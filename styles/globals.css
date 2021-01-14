@@ -1,4 +1,29 @@
-html,
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .font-domainet {
+    font-family: "DomaineT-Regular";
+  }
+}
+
+@font-face {
+  font-family: "DomaineT-Regular";
+  font-style: normal;
+  font-weight: 100;
+  font-display: optional;
+  src: url(/fonts/DomaineT-Regular) format("ttf");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+html {
+  min-width: 360px;
+  scroll-behavior: smooth;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -13,4 +38,45 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.sticky-nav {
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  backdrop-filter: saturate(180%) blur(20px);
+  transition: background-color 0.1 ease-in-out;
+}
+
+.phong-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phong-icon {
+  position: relative;
+  display: block;
+  margin: auto;
+}
+
+.phong-info {
+  position: absolute;
+  display: block;
+  margin: auto;
+}
+
+.logo-rotate {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: rotation 16s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
