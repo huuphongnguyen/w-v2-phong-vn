@@ -70,8 +70,8 @@ export default function Blog({ posts }) {
           </svg>
         </div>
         {!searchValue && <></>}
-        <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-8 text-black dark:text-white">
-          Tất cả bài viết
+        <h3 className="uppercase text-sm md:text-md tracking-tight mb-4 mt-4 text-black dark:text-white">
+          Tất cả bài viết /
         </h3>
         {!filteredBlogPosts.length && "Không tìm thấy bài viết nào liên quan."}
         {filteredBlogPosts.map((frontMatter) => (
