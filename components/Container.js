@@ -20,7 +20,7 @@ export default function Container({ children }) {
             <Logo />
           </div>
         </div>
-        <h1 className=" text-3xl md:text-5xl tracking-tight text-center pt-5 text-black dark:text-white font-domainet">
+        <h1 className="text-3xl md:text-5xl tracking-tight text-center pt-5 text-black dark:text-white font-domainet">
           PHONG FOUNDATION
         </h1>
         <p className=" text-black dark:text-white text-sm md:text-md text-center">
@@ -30,7 +30,7 @@ export default function Container({ children }) {
           </a>
         </p>
       </header>
-      <nav className="sticky-nav flex justify-between items-center max-w-4xl w-full px-6 pt-10 mb-7 pb-3 md:px-8 md:py-2 my-0 md:my-8 mx-auto bg-white dark:bg-black bg-opacity-60">
+      <nav className="sticky-nav flex justify-between items-center max-w-4xl w-full px-6 pt-5 mb-7 pb-3 md:px-8 md:py-2 my-0 md:my-8 mx-auto bg-white dark:bg-black bg-opacity-60">
         <button
           aria-label="Toggle Dark Mode"
           type="button"
@@ -96,7 +96,7 @@ export default function Container({ children }) {
           </NextLink>
         </div>
       </nav>
-      <main className="flex flex-col justify-center bg-white dark:bg-black px-8">
+      <main className="flex flex-col justify-center bg-white dark:bg-black px-4">
         {children}
         <Footer />
       </main>
