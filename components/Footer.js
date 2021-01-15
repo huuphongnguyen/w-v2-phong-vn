@@ -3,17 +3,6 @@ import Lottie from "react-lottie";
 import animationData from "../public/lotties/waveline.json";
 import { useRouter } from "next/router";
 
-const ExternalLink = ({ href, children }) => (
-  <a
-    className="text-sm text-gray-500 hover:text-gray-600 transition"
-    target="_blank"
-    rel="noopener noreferrer"
-    href={href}
-  >
-    {children}
-  </a>
-);
-
 export default function Footer() {
   const defaultOptions = {
     loop: true,
@@ -27,7 +16,7 @@ export default function Footer() {
   const router = useRouter();
 
   return (
-    <footer className="flex-col space-y-1 items-center max-w-4xl w-full mt-10 my-0 md:my-8 mx-auto bg-white dark:bg-black bg-opacity-60">
+    <footer className="flex-col space-y-1 items-center max-w-4xl w-full mt-10 my-0 md:my-8 mx-auto bg-white dark:bg-white bg-opacity-60 px-2 mb-10 md:px-10 rounded-xl">
       <div className="flex flex-col mb-8">
         <div className="flex items-center">
           <div className="flex">
@@ -44,7 +33,7 @@ export default function Footer() {
             alt="Now Playing"
           ></img>
         </div>
-        <div className="py-4 px-1 flex items-center">
+        <div className="pt-4 px-1 flex items-center">
           <div className="flex items-center">
             <Image
               className="rounded-full"
@@ -54,7 +43,7 @@ export default function Footer() {
               height={30}
             />
           </div>
-          <div className="text-xs ml-2">
+          <div className="text-xs ml-2 text-black">
             <p>
               designed / build / developed by{" "}
               <a className="font-bold" href="https://phong.vn">
@@ -73,6 +62,16 @@ export default function Footer() {
               /{" "}
               <a className="font-bold" href="https://tailwindcss.com/">
                 TailwindCSS
+              </a>{" "}
+              /{" "}
+              <a className="font-bold" href="https://mdxjs.com/">
+                MDX
+              </a>
+            </p>
+            <p>
+              This website is an Open Source Project on{" "}
+              <a className="font-bold" href="https://mdxjs.com/">
+                Github
               </a>
               .
             </p>

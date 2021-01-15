@@ -6,6 +6,29 @@
   .font-domainet {
     font-family: "DomaineT-Regular";
   }
+
+  div.scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+    /* this will hide the scrollbar in mozilla based browsers */
+    overflow: -moz-scrollbars-none;
+    /* this will hide the scrollbar in internet explorers */
+    -ms-overflow-style: none;
+  }
+
+  div.scrollmenu::-webkit-scrollbar {
+    width: 0 !important;
+    display: none;
+  }
+
+  div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+  }
 }
 
 @font-face {
@@ -22,6 +45,8 @@
 html {
   min-width: 360px;
   scroll-behavior: smooth;
+
+  overflow-x: hidden;
 }
 
 body {
@@ -29,6 +54,13 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: #fff67a;
+  color: #000000;
 }
 
 a {
@@ -79,4 +111,34 @@ a {
   to {
     transform: rotate(359deg);
   }
+}
+
+.prose pre {
+  @apply bg-gray-50 border border-gray-200 dark:border-gray-700 dark:bg-gray-900;
+}
+
+.prose code {
+  @apply text-gray-800 dark:text-gray-200 px-1 py-0.5 border border-gray-100 dark:border-gray-800 rounded-md bg-gray-100 dark:bg-gray-900;
+}
+
+.prose img {
+  /* Don't apply styles to next/image */
+  @apply m-0;
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+  @apply text-gray-800 dark:text-gray-50;
+}
+
+.remark-code-title {
+  @apply text-gray-800 dark:text-gray-200 px-5 py-3 border border-b-0 border-gray-200 dark:border-gray-700 rounded-t bg-gray-200 dark:bg-gray-800 text-sm font-mono font-bold;
+}
+
+.remark-code-title + pre {
+  @apply mt-0 rounded-t-none;
+}
+
+.mdx-marker {
+  @apply block -mx-4 px-4 bg-gray-100 dark:bg-gray-800 border-l-4 border-blue-500;
 }

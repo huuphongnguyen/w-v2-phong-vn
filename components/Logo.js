@@ -4,13 +4,13 @@ import NextLink from "next/link";
 export default function Logo() {
   return (
     <NextLink href="/">
-      <a>
-        <div className="transform scale-125 py-5">
+      <a className="noSelect">
+        <div className="transform scale-125">
           <div class="phong-main">
             <div class="phong-icon">
               <Image src="/logos/phong-icon.svg" width={105} height={105} />
             </div>
-            <div class="phong-info">
+            <div class="phong-info transform scale-125">
               <Image
                 class="logo-rotate"
                 src="/logos/phong-info.svg"
