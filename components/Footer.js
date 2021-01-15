@@ -70,7 +70,10 @@ export default function Footer() {
             </p>
             <p>
               This website is an Open Source Project on{" "}
-              <a className="font-bold" href="https://mdxjs.com/">
+              <a
+                className="font-bold"
+                href="https://github.com/huuphongnguyen/w-v2-phong-vn"
+              >
                 Github
               </a>
               .
