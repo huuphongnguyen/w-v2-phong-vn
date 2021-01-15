@@ -23,8 +23,11 @@ export default function Container({ children }) {
         <h1 className=" text-3xl md:text-5xl tracking-tight text-center pt-5 text-black dark:text-white font-domainet">
           PHONG FOUNDATION
         </h1>
-        <p className=" text-black dark:text-white text-sm md:text-md text-center uppercase">
-          created by phong
+        <p className=" text-black dark:text-white text-sm md:text-md text-center">
+          created by{" "}
+          <a className="font-bold" href="https://phong.vn/phong">
+            phong
+          </a>
         </p>
       </header>
       <nav className="sticky-nav flex justify-between items-center max-w-4xl w-full px-6 pt-10 mb-7 pb-3 md:px-8 md:py-2 my-0 md:my-8 mx-auto bg-white dark:bg-black bg-opacity-60">
@@ -66,7 +69,7 @@ export default function Container({ children }) {
               Bài viết
             </a>
           </NextLink>
-          <NextLink href="/gioithieu">
+          <NextLink href="/about">
             <a className="p-1 sm:p-4 text-gray-900 dark:text-gray-100 hover:text-gray-100 dark:hover:text-gray-900 uppercase text-sm border-gray-900 dark:border-gray-100 hover:bg-black dark:bg-black dark:hover:bg-white border mr-2 md:p-2">
               Giới thiệu
             </a>
@@ -76,14 +79,14 @@ export default function Container({ children }) {
               Projects
             </a>
           </NextLink>
-          <NextLink href="/lienhe">
+          <NextLink href="/contact">
             <a className="p-1 sm:p-4 text-gray-900 dark:text-gray-100 hover:text-gray-100 dark:hover:text-gray-900 uppercase text-sm border-gray-900 dark:border-gray-100 hover:bg-black dark:bg-black dark:hover:bg-white border mr-2 md:p-2">
               Liên hệ
             </a>
           </NextLink>
           <NextLink href="/humans">
             <a className="p-1 sm:p-4 text-gray-900 dark:text-gray-100 hover:text-gray-100 dark:hover:text-gray-900 uppercase text-sm border-gray-900 dark:border-gray-100 hover:bg-black dark:bg-black dark:hover:bg-white border mr-2 md:p-2">
-              Founders & Members
+              Con người
             </a>
           </NextLink>
           <NextLink href="/">

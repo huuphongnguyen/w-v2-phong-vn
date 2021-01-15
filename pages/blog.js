@@ -10,6 +10,12 @@ const title = "Blog – PHONG FOUNDATION";
 const description =
   "Những bài viết, những chia sẻ, những điều liên quan đến PHONG FOUNDATION đang làm. Được viết bởi phong và một vài thành viên khác.";
 
+export async function getStaticProps() {
+  const posts = await getAllFilesFrontMatter("blog");
+
+  return { props: { posts } };
+}
+
 export default function Blog({ posts }) {
   const [searchValue, setSearchValue] = useState("");
   const filteredBlogPosts = posts
@@ -33,25 +39,23 @@ export default function Blog({ posts }) {
           description,
         }}
       />
-      <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
-        <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
-          Blog
+      <div className="flex flex-col mx-auto bg-gray-100 dark:bg-gray-900 items-start max-w-4xl my-2 md:my-10 p-5 md:p-10 rounded-xl">
+        <h1 className="font-domainet text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
+          Bài viết
         </h1>
-        <p className="text-gray-600 dark:text-gray-400 mb-4">
-          {`I've been writing online since 2014, mostly about web development and tech careers.
-              In total, I've written ${posts.length} articles on this site.
-              Use the search below to filter by title.`}
+        <p className="text-black dark:text-white text-sm mb-4">
+          {`Đây là nơi tập hợp những bài viết được viết bởi Phong và thỉnh thoảng cùng một vài người khác. Những bài viết này chủ yếu chia sẻ, note, suy nghĩ về một vấn đề nào đó trong quá trình dự án này phát triển, phần lớn bao gồm những kinh nghiệm, thất bại và những điều học được qua những gì đã trải qua. Hiện tại có khoảng ${posts.length} bài viết và sẽ được cập nhật sớm.`}
         </p>
         <div className="relative w-full mb-4">
           <input
             aria-label="Search articles"
             type="text"
             onChange={(e) => setSearchValue(e.target.value)}
-            placeholder="Search articles"
-            className="px-4 py-2 border border-gray-300 dark:border-gray-900 focus:ring-blue-500 focus:border-blue-500 block w-full rounded-md bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100"
+            placeholder="Tìm kiếm bài viết, chủ đề, keywords,..."
+            className="px-4 py-2 text-sm md:text-md border border-gray-300 dark:border-gray-900 focus:ring-blue-500 focus:border-yellow-500 block w-full rounded-md bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100"
           />
           <svg
-            className="absolute right-3 top-3 h-5 w-5 text-gray-400 dark:text-gray-300"
+            className="absolute right-3 top-2 h-5 w-5 text-gray-400 dark:text-gray-300"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -65,30 +69,9 @@ export default function Blog({ posts }) {
             />
           </svg>
         </div>
-        {!searchValue && (
-          <>
-            <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-8 text-black dark:text-white">
-              Most Popular
-            </h3>
-            <BlogPost
-              title="Everything I Know About Style Guides, Design Systems, and Component Libraries"
-              summary="A deep-dive on everything I've learned in the past year building style guides, design systems, component libraries, and their best practices."
-              slug="style-guides-component-libraries-design-systems"
-            />
-            <BlogPost
-              title="How Stripe Designs Beautiful Websites"
-              summary="Examining the tips and tricks used to make Stripe's website design a notch above the rest."
-              slug="how-stripe-designs-beautiful-websites"
-            />
-            <BlogPost
-              title="Creating a Monorepo with Lerna & Yarn Workspaces"
-              summary="In this guide, you will learn how to create a Monorepo to manage multiple packages with a shared build, test, and release process."
-              slug="monorepo-lerna-yarn-workspaces"
-            />
-          </>
-        )}
+        {!searchValue && <></>}
         <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-8 text-black dark:text-white">
-          All Posts
+          Tất cả bài viết
         </h3>
         {!filteredBlogPosts.length && "Không tìm thấy bài viết nào liên quan."}
         {filteredBlogPosts.map((frontMatter) => (
@@ -97,10 +80,4 @@ export default function Blog({ posts }) {
       </div>
     </Container>
   );
-}
-
-export async function getStaticProps() {
-  const posts = await getAllFilesFrontMatter("blog");
-
-  return { props: { posts } };
 }
