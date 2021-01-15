@@ -4,6 +4,14 @@
 
 This project is an open-source codepackage to build my website at: https://phong.vn.
 
+<div align="center">
+	<br>
+	<a href="https://github.com/huuphongnguyen/w-v2-phong-vn/blob/main/phong-vn-logo.svg">
+		<img src="phong-vn-logo.svg" width="800" height="400">
+	</a>
+	<br>
+</div>
+
 ## Running Locally
 
 ```bash
