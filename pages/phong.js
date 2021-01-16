@@ -34,9 +34,9 @@ export default function Phong() {
         </div>
         <div className="text-black dark:text-gray-400 mt-2 mb-3 space-y-2 text-sm">
           <div className="flex-cols md:flex">
-            <div className="w-full md:w-1/2 transform scale-50 md:scale-100 origin-top-left -mb-40">
+            <div className="w-full md:w-1/2 transform scale-50 md:scale-100 origin-top -mb-40">
               <NextImage
-                className=""
+                className="rounded-full"
                 src="/avatar.jpg"
                 width={350}
                 height={350}
