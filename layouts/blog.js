@@ -6,7 +6,7 @@ import Container from "../components/Container";
 import BlogSeo from "../components/BlogSeo";
 
 const editUrl = (slug) =>
-  `https://github.com/leerob/leerob.io/edit/master/data/blog/${slug}.mdx`;
+  `https://github.com/huuphongnguyen/w-v2-phong-vn/edit/master/data/blog/${slug}.mdx`;
 
 export default function BlogLayout({ children, frontMatter }) {
   const router = useRouter();

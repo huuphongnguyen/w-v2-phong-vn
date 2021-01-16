@@ -40,9 +40,14 @@ export default function Blog({ posts }) {
         }}
       />
       <div className="flex flex-col mx-auto bg-gray-100 dark:bg-gray-900 items-start max-w-4xl my-2 md:my-10 p-5 md:p-10 rounded-xl">
-        <h1 className="font-domainet text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
-          Bài viết
-        </h1>
+        <div className="flex space-x-2">
+          <span className="text-3xl font-domainet md:text-5xl text-black dark:text-white">
+            /
+          </span>
+          <h1 className="font-domainet text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
+            Bài viết
+          </h1>
+        </div>
         <p className="text-black dark:text-white text-sm mb-4">
           {`Đây là nơi tập hợp những bài viết được viết bởi Phong và thỉnh thoảng cùng một vài người khác. Những bài viết này chủ yếu chia sẻ, note, suy nghĩ về một vấn đề nào đó trong quá trình dự án này phát triển, phần lớn bao gồm những kinh nghiệm, thất bại và những điều học được qua những gì đã trải qua. Hiện tại có khoảng ${posts.length} bài viết và sẽ được cập nhật sớm.`}
         </p>

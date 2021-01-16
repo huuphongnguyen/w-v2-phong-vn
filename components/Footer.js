@@ -46,8 +46,8 @@ export default function Footer() {
           <div className="text-xs ml-2 text-black">
             <p>
               designed / build / developed by{" "}
-              <a className="font-bold" href="https://phong.vn">
-                phong
+              <a className="font-bold" href="https://phong.vn/phong">
+                Phong
               </a>
             </p>
             <p>

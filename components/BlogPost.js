@@ -5,7 +5,7 @@ const BlogPost = ({ title, summary, slug, publishedAt, image }) => {
   return (
     <Link href={`/blog/${slug}`}>
       <a className="w-full">
-        <div className="mb-8 w-full flex space-x-3 rounded-md p-0 md:p-3 md:hover:bg-gray-700">
+        <div className="mb-8 w-full flex space-x-3 rounded-md p-0 md:p-3 md:dark:hover:bg-gray-700 md:hover:bg-gray-200">
           <div>
             <NextImage
               className="object-cover"

@@ -26,7 +26,7 @@ export default function Container({ children }) {
         <p className=" text-black dark:text-white text-sm md:text-md text-center">
           created by{" "}
           <a className="font-bold" href="https://phong.vn/phong">
-            phong
+            Phong
           </a>
         </p>
       </header>

@@ -21,9 +21,14 @@ export default function Contact() {
         }}
       />
       <div className="flex flex-col mx-auto bg-gray-100 dark:bg-gray-900 items-start max-w-4xl my-2 md:my-10 p-5 md:p-10 rounded-xl">
-        <h1 className="font-domainet text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
-          Liên hệ
-        </h1>
+        <div className="flex space-x-2">
+          <span className="text-3xl font-domainet md:text-5xl text-black dark:text-white">
+            /
+          </span>
+          <h1 className="font-domainet text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
+            Liên hệ
+          </h1>
+        </div>
         <div className="text-black dark:text-white mb-10 space-y-3 text-sm leading-7">
           <p>
             Bạn có thể liên hệ mình qua{" "}
@@ -57,7 +62,7 @@ export default function Contact() {
             chỉ cần inbox trực tiếp, mình sẽ cố gắng kiểm tra tin nhắn khi có
             thể. Đây là những mạng xã hội mà mình đang sử dụng:{" "}
             <a
-              className="font-bold bg-gray-200 md:bg-white hover:bg-gray-200 p-1 rounded-lg"
+              className="font-bold bg-gray-200 dark:bg-gray-700 hover:bg-gray-200 p-1 rounded-lg"
               href="https://instagram.com/isnhp"
             >
               <p className="inline-flex items-center pl-7">
@@ -73,7 +78,7 @@ export default function Contact() {
             tảng khác thôi. Hiện tại chỉ có 1 người mình chấp nhận follower [một
             người cho mình rất nhiều cảm hứng và động lực]) -{" "}
             <a
-              className="font-bold bg-gray-200 md:bg-white hover:bg-gray-200 p-1 rounded-lg"
+              className="font-bold bg-gray-200 dark:bg-gray-700 hover:bg-gray-200 p-1 rounded-lg"
               href="https://www.facebook.com/thereisadonutonthetable/"
             >
               <p className="inline-flex items-center pl-7">
@@ -86,7 +91,7 @@ export default function Contact() {
             </a>{" "}
             cho bạn bè, hóng hớt -{" "}
             <a
-              className="font-bold bg-gray-200 md:bg-white hover:bg-gray-200 p-1 rounded-lg"
+              className="font-bold bg-gray-200 dark:bg-gray-700 hover:bg-gray-200 p-1 rounded-lg"
               href="https://snapchat.com/isnhp"
             >
               <p className="inline-flex items-center pl-8">
@@ -99,7 +104,7 @@ export default function Contact() {
             </a>{" "}
             để Netflix & Chill *jkd* -{" "}
             <a
-              className="font-bold bg-gray-200 md:bg-white hover:bg-gray-200 p-1 rounded-lg"
+              className="font-bold bg-gray-200 dark:bg-gray-700 hover:bg-gray-200 p-1 rounded-lg"
               href="https://telegram.com/isnhp"
             >
               <p className="inline-flex items-center pl-8">
@@ -112,7 +117,7 @@ export default function Contact() {
             </a>{" "}
             để làm việc *I mean "works" - và{" "}
             <a
-              className="font-bold bg-gray-200 md:bg-white hover:bg-gray-200 p-1 rounded-lg"
+              className="font-bold bg-gray-200 dark:bg-gray-700 hover:bg-gray-200 p-1 rounded-lg"
               href="https://twitter.com/isnhp"
             >
               <p className="inline-flex items-center pl-8">

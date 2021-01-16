@@ -20,9 +20,14 @@ export default function WhitePaper() {
         }}
       />
       <div className="flex flex-col mx-auto bg-gray-100 dark:bg-gray-900 items-start max-w-4xl my-2 md:my-10 p-5 md:p-10 rounded-xl">
-        <h1 className="font-domainet text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
-          White-Paper
-        </h1>
+        <div className="flex space-x-2">
+          <span className="text-3xl font-domainet md:text-5xl text-black dark:text-white">
+            /
+          </span>
+          <h1 className="font-domainet text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
+            White-Paper
+          </h1>
+        </div>
         <div className="text-black">
           Xây dựng bởi <strong>Nguyễn Hữu Phong</strong>.
           <br />
