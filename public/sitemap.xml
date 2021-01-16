@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://phong.vn/about</loc>
-  </url>
-
-  <url>
     <loc>https://phong.vn/blog</loc>
   </url>
 
@@ -25,6 +21,10 @@
   </url>
 
   <url>
-    <loc>https://phong.vn/blog/2019</loc>
+    <loc>https://phong.vn/white-paper</loc>
+  </url>
+
+  <url>
+    <loc>https://phong.vn/blog/phongfoundation-nextchapter</loc>
   </url>
 </urlset>

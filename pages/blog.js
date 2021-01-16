@@ -46,6 +46,37 @@ export default function Blog({ posts }) {
         <p className="text-black dark:text-white text-sm mb-4">
           {`Đây là nơi tập hợp những bài viết được viết bởi Phong và thỉnh thoảng cùng một vài người khác. Những bài viết này chủ yếu chia sẻ, note, suy nghĩ về một vấn đề nào đó trong quá trình dự án này phát triển, phần lớn bao gồm những kinh nghiệm, thất bại và những điều học được qua những gì đã trải qua. Hiện tại có khoảng ${posts.length} bài viết và sẽ được cập nhật sớm.`}
         </p>
+        <div className="mb-4 flex items-center space-x-1">
+          <div className="">
+            <svg
+              class="w-6 h-6 stroke-current text-black dark:text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+              ></path>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+              ></path>
+            </svg>
+          </div>
+          <p className="text-gray-500 text-sm">
+            Các feature image của bài viết được chọn lọc và lấy cảm hứng từ kho
+            lưu trữ của AI{" "}
+            <a className="font-bold" href="https://archillect.com/">
+              Archillect
+            </a>
+          </p>
+        </div>
         <div className="relative w-full mb-4">
           <input
             aria-label="Search articles"

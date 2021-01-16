@@ -69,9 +69,9 @@ export default function Container({ children }) {
               Bài viết
             </a>
           </NextLink>
-          <NextLink href="/about">
+          <NextLink href="/white-paper">
             <a className="p-1 sm:p-4 text-gray-900 dark:text-gray-100 hover:text-gray-100 dark:hover:text-gray-900 uppercase text-xs border-gray-900 dark:border-gray-100 hover:bg-black dark:bg-black dark:hover:bg-white border mr-2 md:p-2">
-              Giới thiệu
+              White-Paper
             </a>
           </NextLink>
           <NextLink href="/projects">

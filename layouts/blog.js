@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { parseISO, format } from "date-fns";
+import { useRouter } from "next/router";
 
 import Container from "../components/Container";
 import BlogSeo from "../components/BlogSeo";
@@ -8,6 +9,7 @@ const editUrl = (slug) =>
   `https://github.com/leerob/leerob.io/edit/master/data/blog/${slug}.mdx`;
 
 export default function BlogLayout({ children, frontMatter }) {
+  const router = useRouter();
   return (
     <Container>
       <BlogSeo
@@ -19,6 +21,30 @@ export default function BlogLayout({ children, frontMatter }) {
           <h1 className="font-domainet text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
             {frontMatter.title}
           </h1>
+
+          <div
+            className="flex space-x-2 items-center p-0 md:p-2 cursor-pointer mb-2 rounded-md text-black dark:text-white hover:bg-gray-200 dark:hover:text-black"
+            onClick={() => router.back()}
+          >
+            <div>
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M11 15l-3-3m0 0l3-3m-3 3h8M3 12a9 9 0 1118 0 9 9 0 01-18 0z"
+                ></path>
+              </svg>
+            </div>
+            <p className="text-sm font-bold">Quay trở lại Trang Blog chính</p>
+          </div>
+
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center w-full mt-2 mb-8">
             <div className="flex items-center">
               <Image
@@ -38,6 +64,23 @@ export default function BlogLayout({ children, frontMatter }) {
               {frontMatter.readingTime.text}
               {` • `}
             </p>
+          </div>
+          <div className=" flex justify-between space-x-7 w-full mb-4">
+            <div className="w-1/3">
+              <Image
+                className="rounded-xl"
+                src={frontMatter.image}
+                width={300}
+                height={300}
+                quality="50"
+                priority="true"
+              />
+            </div>
+            <div className="inline-flex w-2/3">
+              <p className="text-black dark:text-gray-400 text-sm">
+                {frontMatter.summary}
+              </p>
+            </div>
           </div>
           <div className="prose dark:prose-dark max-w-none w-full">
             {children}
