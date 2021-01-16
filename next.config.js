@@ -1,8 +1,10 @@
 module.exports = {
   images: {
     domains: [
-      "i.scdn.co", // Spotify Album Art
-      "pbs.twimg.com", // Twitter Profile Picture
+      "images.unsplash.com",
+      "66.media.tumblr.com",
+      "64.media.tumblr.com",
+      "theuvitinhanhxuyen.files.wordpress.com",
     ],
   },
   webpack: (config, { dev, isServer }) => {

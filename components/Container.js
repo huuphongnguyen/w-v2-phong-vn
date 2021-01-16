@@ -30,7 +30,7 @@ export default function Container({ children }) {
           </a>
         </p>
       </header>
-      <nav className="sticky-nav flex justify-between items-center max-w-4xl w-full px-6 pt-5 mb-7 pb-3 md:px-8 md:py-2 my-0 md:my-8 mx-auto bg-white dark:bg-black bg-opacity-60">
+      <nav className="sticky-nav flex justify-between items-center max-w-4xl w-full px-6 pt-5 mb-7 pb-3 md:px-8 md:py-2 my-0 md:my-8 mx-auto bg-white dark:bg-black bg-opacity-60 z-50">
         <button
           aria-label="Toggle Dark Mode"
           type="button"
