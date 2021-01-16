@@ -21,7 +21,7 @@ export default function ProjectCard({
   emailname,
 }) {
   return (
-    <div className="border-4 p-2 rounded-md">
+    <div className="border-4 p-2 rounded-md bg-white dark:bg-gray-900">
       <ProjectImageGallery data={dataimg} />
       <div className="my-0">
         <div className="flex items-center -my-1">
@@ -73,12 +73,7 @@ export default function ProjectCard({
         <p className="mb-2 text-sm">{description}</p>
         <div className="flex items-center mb-2">
           <div className="w-5 h-5">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="rgba(249, 191, 59, 1)"
-            >
+            <svg fill="none" viewBox="0 0 24 24" stroke="rgba(249, 191, 59, 1)">
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
@@ -92,7 +87,7 @@ export default function ProjectCard({
         <div className="flex items-center mb-1">
           <div className="w-5 h-5">
             <svg
-              xmlns="http://www.w3.org/2000/svg"
+              className="stroke-current text-black dark:text-white"
               fill="none"
               viewBox="0 0 24 24"
               stroke="black"
