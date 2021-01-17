@@ -5,7 +5,7 @@ import InternalLink from "../components/elements/InternalLink";
 import PhongSignature from "../components/elements/PhongSignature";
 import ExternalLink from "../components/elements/ExternalLink";
 
-const defaultEndpoint = `https://archillect.phong.vn/visuals?per=50`;
+const defaultEndpoint = process.env.ARCHILLECT_AI_UNOFFICIAL_API;
 
 const FullLetter = () => (
   <>
