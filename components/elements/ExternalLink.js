@@ -1,7 +1,12 @@
-export default function ExternalLink({ href, children }) {
+export default function ExternalLink({
+  href,
+  children,
+  colortext,
+  colortexthover,
+}) {
   return (
     <a
-      className="text-sm font-bold text-yellow-500 hover:text-yellow-500 transition"
+      className={`${colortext} ${colortexthover} font-bold text-sm`}
       target="_blank"
       rel="noopener noreferrer"
       href={href}

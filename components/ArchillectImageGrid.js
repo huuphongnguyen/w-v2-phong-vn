@@ -3,7 +3,7 @@ import React from "react";
 import styled from "styled-components";
 import Delayed from "../components/features/Delayed";
 
-export default function ProjectImageGallery({ data }) {
+export default function ArchillectImageGrid({ data }) {
   return (
     <Delayed waitBeforeShow={500}>
       <Wrapper>
@@ -12,7 +12,7 @@ export default function ProjectImageGallery({ data }) {
             <ImageProject>
               <Image
                 className="z-10 object-cover"
-                src={img.imgurl}
+                src={img.imageSource}
                 quality="50"
                 priority="true"
                 layout="fill"
