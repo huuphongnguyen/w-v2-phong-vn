@@ -16,7 +16,7 @@ export default function Footer() {
   const router = useRouter();
 
   return (
-    <footer className="flex-col space-y-1 items-center max-w-4xl w-full mt-10 my-0 md:my-8 mx-auto bg-gray-200 dark:bg-gray-200 bg-opacity-60 px-2 mb-10 md:px-10 rounded-xl">
+    <footer className="flex-col space-y-1 items-center max-w-4xl w-full mt-5 md:mt-0 md:mb-8 mx-auto bg-gray-200 dark:bg-gray-200 bg-opacity-60 px-2 mb-10 md:px-10 rounded-xl">
       <div className="flex flex-col mb-8">
         <div className="flex items-center">
           <div className="flex">

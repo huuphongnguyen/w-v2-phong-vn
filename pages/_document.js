@@ -43,6 +43,27 @@ class MyDocument extends Document {
             content="pM4nU9JEo0lDNc8hgCsYCAWFFAvCDGsO2nz2rzEkakc"
             name="google-site-verification"
           />
+          <meta
+            name="p:domain_verify"
+            content="1975346e757422e5e792ad21fb3a1d88"
+          />
+
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-TCMHSHC45D"
+          />
+
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+            
+              gtag('config', 'G-TCMHSHC45D');
+          `,
+            }}
+          />
         </Head>
         <body className="bg-white dark:bg-black text-white dark:text-black">
           <Main />
