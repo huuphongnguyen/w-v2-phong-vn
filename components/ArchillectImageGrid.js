@@ -13,7 +13,8 @@ export default function ArchillectImageGrid({ data }) {
       <div className="mb-4 space-y-1">
         <TenMinutesCounter />
         <p className="text-black dark:text-white text-xs">
-          Tắt và Gọi lại Archillect để cập nhật block mới
+          Cập nhật sẽ có độ trễ nhất định so với máy chủ của cô trong một vài
+          trường hợp.
         </p>
       </div>
       <Delayed waitBeforeShow={500}>
@@ -43,7 +44,7 @@ export default function ArchillectImageGrid({ data }) {
         </Wrapper>
       </Delayed>
       <div className="mt-4">
-        <p className="text-black dark:text-white text-xs">
+        <p className="text-black dark:text-white text-xs leading-5">
           Gồm 50 Block [hình ảnh hoặc ảnh động] mới nhất của Archillect. Mỗi 10
           phút Archillect sẽ cập nhật một Block mới.
           <br />{" "}
