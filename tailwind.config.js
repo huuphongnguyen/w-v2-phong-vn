@@ -5,6 +5,17 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      spacing: {
+        0.5: "0.6px",
+        "300px": "300px",
+        "600px": "600px",
+      },
+      zIndex: {
+        "-10": -10,
+      },
+      animation: {
+        "spin-slow": "spin 7s linear infinite",
+      },
       typography: (theme) => ({
         DEFAULT: {
           css: {
