@@ -30,6 +30,7 @@
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-lottie": "^1.2.3",
+    "react-modal": "^3.12.1",
     "reading-time": "^1.2.1",
     "rehype": "^11.0.0",
     "remark-autolink-headings": "^6.0.1",

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import NextLink from "next/link";
 import React from "react";
 import styled from "styled-components";
 import Delayed from "../components/features/Delayed";
@@ -13,32 +12,26 @@ export default function ArchillectImageGrid({ data }) {
       <div className="mb-4 space-y-1">
         <TenMinutesCounter />
         <p className="text-black dark:text-white text-xs">
-          Cập nhật sẽ có độ trễ nhất định so với máy chủ của cô trong một vài
-          trường hợp.
+          Cập nhật sẽ có độ trễ nhất định so với máy chủ của Archillect trong
+          một vài trường hợp.
         </p>
       </div>
+
       <Delayed waitBeforeShow={500}>
         <Wrapper>
           {data.map((item, index) => (
             <div key={index}>
-              {/* <NextLink
-                href="/archillect/[archillect]"
-                as={`/archillect/${index}`}
-              > */}
-              <a>
-                <ElementWrapper>
-                  <ImageProject>
-                    <Image
-                      className="z-10 object-cover"
-                      src={item.imageSource}
-                      quality="50"
-                      priority="true"
-                      layout="fill"
-                    />
-                  </ImageProject>
-                </ElementWrapper>
-              </a>
-              {/* </NextLink> */}
+              <ElementWrapper>
+                <ImageProject>
+                  <Image
+                    className="z-10 object-cover"
+                    src={item.imageSource}
+                    quality="50"
+                    priority="true"
+                    layout="fill"
+                  />
+                </ImageProject>
+              </ElementWrapper>
             </div>
           ))}
         </Wrapper>
@@ -113,5 +106,5 @@ const ImageProject = styled.div`
   height: 100%;
   width: 100%;
   object-fit: cover;
-  z-index: 10;
+  z-index: 50;
 `;

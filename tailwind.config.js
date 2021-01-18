@@ -12,6 +12,8 @@ module.exports = {
       },
       zIndex: {
         "-10": -10,
+        60: 60,
+        100: 100,
       },
       animation: {
         "spin-slow": "spin 7s linear infinite",

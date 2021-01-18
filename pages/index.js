@@ -11,7 +11,7 @@ const FullLetter = () => (
   <>
     <div className="text-black dark:text-white my-10 space-y-3 text-sm">
       <p>
-        Xin chào, mình là <InternalLink href="/phong">Phong</InternalLink>,, là
+        Xin chào, mình là <InternalLink href="/phong">Phong</InternalLink>, là
         người xây dựng, phát triển, và thiết kế cho{" "}
         <strong>PHONG FOUNDATION</strong>. Đây là được mình xem như là một trung
         tâm phát triển và xây dựng những gì mình làm trong xuyên suốt quá trình
