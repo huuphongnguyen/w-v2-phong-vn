@@ -1,4 +1,5 @@
 import { useState } from "react";
+import NextLink from "next/link";
 import ArchillectImageGrid from "../components/ArchillectImageGrid";
 import Container from "../components/Container";
 import InternalLink from "../components/elements/InternalLink";
@@ -43,6 +44,33 @@ const FullLetter = () => (
     <div className="transform scale-75 md:scale-100 origin-top-left">
       <PhongSignature classsvg="stroke-current text-black dark:text-white" />
     </div>
+    <NextLink href="/phong">
+      <a>
+        <div className="mt-4">
+          <p className="text-black dark:text-white text-sm">
+            Nguyễn Hữu Phong.
+          </p>
+          <div className="text-sm text-black dark:text-white inline-flex items-center p-2 space-x-1 -ml-2 mt-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 cursor-pointer">
+            <div>
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </div>
+            <p>Đọc thêm xíu nữa về mình.</p>
+          </div>
+        </div>
+      </a>
+    </NextLink>
   </>
 );
 
