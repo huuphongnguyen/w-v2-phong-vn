@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { parseISO, format } from "date-fns";
 import { useRouter } from "next/router";
+import NextLink from "next/link";
 
 import Container from "../components/Container";
 import BlogSeo from "../components/BlogSeo";
@@ -46,20 +47,24 @@ export default function BlogLayout({ children, frontMatter }) {
           </div>
 
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center w-full mt-2 mb-8">
-            <div className="flex items-center">
-              <Image
-                alt="Phong"
-                height={40}
-                width={40}
-                src="/avatar.jpg"
-                className="rounded-full"
-              />
-              <p className="text-sm text-gray-700 dark:text-gray-300 ml-2">
-                {frontMatter.by}
-                {"Phong / "}
-                {format(parseISO(frontMatter.publishedAt), "MMMM dd, yyyy")}
-              </p>
-            </div>
+            <NextLink href="/phong">
+              <a>
+                <div className="flex items-center">
+                  <Image
+                    alt="Phong"
+                    height={40}
+                    width={40}
+                    src="/avatar.jpg"
+                    className="rounded-full"
+                  />
+                  <p className="text-sm text-gray-700 dark:text-gray-300 ml-2">
+                    {frontMatter.by}
+                    {"Phong / "}
+                    {format(parseISO(frontMatter.publishedAt), "MMMM dd, yyyy")}
+                  </p>
+                </div>
+              </a>
+            </NextLink>
             <p className="text-sm text-gray-500 min-w-32 mt-2 md:mt-0">
               {frontMatter.readingTime.text}
               {` • `}

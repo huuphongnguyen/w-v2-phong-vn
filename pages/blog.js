@@ -74,7 +74,7 @@ export default function Blog({ posts }) {
               ></path>
             </svg>
           </div>
-          <p className="text-gray-500 text-sm">
+          <p className="text-gray-500 text-xs pl-2">
             Các feature image của bài viết được chọn lọc và lấy cảm hứng từ kho
             lưu trữ của AI{" "}
             <a className="font-bold" href="https://archillect.com/">

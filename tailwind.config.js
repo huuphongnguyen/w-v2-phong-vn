@@ -7,7 +7,12 @@ module.exports = {
     extend: {
       spacing: {
         0.5: "0.6px",
+        "50px": "50px",
+        "100px": "100px",
+        "200px": "200px",
         "300px": "300px",
+        "400px": "500px",
+        "500px": "500px",
         "600px": "600px",
       },
       zIndex: {
@@ -83,5 +88,8 @@ module.exports = {
   variants: {
     typography: ["dark"],
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/line-clamp"),
+  ],
 };

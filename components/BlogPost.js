@@ -6,15 +6,16 @@ const BlogPost = ({ title, summary, slug, publishedAt, image }) => {
     <Link href={`/blog/${slug}`}>
       <a className="w-full">
         <div className="mb-8 w-full flex space-x-3 rounded-md p-0 md:p-3 md:dark:hover:bg-gray-700 md:hover:bg-gray-200">
-          <div>
-            <NextImage
-              className="object-cover"
-              src={image}
-              width={100}
-              height={100}
-              priority="true"
-              quality="50"
-            />
+          <div className="w-1/2 md:w-300px relative">
+            <div className="w-full h-full">
+              <NextImage
+                className="object-cover rounded-md"
+                src={image}
+                layout="fill"
+                priority="true"
+                quality="50"
+              />
+            </div>
           </div>
           <div className="w-full">
             <div className="flex flex-col md:flex-row justify-between">
@@ -25,7 +26,7 @@ const BlogPost = ({ title, summary, slug, publishedAt, image }) => {
                 {publishedAt}
               </p>
             </div>
-            <p className="text-sm text-gray-600 dark:text-gray-400">
+            <p className="text-sm text-gray-600 dark:text-gray-400 line-clamp-4 md:line-clamp-none">
               {summary}
             </p>
           </div>

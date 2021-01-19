@@ -2,6 +2,7 @@ import Container from "../components/Container";
 import { NextSeo } from "next-seo";
 import ProjectCard from "../components/ProjectCard";
 import projectData from "../data/project/projectData.json";
+import NextLink from "next/link";
 
 const url = "https://phong.vn/projects";
 const title = "Projects – PHONG FOUNDATION";
@@ -34,7 +35,31 @@ export default function Projects() {
           Những project đã / đang được thực hiện bởi Phong trước đó, hiện tại
           mọi thứ đều được thực hiện dưới PHONG FOUNDATION
         </p>
-        <div className="text-black dark:text-white my-10 space-y-3 text-sm">
+        <div className="py-4">
+          <NextLink href="mailto:touch@phong.vn">
+            <a>
+              <div className="flex space-x-1 items-center text-yellow-500 dark:text-yellow-500 text-sm uppercase font-bold p-2 hover:bg-gray-200 dark:hover:bg-gray-700 cursor-pointer rounded-md">
+                <div>
+                  <svg
+                    class="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"
+                    ></path>
+                  </svg>
+                </div>
+                <p>Liên hệ hợp tác</p>
+              </div>
+            </a>
+          </NextLink>
+        </div>
+        <div className="text-black dark:text-white my-5 space-y-3 text-sm">
           <div>
             <div>
               <div className="mb-4 flex-col space-y-2">
@@ -59,10 +84,9 @@ export default function Projects() {
                   </h2>
                 </div>
                 <p className="text-black dark:text-white">
-                  Thật khó để chia tay hay dừng lại những điều mà nó đã từng là
-                  thói quen. Nhưng thất bại luôn sẽ xảy ra trên con đường mà
-                  chúng ta đi, đó vẫn là những kỷ niệm đẹp và chúng ta học rất
-                  nhiều từ nó.
+                  Thực hiện bằng tất cả những gì có thể và luôn trân trọng từng
+                  khoảng khắc khi thực hiện những dự án này. Cố gắng để những dự
+                  án trong phần này không bị đẩy xuống phần dưới.
                 </p>
               </div>
             </div>
