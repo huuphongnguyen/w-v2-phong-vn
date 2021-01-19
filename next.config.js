@@ -5,6 +5,7 @@ module.exports = {
       "64.media.tumblr.com",
       "66.media.tumblr.com",
       "theuvitinhanhxuyen.files.wordpress.com",
+      "pbs.twimg.com", // Twitter Profile Picture
     ],
   },
   webpack: (config, { dev, isServer }) => {

@@ -19,7 +19,7 @@ export default function Footer() {
   return (
     <footer className="flex-col space-y-1 items-center max-w-4xl w-full mt-5 md:mt-0 md:mb-8 mx-auto bg-gray-200 dark:bg-gray-200 bg-opacity-60 px-2 mb-10 md:px-10 rounded-xl">
       <div className="flex flex-col mb-8">
-        <div className="flex items-center space-x-1 pt-6 px-3 -mb-5 z-50">
+        <div className="flex items-center space-x-1 pt-6 px-3 -mb-5">
           <NextLink href="/tools">
             <a>
               <div className="inline-flex text-gray-700 text-xs hover:bg-gray-200 dark:hover:bg-gray-300 px-2 py-1 transform -translate-x-2 font-bold rounded-md cursor-pointer uppercase">
@@ -34,13 +34,13 @@ export default function Footer() {
               </div>
             </a>
           </NextLink>
-          {/* <NextLink href="#">
+          <NextLink href="/tweets">
             <a>
               <div className="inline-flex text-gray-700 text-xs hover:bg-gray-200 dark:hover:bg-gray-300 px-2 py-1 transform -translate-x-2 font-bold rounded-md cursor-pointer uppercase">
-                <p>/ Notes</p>
+                <p>/ Tweets</p>
               </div>
             </a>
-          </NextLink> */}
+          </NextLink>
         </div>
         <div className="flex items-center">
           <div className="flex">
