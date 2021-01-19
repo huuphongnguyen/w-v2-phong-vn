@@ -1,5 +1,6 @@
 import Container from "../components/Container";
 import { NextSeo } from "next-seo";
+import ToolCard from "../components/ToolCard";
 
 const url = "https://phong.vn/tools";
 const title = "Tools – PHONG FOUNDATION";
@@ -32,6 +33,14 @@ export default function Tools() {
           Tổng hợp những tool, những công cụ hay và tiện lợi giúp thực hiện công
           việc tốt hơn.
         </p>
+        <div>
+          <ToolCard
+            toolicon="/icons/twitter.svg"
+            toolname="tweetpik.vercel.app"
+            tooldescription="Tạo svg đẹp cho một Tweet với Link Tweet"
+            toolurl="https://tweetpik.vercel.app/"
+          />
+        </div>
       </div>
     </Container>
   );

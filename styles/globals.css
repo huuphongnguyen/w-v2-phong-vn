@@ -112,3 +112,7 @@ a {
     transform: rotate(359deg);
   }
 }
+
+.spline-watermark {
+  display: none;
+}
