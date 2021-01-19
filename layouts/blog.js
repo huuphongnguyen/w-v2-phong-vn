@@ -119,16 +119,21 @@ export default function BlogLayout({ children, frontMatter }) {
             </a>
           </div>
           <div className="flex-col space-y-2 w-full mt-5">
-            <p className="text-black dark:text-white text-sm">
-              Bạn có thể bình luận bài viết bằng{" "}
-              <ExternalLink href="https://telegram.org">Telegram</ExternalLink>.
-              <br /> Bình luận tại đây đồng bộ theo thời gian thực với bình luận
-              trên kệnh Telegram
-              <br /> Kênh Telegram của PHONG FOUNDATION{" "}
-              <a className="font-bold" href="https://t.me/phongchannel">
-                @phongchannel
-              </a>
-            </p>
+            <div>
+              <p className="text-black dark:text-white text-sm">
+                Bạn có thể bình luận bài viết bằng{" "}
+                <ExternalLink href="https://telegram.org">
+                  Telegram
+                </ExternalLink>
+                .
+                <br /> Bình luận tại đây đồng bộ theo thời gian thực với bình
+                luận trên kệnh Telegram
+                <br /> Kênh Telegram của PHONG FOUNDATION{" "}
+                <a className="font-bold" href="https://t.me/phongchannel">
+                  @phongchannel
+                </a>
+              </p>
+            </div>
             <TelegramComments
               datatelegramdiscussion={frontMatter.telegamdiscussionurl}
             />
