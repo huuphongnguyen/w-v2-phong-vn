@@ -117,9 +117,6 @@ export default function BlogLayout({ children, frontMatter }) {
               {"Chỉnh sửa bài viết này trên Github"}
             </a>
           </div>
-          <div className="mt-6">
-            <TelegramComments pageid={frontMatter.title} />
-          </div>
         </article>
       </div>
     </Container>
