@@ -1,6 +1,6 @@
 export default function TelegramComments({ datatelegramdiscussion }) {
   return (
-    <div className="w-full">
+    <div>
       <script
         async
         src="https://telegram.org/js/telegram-widget.js?14"
