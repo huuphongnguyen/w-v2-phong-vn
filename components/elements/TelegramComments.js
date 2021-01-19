@@ -1,12 +1,11 @@
-export default function TelegramComments({ pageid }) {
+export default function TelegramComments({ datatelegramdiscussion }) {
   return (
     <div>
       <script
         async
-        src="https://comments.app/js/widget.js?3"
-        data-comments-app-website={process.env.TELEGRAM_COMMENTS_APP_WEBSITE_ID}
-        data-limit="20"
-        data-page-id={pageid}
+        src="https://telegram.org/js/telegram-widget.js?14"
+        data-telegram-discussion={datatelegramdiscussion}
+        data-comments-limit="10"
         data-color="0068FF"
         data-dark="1"
       ></script>
