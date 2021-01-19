@@ -6,6 +6,7 @@ import NextLink from "next/link";
 import Container from "../components/Container";
 import BlogSeo from "../components/BlogSeo";
 import TelegramComments from "../components/elements/TelegramComments";
+import ExternalLink from "../components/elements/ExternalLink";
 
 const editUrl = (slug) =>
   `https://github.com/huuphongnguyen/w-v2-phong-vn/edit/main/data/blog/${slug}.mdx`;
@@ -118,6 +119,16 @@ export default function BlogLayout({ children, frontMatter }) {
             </a>
           </div>
           <div className="flex w-full mt-5">
+            <p className="text-black dark:text-white text-sm">
+              Bạn có thể bình luận bài viết bằng{" "}
+              <ExternalLink href="https://telegram.org">Telegram</ExternalLink>.
+              <br /> Bình luận tại đây đồng bộ theo thời gian thực với bình luận
+              trên kệnh Telegram
+              <br /> Kênh Telegram của PHONG FOUNDATION{" "}
+              <a className="font-bold" href="https://t.me/phongchannel">
+                @phongchannel
+              </a>
+            </p>
             <TelegramComments
               datatelegramdiscussion={frontMatter.telegamdiscussionurl}
             />
