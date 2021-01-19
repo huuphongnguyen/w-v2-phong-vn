@@ -5,6 +5,7 @@ import NextLink from "next/link";
 
 import Container from "../components/Container";
 import BlogSeo from "../components/BlogSeo";
+import TelegramComments from "../components/elements/TelegramComments";
 
 const editUrl = (slug) =>
   `https://github.com/huuphongnguyen/w-v2-phong-vn/edit/main/data/blog/${slug}.mdx`;
@@ -116,6 +117,7 @@ export default function BlogLayout({ children, frontMatter }) {
               {"Chỉnh sửa bài viết này trên Github"}
             </a>
           </div>
+          <TelegramComments datapageid={frontMatter.title} />
         </article>
       </div>
     </Container>
