@@ -118,7 +118,7 @@ export default function BlogLayout({ children, frontMatter }) {
               {"Chỉnh sửa bài viết này trên Github"}
             </a>
           </div>
-          <div className="flex w-full mt-5">
+          <div className="flex-col space-y-2 w-full mt-5">
             <p className="text-black dark:text-white text-sm">
               Bạn có thể bình luận bài viết bằng{" "}
               <ExternalLink href="https://telegram.org">Telegram</ExternalLink>.
