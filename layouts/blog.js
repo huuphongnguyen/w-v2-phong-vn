@@ -118,6 +118,9 @@ export default function BlogLayout({ children, frontMatter }) {
             </a>
           </div>
         </article>
+        <div>
+          <TelegramComments pageid={frontMatter.title} />
+        </div>
       </div>
     </Container>
   );
