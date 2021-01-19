@@ -117,12 +117,12 @@ export default function BlogLayout({ children, frontMatter }) {
               {"Chỉnh sửa bài viết này trên Github"}
             </a>
           </div>
+          <div className="flex">
+            <TelegramComments
+              datatelegramdiscussion={frontMatter.telegamdiscussionurl}
+            />
+          </div>
         </article>
-        <div className="flex w-full">
-          <TelegramComments
-            datatelegramdiscussion={frontMatter.telegamdiscussionurl}
-          />
-        </div>
       </div>
     </Container>
   );

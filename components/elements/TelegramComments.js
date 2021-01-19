@@ -8,6 +8,7 @@ export default function TelegramComments({ datatelegramdiscussion }) {
         data-comments-limit="10"
         data-color="0068FF"
         data-dark="1"
+        data-width="500px"
       ></script>
     </div>
   );
