@@ -117,7 +117,7 @@ export default function BlogLayout({ children, frontMatter }) {
               {"Chỉnh sửa bài viết này trên Github"}
             </a>
           </div>
-          <div className="flex">
+          <div className="flex w-full mt-5">
             <TelegramComments
               datatelegramdiscussion={frontMatter.telegamdiscussionurl}
             />
