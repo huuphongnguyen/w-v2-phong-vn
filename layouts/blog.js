@@ -118,7 +118,7 @@ export default function BlogLayout({ children, frontMatter }) {
               {"Chỉnh sửa bài viết này trên Github"}
             </a>
           </div>
-          <div className="flex-col space-y-2 w-full mt-5">
+          <div className="w-full mt-5">
             <div>
               <p className="text-black dark:text-white text-sm">
                 Bạn có thể bình luận bài viết bằng{" "}
@@ -134,9 +134,11 @@ export default function BlogLayout({ children, frontMatter }) {
                 </a>
               </p>
             </div>
-            <TelegramComments
-              datatelegramdiscussion={frontMatter.telegamdiscussionurl}
-            />
+            <div class="mt-3">
+              <TelegramComments
+                datatelegramdiscussion={frontMatter.telegamdiscussionurl}
+              />
+            </div>
           </div>
         </article>
       </div>
