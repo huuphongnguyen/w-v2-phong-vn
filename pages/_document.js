@@ -65,7 +65,7 @@ class MyDocument extends Document {
             }}
           />
 
-          <link rel="canonical" href="%page_url%" />
+          <link rel="canonical" href="https://phong.vn" />
         </Head>
         <body className="bg-white dark:bg-black text-white dark:text-black">
           <Main />

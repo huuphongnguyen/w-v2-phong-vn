@@ -118,7 +118,7 @@ export default function BlogLayout({ children, frontMatter }) {
             </a>
           </div>
         </article>
-        <div>
+        <div className="flex w-full">
           <TelegramComments
             datatelegramdiscussion={frontMatter.telegamdiscussionurl}
           />
