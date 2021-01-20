@@ -33,16 +33,7 @@ export default function Credit() {
           dụng. Một sự cảm ơn và trân trọng nhất dành cho những người đã tạo ra
           các công cụ tuyệt vời này.
         </p>
-        <div>
-          <div className="w-300px h-300px bg-pink-300">
-            <iframe
-              src="https://my.spline.design/georginayeboahcupcakes-96cb5b22ffd2df3f0a1ae89467079365/"
-              frameborder="0"
-              width="100%"
-              height="100%"
-            ></iframe>
-          </div>
-        </div>
+        <div></div>
       </div>
     </Container>
   );
