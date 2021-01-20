@@ -14,10 +14,9 @@ export default function ToolCard({
           <div className="flex items-center justify-center">
             <NextImage src={toolicon} width={20} height={20} />
           </div>
-          <div className="flex items-center space-x-1 text-black dark:text-white">
-            <h2 className="font-bold">{toolname}</h2>
-            <span>:</span>
-            <p className="font-normal">{tooldescription}</p>
+          <div className=" md:flex items-center md:space-x-2 text-black dark:text-white">
+            <h2 className="text-md font-bold ml-0.5 md:ml-1">{toolname}</h2>
+            <p className="text-sm font-normal">{tooldescription}</p>
           </div>
         </div>
       </ExternalLink>
