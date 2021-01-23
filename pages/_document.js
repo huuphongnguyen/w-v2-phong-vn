@@ -66,6 +66,11 @@ class MyDocument extends Document {
           />
 
           <link rel="canonical" href="https://phong.vn" />
+          <script
+            async
+            src="https://platform.twitter.com/widgets.js"
+            charset="utf-8"
+          ></script>
         </Head>
         <body className="bg-white dark:bg-black text-white dark:text-black">
           <Main />
