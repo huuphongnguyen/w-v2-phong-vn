@@ -35,7 +35,7 @@ export default function Tweets() {
         </p>
 
         <div className="w-full">
-          <blockquote class="twitter-tweet">
+          <blockquote class="twitter-tweet" data-theme="light">
             <p lang="en" dir="ltr">
               just setting up my twttr
             </p>
@@ -43,7 +43,12 @@ export default function Tweets() {
             <a href="https://twitter.com/jack/status/20?ref_src=twsrc%5Etfw">
               March 21, 2006
             </a>
-          </blockquote>
+          </blockquote>{" "}
+          <script
+            async
+            src="https://platform.twitter.com/widgets.js"
+            charset="utf-8"
+          ></script>
         </div>
       </div>
     </Container>
