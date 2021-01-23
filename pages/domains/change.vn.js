@@ -1,5 +1,6 @@
 import Container from "../../components/Container";
 import { NextSeo } from "next-seo";
+import DomainVerifiedBadge from "../../components/elements/DomainVerifiedBadge";
 
 import { useRouter } from "next/router";
 
