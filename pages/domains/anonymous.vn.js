@@ -2,6 +2,7 @@ import Container from "../../components/Container";
 import { NextSeo } from "next-seo";
 
 import { useRouter } from "next/router";
+import DomainVerifiedBadge from "../../components/elements/DomainVerifiedBadge";
 
 const url = "https://phong.vn/domains/anonymous.vn";
 const title = "Domains - anonymous.vn – PHONG FOUNDATION";
@@ -88,6 +89,9 @@ export default function Tools() {
             <div className="inline-flex text-sm font-normal px-2 bg-notion-blue rounded-full">
               {domainstartdate}
             </div>
+          </div>
+          <div>
+            <DomainVerifiedBadge domainowner="Nguyễn Hữu Phong" />
           </div>
           <a href={domainplaceholderurl} target="_blank">
             <div className="inline-flex items-center space-x-1 text-sm p-2 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-md my-4 text-black dark:text-white cursor-pointer">
