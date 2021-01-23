@@ -41,6 +41,13 @@ export default function Footer() {
               </div>
             </a>
           </NextLink>
+          <NextLink href="/domains">
+            <a>
+              <div className="inline-flex text-gray-700 text-xs hover:bg-gray-200 dark:hover:bg-gray-300 px-2 py-1 transform -translate-x-2 font-bold rounded-md cursor-pointer uppercase">
+                <p>/ Domains</p>
+              </div>
+            </a>
+          </NextLink>
         </div>
         <div className="flex items-center">
           <div className="flex">

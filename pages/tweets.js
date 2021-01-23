@@ -1,40 +1,12 @@
 import Container from "../components/Container";
 import { NextSeo } from "next-seo";
 
-import Tweet from "../components/elements/Tweet";
-import { getTweets } from "../lib/twitter";
-
 const url = "https://phong.vn/tweets";
 const title = "Tweets – PHONG FOUNDATION";
 const description =
   "Các Tweets thật sự hay và đáng để lưu trữ lại. Được đăng tải bởi những người rất rất giỏi, thể hiện quan điểm của họ về những vấn đề liên quan. ";
 
-// export async function getStaticProps() {
-//   const tweets = await getTweets([
-//     "935857414435495937",
-//     "1334528781139259400",
-//     "1334334544598740994",
-//     "826528907381739520",
-//     "1308509070140162048",
-//     "997895977179721728",
-//     "1341090253864542208",
-//     "1026872652290379776",
-//     "1346113149112619016",
-//     "1340107217970683906",
-//     "992629481578745856",
-//     "989142253468708864",
-//     "807626710350839808",
-//     "1341962177272537089",
-//     "1342869937841266688",
-//     "1116362674319908864",
-//     "1331380003716681728",
-//     "1002104154737684480",
-//   ]);
-
-//   return { props: { tweets } };
-// }
-
-export default function Tweets({ tweets }) {
+export default function Tweets() {
   return (
     <Container>
       <NextSeo
@@ -61,11 +33,23 @@ export default function Tweets({ tweets }) {
           người rất rất giỏi, thể hiện quan điểm của họ về những vấn đề liên
           quan.
         </p>
-        {/* <div>
-          {tweets.map((tweet) => (
-            <Tweet key={tweet.id} {...tweet} />
-          ))}
-        </div> */}
+
+        <div>
+          <blockquote class="twitter-tweet">
+            <p lang="en" dir="ltr">
+              just setting up my twttr
+            </p>
+            &mdash; jack (@jack){" "}
+            <a href="https://twitter.com/jack/status/20?ref_src=twsrc%5Etfw">
+              March 21, 2006
+            </a>
+          </blockquote>{" "}
+          <script
+            async
+            src="https://platform.twitter.com/widgets.js"
+            charset="utf-8"
+          ></script>
+        </div>
       </div>
     </Container>
   );

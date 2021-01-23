@@ -1,10 +1,22 @@
-const { spacing, fontFamily } = require("tailwindcss/defaultTheme");
+const { spacing } = require("tailwindcss/defaultTheme");
 
 module.exports = {
   purge: ["./pages/**/*.js", "./components/**/*.js", "./layouts/**/*.js"],
   darkMode: "class",
   theme: {
     extend: {
+      colors: {
+        "notion-default": "#E6E6E5",
+        "notion-gray": "#D7D7D6",
+        "notion-brown": "#E9D6CF",
+        "notion-orange": "#FEE0D2",
+        "notion-yellow": "#FBEED5",
+        "notion-green": "#D4E8E2",
+        "notion-blue": "#D3E4F9",
+        "notion-purple": "#E1D5FA",
+        "notion-pink": "#E4BFD0",
+        "notion-red": "#FFD4D4",
+      },
       spacing: {
         0.5: "0.6px",
         "50px": "50px",
