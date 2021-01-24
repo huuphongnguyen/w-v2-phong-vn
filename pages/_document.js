@@ -65,6 +65,12 @@ class MyDocument extends Document {
             }}
           />
 
+          <script
+            defer
+            src="https://static.cloudflareinsights.com/beacon.min.js"
+            data-cf-beacon='{"token": "b1c3abfca41643e7b2e9b67d8fa02a71"}'
+          />
+
           <link rel="canonical" href="https://phong.vn" />
         </Head>
         <body className="bg-white dark:bg-black text-white dark:text-black">
