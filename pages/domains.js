@@ -1,6 +1,7 @@
 import Container from "../components/Container";
 import { NextSeo } from "next-seo";
 import DomainCard from "../components/DomainCard";
+import OwnerBadge from "../components/elements/OwnerBadge";
 
 const url = "https://phong.vn/domains";
 const title = "Domains – PHONG FOUNDATION";
@@ -39,29 +40,37 @@ export default function Tools() {
           một ý tưởng gì đó, tìm mua một vài domain Phong thích và quên mất
           luôn. *cười.
         </p>
-        <div className="mt-4">
-          <a href={mailtolink}>
-            <div>
-              <div className="inline-flex items-center space-x-1 text-sm p-2 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-md mb-4 text-black dark:text-white cursor-pointer">
-                <div className="text-blue-500">
-                  <svg
-                    class="w-6 h-6"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"
-                    ></path>
-                  </svg>
+        <div className="md:flex items-center">
+          <OwnerBadge
+            className="my-4"
+            ownerName="Phong"
+            ownerLink="/phong"
+            ownerImage="/avatar.jpg"
+          />
+          <div>
+            <a href={mailtolink}>
+              <div>
+                <div className="inline-flex items-center space-x-1 text-sm p-2 bg-gray-200 md:bg-transparent hover:bg-gray-200 dark:hover:bg-gray-700 rounded-md mb-0.5 text-black dark:text-white cursor-pointer">
+                  <div className="text-blue-500">
+                    <svg
+                      class="w-6 h-6"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"
+                      ></path>
+                    </svg>
+                  </div>
+                  <p className="font-bold">Liên hệ sử dụng tên miền</p>
                 </div>
-                <p className="font-bold">Liên hệ sử dụng tên miền</p>
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
         <div>
           <DomainCard
