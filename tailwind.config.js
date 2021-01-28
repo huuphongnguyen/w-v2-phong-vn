@@ -5,6 +5,18 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      filter: {
+        // defaults to {}
+        none: "none",
+        grayscale: "grayscale(1)",
+        invert: "invert(1)",
+        sepia: "sepia(1)",
+      },
+      backdropFilter: {
+        // defaults to {}
+        none: "none",
+        blur: "blur(20px)",
+      },
       colors: {
         "notion-default": "#E6E6E5",
         "notion-gray": "#D7D7D6",
@@ -99,9 +111,12 @@ module.exports = {
   },
   variants: {
     typography: ["dark"],
+    filter: ["responsive"], // defaults to ['responsive']
+    backdropFilter: ["responsive"], // defaults to ['responsive']
   },
   plugins: [
     require("@tailwindcss/typography"),
     require("@tailwindcss/line-clamp"),
+    require("tailwindcss-filters"),
   ],
 };

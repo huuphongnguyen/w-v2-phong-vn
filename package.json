@@ -41,6 +41,7 @@
     "remark-code-titles": "^0.1.1",
     "remark-slug": "^6.0.0",
     "styled-components": "^5.2.1",
-    "tailwindcss": "^2.0.2"
+    "tailwindcss": "^2.0.2",
+    "tailwindcss-filters": "^3.0.0"
   }
 }
