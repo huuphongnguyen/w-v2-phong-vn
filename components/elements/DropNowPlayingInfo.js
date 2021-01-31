@@ -1,13 +1,13 @@
 import * as React from "react";
 import { Menu, Transition } from "@headlessui/react";
 
-export default function DropInfoWindow({ children, namebutton }) {
+export default function DropNowPlayingInfo({ children, namebutton }) {
   return (
     <Menu>
       {({ open }) => (
         <>
           <span>
-            <Menu.Button className=" underline text-black dark:text-white font-bold outline-none focus:outline-none text-left">
+            <Menu.Button className="z-100 underline text-black dark:text-white font-bold outline-none focus:outline-none text-left">
               {namebutton}
             </Menu.Button>
           </span>
@@ -23,7 +23,7 @@ export default function DropInfoWindow({ children, namebutton }) {
           >
             <Menu.Items
               static
-              className="absolute z-100 w-300px md:w-600px mt-2 origin-top-right bg-white outline-none p-3 border border-black"
+              className="absolute z-100 w-400px md:w-500px -mt-64 origin-top-center bg-white outline-none p-3 border border-black"
             >
               {children}
             </Menu.Items>

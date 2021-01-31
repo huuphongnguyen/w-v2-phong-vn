@@ -6,6 +6,7 @@ module.exports = {
       "66.media.tumblr.com",
       "theuvitinhanhxuyen.files.wordpress.com",
       "pbs.twimg.com", // Twitter Profile Picture
+      "notion-api-database01.phong.vn",
     ],
   },
   webpack: (config, { dev, isServer }) => {
