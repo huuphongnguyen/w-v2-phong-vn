@@ -1,5 +1,6 @@
 import Container from "../components/Container";
 import { NextSeo } from "next-seo";
+import { ArrowCircleDown } from "../components/icons/HeroIcons";
 
 const url = "https://phong.vn/white-paper";
 const title = "White Paper – PHONG FOUNDATION";
@@ -35,22 +36,7 @@ export default function WhitePaper() {
           <span className="font-domainet">PHONG FOUNDATION</span>.
         </div>
         <div className=" text-blue-500 flex items-center space-x-1 my-2 p-1 rounded-md hover:bg-gray-200">
-          <div>
-            <svg
-              class="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"
-              ></path>
-            </svg>
-          </div>
+          <ArrowCircleDown classNameSync="w-7 h-7 mr-1" />
           <a href="https://dl.dropbox.com/s/wl563216tuzqj6d/White-Paper-Update-20210116.pdf?dl=0">
             Tải về bản PDF
           </a>

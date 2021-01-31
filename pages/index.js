@@ -5,6 +5,16 @@ import Container from "../components/Container";
 import InternalLink from "../components/elements/InternalLink";
 import PhongSignature from "../components/elements/PhongSignature";
 import ExternalLink from "../components/elements/ExternalLink";
+import {
+  Chip,
+  CubeTransparent,
+  QRCode,
+  Mail,
+  MailOpen,
+  ChevronUp,
+  UserCircle,
+} from "../components/icons/HeroIcons";
+import { ChevronDown } from "../components/icons/CustomIcons";
 
 const defaultEndpoint = process.env.ARCHILLECT_AI_UNOFFICIAL_API;
 
@@ -51,21 +61,7 @@ const FullLetter = () => (
             Nguyễn Hữu Phong.
           </p>
           <div className="text-sm text-black dark:text-white inline-flex items-center p-2 space-x-1 -ml-2 mt-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 cursor-pointer">
-            <div>
-              <svg
-                class="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                ></path>
-              </svg>
-            </div>
+            <UserCircle classNameSync="text-black w-7 h-7 mr-1" />
             <p>Đọc thêm xíu nữa về mình.</p>
           </div>
         </div>
@@ -118,37 +114,9 @@ export default function Home({ data }) {
               className="flex items-center text-sm my-4 mx-auto px-4 py-2 rounded-md font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700"
               onClick={() => showFullLetter(false)}
             >
-              <div className="mr-1">
-                <svg
-                  class="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M3 19v-8.93a2 2 0 01.89-1.664l7-4.666a2 2 0 012.22 0l7 4.666A2 2 0 0121 10.07V19M3 19a2 2 0 002 2h14a2 2 0 002-2M3 19l6.75-4.5M21 19l-6.75-4.5M3 10l6.75 4.5M21 10l-6.75 4.5m0 0l-1.14.76a2 2 0 01-2.22 0l-1.14-.76"
-                  ></path>
-                </svg>
-              </div>
+              <MailOpen classNameSync="text-red-500 w-7 h-7 mr-1" />
               <p>Cảm ơn bạn đã đọc nó</p>
-              <div className="transform rotate-180 ml-1">
-                <svg
-                  className="h-4 w-4 ml-1"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </div>
+              <ChevronUp classNameSync="text-black w-4 h-4 ml-1" />
             </button>
           </div>
         ) : (
@@ -157,35 +125,9 @@ export default function Home({ data }) {
             className="flex items-center text-sm my-4 mx-auto px-4 py-2 rounded-md font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700"
             onClick={() => showFullLetter(true)}
           >
-            <div className="mr-1 stroke-current text-red-400">
-              <svg
-                class="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                ></path>
-              </svg>
-            </div>
+            <Mail classNameSync="text-red-500 w-7 h-7 mr-1" />
             <p>Một lá thư từ Phong</p>
-            <svg
-              className="h-4 w-4 ml-1"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
+            <ChevronDown classNameSync="text-black w-4 h-4 ml-1" />
           </button>
         )}
       </div>
@@ -199,22 +141,8 @@ export default function Home({ data }) {
           </h2>
         </div>
         <div className="block md:flex md:justify-between">
-          <div className="flex items-center space-x-3 text-black dark:text-white pb-4">
-            <div>
-              <svg
-                class="w-8 h-8"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z"
-                ></path>
-              </svg>
-            </div>
+          <div className="flex items-center space-x-2 text-black dark:text-white pb-4">
+            <QRCode classNameSync="text-black w-7 h-7" />
             <p className=" text-sm">Lấy cảm hứng từ Archillect</p>
           </div>
           <div className="text-black mb-4">
@@ -224,22 +152,7 @@ export default function Home({ data }) {
                 className="flex items-center text-sm mx-auto px-4 py-2 rounded-md font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700"
                 onClick={() => showArchillectImageGrid(true)}
               >
-                <div className="mr-1">
-                  <svg
-                    class="w-6 h-6"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"
-                    ></path>
-                  </svg>
-                </div>
+                <Chip classNameSync="text-black w-7 h-7 mr-1" />
                 Gọi Archillect
               </button>
               <button
@@ -247,22 +160,7 @@ export default function Home({ data }) {
                 className="flex items-center text-sm mx-auto px-4 py-2 rounded-md font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700"
                 onClick={() => showArchillectImageGrid(false)}
               >
-                <div className="mr-1">
-                  <svg
-                    class="w-6 h-6"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5"
-                    ></path>
-                  </svg>
-                </div>
+                <CubeTransparent classNameSync="text-black w-7 h-7 mr-1" />
                 Tắt Archillect
               </button>
             </div>

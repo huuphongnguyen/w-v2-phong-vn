@@ -24,6 +24,8 @@
     "next-mdx-remote": "^2.1.1",
     "next-seo": "^4.17.0",
     "next-themes": "0.0.10",
+    "nextjs-progressbar": "0.0.7",
+    "nprogress": "^0.2.0",
     "path": "^0.12.7",
     "postcss": "^8.2.4",
     "preact": "^10.5.10",

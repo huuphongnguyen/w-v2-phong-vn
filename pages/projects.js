@@ -85,7 +85,7 @@ export default function Projects() {
                 </div>
                 <p className="text-black dark:text-white">
                   Thực hiện bằng tất cả những gì có thể và luôn trân trọng từng
-                  khoảng khắc khi thực hiện những dự án này. Cố gắng để những dự
+                  khoảnh khắc khi thực hiện những dự án này. Cố gắng để những dự
                   án trong phần này không bị đẩy xuống phần dưới.
                 </p>
               </div>

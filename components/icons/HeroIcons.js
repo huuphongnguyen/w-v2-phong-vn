@@ -63,6 +63,58 @@ export const LightBulb = ({ classNameSync }) => (
   </div>
 );
 
+export const ChevronUp = ({ classNameSync }) => (
+  <div className={classNameSync}>
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M5 15l7-7 7 7"
+      ></path>
+    </svg>
+  </div>
+);
+
+export const UserCircle = ({ classNameSync }) => (
+  <div className={classNameSync}>
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+      ></path>
+    </svg>
+  </div>
+);
+
+export const GlobeAlt = ({ classNameSync }) => (
+  <div className={classNameSync}>
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+      ></path>
+    </svg>
+  </div>
+);
+
+export const UserGroup = ({ classNameSync }) => (
+  <div className={classNameSync}>
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+      ></path>
+    </svg>
+  </div>
+);
+
 export const BadgeCheckSolid = ({ classNameSync }) => (
   <div className={classNameSync}>
     <svg fill="currentColor" viewBox="0 0 20 20">
@@ -205,6 +257,45 @@ export const QuestionMarkCircle = ({ classNameSync }) => (
   </div>
 );
 
+export const Mail = ({ classNameSync }) => (
+  <div className={classNameSync}>
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+      ></path>
+    </svg>
+  </div>
+);
+
+export const MailOpen = ({ classNameSync }) => (
+  <div className={classNameSync}>
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M3 19v-8.93a2 2 0 01.89-1.664l7-4.666a2 2 0 012.22 0l7 4.666A2 2 0 0121 10.07V19M3 19a2 2 0 002 2h14a2 2 0 002-2M3 19l6.75-4.5M21 19l-6.75-4.5M3 10l6.75 4.5M21 10l-6.75 4.5m0 0l-1.14.76a2 2 0 01-2.22 0l-1.14-.76"
+      ></path>
+    </svg>
+  </div>
+);
+
+export const QRCode = ({ classNameSync }) => (
+  <div className={classNameSync}>
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z"
+      ></path>
+    </svg>
+  </div>
+);
+
 export const Collection = ({ classNameSync }) => (
   <div className={classNameSync}>
     <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -304,6 +395,32 @@ export const ArrowsExpand = ({ classNameSync }) => (
         stroke-linejoin="round"
         stroke-width="2"
         d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"
+      ></path>
+    </svg>
+  </div>
+);
+
+export const ArrowCircleDown = ({ classNameSync }) => (
+  <div className={classNameSync}>
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"
+      ></path>
+    </svg>
+  </div>
+);
+
+export const Identification = ({ classNameSync }) => (
+  <div className={classNameSync}>
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2"
       ></path>
     </svg>
   </div>

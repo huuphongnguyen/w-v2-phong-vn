@@ -9,6 +9,8 @@ import SEO from "../next-seo.config";
 
 import MDXComponents from "../components/MDXComponents";
 
+import NextNProgress from "nextjs-progressbar";
+
 function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider attribute="class">
@@ -17,6 +19,10 @@ function MyApp({ Component, pageProps }) {
           <meta content="width=device-width, initial-scale=1" name="viewport" />
         </Head>
         <DefaultSeo {...SEO} />
+        <NextNProgress
+          color="#FC211E"
+          options={{ easing: "ease", speed: 500 }}
+        />
         <Component {...pageProps} />
       </MDXProvider>
     </ThemeProvider>
