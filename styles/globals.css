@@ -7,6 +7,12 @@
     font-family: "DomaineT-Regular";
   }
 
+  .font-carbon-bold {
+    font-family: t26-carbon, monospace;
+    font-weight: 700;
+    font-style: normal;
+  }
+
   div.scrollmenu {
     overflow: auto;
     white-space: nowrap;

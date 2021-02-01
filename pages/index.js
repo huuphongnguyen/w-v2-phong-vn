@@ -15,6 +15,7 @@ import {
   UserCircle,
 } from "../components/icons/HeroIcons";
 import { ChevronDown } from "../components/icons/CustomIcons";
+import toast, { Toaster } from "react-hot-toast";
 
 const defaultEndpoint = process.env.ARCHILLECT_AI_UNOFFICIAL_API;
 
@@ -61,7 +62,7 @@ const FullLetter = () => (
             Nguyễn Hữu Phong.
           </p>
           <div className="text-sm text-black dark:text-white inline-flex items-center p-2 space-x-1 -ml-2 mt-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 cursor-pointer">
-            <UserCircle classNameSync="text-black w-7 h-7 mr-1" />
+            <UserCircle classNameSync="text-black dark:text-white w-7 h-7 mr-1" />
             <p>Đọc thêm xíu nữa về mình.</p>
           </div>
         </div>
@@ -95,6 +96,9 @@ export default function Home({ data }) {
 
   const archillectarray = [data];
 
+  const notifyArchillectOn = () => toast("😆 Xin chào !!!");
+  const notifyArchillectOff = () => toast("🥲 Goodbye !!!");
+
   return (
     <Container>
       <div className="flex flex-col mx-auto bg-gray-100 dark:bg-gray-900 items-start max-w-4xl my-2 md:my-10 p-5 md:p-10 rounded-md w-full">
@@ -116,7 +120,7 @@ export default function Home({ data }) {
             >
               <MailOpen classNameSync="text-red-500 w-7 h-7 mr-1" />
               <p>Cảm ơn bạn đã đọc nó</p>
-              <ChevronUp classNameSync="text-black w-4 h-4 ml-1" />
+              <ChevronUp classNameSync="text-black dark:text-white w-4 h-4 ml-1" />
             </button>
           </div>
         ) : (
@@ -127,7 +131,7 @@ export default function Home({ data }) {
           >
             <Mail classNameSync="text-red-500 w-7 h-7 mr-1" />
             <p>Một lá thư từ Phong</p>
-            <ChevronDown classNameSync="text-black w-4 h-4 ml-1" />
+            <ChevronDown classNameSync="text-black dark:text-white w-4 h-4 ml-1" />
           </button>
         )}
       </div>
@@ -142,27 +146,32 @@ export default function Home({ data }) {
         </div>
         <div className="block md:flex md:justify-between">
           <div className="flex items-center space-x-2 text-black dark:text-white pb-4">
-            <QRCode classNameSync="text-black w-7 h-7" />
+            <QRCode classNameSync="text-black dark:text-white w-7 h-7" />
             <p className=" text-sm">Lấy cảm hứng từ Archillect</p>
           </div>
           <div className="text-black mb-4">
             <div className="flex items-center spacex-2">
-              <button
-                type="button"
-                className="flex items-center text-sm mx-auto px-4 py-2 rounded-md font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700"
-                onClick={() => showArchillectImageGrid(true)}
-              >
-                <Chip classNameSync="text-black w-7 h-7 mr-1" />
-                Gọi Archillect
+              <button onClick={notifyArchillectOn}>
+                <button
+                  type="button"
+                  className="flex items-center text-sm mx-auto px-4 py-2 rounded-md font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700"
+                  onClick={() => showArchillectImageGrid(true)}
+                >
+                  <Chip classNameSync="text-black dark:text-white w-7 h-7 mr-1" />
+                  Gọi Archillect
+                </button>
               </button>
-              <button
-                type="button"
-                className="flex items-center text-sm mx-auto px-4 py-2 rounded-md font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700"
-                onClick={() => showArchillectImageGrid(false)}
-              >
-                <CubeTransparent classNameSync="text-black w-7 h-7 mr-1" />
-                Tắt Archillect
+              <button onClick={notifyArchillectOff}>
+                <button
+                  type="button"
+                  className="flex items-center text-sm mx-auto px-4 py-2 rounded-md font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700"
+                  onClick={() => showArchillectImageGrid(false)}
+                >
+                  <CubeTransparent classNameSync="text-black dark:text-white w-7 h-7 mr-1" />
+                  Tắt Archillect
+                </button>
               </button>
+              <Toaster />
             </div>
           </div>
         </div>

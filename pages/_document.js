@@ -12,6 +12,7 @@ class MyDocument extends Document {
             type="font/ttf"
             crossOrigin="anonymous"
           />
+          <link rel="stylesheet" href="https://use.typekit.net/utb0vnu.css" />
           <link href="/static/favicons/phong-vn.ico" rel="shortcut icon" />
           <link href="/static/favicons/site.webmanifest" rel="manifest" />
           <link
@@ -70,6 +71,8 @@ class MyDocument extends Document {
             src="https://static.cloudflareinsights.com/beacon.min.js"
             data-cf-beacon='{"token": "b1c3abfca41643e7b2e9b67d8fa02a71"}'
           />
+
+          <script async src="https://cdn.splitbee.io/sb.js" />
 
           <link rel="canonical" href="https://phong.vn" />
         </Head>

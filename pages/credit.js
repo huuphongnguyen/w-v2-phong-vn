@@ -9,7 +9,23 @@ const title = "Credit – PHONG FOUNDATION";
 const description =
   "Trang tổng hợp và credit các nguồn mà website của PHONG FOUNDATION sử dụng. Một sự cảm ơn và trân trọng nhất dành cho những người đã tạo ra các công cụ tuyệt vời này.";
 
-export default function Credit() {
+const defaultEndpoint = process.env.CREDIT_NOTION_UNOFFICIAL_API;
+
+export async function getServerSideProps() {
+  const res = await fetch(defaultEndpoint);
+  const data = await res.json();
+
+  return {
+    props: {
+      data,
+    },
+  };
+}
+
+export default function Credit({ data }) {
+  const creditsdata = [data];
+  const creditsarray = creditsdata[0];
+
   return (
     <Container>
       <NextSeo
@@ -210,6 +226,35 @@ export default function Credit() {
                 triển website / các app liên quan.
               </p>
             </div>
+            <div className="my-3 space-y-2">
+              {creditsarray
+                .filter((credit) => credit.fields.tag.includes("main"))
+                .map((credit, index) => (
+                  <div
+                    key={index}
+                    className="flex-col items-center space-x-3 bg-gray-200 dark:bg-gray-700 p-2 rounded-xl"
+                  >
+                    <div className="space-y-2 md:space-y-0 space-x-3 md:flex items-center md:space-x-2 md:items-center">
+                      <h3 className="text-white bg-black px-2 py-1 rounded-full text-sm font-bold">
+                        {credit.fields.name}
+                      </h3>
+                      <div className="flex item-center space-x-1">
+                        <a href={credit.fields.website} target="_blank">
+                          <p className="px-2 py-1 bg-red-100 text-black text-sm uppercase font-bold rounded-full">
+                            Website
+                          </p>
+                        </a>
+                        <a href={credit.fields.github} target="_blank">
+                          <p className="px-2 py-1 bg-blue-100 text-black text-sm uppercase font-bold rounded-full">
+                            Github
+                          </p>
+                        </a>
+                      </div>
+                    </div>
+                    <p className="text-sm mt-2">{credit.fields.description}</p>
+                  </div>
+                ))}
+            </div>
           </div>
 
           <div className="mb-7">
@@ -223,7 +268,45 @@ export default function Credit() {
               <p className="text-sm">
                 Những thư viện hỗ trợ chức năng và hỗ trợ thực hiện các tác vụ
                 khác giúp việc viết code trở nên tốt hơn.
+                <br /> Xem đầy đủ / chi tiết tại{" "}
+                <a
+                  className="font-bold"
+                  href="https://github.com/huuphongnguyen/phong.vn/blob/main/package.json"
+                  target="_blank"
+                >
+                  phong.vn/package.json
+                </a>{" "}
+                trên Github
               </p>
+            </div>
+            <div className="my-3 space-y-2">
+              {creditsarray
+                .filter((credit) => credit.fields.tag.includes("support"))
+                .map((credit, index) => (
+                  <div
+                    key={index}
+                    className="flex-col items-center space-x-3 bg-gray-200 dark:bg-gray-700 p-2 rounded-xl"
+                  >
+                    <div className="space-y-2 md:space-y-0 space-x-3 md:flex items-center md:space-x-2 md:items-center">
+                      <h3 className="text-white bg-black px-2 py-1 rounded-full text-sm font-bold">
+                        {credit.fields.name}
+                      </h3>
+                      <div className="flex item-center space-x-1">
+                        <a href={credit.fields.website} target="_blank">
+                          <p className="px-2 py-1 bg-red-100 text-black text-sm uppercase font-bold rounded-full">
+                            Website
+                          </p>
+                        </a>
+                        <a href={credit.fields.github} target="_blank">
+                          <p className="px-2 py-1 bg-blue-100 text-black text-sm uppercase font-bold rounded-full">
+                            Github
+                          </p>
+                        </a>
+                      </div>
+                    </div>
+                    <p className="text-sm mt-2">{credit.fields.description}</p>
+                  </div>
+                ))}
             </div>
           </div>
         </div>

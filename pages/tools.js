@@ -61,7 +61,7 @@ export default function Tools({ data }) {
             href="https://www.notion.so/isnhp/930aa0192d3e4dfc88eb30bfeee208a7?v=f3222a3da894498d9c8058ea00c308f1"
             target="_blank"
           >
-            <div className="inline-flex items-center space-x-1 px-2 py-1 bg-none hover:bg-gray-200 rounded-md mx-2 cursor-pointer transform translate-y-2 md:translate-y-0 bg-gray-200 md:bg-transparent">
+            <div className="inline-flex items-center space-x-1 px-2 py-1 bg-none hover:bg-gray-200 dark:hover:bg-gray-700 rounded-md mx-2 cursor-pointer transform translate-y-1 md:translate-y-0 bg-gray-200 md:bg-transparent">
               <img
                 src="https://www.notion.so/images/favicon.ico"
                 width={20}
@@ -95,7 +95,7 @@ export default function Tools({ data }) {
           </svg>
         </div>
         {!searchValue && <></>}
-        <p className="text-black font-bold">Tất cả /</p>
+        <p className="text-black dark:text-gray-200 font-bold">Tất cả /</p>
         {!filteredToolsData.length && (
           <p className="text-black">
             Không tìm thấy Tool nào có tên trùng khớp :(

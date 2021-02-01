@@ -90,6 +90,13 @@ export default function Footer() {
                 </div>
               </a>
             </NextLink>
+            <NextLink href="/words">
+              <a>
+                <div className="inline-flex text-gray-700 text-xs hover:bg-gray-200 dark:hover:bg-gray-300 px-2 py-1 transform -translate-x-2 font-bold rounded-md cursor-pointer uppercase">
+                  <p>/ Words</p>
+                </div>
+              </a>
+            </NextLink>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2">
             <div className="flex relative flex-col mb-8 items-start justify-start">

@@ -113,6 +113,8 @@ export default function Blog({ posts }) {
         {filteredBlogPosts.map((frontMatter) => (
           <BlogPost key={frontMatter.title} {...frontMatter} />
         ))}
+
+        <div></div>
       </div>
     </Container>
   );
