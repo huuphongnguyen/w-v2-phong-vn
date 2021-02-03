@@ -70,6 +70,34 @@ export const Messenger = ({ classNameSync }) => (
   </div>
 );
 
+export const Archillect = ({ classNameSync }) => (
+  <div className={classNameSync}>
+    <svg viewBox="0 0 24 24">
+      <title>logo_thick</title>
+      <g
+        id="Phong"
+        stroke="none"
+        stroke-width="1"
+        fill="none"
+        fill-rule="evenodd"
+      >
+        <g
+          id="Artboard"
+          transform="translate(-161.000000, -140.000000)"
+          fill="#000000"
+          fill-rule="nonzero"
+        >
+          <g id="logo_thick" transform="translate(161.000000, 140.000000)">
+            <rect id="Rectangle" x="0" y="0" width="6" height="24"></rect>
+            <rect id="Rectangle" x="9" y="0" width="6" height="24"></rect>
+            <rect id="Rectangle" x="18" y="0" width="6" height="24"></rect>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
+);
+
 export const Zalo = ({ classNameSync }) => (
   <div className={classNameSync}>
     <svg viewBox="0 0 24 25">

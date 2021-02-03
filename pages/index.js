@@ -13,9 +13,14 @@ import {
   MailOpen,
   ChevronUp,
   UserCircle,
+  Cube,
+  DocumentText,
+  Document,
 } from "../components/icons/HeroIcons";
 import { ChevronDown } from "../components/icons/CustomIcons";
 import toast, { Toaster } from "react-hot-toast";
+import HashflagsGrid from "../components/HashflagsGrid";
+import { Archillect, Twitter } from "../components/icons/LogoIcons";
 
 const defaultEndpoint = process.env.ARCHILLECT_AI_UNOFFICIAL_API;
 
@@ -94,14 +99,19 @@ export default function Home({ data }) {
     false
   );
 
+  const [isShowingHashflagsGrid, showHashflagsGrid] = useState(false);
+
   const archillectarray = [data];
 
-  const notifyArchillectOn = () => toast("😆 Xin chào !!!");
+  const notifyArchillectOn = () => toast.success("😆 Xin chào !!!");
   const notifyArchillectOff = () => toast("🥲 Goodbye !!!");
+
+  const notifyHashflagOn = () => toast.success("🐧 Đã hiển thị !!!");
+  const notifyHashflagOff = () => toast("🥲 Goodbye !!!");
 
   return (
     <Container>
-      <div className="flex flex-col mx-auto bg-gray-100 dark:bg-gray-900 items-start max-w-4xl my-2 md:my-10 p-5 md:p-10 rounded-md w-full">
+      <div className="flex flex-col mx-auto bg-gray-100 dark:bg-gray-900 items-start max-w-4xl my-2 md:my-10 p-5 md:p-10 rounded-xl w-full">
         <div className="flex space-x-2">
           <span className="text-3xl font-domainet md:text-5xl text-black dark:text-white">
             /
@@ -135,7 +145,7 @@ export default function Home({ data }) {
           </button>
         )}
       </div>
-      <div className=" mx-auto bg-gray-100 dark:bg-gray-900 items-start max-w-4xl my-2 md:mb-10 md:-mt-2 p-5 md:p-10 rounded-md w-full">
+      <div className=" mx-auto bg-gray-100 dark:bg-gray-900 items-start max-w-4xl my-2 md:mb-10 md:-mt-2 p-5 md:p-10 rounded-xl w-full">
         <div className="flex space-x-2">
           <span className="text-3xl font-domainet md:text-5xl text-black dark:text-white">
             /
@@ -144,53 +154,120 @@ export default function Home({ data }) {
             Inspiration
           </h2>
         </div>
-        <div className="block md:flex md:justify-between">
-          <div className="flex items-center space-x-2 text-black dark:text-white pb-4">
-            <QRCode classNameSync="text-black dark:text-white w-7 h-7" />
-            <p className=" text-sm">Lấy cảm hứng từ Archillect</p>
-          </div>
-          <div className="text-black mb-4">
-            <div className="flex items-center spacex-2">
-              <button onClick={notifyArchillectOn}>
-                <button
-                  type="button"
-                  className="flex items-center text-sm mx-auto px-4 py-2 rounded-md font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700"
-                  onClick={() => showArchillectImageGrid(true)}
-                >
-                  <Chip classNameSync="text-black dark:text-white w-7 h-7 mr-1" />
-                  Gọi Archillect
-                </button>
-              </button>
-              <button onClick={notifyArchillectOff}>
-                <button
-                  type="button"
-                  className="flex items-center text-sm mx-auto px-4 py-2 rounded-md font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700"
-                  onClick={() => showArchillectImageGrid(false)}
-                >
-                  <CubeTransparent classNameSync="text-black dark:text-white w-7 h-7 mr-1" />
-                  Tắt Archillect
-                </button>
-              </button>
-              <Toaster />
+        <div className="space-y-4">
+          <div className="border-4 p-2">
+            <div className="py-2">
+              <div className="block md:flex md:justify-between">
+                <div className="flex items-center space-x-2 text-black dark:text-white pb-4 ml-4">
+                  <div>
+                    <Archillect classNameSync="w-5 h-5" />
+                  </div>
+                  <p className=" text-sm">Lấy cảm hứng từ Archillect</p>
+                </div>
+                <div className="text-black mb-4">
+                  <div className="grid grid-cols-2 gap-2">
+                    <button
+                      type="button"
+                      className="md:flex items-center text-sm mx-auto px-2 py-2 rounded-md font-medium bg-gray-200 md:bg-transparent text-gray-900 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none w-full"
+                      onClick={() => {
+                        showArchillectImageGrid(true);
+                        notifyArchillectOn();
+                      }}
+                    >
+                      <div className="flex justify-center">
+                        <Cube classNameSync="text-black dark:text-white w-7 h-7 mr-1 mb-2 md:mb-0" />
+                      </div>
+                      Gọi Archillect
+                    </button>
+                    <Toaster />
+                    <button
+                      type="button"
+                      className="md:flex items-center text-sm mx-auto px-2 py-2 rounded-md font-medium bg-gray-200 md:bg-transparent text-gray-900 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none w-full"
+                      onClick={() => {
+                        showArchillectImageGrid(false);
+                        notifyArchillectOff();
+                      }}
+                    >
+                      <div className="flex justify-center">
+                        <CubeTransparent classNameSync="text-black dark:text-white w-7 h-7 mr-1 mb-2 md:mb-0" />
+                      </div>
+                      Tắt Archillect
+                    </button>
+                  </div>
+                </div>
+              </div>
+              {isShowingArchillectImageGrid ? (
+                <ArchillectImageGridShow sync={archillectarray[0]} />
+              ) : (
+                <p className="text-gray-700 dark:text-gray-200 text-sm">
+                  Archillect [archive + intellect] là một AI tự động khám phá -
+                  tìm kiếm - lựa chọn hình ảnh trên Internet. Tìm hiểu thêm về
+                  Archillect tại{" "}
+                  <ExternalLink
+                    href="https://archillect.com/"
+                    colortext="text-gray-500"
+                    colortexthover="hover:text-gray-700"
+                  >
+                    đây
+                  </ExternalLink>
+                </p>
+              )}
             </div>
           </div>
+          <div className="border-4 p-2">
+            <div className="block md:flex md:justify-between py-2">
+              <div className="flex items-center space-x-2 text-black dark:text-white pb-4 ml-4">
+                <div>
+                  <Twitter classNameSync="w-6 h-6" />
+                </div>
+                <p className=" text-sm">Lấy cảm hứng từ Twitter Hashflags</p>
+              </div>
+              <div className="text-black mb-4">
+                <div className="grid grid-cols-2 gap-2">
+                  <button
+                    type="button"
+                    className="md:flex items-center text-sm mx-auto px-2 py-2 rounded-md font-medium bg-gray-200 md:bg-transparent text-gray-900 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none w-full"
+                    onClick={() => {
+                      showHashflagsGrid(true);
+                      notifyHashflagOn();
+                    }}
+                  >
+                    <div className="flex justify-center">
+                      <DocumentText classNameSync="text-black dark:text-white w-7 h-7 mr-1 mb-2 md:mb-0" />
+                    </div>
+                    Hiển thị
+                  </button>
+
+                  <button
+                    type="button"
+                    className="md:flex items-center text-sm mx-auto px-2 py-2 rounded-md font-medium bg-gray-200 md:bg-transparent text-gray-900 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none w-full"
+                    onClick={() => {
+                      showHashflagsGrid(false);
+                      notifyHashflagOff();
+                    }}
+                  >
+                    <div className="flex justify-center">
+                      <Document classNameSync="text-black dark:text-white w-7 h-7 mr-1 mb-2 md:mb-0" />
+                    </div>
+                    Tắt đi
+                  </button>
+                </div>
+              </div>
+            </div>
+            {isShowingHashflagsGrid ? (
+              <HashflagsGrid />
+            ) : (
+              <p className="text-gray-700 dark:text-gray-200 text-sm">
+                Hashflags là một khái niệm được Twitter sử dụng để chỉ những
+                icon bên cạnh các Hashtags. <br />
+                Chỉ những Hashtags thật sự quan trọng và đang hot mới có
+                Hashflags.
+                <br /> Các Hashflags chỉ tồn tại trong một khoảng thời gian nhất
+                định trước khi biến mất.{" "}
+              </p>
+            )}
+          </div>
         </div>
-        {isShowingArchillectImageGrid ? (
-          <ArchillectImageGridShow sync={archillectarray[0]} />
-        ) : (
-          <p className="text-gray-700 dark:text-gray-200 text-sm">
-            Archillect [archive + intellect] là một AI tự động khám phá - tìm
-            kiếm - lựa chọn hình ảnh trên Internet. Tìm hiểu thêm về Archillect
-            tại{" "}
-            <ExternalLink
-              href="https://archillect.com/"
-              colortext="text-gray-500"
-              colortexthover="hover:text-gray-700"
-            >
-              đây
-            </ExternalLink>
-          </p>
-        )}
       </div>
     </Container>
   );
