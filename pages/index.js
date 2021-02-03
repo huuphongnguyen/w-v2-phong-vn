@@ -162,7 +162,9 @@ export default function Home({ data }) {
                   <div>
                     <Archillect classNameSync="w-5 h-5 dark:bg-white" />
                   </div>
-                  <p className=" text-sm">Lấy cảm hứng từ Archillect</p>
+                  <p className="text-sm font-bold">
+                    Lấy cảm hứng từ Archillect
+                  </p>
                 </div>
                 <div className="text-black mb-4">
                   <div className="grid grid-cols-2 gap-2">
@@ -206,7 +208,7 @@ export default function Home({ data }) {
                   <ExternalLink
                     href="https://archillect.com/"
                     colortext="text-gray-500"
-                    colortexthover="hover:text-gray-700"
+                    colortexthover="text-black dark:text-white"
                   >
                     đây
                   </ExternalLink>
@@ -218,9 +220,11 @@ export default function Home({ data }) {
             <div className="block md:flex md:justify-between py-2">
               <div className="flex items-center space-x-2 text-black dark:text-white pb-4 ml-4">
                 <div>
-                  <Twitter classNameSync="w-6 h-6" />
+                  <Twitter classNameSync="w-5 h-5 fill-current text-black dark:text-white" />
                 </div>
-                <p className=" text-sm">Lấy cảm hứng từ Twitter Hashflags</p>
+                <p className="text-sm font-bold">
+                  Lấy cảm hứng từ Twitter Hashflags
+                </p>
               </div>
               <div className="text-black mb-4">
                 <div className="grid grid-cols-2 gap-2">
