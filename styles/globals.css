@@ -61,8 +61,6 @@
 html {
   min-width: 360px;
   scroll-behavior: smooth;
-
-  overflow-x: hidden;
 }
 
 body {
@@ -71,7 +69,6 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   max-width: 100%;
-  overflow-x: hidden;
 }
 
 .sticky-nav {

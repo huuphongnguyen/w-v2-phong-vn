@@ -6,7 +6,11 @@ import DropInfoWindow from "../components/elements/DropInfoWindow";
 import ExternalLink from "./elements/ExternalLink";
 import TenMinutesCounter from "./elements/TenMinutesCounter";
 
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 export default function ArchillectImageGrid({ data }) {
+  console.log("data", data);
   return (
     <div>
       <div className="mb-4 space-y-1">
@@ -15,16 +19,54 @@ export default function ArchillectImageGrid({ data }) {
           Cập nhật sẽ có độ trễ nhất định so với máy chủ của Archillect trong
           một vài trường hợp.
         </p>
+        <div className="text-red-500 text-xl font-carbon-bold flex items-center space-x-2">
+          <p>BLOCKS: </p>
+          <p>
+            {data[0].id} - {data[49].id}
+          </p>
+        </div>
       </div>
 
       <Delayed waitBeforeShow={500}>
         <Wrapper>
           {data.map((item, index) => (
             <div key={index}>
-              <ElementWrapper>
+              <ElementWrapper
+                onClick={() =>
+                  toast(
+                    <div>
+                      <h3 className="text-2xl font-bold font-carbon-bold text-black">
+                        BLOCK: {item.id}
+                      </h3>
+                      <img
+                        onClick={() => downloadImage(item.imageSource)}
+                        src={item.imageSource}
+                      />
+                      <p className="text-black text-xl font-carbon-bold">
+                        References:
+                        <br />
+                        <div className="flex">
+                          {item.sourceLinks.map((link, index) => (
+                            <div className="flex">
+                              <a
+                                key={index}
+                                className="inline-flex text-blue-500 w-full-80 mr-2"
+                                href={link}
+                                target="_blank"
+                              >
+                                [{index}]
+                              </a>
+                            </div>
+                          ))}
+                        </div>
+                      </p>
+                    </div>
+                  )
+                }
+              >
                 <ImageProject>
                   <Image
-                    className="z-10 object-cover"
+                    className="z-10 object-cover transform hover:scale-105 cursor-pointer"
                     src={item.imageSource}
                     quality="50"
                     priority="true"
@@ -35,6 +77,17 @@ export default function ArchillectImageGrid({ data }) {
             </div>
           ))}
         </Wrapper>
+        <ToastContainer
+          position="top-left"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop
+          closeOnClick={false}
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover={false}
+        />
       </Delayed>
       <div className="mt-4">
         <p className="text-black dark:text-white text-xs leading-5">

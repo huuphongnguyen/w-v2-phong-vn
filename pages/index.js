@@ -160,7 +160,7 @@ export default function Home({ data }) {
               <div className="block md:flex md:justify-between">
                 <div className="flex items-center space-x-2 text-black dark:text-white pb-4 ml-4">
                   <div>
-                    <Archillect classNameSync="w-5 h-5" />
+                    <Archillect classNameSync="w-5 h-5 dark:bg-white" />
                   </div>
                   <p className=" text-sm">Lấy cảm hứng từ Archillect</p>
                 </div>

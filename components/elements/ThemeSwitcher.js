@@ -12,7 +12,7 @@ export default function ThemeSwitcher() {
     <button
       aria-label="Toggle Dark Mode"
       type="button"
-      className="bg-gray-200 dark:bg-gray-800 rounded p-3 h-10 w-10"
+      className="bg-gray-200 dark:bg-gray-800 rounded p-3 h-10 w-10 focus:outline-none"
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
     >
       {mounted && (

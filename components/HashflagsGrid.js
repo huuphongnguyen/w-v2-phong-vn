@@ -36,9 +36,6 @@ export default function HashflagsGrid() {
   const rawdt = Object.values(nextobject);
 
   const hflagsplay = _.sampleSize(rawdt, [220]);
-  console.log("data", hflagsplay);
-
-  const notify = () => toast("Wow so easy!");
 
   return (
     <div>
@@ -132,7 +129,6 @@ export default function HashflagsGrid() {
           draggable
           pauseOnHover={false}
         />
-        <div></div>
       </Delayed>
     </div>
   );
