@@ -88,7 +88,7 @@ export default function HashflagsGrid() {
                           )
                         </p>
                         <p className="text-sm font-bold">
-                          Kết thức dự kiến vào:
+                          Kết thúc dự kiến vào:
                         </p>
                         <p className="text-sm">
                           {moment(Number(hashflag[0].endingTimestampMs))

@@ -3,29 +3,22 @@ import { parseISO, format } from "date-fns";
 import NextLink from "next/link";
 
 import Container from "../components/Container";
-import BlogSeo from "../components/BlogSeo";
-import TelegramComments from "../components/elements/TelegramComments";
 import ExternalLink from "../components/elements/ExternalLink";
 
 const editUrl = (slug) =>
-  `https://github.com/huuphongnguyen/w-v2-phong-vn/edit/main/data/blog/${slug}.mdx`;
+  `https://github.com/huuphongnguyen/w-v2-phong-vn/edit/main/data/snippets/${slug}.mdx`;
 
-export default function BlogLayout({ children, frontMatter }) {
+export default function SnippetLayout({ children, frontMatter }) {
   return (
     <Container>
-      <BlogSeo
-        url={`https://phong.vn/blog/${frontMatter.slug}`}
-        {...frontMatter}
-      />
       <div className="flex flex-col mx-auto bg-gray-100 dark:bg-gray-900 items-start max-w-4xl my-2 md:my-10 p-5 md:p-10 rounded-xl">
         <article className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full">
           <h1 className="font-domainet text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
             {frontMatter.title}
           </h1>
 
-          <NextLink href="/blog">
+          <NextLink href="/snippets">
             <a>
-              {" "}
               <div className="flex space-x-2 items-center p-0 md:p-2 cursor-pointer mb-2 rounded-md text-black dark:text-white hover:bg-gray-200 dark:hover:text-black">
                 <div>
                   <svg
@@ -44,7 +37,7 @@ export default function BlogLayout({ children, frontMatter }) {
                   </svg>
                 </div>
                 <p className="text-sm font-bold">
-                  Quay trở lại Trang Blog chính
+                  Quay trở lại Trang Snippets chính
                 </p>
               </div>
             </a>
@@ -117,30 +110,8 @@ export default function BlogLayout({ children, frontMatter }) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {"Chỉnh sửa bài viết này trên Github"}
+              {"Chỉnh sửa Snippet này trên Github"}
             </a>
-          </div>
-          <div className="w-full mt-5">
-            <div>
-              <p className="text-black dark:text-white text-sm">
-                Bạn có thể bình luận bài viết bằng{" "}
-                <ExternalLink href="https://telegram.org">
-                  Telegram
-                </ExternalLink>
-                .
-                <br /> Bình luận tại đây đồng bộ theo thời gian thực với bình
-                luận trên kệnh Telegram
-                <br /> Kênh Telegram của PHONG FOUNDATION{" "}
-                <a className="font-bold" href="https://t.me/phongchannel">
-                  @phongchannel
-                </a>
-              </p>
-            </div>
-            <div class="mt-3">
-              <TelegramComments
-                datatelegramdiscussion={frontMatter.telegamdiscussionurl}
-              />
-            </div>
           </div>
         </article>
       </div>

@@ -1,12 +1,32 @@
 import Container from "../components/Container";
+import { useState } from "react";
 import { NextSeo } from "next-seo";
+
+import SnippetPost from "../components/SnippetPost";
+import { getAllFilesFrontMatter } from "../lib/mdx";
 
 const url = "https://phong.vn/snippets";
 const title = "Snippets – PHONG FOUNDATION";
 const description =
   "Trang tổng hợp những đoạn code, những tính năng nhỏ dùng trong việc phát triển ứng dụng. Ngoài ra còn có nhữnọ điều khác nữa.";
 
-export default function Snippets() {
+export async function getStaticProps() {
+  const posts = await getAllFilesFrontMatter("snippets");
+
+  return { props: { posts } };
+}
+
+export default function Snippets({ posts }) {
+  const [searchValue, setSearchValue] = useState("");
+  const filteredSnippetPosts = posts
+    .sort(
+      (a, b) =>
+        Number(new Date(b.publishedAt)) - Number(new Date(a.publishedAt))
+    )
+    .filter((frontMatter) =>
+      frontMatter.title.toLowerCase().includes(searchValue.toLowerCase())
+    );
+
   return (
     <Container>
       <NextSeo
@@ -32,7 +52,18 @@ export default function Snippets() {
           Trang tổng hợp những đoạn code, những tính năng nhỏ dùng trong việc
           phát triển ứng dụng. Ngoài ra còn có những điều khác.
         </p>
-        <div></div>
+        <div>
+          <h3 className="uppercase text-sm md:text-md tracking-tight mb-4 mt-4 text-black dark:text-white">
+            Tất cả Snippets /
+          </h3>
+          {!filteredSnippetPosts.length &&
+            "Không tìm thấy Snippet nào liên quan."}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+            {filteredSnippetPosts.map((frontMatter) => (
+              <SnippetPost key={frontMatter.title} {...frontMatter} />
+            ))}
+          </div>
+        </div>
       </div>
     </Container>
   );
