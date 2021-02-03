@@ -70,7 +70,7 @@ export default function HashflagsGrid() {
                           <div key={index}>
                             <a
                               href={`https://twitter.com/hashtag/${hf.hashtag}`}
-                              className="text-blue-500"
+                              className="text-blue-500 font-bold"
                               target="_blank"
                             >
                               #{hf.hashtag}
@@ -112,7 +112,7 @@ export default function HashflagsGrid() {
             >
               <ImageProject>
                 <LazyLoadImage
-                  className="z-10 object-cover p-0.5"
+                  className="z-10 object-cover p-0.5 transform hover:rotate-12"
                   alt={hashflag[0].campaigName}
                   src={hashflag[0].assetUrl}
                   placeholderSrc="opacity"
