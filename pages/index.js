@@ -170,7 +170,7 @@ export default function Home({ data }) {
                   <div className="grid grid-cols-2 gap-2">
                     <button
                       type="button"
-                      className="md:flex items-center text-sm mx-auto px-2 py-2 rounded-md font-medium bg-gray-700 md:bg-transparent text-gray-900 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none w-full"
+                      className="md:flex items-center text-sm mx-auto px-2 py-2 rounded-md font-medium bg-gray-200 dark:bg-gray-700 md:bg-transparent text-gray-900 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none w-full"
                       onClick={() => {
                         showArchillectImageGrid(true);
                         notifyArchillectOn();
@@ -184,7 +184,7 @@ export default function Home({ data }) {
                     <Toaster />
                     <button
                       type="button"
-                      className="md:flex items-center text-sm mx-auto px-2 py-2 rounded-md font-medium bg-gray-700 md:bg-transparent text-gray-900 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none w-full"
+                      className="md:flex items-center text-sm mx-auto px-2 py-2 rounded-md font-medium bg-gray-200 dark:bg-gray-700 md:bg-transparent text-gray-900 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none w-full"
                       onClick={() => {
                         showArchillectImageGrid(false);
                         notifyArchillectOff();
@@ -230,7 +230,7 @@ export default function Home({ data }) {
                 <div className="grid grid-cols-2 gap-2">
                   <button
                     type="button"
-                    className="md:flex items-center text-sm mx-auto px-2 py-2 rounded-md font-medium bg-gray-700 md:bg-transparent text-gray-900 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none w-full"
+                    className="md:flex items-center text-sm mx-auto px-2 py-2 rounded-md font-medium bg-gray-200  dark:bg-gray-700 md:bg-transparent text-gray-900 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none w-full"
                     onClick={() => {
                       showHashflagsGrid(true);
                       notifyHashflagOn();
@@ -244,7 +244,7 @@ export default function Home({ data }) {
 
                   <button
                     type="button"
-                    className="md:flex items-center text-sm mx-auto px-2 py-2 rounded-md font-medium bg-gray-700 md:bg-transparent text-gray-900 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none w-full"
+                    className="md:flex items-center text-sm mx-auto px-2 py-2 rounded-md font-medium bg-gray-200 dark:bg-gray-700 md:bg-transparent text-gray-900 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none w-full"
                     onClick={() => {
                       showHashflagsGrid(false);
                       notifyHashflagOff();

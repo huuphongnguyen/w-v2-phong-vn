@@ -1,6 +1,5 @@
 import Container from "../components/Container";
 import { NextSeo } from "next-seo";
-import { TwitterTweetEmbed } from "react-twitter-embed";
 import { ArrowNarrowRight } from "../components/icons/HeroIcons";
 
 const url = "https://phong.vn/tweets";
@@ -8,25 +7,7 @@ const title = "Tweets – PHONG FOUNDATION";
 const description =
   "Các Tweets thật sự hay và đáng để lưu trữ lại. Được đăng tải bởi những người rất rất giỏi, thể hiện quan điểm của họ về những vấn đề liên quan. ";
 
-const defaultEndpointx = process.env.TWEETS_NOTION_UNOFFICIAL_API;
-
-export async function getServerSideProps() {
-  const res = await fetch(defaultEndpointx);
-  const data = await res.json();
-
-  return {
-    props: {
-      data,
-    },
-  };
-}
-
-export default function Tweets({ data }) {
-  const tweetsdata = [data];
-  const tweetsarray = tweetsdata[0];
-
-  console.log("tw", tweetsarray);
-
+export default function Tweets() {
   return (
     <Container>
       <NextSeo
@@ -56,14 +37,6 @@ export default function Tweets({ data }) {
 
         <div>
           <ArrowNarrowRight classNameSync="w-7 h-7 text-black dark:text-white" />
-        </div>
-
-        <div className="flex py-5 space-x-2 w-full overflow-x-scroll">
-          {tweetsarray.map((tweet) => (
-            <div className="w-300px">
-              <TwitterTweetEmbed tweetId={tweet.fields.tweetid} />
-            </div>
-          ))}
         </div>
       </div>
     </Container>
