@@ -125,7 +125,7 @@ export default function Home({ data }) {
             <FullLetter />
             <button
               type="button"
-              className="flex items-center text-sm my-4 mx-auto px-4 py-2 rounded-md font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700"
+              className="flex items-center text-sm my-4 mx-auto px-4 py-2 rounded-md font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none"
               onClick={() => showFullLetter(false)}
             >
               <MailOpen classNameSync="text-red-500 w-7 h-7 mr-1" />
@@ -136,7 +136,7 @@ export default function Home({ data }) {
         ) : (
           <button
             type="button"
-            className="flex items-center text-sm my-4 mx-auto px-4 py-2 rounded-md font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700"
+            className="flex items-center text-sm my-4 mx-auto px-4 py-2 rounded-md font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none"
             onClick={() => showFullLetter(true)}
           >
             <Mail classNameSync="text-red-500 w-7 h-7 mr-1" />
