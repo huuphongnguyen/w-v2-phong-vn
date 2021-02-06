@@ -16,13 +16,17 @@ import {
   Cube,
   DocumentText,
   Document,
+  PhoneOutCome,
+  ThumbUp,
 } from "../components/icons/HeroIcons";
-import { ChevronDown } from "../components/icons/CustomIcons";
+import { ChevronDown, MemeDealer } from "../components/icons/CustomIcons";
 import toast, { Toaster } from "react-hot-toast";
 import HashflagsGrid from "../components/HashflagsGrid";
 import { Archillect, Twitter } from "../components/icons/LogoIcons";
+import MemeDealerGrid from "../components/MemeDealerGrid";
 
 const defaultEndpoint = process.env.ARCHILLECT_AI_UNOFFICIAL_API;
+const memeDealerEndpoint = process.env.MEME_DEALER_REDDIT_API;
 
 const FullLetter = () => (
   <>
@@ -84,30 +88,38 @@ const ArchillectImageGridShow = ({ sync }) => (
 
 export async function getServerSideProps() {
   const res = await fetch(defaultEndpoint);
+  const resMemeDealer = await fetch(memeDealerEndpoint);
   const data = await res.json();
+  const memeDealerData = await resMemeDealer.json();
 
   return {
     props: {
       data,
+      memeDealerData,
     },
   };
 }
 
-export default function Home({ data }) {
+export default function Home({ data, memeDealerData }) {
   const [isShowingFullLetter, showFullLetter] = useState(false);
+
   const [isShowingArchillectImageGrid, showArchillectImageGrid] = useState(
     false
   );
-
   const [isShowingHashflagsGrid, showHashflagsGrid] = useState(false);
+  const [isShowingMemeDealerGrid, showMemeDealerGrid] = useState(false);
 
   const archillectarray = [data];
+  const memedealerarray = [memeDealerData];
 
   const notifyArchillectOn = () => toast.success("😆 Xin chào !!!");
   const notifyArchillectOff = () => toast("🥲 Goodbye !!!");
 
   const notifyHashflagOn = () => toast.success("🐧 Đã hiển thị !!!");
   const notifyHashflagOff = () => toast("🥲 Goodbye !!!");
+
+  const notifyMemeOn = () => toast.success("🐧 Đã hiển thị !!!");
+  const notifyMemeOff = () => toast("🥲 Goodbye !!!");
 
   return (
     <Container>
@@ -268,6 +280,58 @@ export default function Home({ data }) {
                 Hashflags.
                 <br /> Các Hashflags chỉ tồn tại trong một khoảng thời gian nhất
                 định trước khi biến mất.{" "}
+              </p>
+            )}
+          </div>
+
+          <div className="border-4 p-2">
+            <div className="block md:flex md:justify-between py-2">
+              <div className="flex items-center space-x-2 text-black dark:text-white pb-4 ml-4">
+                <div>
+                  <MemeDealer classNameSync="w-6 h-6 bg-transparent dark:bg-white rounded" />
+                </div>
+                <p className="text-sm font-bold">Meme Dealer?? huh!!!</p>
+              </div>
+              <div className="text-black mb-4">
+                <div className="grid grid-cols-2 gap-2">
+                  <button
+                    type="button"
+                    className="md:flex items-center text-sm mx-auto px-2 py-2 rounded-md font-medium bg-gray-200  dark:bg-gray-700 md:bg-transparent text-gray-900 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none w-full"
+                    onClick={() => {
+                      showMemeDealerGrid(true);
+                      notifyMemeOn();
+                    }}
+                  >
+                    <div className="flex justify-center">
+                      <PhoneOutCome classNameSync="text-black dark:text-white w-7 h-7 mr-1 mb-2 md:mb-0" />
+                    </div>
+                    Give me some MEMEs!!
+                  </button>
+
+                  <button
+                    type="button"
+                    className="md:flex items-center text-sm mx-auto px-2 py-2 rounded-md font-medium bg-gray-200 dark:bg-gray-700 md:bg-transparent text-gray-900 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none w-full"
+                    onClick={() => {
+                      showMemeDealerGrid(false);
+                      notifyMemeOff();
+                    }}
+                  >
+                    <div className="flex justify-center">
+                      <ThumbUp classNameSync="text-black dark:text-white w-7 h-7 mr-1 mb-2 md:mb-0" />
+                    </div>
+                    OK!! That's enough....
+                  </button>
+                </div>
+              </div>
+            </div>
+            {isShowingMemeDealerGrid ? (
+              <MemeDealerGrid sync={memedealerarray[0]} />
+            ) : (
+              <p className="text-gray-700 dark:text-gray-200 text-sm">
+                20 MEMEs được lấy ngẫu nhiên từ Reddit trong những subreddit nổi
+                tiếng nhất về MEME. <br />
+                Toàn bộ dữ liệu hiển thị được fetching trực tiếp từ Reddit thông
+                qua Token. Viết bằng ngôn ngữ Python.
               </p>
             )}
           </div>

@@ -439,6 +439,19 @@ export const ArrowCircleDown = ({ classNameSync }) => (
   </div>
 );
 
+export const ArrowCircleUp = ({ classNameSync }) => (
+  <div className={classNameSync}>
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M9 11l3-3m0 0l3 3m-3-3v8m0-13a9 9 0 110 18 9 9 0 010-18z"
+      ></path>
+    </svg>
+  </div>
+);
+
 export const ArrowNarrowRight = ({ classNameSync }) => (
   <div className={classNameSync}>
     <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -447,6 +460,32 @@ export const ArrowNarrowRight = ({ classNameSync }) => (
         stroke-linejoin="round"
         stroke-width="2"
         d="M17 8l4 4m0 0l-4 4m4-4H3"
+      ></path>
+    </svg>
+  </div>
+);
+
+export const PhoneOutCome = ({ classNameSync }) => (
+  <div className={classNameSync}>
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M16 3h5m0 0v5m0-5l-6 6M5 3a2 2 0 00-2 2v1c0 8.284 6.716 15 15 15h1a2 2 0 002-2v-3.28a1 1 0 00-.684-.948l-4.493-1.498a1 1 0 00-1.21.502l-1.13 2.257a11.042 11.042 0 01-5.516-5.517l2.257-1.128a1 1 0 00.502-1.21L9.228 3.683A1 1 0 008.279 3H5z"
+      ></path>
+    </svg>
+  </div>
+);
+
+export const ThumbUp = ({ classNameSync }) => (
+  <div className={classNameSync}>
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"
       ></path>
     </svg>
   </div>

@@ -9,6 +9,48 @@ Gallery Grid Layout sử dụng style-components để layout các đối tượ
 
 Phong sẽ cập nhật cho TailwindCSS sau, hiện tại vẫn dùng style-components chỉ để làm cái Gallery Grid Layout này. Phần /Inspiration của Archillect và Hashflags là sử dụng Grid Layout này.
 
-<script src="https://gist.github.com/huuphongnguyen/f6e968b7acba877dddb75c1e7d482caf.js"></script>
+```js
+import styled from "styled-components";
+
+export default function GalleryGridLayout() {
+  return (
+    <Wrapper>
+      {data.map((dt) => (
+        <ElementWrapper>
+          <ImageProject>
+            <img src={e.img} />
+          </ImageProject>
+        </ElementWrapper>
+      ))}
+    </Wrapper>
+  );
+}
+
+const Wrapper = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+  grid-gap: 0px;
+  z-index: 10;
+`;
+
+const ElementWrapper = styled.div`
+  position: relative;
+  ::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+`;
+
+const ImageProject = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 50;
+`;
+```
 
 Điều chỉnh phần minmax trong grid-template-columns để có được số column trong grid theo mong muốn.

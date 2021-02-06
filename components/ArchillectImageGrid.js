@@ -10,7 +10,6 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 export default function ArchillectImageGrid({ data }) {
-  console.log("data", data);
   return (
     <div>
       <div className="mb-4 space-y-1">
@@ -38,10 +37,7 @@ export default function ArchillectImageGrid({ data }) {
                       <h3 className="text-2xl font-bold font-carbon-bold text-black">
                         BLOCK: {item.id}
                       </h3>
-                      <img
-                        onClick={() => downloadImage(item.imageSource)}
-                        src={item.imageSource}
-                      />
+                      <img src={item.imageSource} />
                       <p className="text-black text-xl font-carbon-bold">
                         References:
                         <br />
