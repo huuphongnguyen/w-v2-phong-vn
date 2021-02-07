@@ -73,18 +73,19 @@ export default function Words({ data }) {
               2021 / January
             </h2>
             <div>
-              {wordsarray
-                .filter((word) =>
-                  word.fields.day.start_date.includes("2021-01")
-                )
-                .map((word, index) => (
-                  <div
-                    className="font-carbon-bold uppercase text-white dark:text-gray-700 bg-black dark:bg-white inline-flex items-center mx-1 my-1 px-2 py-1 rounded-full"
-                    key={index}
-                  >
-                    <p>{word.fields.keyword}</p>
-                  </div>
-                ))}
+              {wordsarray &&
+                wordsarray
+                  .filter((word) =>
+                    word.fields.day.start_date.includes("2021-01")
+                  )
+                  .map((word, index) => (
+                    <div
+                      className="font-carbon-bold uppercase text-white dark:text-gray-700 bg-black dark:bg-white inline-flex items-center mx-1 my-1 px-2 py-1 rounded-full"
+                      key={index}
+                    >
+                      <p>{word.fields.keyword}</p>
+                    </div>
+                  ))}
             </div>
           </div>
 
@@ -93,15 +94,16 @@ export default function Words({ data }) {
               2021 / February
             </h2>
             <div>
-              {wordsarray
-                .filter((word) =>
-                  word.fields.day.start_date.includes("2021-02")
-                )
-                .map((word) => (
-                  <div className="font-carbon-bold uppercase text-white dark:text-gray-700 bg-black dark:bg-white inline-flex items-center mx-1 my-1 px-2 py-1 rounded-full">
-                    <p>{word.fields.keyword}</p>
-                  </div>
-                ))}
+              {wordsarray &&
+                wordsarray
+                  .filter((word) =>
+                    word.fields.day.start_date.includes("2021-02")
+                  )
+                  .map((word) => (
+                    <div className="font-carbon-bold uppercase text-white dark:text-gray-700 bg-black dark:bg-white inline-flex items-center mx-1 my-1 px-2 py-1 rounded-full">
+                      <p>{word.fields.keyword}</p>
+                    </div>
+                  ))}
             </div>
           </div>
         </div>

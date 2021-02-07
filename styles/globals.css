@@ -137,11 +137,11 @@ a {
 }
 
 .prose pre {
-  @apply bg-gray-50 border border-gray-200 dark:border-gray-700 dark:bg-gray-900;
+  @apply bg-gray-50 border w-350px md:w-full overflow-x-scroll h-450px overflow-y-scroll border-gray-200 dark:border-gray-700 dark:bg-gray-900 !important;
 }
 
 .prose code {
-  @apply text-gray-800 dark:text-gray-200 px-1 py-0.5 border border-gray-100 dark:border-gray-800 rounded-md bg-gray-100 dark:bg-gray-900;
+  @apply text-gray-800 dark:text-gray-200 px-1 py-0.5 border border-gray-100 dark:border-gray-800 rounded-md bg-gray-100 dark:bg-gray-900 !important;
 }
 
 .prose img {
@@ -153,11 +153,11 @@ a {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  @apply text-gray-300 dark:text-gray-300;
+  @apply text-gray-800;
 }
 
 .token.punctuation {
-  @apply text-gray-300 dark:text-gray-300;
+  @apply text-gray-800;
 }
 
 .token.property,
