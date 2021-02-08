@@ -9,6 +9,7 @@ module.exports = {
       "abs.twimg.com", // Twitter Hashflags Picture
       "notion-api-database01.phong.vn",
       "dl.dropboxusercontent.com",
+      "xn--i-7iq.ws",
     ],
   },
   webpack: (config, { dev, isServer }) => {

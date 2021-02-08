@@ -1,9 +1,6 @@
 import { useState } from "react";
-import NextLink from "next/link";
 import ArchillectImageGrid from "../components/ArchillectImageGrid";
 import Container from "../components/Container";
-import InternalLink from "../components/elements/InternalLink";
-import PhongSignature from "../components/elements/PhongSignature";
 import ExternalLink from "../components/elements/ExternalLink";
 import {
   Chip,
@@ -12,73 +9,27 @@ import {
   Mail,
   MailOpen,
   ChevronUp,
-  UserCircle,
   Cube,
   DocumentText,
   Document,
   PhoneOutCome,
   ThumbUp,
+  TrendingDown,
+  TrendingUp,
 } from "../components/icons/HeroIcons";
 import { ChevronDown, MemeDealer } from "../components/icons/CustomIcons";
 import toast, { Toaster } from "react-hot-toast";
 import HashflagsGrid from "../components/HashflagsGrid";
 import { Archillect, Twitter } from "../components/icons/LogoIcons";
 import MemeDealerGrid from "../components/MemeDealerGrid";
+import FullLetter from "../components/FullLetter";
+import EmojiGrid from "../components/EmojiGrid";
 
 const defaultEndpoint = process.env.ARCHILLECT_AI_UNOFFICIAL_API;
 const memeDealerEndpoint = process.env.MEME_DEALER_REDDIT_API;
+const emojiEndpoint = process.env.EMOJI_APPLE_API;
 
-const FullLetter = () => (
-  <>
-    <div className="text-black dark:text-white my-10 space-y-3 text-sm">
-      <p>
-        Xin chào, mình là <InternalLink href="/phong">Phong</InternalLink>, là
-        người xây dựng, phát triển, và thiết kế cho{" "}
-        <strong>PHONG FOUNDATION</strong>. Đây là được mình xem như là một trung
-        tâm phát triển và xây dựng những gì mình làm trong xuyên suốt quá trình
-        mở rộng khả năng của mình.
-      </p>
-      <p>
-        Mình là một người sống hướng nội và không thật sự quá tốt trong việc thể
-        hiện và bộc lộ bản thân để giao tiếp với những người xung quanh. Chính
-        vì lý do đó, mình muốn xây dựng một điều gì đó xung quanh cuộc sống của
-        mình, từ đó như một sợi dây kết nối với mọi người.
-      </p>
-      <p>
-        Bản thân mỗi người chúng ta sinh ra đã là một điều rất rất may mắn mà
-        thượng đế đã ban tặng. Mình nghĩ bất kỳ ai, bất kỳ cá nhân nào cũng có
-        quyền xây dựng cho bản thân một khái niệm, một lý tưởng, một điều gì đó
-        mà nó thể hiện chính xác con người họ. Năm nay mình 22+1, bản thân mình
-        đang trải qua một giai đoạn có thể coi là một vòng lẩn quẩn của cuộc
-        đời. Tức là chúng ta (ít nhất những người trong cùng độ tuổi này mà mình
-        biết) cố gắng thoát khỏi vùng an toàn, cố gắng loại bỏ đi sự trì hoãn,
-        hay ít nhất là cố gắng vượt ra khỏi ranh giới mà bản thân đã ở quá lâu.
-        Đó thật sự là một giai đoạn khó khăn và nhiều thử thách, nhưng ai rồi
-        cũng sẽ vượt qua bằng cách này hay cách khác, và đây sẽ là điều đầu tiên
-        mà mình cần làm để biết mình đang ở đâu, có những gì và đã thất bại như
-        thế nào. Nó có thể coi như là một cuốn nhất ký vậy, và mình muốn viết nó
-        ra.
-      </p>
-      <p>Và đây là front-page cho nó.</p>
-    </div>
-    <div className="transform scale-75 md:scale-100 origin-top-left">
-      <PhongSignature classsvg="stroke-current text-black dark:text-white" />
-    </div>
-    <NextLink href="/phong">
-      <a>
-        <div className="mt-4">
-          <p className="text-black dark:text-white text-sm">
-            Nguyễn Hữu Phong.
-          </p>
-          <div className="text-sm text-black dark:text-white inline-flex items-center p-2 space-x-1 -ml-2 mt-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 cursor-pointer">
-            <UserCircle classNameSync="text-black dark:text-white w-7 h-7 mr-1" />
-            <p>Đọc thêm xíu nữa về mình.</p>
-          </div>
-        </div>
-      </a>
-    </NextLink>
-  </>
-);
+const FullLetterFetching = () => <FullLetter />;
 
 const ArchillectImageGridShow = ({ sync }) => (
   <>
@@ -89,18 +40,22 @@ const ArchillectImageGridShow = ({ sync }) => (
 export async function getServerSideProps() {
   const res = await fetch(defaultEndpoint);
   const resMemeDealer = await fetch(memeDealerEndpoint);
+  const resEmoji = await fetch(emojiEndpoint);
+
   const data = await res.json();
   const memeDealerData = await resMemeDealer.json();
+  const emojiData = await resEmoji.json();
 
   return {
     props: {
       data,
       memeDealerData,
+      emojiData,
     },
   };
 }
 
-export default function Home({ data, memeDealerData }) {
+export default function Home({ data, memeDealerData, emojiData }) {
   const [isShowingFullLetter, showFullLetter] = useState(false);
 
   const [isShowingArchillectImageGrid, showArchillectImageGrid] = useState(
@@ -108,9 +63,11 @@ export default function Home({ data, memeDealerData }) {
   );
   const [isShowingHashflagsGrid, showHashflagsGrid] = useState(false);
   const [isShowingMemeDealerGrid, showMemeDealerGrid] = useState(false);
+  const [isShowingEmojiGrid, showEmojiGrid] = useState(false);
 
   const archillectarray = [data];
   const memedealerarray = [memeDealerData];
+  const emojiarray = [emojiData];
 
   const notifyArchillectOn = () => toast.success("😆 Xin chào !!!");
   const notifyArchillectOff = () => toast("🥲 Goodbye !!!");
@@ -118,8 +75,11 @@ export default function Home({ data, memeDealerData }) {
   const notifyHashflagOn = () => toast.success("🐧 Đã hiển thị !!!");
   const notifyHashflagOff = () => toast("🥲 Goodbye !!!");
 
-  const notifyMemeOn = () => toast.success("🐧 Đã hiển thị !!!");
+  const notifyMemeOn = () => toast.success("MEME cho hôm nay!!!");
   const notifyMemeOff = () => toast("🥲 Goodbye !!!");
+
+  const notifyEmojiOn = () => toast.success("Emoji đây !!!");
+  const notifyEmojiOff = () => toast("🥲 Goodbye !!!");
 
   return (
     <Container>
@@ -134,7 +94,7 @@ export default function Home({ data, memeDealerData }) {
         </div>
         {isShowingFullLetter ? (
           <div>
-            <FullLetter />
+            <FullLetterFetching />
             <button
               type="button"
               className="flex items-center text-sm my-4 mx-auto px-4 py-2 rounded-md font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none"
@@ -333,6 +293,53 @@ export default function Home({ data, memeDealerData }) {
                 Toàn bộ dữ liệu hiển thị được fetching trực tiếp từ Reddit thông
                 qua Token. Viết bằng ngôn ngữ Python.
               </p>
+            )}
+          </div>
+
+          <div className="border-4 p-2">
+            <div className="block md:flex md:justify-between py-2">
+              <div className="flex items-center space-x-2 text-black dark:text-white pb-4 ml-4">
+                <div>
+                  <img src="/icons/rocket-ios.svg" className="w-7 h-7" />
+                </div>
+                <p className="text-sm font-bold">EMOJI LAUCH SPACE</p>
+              </div>
+              <div className="text-black mb-4">
+                <div className="grid grid-cols-2 gap-2">
+                  <button
+                    type="button"
+                    className="md:flex items-center text-sm mx-auto px-2 py-2 rounded-md font-medium bg-gray-200  dark:bg-gray-700 md:bg-transparent text-gray-900 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none w-full"
+                    onClick={() => {
+                      showEmojiGrid(true);
+                      notifyEmojiOn();
+                    }}
+                  >
+                    <div className="flex justify-center">
+                      <TrendingUp classNameSync="text-black dark:text-white w-7 h-7 mr-1 mb-2 md:mb-0" />
+                    </div>
+                    Open up
+                  </button>
+
+                  <button
+                    type="button"
+                    className="md:flex items-center text-sm mx-auto px-2 py-2 rounded-md font-medium bg-gray-200 dark:bg-gray-700 md:bg-transparent text-gray-900 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none w-full"
+                    onClick={() => {
+                      showEmojiGrid(false);
+                      notifyEmojiOff();
+                    }}
+                  >
+                    <div className="flex justify-center">
+                      <TrendingDown classNameSync="text-black dark:text-white w-7 h-7 mr-1 mb-2 md:mb-0" />
+                    </div>
+                    Close down
+                  </button>
+                </div>
+              </div>
+            </div>
+            {isShowingEmojiGrid ? (
+              <EmojiGrid emojis={emojiarray[0]} />
+            ) : (
+              <p className="text-gray-700 dark:text-gray-200 text-sm"></p>
             )}
           </div>
         </div>
