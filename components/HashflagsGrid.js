@@ -62,7 +62,7 @@ export default function HashflagsGrid() {
                         <p className="text-sm font-bold">Campaign:</p>
                         <p className="text-xs">{hashflag[0].campaignName}</p>
                       </div>
-                      <div className="my-2">
+                      <div className="my-2 max-h-350px overflow-y-scroll">
                         {hashflag.map((hf, index) => (
                           <div key={index}>
                             <a

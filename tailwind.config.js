@@ -123,6 +123,11 @@ module.exports = {
     typography: ["dark"],
     filter: ["responsive"], // defaults to ['responsive']
     backdropFilter: ["responsive"], // defaults to ['responsive']
+    extend: {
+      backgroundColor: ["active"],
+      scale: ["active"],
+      outline: ["active"],
+    },
   },
   plugins: [
     require("@tailwindcss/typography"),

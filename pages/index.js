@@ -24,10 +24,13 @@ import { Archillect, Twitter } from "../components/icons/LogoIcons";
 import MemeDealerGrid from "../components/MemeDealerGrid";
 import FullLetter from "../components/FullLetter";
 import EmojiGrid from "../components/EmojiGrid";
+import TextLoop from "react-text-loop";
 
 const defaultEndpoint = process.env.ARCHILLECT_AI_UNOFFICIAL_API;
 const memeDealerEndpoint = process.env.MEME_DEALER_REDDIT_API;
 const emojiEndpoint = process.env.EMOJI_APPLE_API;
+
+var _ = require("lodash");
 
 const FullLetterFetching = () => <FullLetter />;
 
@@ -80,6 +83,12 @@ export default function Home({ data, memeDealerData, emojiData }) {
 
   const notifyEmojiOn = () => toast.success("Emoji đây !!!");
   const notifyEmojiOff = () => toast("🥲 Goodbye !!!");
+
+  const emojiaccess = emojiarray[0].filter((e) =>
+    e.category.includes("Smileys & Emotion")
+  );
+  const randomemojidata = _.sampleSize(emojiaccess, [emojiaccess.length]);
+  const randomemojidataspliced = randomemojidata.splice(0, 22);
 
   return (
     <Container>
@@ -153,7 +162,7 @@ export default function Home({ data, memeDealerData, emojiData }) {
                       </div>
                       Gọi Archillect
                     </button>
-                    <Toaster />
+                    <Toaster position="bottom-center" reverseOrder={false} />
                     <button
                       type="button"
                       className="md:flex items-center text-sm mx-auto px-2 py-2 rounded-md font-medium bg-gray-200 dark:bg-gray-700 md:bg-transparent text-gray-900 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none w-full"
@@ -299,8 +308,18 @@ export default function Home({ data, memeDealerData, emojiData }) {
           <div className="border-4 p-2">
             <div className="block md:flex md:justify-between py-2">
               <div className="flex items-center space-x-2 text-black dark:text-white pb-4 ml-4">
-                <div>
-                  <img src="/icons/rocket-ios.svg" className="w-7 h-7" />
+                <div className="bg-gray-200 py-1 px-2 rounded-lg">
+                  <TextLoop
+                    interval={1300}
+                    springConfig={{ stiffness: 180, damping: 12 }}
+                    fade={true}
+                  >
+                    {randomemojidataspliced.map((emoji, index) => (
+                      <p className="text-3xl text-black" key={index}>
+                        {emoji.emoji}
+                      </p>
+                    ))}
+                  </TextLoop>
                 </div>
                 <p className="text-sm font-bold">EMOJI LAUCH SPACE</p>
               </div>
@@ -339,7 +358,9 @@ export default function Home({ data, memeDealerData, emojiData }) {
             {isShowingEmojiGrid ? (
               <EmojiGrid emojis={emojiarray[0]} />
             ) : (
-              <p className="text-gray-700 dark:text-gray-200 text-sm"></p>
+              <p className="text-gray-700 dark:text-gray-200 text-sm">
+                220 emoji bất kỳ từ khoảng ~1804 emoji của Apple.
+              </p>
             )}
           </div>
         </div>
