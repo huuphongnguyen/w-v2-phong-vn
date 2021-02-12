@@ -21,13 +21,13 @@ import { ChevronDown, MemeDealer } from "../components/icons/CustomIcons";
 import toast, { Toaster } from "react-hot-toast";
 import HashflagsGrid from "../components/HashflagsGrid";
 import { Archillect, Twitter } from "../components/icons/LogoIcons";
-import MemeDealerGrid from "../components/MemeDealerGrid";
+// import MemeDealerGrid from "../components/MemeDealerGrid";
 import FullLetter from "../components/FullLetter";
 import EmojiGrid from "../components/EmojiGrid";
 import TextLoop from "react-text-loop";
 
 const defaultEndpoint = process.env.ARCHILLECT_AI_UNOFFICIAL_API;
-const memeDealerEndpoint = process.env.MEME_DEALER_REDDIT_API;
+// const memeDealerEndpoint = process.env.MEME_DEALER_REDDIT_API;
 const emojiEndpoint = process.env.EMOJI_APPLE_API;
 
 var _ = require("lodash");
@@ -46,7 +46,7 @@ export async function getServerSideProps() {
   const resEmoji = await fetch(emojiEndpoint);
 
   const data = await res.json();
-  const memeDealerData = await resMemeDealer.json();
+  // const memeDealerData = await resMemeDealer.json();
   const emojiData = await resEmoji.json();
 
   return {
