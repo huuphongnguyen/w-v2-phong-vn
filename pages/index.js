@@ -42,7 +42,7 @@ const ArchillectImageGridShow = ({ sync }) => (
 
 export async function getServerSideProps() {
   const res = await fetch(defaultEndpoint);
-  const resMemeDealer = await fetch(memeDealerEndpoint);
+  // const resMemeDealer = await fetch(memeDealerEndpoint);
   const resEmoji = await fetch(emojiEndpoint);
 
   const data = await res.json();
@@ -52,24 +52,24 @@ export async function getServerSideProps() {
   return {
     props: {
       data,
-      memeDealerData,
+      //   memeDealerData,
       emojiData,
     },
   };
 }
 
-export default function Home({ data, memeDealerData, emojiData }) {
+export default function Home({ data, emojiData }) {
   const [isShowingFullLetter, showFullLetter] = useState(false);
 
   const [isShowingArchillectImageGrid, showArchillectImageGrid] = useState(
     false
   );
   const [isShowingHashflagsGrid, showHashflagsGrid] = useState(false);
-  const [isShowingMemeDealerGrid, showMemeDealerGrid] = useState(false);
+  //  const [isShowingMemeDealerGrid, showMemeDealerGrid] = useState(false);
   const [isShowingEmojiGrid, showEmojiGrid] = useState(false);
 
   const archillectarray = [data];
-  const memedealerarray = [memeDealerData];
+  //  const memedealerarray = [memeDealerData];
   const emojiarray = [emojiData];
 
   const notifyArchillectOn = () => toast.success("😆 Xin chào !!!");
@@ -78,8 +78,8 @@ export default function Home({ data, memeDealerData, emojiData }) {
   const notifyHashflagOn = () => toast.success("🐧 Đã hiển thị !!!");
   const notifyHashflagOff = () => toast("🥲 Goodbye !!!");
 
-  const notifyMemeOn = () => toast.success("MEME cho hôm nay!!!");
-  const notifyMemeOff = () => toast("🥲 Goodbye !!!");
+  //  const notifyMemeOn = () => toast.success("MEME cho hôm nay!!!");
+  //  const notifyMemeOff = () => toast("🥲 Goodbye !!!");
 
   const notifyEmojiOn = () => toast.success("Emoji đây !!!");
   const notifyEmojiOff = () => toast("🥲 Goodbye !!!");
@@ -154,6 +154,8 @@ export default function Home({ data, memeDealerData, emojiData }) {
                       className="md:flex items-center text-sm mx-auto px-2 py-2 rounded-md font-medium bg-gray-200 dark:bg-gray-700 md:bg-transparent text-gray-900 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none w-full"
                       onClick={() => {
                         showArchillectImageGrid(true);
+                        showHashflagsGrid(false);
+                        showEmojiGrid(false);
                         notifyArchillectOn();
                       }}
                     >
@@ -168,6 +170,7 @@ export default function Home({ data, memeDealerData, emojiData }) {
                       className="md:flex items-center text-sm mx-auto px-2 py-2 rounded-md font-medium bg-gray-200 dark:bg-gray-700 md:bg-transparent text-gray-900 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none w-full"
                       onClick={() => {
                         showArchillectImageGrid(false);
+
                         notifyArchillectOff();
                       }}
                     >
@@ -214,6 +217,8 @@ export default function Home({ data, memeDealerData, emojiData }) {
                     className="md:flex items-center text-sm mx-auto px-2 py-2 rounded-md font-medium bg-gray-200  dark:bg-gray-700 md:bg-transparent text-gray-900 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none w-full"
                     onClick={() => {
                       showHashflagsGrid(true);
+                      showArchillectImageGrid(false);
+                      showEmojiGrid(false);
                       notifyHashflagOn();
                     }}
                   >
@@ -253,7 +258,7 @@ export default function Home({ data, memeDealerData, emojiData }) {
             )}
           </div>
 
-          <div className="border-4 p-2">
+          {/* <div className="border-4 p-2">
             <div className="block md:flex md:justify-between py-2">
               <div className="flex items-center space-x-2 text-black dark:text-white pb-4 ml-4">
                 <div>
@@ -303,7 +308,7 @@ export default function Home({ data, memeDealerData, emojiData }) {
                 qua Token. Viết bằng ngôn ngữ Python.
               </p>
             )}
-          </div>
+          </div> */}
 
           <div className="border-4 p-2">
             <div className="block md:flex md:justify-between py-2">
