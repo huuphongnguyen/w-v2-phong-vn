@@ -1,11 +1,24 @@
 import Container from "../components/Container";
 import { NextSeo } from "next-seo";
 import { ArrowNarrowRight } from "../components/icons/HeroIcons";
+import TweetStatic from "../components/TweetStatic";
 
 const url = "https://phong.vn/tweets";
 const title = "Tweets – PHONG FOUNDATION";
 const description =
   "Các Tweets thật sự hay và đáng để lưu trữ lại. Được đăng tải bởi những người rất rất giỏi, thể hiện quan điểm của họ về những vấn đề liên quan. ";
+
+const tweetarray = [
+  "20",
+  "976588005547954177",
+  "1359214111956086788",
+  "1356707686428020738",
+  "1337641645680992256",
+  "1316077913477840897",
+  "1283040429848629249",
+  "1251864062172041219",
+  "1075194755175243781",
+];
 
 export default function Tweets() {
   return (
@@ -37,6 +50,11 @@ export default function Tweets() {
 
         <div>
           <ArrowNarrowRight classNameSync="w-7 h-7 text-black dark:text-white" />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+            {tweetarray.map((tweet, index) => (
+              <TweetStatic tweetId={tweet} key={index} />
+            ))}
+          </div>
         </div>
       </div>
     </Container>

@@ -46,6 +46,7 @@
     "react-lottie": "^1.2.3",
     "react-modal": "^3.12.1",
     "react-stack-grid": "^0.7.1",
+    "react-static-tweets": "^0.2.6",
     "react-text-loop": "^2.3.0",
     "react-toastify": "^7.0.3",
     "react-twitter-embed": "^3.0.3",
