@@ -38,7 +38,7 @@ const ArchillectImageGridShow = ({ sync }) => (
   </>
 );
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const res = await fetch(defaultEndpoint);
   const resEmoji = await fetch(emojiEndpoint);
 
