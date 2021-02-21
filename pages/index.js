@@ -3,21 +3,17 @@ import ArchillectImageGrid from "../components/ArchillectImageGrid";
 import Container from "../components/Container";
 import ExternalLink from "../components/elements/ExternalLink";
 import {
-  Chip,
   CubeTransparent,
-  QRCode,
   Mail,
   MailOpen,
   ChevronUp,
   Cube,
   DocumentText,
   Document,
-  PhoneOutCome,
-  ThumbUp,
   TrendingDown,
   TrendingUp,
 } from "../components/icons/HeroIcons";
-import { ChevronDown, MemeDealer } from "../components/icons/CustomIcons";
+import { ChevronDown } from "../components/icons/CustomIcons";
 import toast, { Toaster } from "react-hot-toast";
 import HashflagsGrid from "../components/HashflagsGrid";
 import { Archillect, Twitter } from "../components/icons/LogoIcons";
@@ -38,7 +34,7 @@ const ArchillectImageGridShow = ({ sync }) => (
   </>
 );
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const res = await fetch(defaultEndpoint);
   const resEmoji = await fetch(emojiEndpoint);
 
@@ -273,6 +269,8 @@ export default function Home({ data, emojiData }) {
                     className="md:flex items-center text-sm mx-auto px-2 py-2 rounded-md font-medium bg-gray-200  dark:bg-gray-700 md:bg-transparent text-gray-900 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none w-full"
                     onClick={() => {
                       showEmojiGrid(true);
+                      showArchillectImageGrid(false);
+                      showHashflagsGrid(false);
                       notifyEmojiOn();
                     }}
                   >

@@ -1,6 +1,13 @@
 import Container from "../components/Container";
 import { NextSeo } from "next-seo";
 import PhongSignature from "../components/elements/PhongSignature";
+import { CopyToClipboard } from "react-copy-to-clipboard";
+import NextImage from "next/image";
+
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+import reacthottoast, { Toaster } from "react-hot-toast";
 
 const url = "https://phong.vn/contact";
 const title = "Liên hệ – PHONG FOUNDATION";
@@ -8,6 +15,8 @@ const description =
   "Những thông tin liên hệ liên quan đển PHONG FOUNDATION. Bạn có thể liên hệ với chúng tôi thông qua email hoặc các mạng xã hội.";
 
 export default function Contact() {
+  const CopySuccessful = () => reacthottoast.success("Copied");
+
   return (
     <Container>
       <NextSeo
@@ -46,17 +55,72 @@ export default function Contact() {
               iMessage
             </a>{" "}
             nếu bạn sử dụng các thiết bị của Apple,{" "}
-            <a
-              className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400  to-purple-500 text-md xl font-black"
-              href=""
+            <span
+              className="cursor-pointer"
+              onClick={() =>
+                toast(
+                  <div>
+                    <h3 className="text-xl font-bold font-carbon-bold text-black">
+                      Session
+                    </h3>
+                    <p className="text-sm text-gray-500">
+                      Session là một trong những ứng dụng chat ẩn danh bảo mật
+                      nhất hiện nay. Tìm hiểu và tải ứng dụng tại{" "}
+                      <a
+                        href=""
+                        target="_blank"
+                        className="font-bold text-blue-500"
+                      >
+                        đây
+                      </a>
+                      .
+                    </p>
+                    <div>
+                      <h4 className="font-carbon-bold text-bold uppercase text-black">
+                        Session ID:
+                      </h4>
+                      <p className="text-blue-500 font-carbon-bold text-sm flex">
+                        051197cf6e06d5d6ab60b2a6747f2c
+                        <br />
+                        93723bd39f2a11209d39467c38aa48494156
+                      </p>
+                      <CopyToClipboard text="051197cf6e06d5d6ab60b2a6747f2c93723bd39f2a11209d39467c38aa48494156">
+                        <button
+                          className="my-2 px-2 py-1 bg-gray-200 rounded-xl text-black uppercase font-carbon-bold focus:outline-none transform transition-all active:scale-90"
+                          onClick={() => CopySuccessful()}
+                        >
+                          Copy Session ID
+                        </button>
+                      </CopyToClipboard>
+                      <div className=" w-full-80">
+                        <img src="/images/session-contact-phong-vn-qrcode.jpg" />
+                      </div>
+                      <Toaster position="top-center" reverseOrder={false} />
+                    </div>
+                  </div>
+                )
+              }
             >
-              Session
-            </a>{" "}
-            Nếu bạn không muốn mình biết bạn là ai (trong trường hợp bạn muốn ẩn
+              <a className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400  to-purple-500 text-md xl font-black">
+                Session
+              </a>
+            </span>{" "}
+            nếu bạn không muốn mình biết bạn là ai (trong trường hợp bạn muốn ẩn
             danh để đảm bảo an toàn). Hãy cứ thoải mái và vui vẻ nhắn bất kỳ
             điều gì với mình nếu bạn gặp phải vấn đề gì đó mà bạn nghĩ mình có
             thể giúp bạn. Mình sẽ giúp bằng tất cả những gì mình biết.
           </p>
+          <ToastContainer
+            position="top-left"
+            autoClose={7000}
+            hideProgressBar={false}
+            newestOnTop
+            closeOnClick={false}
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover={true}
+          />
           <p className="mt-4 leading-8">
             Ngoài ra, bạn có thể liên hệ với mình thông qua các mạng xã hội, bạn
             chỉ cần inbox trực tiếp, mình sẽ cố gắng kiểm tra tin nhắn khi có

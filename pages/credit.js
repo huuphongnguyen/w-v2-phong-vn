@@ -11,7 +11,7 @@ const description =
 
 const defaultEndpoint = process.env.CREDIT_NOTION_UNOFFICIAL_API;
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const res = await fetch(defaultEndpoint);
   const data = await res.json();
 
