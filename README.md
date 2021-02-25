@@ -31,3 +31,8 @@ $ yarn dev
 ### Inspiration
 
 - Inspired by the website structure of [leerob.io](https://leerob.io/)
+
+### Data updates
+
+Because some part of this website using static data, so I need update this README for letting Vercel re-build to fetching data.
+Current data version: 1.1
