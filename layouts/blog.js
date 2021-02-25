@@ -95,7 +95,7 @@ export default function BlogLayout({ children, frontMatter }) {
             {children}
           </div>
           <div className="mt-8"></div>
-          <div className="flex items-center space-x-2 text-sm text-gray-700 dark:text-gray-300 p-3 rounded-md hover:bg-gray-200 dark:hover:text-black font-bold">
+          <div className="flex items-center space-x-2 text-sm text-gray-700 dark:text-gray-300 p-3 rounded-xl hover:bg-gray-200 dark:hover:text-black font-bold">
             <div>
               <svg
                 class="w-6 h-6"

@@ -8,7 +8,7 @@ const description =
 
 const defaultEndpointx = process.env.WORDS_NOTION_UNOFFICIAL_API;
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const res = await fetch(defaultEndpointx);
   const data = await res.json();
 

@@ -51,9 +51,10 @@ export default function Tweets() {
         <div>
           <ArrowNarrowRight classNameSync="w-7 h-7 text-black dark:text-white" />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-            {tweetarray.map((tweet, index) => (
-              <TweetStatic tweetId={tweet} key={index} />
-            ))}
+            {tweetarray &&
+              tweetarray.map((tweet, index) => (
+                <TweetStatic tweetId={tweet} key={index} />
+              ))}
           </div>
         </div>
       </div>

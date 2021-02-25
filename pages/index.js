@@ -22,7 +22,8 @@ import EmojiGrid from "../components/EmojiGrid";
 import TextLoop from "react-text-loop";
 
 const defaultEndpoint = process.env.ARCHILLECT_AI_UNOFFICIAL_API;
-const emojiEndpoint = process.env.EMOJI_APPLE_API;
+
+import emojiData from "../data/stuff/emoji.json";
 
 var _ = require("lodash");
 
@@ -36,20 +37,17 @@ const ArchillectImageGridShow = ({ sync }) => (
 
 export async function getServerSideProps() {
   const res = await fetch(defaultEndpoint);
-  const resEmoji = await fetch(emojiEndpoint);
 
   const data = await res.json();
-  const emojiData = await resEmoji.json();
 
   return {
     props: {
       data,
-      emojiData,
     },
   };
 }
 
-export default function Home({ data, emojiData }) {
+export default function Home({ data }) {
   const [isShowingFullLetter, showFullLetter] = useState(false);
 
   const [isShowingArchillectImageGrid, showArchillectImageGrid] = useState(
