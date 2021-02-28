@@ -24,6 +24,7 @@ import TextLoop from "react-text-loop";
 const defaultEndpoint = process.env.ARCHILLECT_AI_UNOFFICIAL_API;
 
 import emojiData from "../data/stuff/emoji.json";
+import { File } from "akar-icons";
 
 var _ = require("lodash");
 
@@ -46,6 +47,11 @@ export async function getServerSideProps() {
     },
   };
 }
+
+const subdomainMyPersonalPagesData = [
+  { title: "log.phong.vn", url: "https://log.phong.vn", tag: "public diary" },
+  { title: "wiki.phong.vn", url: "https://wiki.phong.vn", tag: "quick notes" },
+];
 
 export default function Home({ data }) {
   const [isShowingFullLetter, showFullLetter] = useState(false);
@@ -76,7 +82,7 @@ export default function Home({ data }) {
 
   return (
     <Container>
-      <div className="flex flex-col mx-auto bg-gray-100 dark:bg-gray-900 items-start max-w-4xl my-2 md:my-10 p-5 md:p-10 rounded-xl w-full">
+      <div className="flex flex-col mx-auto bg-gray-100 dark:bg-gray-900 items-start max-w-4xl my-2 md:mt-10 md:mb-5 p-5 md:p-10 rounded-xl w-full">
         <div className="flex space-x-2">
           <span className="text-3xl font-domainet md:text-5xl text-black dark:text-white">
             /
@@ -109,6 +115,35 @@ export default function Home({ data }) {
             <ChevronDown classNameSync="text-black dark:text-white w-4 h-4 ml-1" />
           </button>
         )}
+      </div>
+      <div className="flex flex-col mx-auto bg-gray-100 dark:bg-gray-900 items-start max-w-4xl my-2 md:mb-10 p-5 md:p-10 rounded-xl w-full">
+        <div className="flex space-x-2">
+          <span className="text-3xl font-domainet md:text-5xl text-black dark:text-white">
+            /
+          </span>
+          <h2 className="font-domainet text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
+            Sub-Domain
+          </h2>
+        </div>
+        <h3 className="text-black dark:text-white text-sm uppercase">
+          My Personal Sub-Pages:
+        </h3>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-2 my-4">
+          {subdomainMyPersonalPagesData.map((page, index) => (
+            <a href={page.url} target="_blank">
+              <div
+                key={index}
+                className="flex items-center space-x-2 text-black dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 px-2 py-1 rounded-md"
+              >
+                <File />
+                <h4>{page.title}</h4>
+                <p className="text-gray-700 dark:text-gray-200 font-bold text-xs uppercase">
+                  {page.tag}
+                </p>
+              </div>
+            </a>
+          ))}
+        </div>
       </div>
       <div className=" mx-auto bg-gray-100 dark:bg-gray-900 items-start max-w-4xl my-2 md:mb-10 md:-mt-2 p-5 md:p-10 rounded-xl w-full">
         <div className="flex space-x-2">
