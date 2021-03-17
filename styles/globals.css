@@ -71,7 +71,7 @@ a {
   -webkit-background-clip: text;
   -webkit-box-decoration-break: clone;
   background-clip: text;
-  color: transparent;
+  color: rgba(255, 255, 255, 0);
 }
 
 .rainbow_bg_animated {
