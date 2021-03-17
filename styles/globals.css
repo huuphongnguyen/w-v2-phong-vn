@@ -1,3 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .font-carbon-bold {
+    font-family: t26-carbon, monospace;
+    font-weight: 700;
+    font-style: normal;
+  }
+}
+
 html,
 body {
   padding: 0;
@@ -13,4 +25,268 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.rainbow_bg {
+  background: linear-gradient(
+    110.78deg,
+    #76e650 -1.13%,
+    #f9d649 15.22%,
+    #f08e35 32.09%,
+    #ec5157 48.96%,
+    #ff18bd 67.94%,
+    #1a4bff 85.34%,
+    #62d8f9 99.57%
+  );
+}
+
+.rainbow_text {
+  background: linear-gradient(
+    110.78deg,
+    #76e650 -1.13%,
+    #f9d649 15.22%,
+    #f08e35 32.09%,
+    #ec5157 48.96%,
+    #ff18bd 67.94%,
+    #1a4bff 85.34%,
+    #62d8f9 99.57%
+  );
+  -webkit-background-clip: text;
+  -webkit-box-decoration-break: clone;
+  background-clip: text;
+  color: transparent;
+}
+
+.rainbow_text_hover:hover {
+  background: linear-gradient(
+    110.78deg,
+    #76e650 -1.13%,
+    #f9d649 15.22%,
+    #f08e35 32.09%,
+    #ec5157 48.96%,
+    #ff18bd 67.94%,
+    #1a4bff 85.34%,
+    #62d8f9 99.57%
+  );
+  -webkit-background-clip: text;
+  -webkit-box-decoration-break: clone;
+  background-clip: text;
+  color: transparent;
+}
+
+.rainbow_bg_animated {
+  background: linear-gradient(
+    110.78deg,
+    #76e650 -1.13%,
+    #f9d649 15.22%,
+    #f08e35 32.09%,
+    #ec5157 48.96%,
+    #ff18bd 67.94%,
+    #1a4bff 85.34%,
+    #62d8f9 99.57%
+  );
+  animation: rainbow_animation 17s ease-in-out infinite;
+  background-size: 400% 400%;
+}
+
+.rainbow_text_animated {
+  background: linear-gradient(
+    110.78deg,
+    #76e650 -1.13%,
+    #f9d649 15.22%,
+    #f08e35 32.09%,
+    #ec5157 48.96%,
+    #ff18bd 67.94%,
+    #1a4bff 85.34%,
+    #62d8f9 99.57%
+  );
+  -webkit-background-clip: text;
+  -webkit-box-decoration-break: clone;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow_animation 17s ease-in-out infinite;
+  background-size: 400% 400%;
+}
+
+@keyframes rainbow_animation {
+  0%,
+  100% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 100% 0;
+  }
+}
+
+path,
+line {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+.stroke-H1 {
+  stroke-dasharray: 90;
+  animation: write1 3s 1 linear;
+}
+
+.stroke-H2 {
+  stroke-dasharray: 90;
+  animation: write2 3s 1 linear;
+}
+
+.stroke-H3 {
+  stroke-dasharray: 80;
+  animation: write3 3s 1 linear;
+}
+
+.stroke-U1 {
+  stroke-dasharray: 90;
+  animation: write4 3s 1 linear;
+}
+
+.stroke-U2 {
+  stroke-dasharray: 90;
+  animation: write5 3s 1 linear;
+}
+
+.stroke-P1 {
+  stroke-dasharray: 90;
+  animation: write6 3s 1 linear;
+}
+
+.stroke-P2 {
+  stroke-dasharray: 160;
+  animation: write7 3s 1 linear;
+}
+
+.stroke-H {
+  stroke-dasharray: 150;
+  animation: write8 3s 1 linear;
+}
+
+.stroke-O {
+  stroke-dasharray: 80;
+  animation: write9 3s 1 linear;
+}
+
+.stroke-N {
+  stroke-dasharray: 80;
+  animation: write10 3s 1 linear;
+}
+
+.stroke-G {
+  stroke-dasharray: 180;
+  animation: write11 3s 1 linear;
+}
+
+@keyframes write1 {
+  0% {
+    stroke-dashoffset: 100;
+  }
+  7.14% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes write2 {
+  0%,
+  7.14% {
+    stroke-dashoffset: 90;
+  }
+  14.3% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes write3 {
+  0%,
+  14.3% {
+    stroke-dashoffset: 80;
+  }
+  25% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes write4 {
+  0%,
+  25% {
+    stroke-dashoffset: 90;
+  }
+  35.7% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes write5 {
+  0%,
+  35.7% {
+    stroke-dashoffset: 90;
+  }
+  42.8% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes write6 {
+  0%,
+  42.8% {
+    stroke-dashoffset: 90;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes write7 {
+  0%,
+  50% {
+    stroke-dashoffset: 160;
+  }
+  57% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes write8 {
+  0%,
+  57% {
+    stroke-dashoffset: 160;
+  }
+  71.4% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes write9 {
+  0%,
+  71.4% {
+    stroke-dashoffset: 80;
+  }
+  86% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes write10 {
+  0%,
+  86% {
+    stroke-dashoffset: 80;
+  }
+  92% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes write11 {
+  0%,
+  92% {
+    stroke-dashoffset: 190;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
 }

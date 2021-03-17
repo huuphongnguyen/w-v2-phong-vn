@@ -1,0 +1,7 @@
+{
+  "locales": ["vi-VN", "en"],
+  "defaultLocale": "vi-VN",
+  "pages": {
+    "*": ["common", "hashtags"]
+  }
+}
