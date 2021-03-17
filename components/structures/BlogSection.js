@@ -16,10 +16,10 @@ export default function BlogSection() {
   return (
     <div>
       <div className="inline-flex items-center space-x-1">
-        <p className="text-black dark:text-white uppercase font-carbon-bold">
+        <p className="text-black dark:text-white uppercase font-carbon-bold text-xl">
           /
         </p>
-        <h1 className="text-black dark:text-white uppercase font-carbon-bold">
+        <h1 className="text-black dark:text-white uppercase font-carbon-bold text-xl">
           Blog
         </h1>
       </div>

@@ -8,6 +8,13 @@
     font-weight: 700;
     font-style: normal;
   }
+
+  @variants dark {
+    .fill-white {
+      filter: invert(100%) sepia(1%) saturate(3284%) hue-rotate(116deg)
+        brightness(121%) contrast(100%);
+    }
+  }
 }
 
 html,
@@ -41,7 +48,7 @@ a {
 }
 
 .rainbow_text {
-  background: linear-gradient(
+  background: -webkit-linear-gradient(
     110.78deg,
     #76e650 -1.13%,
     #f9d649 15.22%,
@@ -58,7 +65,7 @@ a {
 }
 
 .rainbow_text_hover:hover {
-  background: linear-gradient(
+  background: -webkit-linear-gradient(
     110.78deg,
     #76e650 -1.13%,
     #f9d649 15.22%,
@@ -75,7 +82,7 @@ a {
 }
 
 .rainbow_bg_animated {
-  background: linear-gradient(
+  background: -webkit-linear-gradient(
     110.78deg,
     #76e650 -1.13%,
     #f9d649 15.22%,
@@ -90,7 +97,7 @@ a {
 }
 
 .rainbow_text_animated {
-  background: linear-gradient(
+  background: -webkit-linear-gradient(
     110.78deg,
     #76e650 -1.13%,
     #f9d649 15.22%,

@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@icons-pack/react-simple-icons": "^4.1.0",
     "@tailwindcss/aspect-ratio": "^0.2.0",
     "@tailwindcss/line-clamp": "^0.2.0",
     "akar-icons": "^1.1.8",

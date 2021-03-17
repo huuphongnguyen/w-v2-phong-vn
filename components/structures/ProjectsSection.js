@@ -16,10 +16,10 @@ export default function ProjectsSection() {
   return (
     <div>
       <div className="inline-flex items-center space-x-1">
-        <p className="text-black dark:text-white uppercase font-carbon-bold">
+        <p className="text-black dark:text-white text-xl uppercase font-carbon-bold">
           /
         </p>
-        <h1 className="text-black dark:text-white uppercase font-carbon-bold">
+        <h1 className="text-black dark:text-white text-xl uppercase font-carbon-bold">
           projects
         </h1>
       </div>

@@ -1,20 +1,20 @@
-const title = "EMB Vietnam - Nghề thêu thật đẹp";
+const title = "PHONG.VN - Phong's personal website";
 const description =
-  "EMB Vietnam là một studio sáng tạo trong lĩnh vực thêu với mục tiêu mang đến những điều tuyệt vời nhất trong nghề Thêu, Thêu vi tính. Thêu là một câu chuyện đẹp, hãy để chúng tôi kể nó.";
+  "Trang cá nhân của Nguyễn Hữu Phong. Được xây dựng bằng Next.js / TailwindCSS và lưu trữ tại Vercel. Nơi chia sẻ những dự án, blog, mấy thứ hay ho của Phong ";
 
 const SEO = {
   title,
   description,
-  canonical: "https://emb.vn",
+  canonical: "https://phong.vn",
   openGraph: {
     type: "website",
     locale: "vi_VN",
-    url: "https://emb.vn",
+    url: "https://phong.vn",
     title,
     description,
     images: [
       {
-        url: "/static/emb-vn-feature-img.png",
+        url: "/static/phong-vn-feature-img.png",
         alt: title,
         width: 1280,
         height: 720,

@@ -6,7 +6,6 @@ export default function Header() {
     <header>
       <div className="items-start mx-auto w-full max-w-3xl space-y-7">
         <NavigationBar />
-        <HeroSection />
       </div>
     </header>
   );
