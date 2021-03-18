@@ -12,13 +12,13 @@ import "react-toastify/dist/ReactToastify.css";
 export default function ArchillectImageGrid({ data }) {
   return (
     <div>
-      <div className="mb-4 space-y-1">
+      <div>
         <TenMinutesCounter />
         <p className="text-black dark:text-white text-xs">
-          Cập nhật sẽ có độ trễ nhất định so với máy chủ của Archillect trong
-          một vài trường hợp.
+          Do sử dụng API được thiết kế riêng. Cập nhật sẽ có độ trễ nhất định so
+          với máy chủ của Archillect trong một vài trường hợp.
         </p>
-        <div className="text-red-500 text-xl font-carbon-bold flex items-center space-x-2">
+        <div className="text-black dark:text-white text-xl font-carbon-bold flex items-center space-x-2">
           <p>BLOCKS: </p>
           <p>
             {data[0].id} - {data[49].id}

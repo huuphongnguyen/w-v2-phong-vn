@@ -5,6 +5,9 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      gridTemplateColumns: {
+        autoscale: "repeat(auto-fit, minmax(75px, 1fr))",
+      },
       colors: {
         teal: colors.teal,
         "notion-default": "#E6E6E5",
