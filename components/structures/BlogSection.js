@@ -34,7 +34,7 @@ export default function BlogSection() {
             </p>
             <NextLink href={b[1]}>
               <a>
-                <h2 className="text-black dark:text-white font-carbon-bold uppercase text-xl rainbow_text_hover">
+                <h2 className="text-black dark:text-white font-bold rainbow_text_hover">
                   {b[0]}
                 </h2>
               </a>
