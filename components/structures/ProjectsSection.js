@@ -20,7 +20,7 @@ export default function ProjectsSection() {
           /
         </p>
         <h1 className="text-black dark:text-white text-xl uppercase font-carbon-bold">
-          projects
+          Projects
         </h1>
       </div>
 
@@ -28,7 +28,7 @@ export default function ProjectsSection() {
         <div>
           <NextLink href="#">
             <a>
-              <h2 className="text-black dark:text-white font-bold rainbow_text_hover inline-flex">
+              <h2 className="text-black dark:text-white font-bold rainbow_text_hover inline-block">
                 {t("projects-ax-title")}
               </h2>
             </a>
@@ -45,7 +45,7 @@ export default function ProjectsSection() {
         <div>
           <NextLink href="#">
             <a>
-              <h2 className="text-black dark:text-white font-bold rainbow_text_hover inline-flex">
+              <h2 className="text-black dark:text-white font-bold rainbow_text_hover inline-block">
                 {t("projects-embvn-title")}
               </h2>
             </a>
@@ -62,7 +62,7 @@ export default function ProjectsSection() {
         <div>
           <NextLink href="#">
             <a>
-              <h2 className="text-black dark:text-white font-bold rainbow_text_hover inline-flex">
+              <h2 className="text-black dark:text-white font-bold rainbow_text_hover inline-block">
                 {t("projects-blvck-title")}
               </h2>
             </a>

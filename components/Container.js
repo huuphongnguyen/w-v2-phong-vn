@@ -1,3 +1,4 @@
+import { MoreHorizontal } from "akar-icons";
 import Footer from "./Footer";
 import Header from "./Header";
 
@@ -7,6 +8,9 @@ export default function Container({ children }) {
       <main className="flex flex-col justify-center space-y-4 py-7 px-4 dark:bg-black bg-white">
         <Header />
         {children}
+        <div className="items-start mx-auto w-full max-w-3xl space-y-1 flex justify-center">
+          <MoreHorizontal className="text-black dark:text-white" />
+        </div>
         <Footer />
       </main>
     </div>

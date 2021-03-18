@@ -11,7 +11,7 @@ export default function SubPageSection() {
           /
         </p>
         <h1 className="text-black dark:text-white text-xl uppercase font-carbon-bold">
-          sub-page
+          Sub-page
         </h1>
       </div>
       <div className="px-4 py-2 space-y-4">
@@ -20,7 +20,7 @@ export default function SubPageSection() {
             <File className="text-black dark:text-white" />
             <div className="flex-cols md:flex items-center space-x-0 md:space-x-2">
               <a href="https://log.phong.vn" target="_blank">
-                <h2 className="text-black dark:text-white font-bold rainbow_text_hover inline-flex">
+                <h2 className="text-black dark:text-white font-bold rainbow_text_hover inline-block">
                   log.phong.vn
                 </h2>
               </a>
