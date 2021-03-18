@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       gridTemplateColumns: {
         autoscale: "repeat(auto-fit, minmax(75px, 1fr))",
+        autoscale_small: "repeat(auto-fit, minmax(35px, 1fr))",
       },
       colors: {
         teal: colors.teal,

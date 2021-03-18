@@ -12,8 +12,11 @@
     "@tailwindcss/aspect-ratio": "^0.2.0",
     "@tailwindcss/line-clamp": "^0.2.0",
     "akar-icons": "^1.1.8",
+    "dayjs": "^1.10.4",
     "fs": "0.0.1-security",
     "globby": "^11.0.2",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
     "next": "10.0.9",
     "next-seo": "^4.20.0",
     "next-themes": "0.0.12",
@@ -22,7 +25,8 @@
     "prettier": "^2.2.1",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "react-hot-toast": "^1.0.2"
+    "react-hot-toast": "^1.0.2",
+    "react-toastify": "^7.0.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.5",

@@ -1,11 +1,17 @@
 import NextImage from "next/image";
+import ArchillectToast from "./ArchillectToast";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function ArchillectGrid({ sync }) {
-  console.log("sync", sync);
   return (
     <div className="grid grid-cols-autoscale">
       {sync.map((element, index) => (
-        <div key={index} className="relative group">
+        <div
+          key={index}
+          className="relative group cursor-pointer"
+          onClick={() => toast(<ArchillectToast item={element} />)}
+        >
           <div className="aspect-w-1 aspect-h-1">
             <NextImage
               src={element.imageSource}
@@ -19,6 +25,17 @@ export default function ArchillectGrid({ sync }) {
           </div>
         </div>
       ))}
+      <ToastContainer
+        position="top-left"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover={false}
+      />
     </div>
   );
 }

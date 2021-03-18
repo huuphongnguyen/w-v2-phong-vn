@@ -1,0 +1,12 @@
+{
+  "hashflags-p1": "Hashflags là một khái niệm được Twitter sử dụng để chỉ những icon bên cạnh các Hashtags.",
+  "hashflags-p2": "Chỉ những Hashtags thật sự quan trọng và đang hot mới có Hashflags.",
+  "hashflags-p3": "Các Hashflags chỉ tồn tại trong một khoảng thời gian nhất định trước khi biến mất.",
+  "hashflags-p4": "Hashflags hiển thị bất kỳ từ các Campaign hiện có trên Twitter.",
+  "hashflags-p5": "Mỗi lần Tắt đi và Hiển thị lại sẽ Random lại.",
+  "hashflags-show": "Show Hashflags",
+  "hashflags-hide": "Hide Hashflags",
+  "hashflags-p6": "Được fetching trực tiếp từ Twitter mà không thông qua bất kỳ API nào.",
+  "hashflags-toast-start": "Bắt dầu vào:",
+  "hashflags-toast-end": "Kết thúc dự kiến vào:"
+}

@@ -8,6 +8,7 @@ module.exports = nextTranslate({
       "66.media.tumblr.com",
       "theuvitinhanhxuyen.files.wordpress.com",
       "pbs.twimg.com",
+      "abs.twimg.com",
       "notion-api.phong.vn",
     ],
   },

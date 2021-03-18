@@ -1,0 +1,12 @@
+{
+  "hashflags-p1": "Hashflags is a concept used by Twitter to refer to icons next to hashtags.",
+  "hashflags-p2": "Only the really important and hot hashtags have Hashflags.",
+  "hashflags-p3": "Hashflags only exist for a certain period of time before disappearing.",
+  "hashflags-p4": "any hashflags from existing Twitter Campaigns.",
+  "hashflags-p5": "Each time [Hide] and [Show] will random all hashflags again.",
+  "hashflags-show": "Show Hashflags",
+  "hashflags-hide": "Hide Hashflags",
+  "hashflags-p6": "Fetching directly from Twitter without going through any API.",
+  "hashflags-toast-start": "Started on:",
+  "hashflags-toast-end": "Expected ending on:"
+}

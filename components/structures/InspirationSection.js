@@ -1,4 +1,3 @@
-import NextLink from "next/link";
 import useTranslation from "next-translate/useTranslation";
 
 export default function InspirationSection() {
@@ -27,13 +26,11 @@ export default function InspirationSection() {
       </div>
 
       <div className="px-4 py-2">
-        <NextLink href="/inspiration/twitter-hashflags">
-          <a>
-            <h2 className="text-black dark:text-white font-bold inline-block rainbow_text_hover">
-              {t("inspiration-twitterhashflags-title")}
-            </h2>
-          </a>
-        </NextLink>
+        <a href="/inspiration/twitter-hashflags">
+          <h2 className="text-black dark:text-white font-bold inline-block rainbow_text_hover">
+            {t("inspiration-twitterhashflags-title")}
+          </h2>
+        </a>
         <p className="text-gray-500 dark:text-gray-400">
           {t("inspiration-twitterhashflags-description")}
         </p>

@@ -60,12 +60,12 @@ export default function Archillect({ data }) {
             </p>
           </div>
         </div>
-        <div className="">
+        <div>
           <div className="text-black mb-4">
             <div className="grid grid-cols-2 gap-2">
               <button
                 type="button"
-                className="focus:outline-none w-full px-2 text-black dark:text-white border-2 border-black dark:border-white font-carbon-bold text-lg font-bold uppercase rainbow_text_hover"
+                className="focus:outline-none w-full px-2 text-black dark:text-white border-2 border-black dark:border-white font-carbon-bold text-lg font-bold uppercase rainbow_text_hover inline-block"
                 onClick={() => {
                   showArchillectImageGrid(true);
                 }}
@@ -75,7 +75,7 @@ export default function Archillect({ data }) {
 
               <button
                 type="button"
-                className="focus:outline-none w-full px-2 text-black dark:text-white border-2 border-black dark:border-white font-carbon-bold text-lg font-bold uppercase rainbow_text_hover"
+                className="focus:outline-none w-full px-2 text-black dark:text-white border-2 border-black dark:border-white font-carbon-bold text-lg font-bold uppercase rainbow_text_hover inline-block"
                 onClick={() => {
                   showArchillectImageGrid(false);
                 }}
