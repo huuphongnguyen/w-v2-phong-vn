@@ -167,7 +167,7 @@ export default function Credit({ data }) {
                   <div>
                     <NextImage
                       className="rounded-xl"
-                      src="https://pbs.twimg.com/profile_images/887661330832003072/Zp6rA_e2_400x400.jpg"
+                      src="https://pbs.twimg.com/profile_images/1362367807887974401/kuJ1OFT1_400x400.jpg"
                       height={90}
                       width={90}
                     />
