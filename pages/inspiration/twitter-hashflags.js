@@ -45,22 +45,26 @@ export default function TwitterHashflags() {
             <div className="grid grid-cols-2 gap-2">
               <button
                 type="button"
-                className="focus:outline-none w-full px-2 text-black dark:text-white border-2 border-black dark:border-white font-carbon-bold text-lg font-bold uppercase rainbow_text_hover inline-block"
+                className="focus:outline-none w-full px-2 text-black dark:text-white border-2 border-black dark:border-white font-carbon-bold text-lg font-bold uppercase"
                 onClick={() => {
                   ShowTwitterHashflagsGrid(true);
                 }}
               >
-                {t("hashflags-show")}
+                <p className="rainbow_text_hover inline-block">
+                  {t("hashflags-show")}
+                </p>
               </button>
 
               <button
                 type="button"
-                className="focus:outline-none w-full px-2 text-black dark:text-white border-2 border-black dark:border-white font-carbon-bold text-lg font-bold uppercase rainbow_text_hover inline-block"
+                className="focus:outline-none w-full px-2 text-black dark:text-white border-2 border-black dark:border-white font-carbon-bold text-lg font-bold uppercase"
                 onClick={() => {
                   ShowTwitterHashflagsGrid(false);
                 }}
               >
-                {t("hashflags-hide")}
+                <p className="rainbow_text_hover inline-block">
+                  {t("hashflags-hide")}
+                </p>
               </button>
             </div>
           </div>

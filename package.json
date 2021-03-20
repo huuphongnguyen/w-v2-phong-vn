@@ -26,11 +26,15 @@
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-hot-toast": "^1.0.2",
-    "react-toastify": "^7.0.3"
+    "react-player": "^2.9.0",
+    "react-toastify": "^7.0.3",
+    "use-sound": "^2.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.5",
+    "file-loader": "^6.2.0",
     "postcss": "^8.2.8",
-    "tailwindcss": "^2.0.3"
+    "tailwindcss": "^2.0.3",
+    "url-loader": "^4.1.1"
   }
 }

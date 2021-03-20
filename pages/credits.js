@@ -8,11 +8,16 @@ import {
   mainTechsData,
 } from "../data/creditsData";
 import ExternalLink from "../components/elements/ExternalLink";
+import useTranslate from "next-translate/useTranslation";
+import { useRouter } from "next/router";
 
 export default function Credits() {
   const foundersDataArray = foundersData;
   const mainTechsDataArray = mainTechsData;
   const librariesDataArray = librariesData;
+
+  const { t } = useTranslate("credits");
+  const router = useRouter();
 
   return (
     <Container>
@@ -23,24 +28,14 @@ export default function Credits() {
         </div>
         <div className="text-black dark:text-white space-y-7">
           <LetterByPhong letterNumber="#0002">
-            <p>
-              Dành một lời cảm ơn và trân trọng nhất đến các thư viện và dự án
-              mã nguồn mở dưới đây. Thế giới này vận hành theo hướng học hỏi và
-              kế thừa những điều tuyệt vời trước đó. Sẽ rất khó hoặc có thể
-              không bao giờ Phong có thể tạo được một trang cho bản thân nếu
-              không có các dự án này. Cảm ơn những người rất giỏi từ khắp nơi
-              trên hành tinh này.
-            </p>
+            <p>{t("credits-letter")}</p>
           </LetterByPhong>
           <div className="space-y-4">
             <div>
               <h2 className="font-bold text-xl">
-                Những người rất giỏi đã hỗ trợ
+                {t("credits-founders-title")}
               </h2>
-              <p className="text-sm">
-                Các chia sẻ / tutorial / open-source / tweet được chia sẻ bởi
-                những người rất giỏi này đã giúp rất rất nhiều.
-              </p>
+              <p className="text-sm">{t("credits-founders-description")}</p>
             </div>
             <div className="grid grid-cols-2 gap-2">
               {foundersDataArray.map((founder, index) => (
@@ -82,12 +77,9 @@ export default function Credits() {
 
             <div>
               <h2 className="font-bold text-xl">
-                Những công nghệ chính sử dụng
+                {t("credits-maintechs-title")}
               </h2>
-              <p className="text-sm">
-                Những công nghệ chính sử dụng trong quá trình xây dựng và phát
-                triển website / các app liên quan.
-              </p>
+              <p className="text-sm">{t("credits-maintechs-description")}</p>
             </div>
             <div className="space-y-2">
               {mainTechsDataArray.map((mainTech, index) => (
@@ -98,21 +90,25 @@ export default function Credits() {
                     </h3>
                     <p>-</p>
                     <div className="space-x-2">
-                      <ExternalLink href={mainTech[2]}>Website</ExternalLink>
-                      <ExternalLink href={mainTech[3]}>Github</ExternalLink>
+                      <ExternalLink href={mainTech[3]}>Website</ExternalLink>
+                      <ExternalLink href={mainTech[4]}>Github</ExternalLink>
                     </div>
                   </div>
-                  <p className="text-sm">{mainTech[1]}</p>
+                  <p className="text-sm">
+                    {router.locale === "vi-VN" ? mainTech[1] : mainTech[2]}
+                  </p>
                 </div>
               ))}
             </div>
 
             <div>
-              <h2 className="font-bold text-xl">Những thư viện hỗ trợ</h2>
+              <h2 className="font-bold text-xl">
+                {" "}
+                {t("credits-libraries-title")}
+              </h2>
               <p className="text-sm">
-                Những thư viện hỗ trợ chức năng và hỗ trợ thực hiện các tác vụ
-                khác giúp việc viết code trở nên tốt hơn.
-                <br /> Xem đầy đủ / chi tiết tại{" "}
+                {t("credits-libraries-description")}
+                <br /> {t("credits-libraries-description1a")}{" "}
                 <a
                   className="font-bold"
                   href="https://github.com/huuphongnguyen/phong.vn/blob/main/package.json"
@@ -120,7 +116,7 @@ export default function Credits() {
                 >
                   phong.vn/package.json
                 </a>{" "}
-                trên Github
+                {t("credits-libraries-description1b")}
               </p>
             </div>
             <div className="space-y-2">
@@ -132,11 +128,13 @@ export default function Credits() {
                     </h3>
                     <p>-</p>
                     <div className="space-x-2">
-                      <ExternalLink href={library[2]}>Website</ExternalLink>
-                      <ExternalLink href={library[3]}>Github</ExternalLink>
+                      <ExternalLink href={library[3]}>Website</ExternalLink>
+                      <ExternalLink href={library[4]}>Github</ExternalLink>
                     </div>
                   </div>
-                  <p className="text-sm">{library[1]}</p>
+                  <p className="text-sm">
+                    {router.locale === "vi-VN" ? library[1] : library[2]}
+                  </p>
                 </div>
               ))}
             </div>
