@@ -1,6 +1,7 @@
 import Container from "../../components/Container";
 import MEMESoundGrid from "../../components/elements/MEMESoundGrid";
 import NextLink from "next/link";
+import useTranslate from "next-translate/useTranslation";
 
 const memesoundEndpoint = process.env.NOTION_API_TABLE_MEMESOUND;
 
@@ -16,6 +17,8 @@ export async function getStaticProps() {
 }
 
 export default function MEMESound({ data }) {
+  const { t } = useTranslate("memesound");
+
   const memesoundarray = [data];
 
   return (
@@ -35,11 +38,8 @@ export default function MEMESound({ data }) {
         </div>
         <div className="my-3">
           <p className="text-black dark:text-white text-sm">
-            Dùng khi Voice Chat trên Clubhouse / Twitter Spaces / Telegram Voice
-            / etc. <br />
-            Dữ liệu fetching trực tiếp từ trang Notion của Phong và được tổng
-            hợp bằng tay nên số lượng sẽ không được nhiều và bao gồm các âm
-            thanh phổ biến.
+            {t("memesound-description-p1")} <br />
+            {t("memesound-description-p2")}
           </p>
         </div>
         <div>

@@ -2,6 +2,13 @@
   "locales": ["vi-VN", "en"],
   "defaultLocale": "vi-VN",
   "pages": {
-    "*": ["common", "hashtags", "archillect", "hashflags", "credits"]
+    "*": [
+      "common",
+      "hashtags",
+      "archillect",
+      "hashflags",
+      "credits",
+      "memesound"
+    ]
   }
 }

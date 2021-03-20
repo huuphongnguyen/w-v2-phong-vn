@@ -45,7 +45,7 @@ export default function MEMESoundGrid({ sync }) {
         {sync.map((element, index) => (
           <button
             key={index}
-            className={`text-black px-2 py-1 rounded-md bg-gray-100 dark:bg-gray-100 mr-2 focus:outline-none border-2 border-transparent border-dashed  ${
+            className={`text-black px-2 py-1 rounded-md bg-gray-100 dark:bg-gray-100 mr-2 focus:outline-none border-2 border-transparent border-dashed transform transition-all md:hover:scale-105 md:hover:border-black  ${
               isplaying ? "focus:border-black" : "focus:border-transparent"
             }`}
             onClick={(e) => handlePLAY(element.fields.sound)}
@@ -59,6 +59,7 @@ export default function MEMESoundGrid({ sync }) {
           url={ismemeadded}
           className="bg-red-500 hidden"
           volume={1}
+          playsinline={true}
           height={50}
           width={50}
           playing={isplaying ? true : false}
