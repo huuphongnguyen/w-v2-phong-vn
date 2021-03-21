@@ -26,7 +26,7 @@ export default function ProjectsSection() {
 
       <div className="px-4 py-2 space-y-4">
         <div>
-          <NextLink href="#">
+          <NextLink href="/projects/axembroidery">
             <a>
               <h2 className="text-black dark:text-white font-bold rainbow_text_hover inline-block">
                 {t("projects-ax-title")}
@@ -43,7 +43,7 @@ export default function ProjectsSection() {
         </div>
 
         <div>
-          <NextLink href="#">
+          <NextLink href="/projects/embvn">
             <a>
               <h2 className="text-black dark:text-white font-bold rainbow_text_hover inline-block">
                 {t("projects-embvn-title")}
@@ -60,7 +60,7 @@ export default function ProjectsSection() {
         </div>
 
         <div>
-          <NextLink href="#">
+          <NextLink href="/projects/blvcksaigon">
             <a>
               <h2 className="text-black dark:text-white font-bold rainbow_text_hover inline-block">
                 {t("projects-blvck-title")}

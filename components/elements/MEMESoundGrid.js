@@ -4,7 +4,7 @@ import { useState } from "react";
 export default function MEMESoundGrid({ sync }) {
   const [isplaying, playing] = useState(false);
   const [ismemeadded, memeadded] = useState("");
-
+  const [ismuted, muted] = useState(true);
   const [isloading, loading] = useState(false);
 
   function handleEND() {
@@ -16,6 +16,7 @@ export default function MEMESoundGrid({ sync }) {
     memeadded(sound);
     playing(true);
     loading(true);
+    muted(false);
   }
 
   function handleREADY() {
@@ -65,6 +66,7 @@ export default function MEMESoundGrid({ sync }) {
           playing={isplaying ? true : false}
           onEnded={handleEND}
           onReady={handleREADY}
+          muted={ismuted}
         />
       </div>
     </div>
