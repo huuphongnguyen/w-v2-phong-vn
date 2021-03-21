@@ -17,6 +17,8 @@ export default function MEMESoundGrid({ sync }) {
     memeadded(sound);
     playing(true);
     loading(true);
+    muted(true);
+    muted(false);
   }
 
   function handleREADY() {
@@ -84,7 +86,7 @@ export default function MEMESoundGrid({ sync }) {
         {sync.map((element, index) => (
           <button
             key={index}
-            className={`text-black px-2 py-1 rounded-md bg-gray-100 dark:bg-gray-100 mr-2 focus:outline-none border-2 border-transparent border-dashed transform transition-all md:hover:scale-105 md:hover:border-black  ${
+            className={`text-black px-2 py-1 rounded-md bg-gray-100 dark:bg-gray-100 mr-2 focus:outline-none focus:border-black border-2 border-transparent border-dashed transform transition-all md:hover:scale-105 md:hover:border-black  ${
               isplaying ? "focus:border-black" : "focus:border-transparent"
             }`}
             onClick={(e) => handlePLAY(element.fields.sound)}
