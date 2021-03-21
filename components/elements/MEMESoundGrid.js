@@ -1,10 +1,11 @@
 import ReactPlayer from "react-player";
 import { useState } from "react";
+import { ArrowClockwise, RockOn } from "akar-icons";
 
 export default function MEMESoundGrid({ sync }) {
   const [isplaying, playing] = useState(false);
   const [ismemeadded, memeadded] = useState("");
-  const [ismuted, muted] = useState(true);
+  const [ismuted, muted] = useState(false);
   const [isloading, loading] = useState(false);
 
   function handleEND() {
@@ -20,21 +21,58 @@ export default function MEMESoundGrid({ sync }) {
 
   function handleREADY() {
     loading(false);
-    muted(false);
   }
 
   return (
     <div>
-      <div className="text-black dark:text-white font-carbon-bold text-xl mb-3">
-        {isloading ? (
-          "loading..."
-        ) : isplaying ? (
-          "playing..."
-        ) : (
-          <p className="font-bold text-black dark:text-white font-carbon-bold text-xl uppercase">
-            so, pick one and fucking chill w/ it
-          </p>
-        )}
+      <div className="text-black dark:text-white font-carbon-bold text-xl mb-3 flex items-center justify-between">
+        <div>
+          {isloading ? (
+            <div className="flex items-center space-x-1">
+              <ArrowClockwise size={18} className="animate-spin" />
+              <p>Loading...</p>
+            </div>
+          ) : isplaying ? (
+            <div className="flex items-center space-x-1">
+              <RockOn size={18} className="animate-bounce" />
+              <p>Playing...</p>
+            </div>
+          ) : (
+            <p className="font-bold text-black dark:text-white font-carbon-bold text-xl uppercase">
+              Just pick 1.
+            </p>
+          )}
+        </div>
+        <div className="text-black dark:text-white flex items-center space-x-2 font-carbon-bold">
+          <p>Sound</p>
+          <div className="flex items-center space-x-2">
+            <div
+              className={`bg-white dark:bg-black focus:outline-none h-9 w-12 transform transition-all ease-in-out active:scale-75 flex items-center justify-center cursor-pointer ${
+                ismuted === false
+                  ? "bg-transparent border-2 border-black dark:border-white"
+                  : "bg-transparent border-2 border-gray-200 dark:border-gray-600"
+              }`}
+              onClick={() => muted(false)}
+            >
+              <p className="text-black dark:text-white font-carbon-bold uppercase rainbow_text_hover">
+                On
+              </p>
+            </div>
+
+            <div
+              className={`bg-white dark:bg-black focus:outline-none h-9 w-12 transform transition-all ease-in-out active:scale-75 flex items-center justify-center cursor-pointer ${
+                ismuted === true
+                  ? "bg-transparent border-2 border-black dark:border-white"
+                  : "bg-transparent border-2 border-gray-200 dark:border-gray-600"
+              }`}
+              onClick={() => muted(true)}
+            >
+              <p className="text-black dark:text-white font-carbon-bold uppercase rainbow_text_hover">
+                Off
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
       <div
         className={`space-y-2 p-3 ${

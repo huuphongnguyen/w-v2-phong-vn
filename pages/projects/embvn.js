@@ -56,17 +56,17 @@ export default function EMBvn() {
               <div className="w-full-80">
                 <div className="border-b-2 border-black dark:border-white">
                   <div className="grid grid-cols-2">
-                    <div className="text-black dark:Text-white text-xs uppercase p-2 border-r-2 border-black dark:border-white">
+                    <div className="text-black dark:text-white text-xs uppercase p-2 border-r-2 border-black dark:border-white">
                       {t("projects-sheet-code")} <strong>#PRJEMBVN</strong>
                     </div>
-                    <div className="text-black dark:Text-white text-xs uppercase p-2">
+                    <div className="text-black dark:text-white text-xs uppercase p-2">
                       {t("projects-sheet-start")} <strong>03/2021</strong>
                     </div>
                   </div>
                 </div>
 
                 <div className="border-b-2 border-black dark:border-white">
-                  <div className="text-black dark:Text-white text-xs uppercase p-2">
+                  <div className="text-black dark:text-white text-xs uppercase p-2">
                     {t("projects-sheet-name")}
                   </div>
                   <div className="px-2 pb-2">
@@ -77,7 +77,7 @@ export default function EMBvn() {
                 </div>
 
                 <div className="border-b-2 border-black dark:border-white">
-                  <div className="text-black dark:Text-white text-xs uppercase p-2">
+                  <div className="text-black dark:text-white text-xs uppercase p-2">
                     Founders:
                   </div>
                   <div className="flex items-center justify-center">
@@ -90,7 +90,7 @@ export default function EMBvn() {
                 </div>
 
                 <div>
-                  <div className="text-black dark:Text-white text-xs uppercase p-2">
+                  <div className="text-black dark:text-white text-xs uppercase p-2">
                     {t("projects-sheet-description")}
                   </div>
                   <div className="px-2 pb-2">
@@ -103,14 +103,14 @@ export default function EMBvn() {
             </div>
 
             <div className="grid grid-cols-2 border-b-2 border-black dark:border-white">
-              <div className="text-black dark:Text-white text-xs uppercase p-2 border-r-2 border-black dark:border-white">
+              <div className="text-black dark:text-white text-xs uppercase p-2 border-r-2 border-black dark:border-white">
                 {t("projects-sheet-status")}
                 <div className="py-2 px-2 space-y-2">
                   <Developing />
                   <Configuration />
                 </div>
               </div>
-              <div className="text-black dark:Text-white text-xs uppercase p-2">
+              <div className="text-black dark:text-white text-xs uppercase p-2">
                 {t("projects-sheet-position")}
                 <div className="py-2 px-2 space-y-2">
                   <Designer />

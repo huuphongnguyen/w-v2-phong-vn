@@ -51,8 +51,8 @@ export const Developing = () => (
 export const Designer = () => (
   <div className="space-x-2 flex items-center">
     <div className="relative">
-      <div className="w-3 h-3 bg-black" />
-      <div className="w-3 h-3 bg-black absolute top-0 mx-auto animate-ping" />
+      <div className="w-3 h-3 bg-black dark:bg-white" />
+      <div className="w-3 h-3 bg-black dark:bg-white absolute top-0 mx-auto animate-ping" />
     </div>
     <p className="font-bold">Designer</p>
   </div>
@@ -61,8 +61,8 @@ export const Designer = () => (
 export const Developer = () => (
   <div className="space-x-2 flex items-center">
     <div className="relative">
-      <div className="w-3 h-3 bg-black" />
-      <div className="w-3 h-3 bg-black absolute top-0 mx-auto animate-ping" />
+      <div className="w-3 h-3 bg-black dark:bg-white" />
+      <div className="w-3 h-3 bg-black dark:bg-white absolute top-0 mx-auto animate-ping" />
     </div>
     <p className="font-bold">Developer</p>
   </div>
@@ -71,8 +71,8 @@ export const Developer = () => (
 export const BusinessDevelopment = () => (
   <div className="space-x-2 flex items-center">
     <div className="relative">
-      <div className="w-3 h-3 bg-black" />
-      <div className="w-3 h-3 bg-black absolute top-0 mx-auto animate-ping" />
+      <div className="w-3 h-3 bg-black dark:bg-white" />
+      <div className="w-3 h-3 bg-black dark:bg-white absolute top-0 mx-auto animate-ping" />
     </div>
     <p className="font-bold">Business Development</p>
   </div>
