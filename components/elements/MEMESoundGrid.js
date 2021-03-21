@@ -16,11 +16,11 @@ export default function MEMESoundGrid({ sync }) {
     memeadded(sound);
     playing(true);
     loading(true);
-    muted(false);
   }
 
   function handleREADY() {
     loading(false);
+    muted(false);
   }
 
   return (

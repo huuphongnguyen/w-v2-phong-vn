@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>anhxuyen-logo</title>
+    <defs>
+        <linearGradient x1="88.138915%" y1="95.5858737%" x2="11.7692186%" y2="4.30432217%" id="linearGradient-1">
+            <stop stop-color="#1100E9" offset="0%"></stop>
+            <stop stop-color="#1A00E7" offset="7%"></stop>
+            <stop stop-color="#3400E1" offset="18%"></stop>
+            <stop stop-color="#5D00D7" offset="33%"></stop>
+            <stop stop-color="#6800D4" offset="36%"></stop>
+            <stop stop-color="#FF0071" offset="79%"></stop>
+            <stop stop-color="#FF2A30" offset="99%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="49.9971283%" x2="100.01804%" y2="49.9971283%" id="linearGradient-2">
+            <stop stop-color="#1100E9" offset="0%"></stop>
+            <stop stop-color="#1A00E7" offset="7%"></stop>
+            <stop stop-color="#3400E1" offset="18%"></stop>
+            <stop stop-color="#5D00D7" offset="33%"></stop>
+            <stop stop-color="#6800D4" offset="36%"></stop>
+            <stop stop-color="#FF0071" offset="79%"></stop>
+            <stop stop-color="#FF2A30" offset="99%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="anhxuyen-logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="AX-Master-Logo-01" transform="translate(19.000000, 10.000000)" fill-rule="nonzero">
+            <polygon id="Path" fill="url(#linearGradient-1)" points="102.683951 90.7358025 160.407407 179.958025 128.395062 179.958025 85.6790123 111.296296 84.3604938 111.296296 41.2691358 179.958025 11.0888889 179.958025 68.945679 89.2864198 11.8814815 0.0641975309 44.1703704 0.0641975309 86.8691358 69.254321 88.3185185 69.254321 130.617284 0.0641975309 161.595062 0.0641975309"></polygon>
+            <path d="M0.22962963,111.301235 L13.8271605,68.3111111 L27.7802469,68.3111111 L41.291358,111.301235 L29.2691358,111.301235 L26.7802469,101.975309 L13.9604938,101.975309 L11.4419753,111.298765 L0.22962963,111.301235 Z M20.1654321,78.1358025 L15.9679012,93.8839506 L24.817284,93.8839506 L20.691358,78.1358025 L20.1654321,78.1358025 Z" id="Shape" fill="url(#linearGradient-2)"></path>
+        </g>
+    </g>
+</svg>

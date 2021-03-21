@@ -18,6 +18,26 @@ export const Configuration = () => (
   </div>
 );
 
+export const ShutDown = () => (
+  <div className="space-x-2 flex items-center">
+    <div className="relative">
+      <div className="w-3 h-3 bg-gray-500 rounded-full" />
+      <div className="w-3 h-3 bg-gray-500 rounded-full absolute top-0 mx-auto animate-ping" />
+    </div>
+    <p className="font-bold">Shut Down</p>
+  </div>
+);
+
+export const Stop = () => (
+  <div className="space-x-2 flex items-center">
+    <div className="relative">
+      <div className="w-3 h-3 bg-red-500 rounded-full" />
+      <div className="w-3 h-3 bg-red-500 rounded-full absolute top-0 mx-auto animate-ping" />
+    </div>
+    <p className="font-bold">Stop</p>
+  </div>
+);
+
 export const Developing = () => (
   <div className="space-x-2 flex items-center">
     <div className="relative">

@@ -28,7 +28,7 @@ export default function AXEmbroidery() {
         </NextLink>
         <div className="inline-flex items-center space-x-1 text-black dark:text-white text-xl uppercase font-carbon-bold">
           <p>/</p>
-          <h1>AX Embroidery</h1>
+          <h1>AXEmbroidery</h1>
         </div>
       </div>
 
@@ -130,25 +130,28 @@ export default function AXEmbroidery() {
             </div>
 
             <div className="p-4 grid grid-cols-2 md:grid-cols-4 gap-4">
-              <a href="#" target="_blank">
+              <a href="https://theuvitinhanhxuyen.com" target="_blank">
                 <div className="text-black dark:text-white uppercase text-sm border_dash_animated dark:border_dash_animated_dark p-2 transform transition-all hover:scale-105">
                   <Globe className="mb-1" />
                   Website
                 </div>
               </a>
-              <a href="#" target="_blank">
+              <a href="mailto:theuvitinhanhxuyen@gmail.com" target="_blank">
                 <div className="text-black dark:text-white uppercase text-sm border_dash_animated dark:border_dash_animated_dark p-2 transform transition-all hover:scale-105">
                   <Envelope className="mb-1" />
                   Mail
                 </div>
               </a>
-              <a href="#" target="_blank">
+              <a
+                href="https://www.facebook.com/theuvitinhanhxuyen/"
+                target="_blank"
+              >
                 <div className="text-black dark:text-white uppercase text-sm border_dash_animated dark:border_dash_animated_dark p-2 transform transition-all hover:scale-105">
                   <ThumbsUp className="mb-1" />
                   Facebook
                 </div>
               </a>
-              <a href="#" target="_blank">
+              <a href="http://g.page/theuvitinhanhxuyen" target="_blank">
                 <div className="text-black dark:text-white uppercase text-sm border_dash_animated dark:border_dash_animated_dark p-2 transform transition-all hover:scale-105">
                   <Location className="mb-1" />
                   Map
