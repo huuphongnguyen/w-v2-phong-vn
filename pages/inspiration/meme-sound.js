@@ -2,6 +2,7 @@ import Container from "../../components/Container";
 import MEMESoundGrid from "../../components/elements/MEMESoundGrid";
 import NextLink from "next/link";
 import useTranslate from "next-translate/useTranslation";
+import { NextSeo } from "next-seo";
 
 const memesoundEndpoint = process.env.NOTION_API_TABLE_MEMESOUND;
 
@@ -21,8 +22,31 @@ export default function MEMESound({ data }) {
 
   const memesoundarray = [data];
 
+  const seotitle = `MEME's Sound Board - Phong.vn`;
+  const seodescrip = `Dùng khi Voice Chat trên Clubhouse / Twitter Spaces / Telegram Voice. Dữ liệu fetching trực tiếp từ trang Notion của Phong và được tổng hợp bằng tay nên số lượng sẽ không được nhiều và bao gồm các âm thanh phổ biến.`;
+  const seourl = `https://phong.vn/inspiration/meme-sound`;
+  const seopreviewimg = "/static/images/inspiration/meme-sound-feature-img.png";
+
   return (
     <Container>
+      <NextSeo
+        title={seotitle}
+        description={seodescrip}
+        canonical={seourl}
+        openGraph={{
+          seotitle,
+          seodescrip,
+          seourl,
+          images: [
+            {
+              url: seopreviewimg,
+              alt: seotitle,
+              width: 1200,
+              height: 628,
+            },
+          ],
+        }}
+      />
       <div className="items-start mx-auto w-full max-w-3xl space-x-1">
         <NextLink href="/">
           <a>

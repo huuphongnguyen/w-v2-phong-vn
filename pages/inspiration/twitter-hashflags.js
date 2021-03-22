@@ -3,6 +3,7 @@ import NextLink from "next/link";
 import TwitterHashflagsGrid from "../../components/elements/TwitterHashflagsGrid";
 import { useState } from "react";
 import useTranslation from "next-translate/useTranslation";
+import { NextSeo } from "next-seo";
 
 export default function TwitterHashflags() {
   const { t } = useTranslation("hashflags");
@@ -11,8 +12,32 @@ export default function TwitterHashflags() {
     false
   );
 
+  const seotitle = `Exploring Twitter Hashflags - Phong.vn`;
+  const seodescrip = `Hashflags là một khái niệm được Twitter sử dụng để chỉ những icon bên cạnh các Hashtags. Chỉ những Hashtags thật sự quan trọng và đang hot mới có Hashflags. Các Hashflags chỉ tồn tại trong một khoảng thời gian nhất định trước khi biến mất.`;
+  const seourl = `https://phong.vn/inspiration/twitter-hashflags`;
+  const seopreviewimg =
+    "/static/images/inspiration/twitter-hashflags-feature-img.png";
+
   return (
     <Container>
+      <NextSeo
+        title={seotitle}
+        description={seodescrip}
+        canonical={seourl}
+        openGraph={{
+          seotitle,
+          seodescrip,
+          seourl,
+          images: [
+            {
+              url: seopreviewimg,
+              alt: seotitle,
+              width: 1200,
+              height: 628,
+            },
+          ],
+        }}
+      />
       <div className="items-start mx-auto w-full max-w-3xl space-x-1">
         <NextLink href="/">
           <a>

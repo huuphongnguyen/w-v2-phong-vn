@@ -4,6 +4,7 @@ import ArchillectGrid from "../../components/elements/ArchillectGrid";
 import { useState } from "react";
 import ArchillectTenMinutesCounter from "../../components/elements/ArchillectTenMinutesCounter";
 import useTranslation from "next-translate/useTranslation";
+import { NextSeo } from "next-seo";
 
 const archillectEndpoint = process.env.ARCHILLECT_AI_UNOFFICIAL_API;
 
@@ -27,8 +28,31 @@ export default function Archillect({ data }) {
 
   const { t } = useTranslation("archillect");
 
+  const seotitle = `Blowing my mind with Archillect - Phong.vn`;
+  const seodescrip = `Gồm 100 Block (hình ảnh hoặc ảnh động) mới nhất của Archillect. Mỗi 10 phút Archillect sẽ cập nhật một Block mới. Archillect (archive + intellect) là một AI tự động khám phá - tìm kiếm - lựa chọn hình ảnh trên Internet.`;
+  const seourl = `https://phong.vn/inspiration/archillect`;
+  const seopreviewimg = "/static/images/inspiration/archillect-feature-img.png";
+
   return (
     <Container>
+      <NextSeo
+        title={seotitle}
+        description={seodescrip}
+        canonical={seourl}
+        openGraph={{
+          seotitle,
+          seodescrip,
+          seourl,
+          images: [
+            {
+              url: seopreviewimg,
+              alt: seotitle,
+              width: 1200,
+              height: 628,
+            },
+          ],
+        }}
+      />
       <div className="items-start mx-auto w-full max-w-3xl space-x-1">
         <NextLink href="/">
           <a>

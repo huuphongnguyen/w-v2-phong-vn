@@ -16,8 +16,8 @@ const SEO = {
       {
         url: "/static/phong-vn-feature-img.png",
         alt: title,
-        width: 1280,
-        height: 720,
+        width: 1200,
+        height: 628,
       },
     ],
   },

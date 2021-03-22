@@ -4,10 +4,35 @@ import AuthorBadge from "../../components/elements/AuthorBadge";
 import NextImage from "next/image";
 import ExternalLink from "../../components/elements/ExternalLink";
 import TelegramComments from "../../components/elements/TelegramComments";
+import { NextSeo } from "next-seo";
 
 export default function Blog_dispo_la_gi_tai_sao_minh_thich_dispo() {
+  const seotitle = `Dispo là gì? Tại sao mình thích Dispo?`;
+  const seodescrip = `Dispo là gì? Tại sao mình rất thích Dispo? Đây chắc là những câu hỏi mà mình sẽ trả lời trong bài viết này. Dispo đặc biệt đến mức mình phải viết một bài blog trên trang cá nhân của mình để nói về nó.`;
+  const seourl = `https://phong.vn/blog/dispo-la-gi-tai-sao-minh-thich-dispo`;
+  const seopreviewimg =
+    "/static/images/dispo-la-gi-tai-sao-minh-thich-dispo/dispo-la-gi-tai-sao-minh-thich-dispo-feature-img.png";
+
   return (
     <Container>
+      <NextSeo
+        title={seotitle}
+        description={seodescrip}
+        canonical={seourl}
+        openGraph={{
+          seotitle,
+          seodescrip,
+          seourl,
+          images: [
+            {
+              url: seopreviewimg,
+              alt: seotitle,
+              width: 1200,
+              height: 628,
+            },
+          ],
+        }}
+      />
       <div className="items-start mx-auto w-full max-w-3xl space-y-4">
         <div className="space-y-3 border_dash_animated dark:border_dash_animated_dark">
           <h1 className="text-2xl font-bold text-black dark:text-white">
