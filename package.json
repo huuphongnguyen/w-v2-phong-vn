@@ -35,6 +35,7 @@
     "file-loader": "^6.2.0",
     "postcss": "^8.2.8",
     "tailwindcss": "^2.0.3",
+    "tailwindcss-css-filters": "^2.1.0",
     "url-loader": "^4.1.1"
   }
 }
