@@ -5,7 +5,14 @@ const prettier = require("prettier");
 
 (async () => {
   const prettierConfig = await prettier.resolveConfig("./.prettierrc.js");
-  const pages = await globby(["pages/*.js", "!pages/_*.js", "!pages/api"]);
+  const pages = await globby([
+    "pages/*.js",
+    "pages/blog/*.js",
+    "pages/inspiration/*.js",
+    "pages/projects/*.js",
+    "!pages/_*.js",
+    "!pages/api",
+  ]);
 
   const sitemap = `
         <?xml version="1.0" encoding="UTF-8"?>
@@ -14,7 +21,9 @@ const prettier = require("prettier");
               .map((page) => {
                 const path = page
                   .replace("pages", "")
-
+                  .replace("pages/inspiration", "")
+                  .replace("pages/projects", "")
+                  .replace("pages/blog", "")
                   .replace(".js", "")
                   .replace(".mdx", "");
                 const route = path === "/index" ? "" : path;
