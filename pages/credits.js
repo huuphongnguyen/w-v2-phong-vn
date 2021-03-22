@@ -10,6 +10,7 @@ import {
 import ExternalLink from "../components/elements/ExternalLink";
 import useTranslate from "next-translate/useTranslation";
 import { useRouter } from "next/router";
+import { NextSeo } from "next-seo";
 
 export default function Credits() {
   const foundersDataArray = foundersData;
@@ -19,8 +20,31 @@ export default function Credits() {
   const { t } = useTranslate("credits");
   const router = useRouter();
 
+  const seotitle = `Credits - Phong.vn`;
+  const seodescrip = `Dành một lời cảm ơn và trân trọng nhất đến các thư viện và dự án mã nguồn mở dưới đây. Thế giới này vận hành theo hướng học hỏi và kế thừa những điều tuyệt vời trước đó.`;
+  const seourl = `https://phong.vn/credits`;
+  const seopreviewimg = "/static/credits-feature-img.png";
+
   return (
     <Container>
+      <NextSeo
+        title={seotitle}
+        description={seodescrip}
+        canonical={seourl}
+        openGraph={{
+          seotitle,
+          seodescrip,
+          seourl,
+          images: [
+            {
+              url: seopreviewimg,
+              alt: seotitle,
+              width: 1200,
+              height: 628,
+            },
+          ],
+        }}
+      />
       <div className="items-start mx-auto w-full max-w-3xl space-y-4">
         <div className="inline-flex items-center space-x-1 text-black dark:text-white text-xl uppercase font-carbon-bold">
           <p>/</p>

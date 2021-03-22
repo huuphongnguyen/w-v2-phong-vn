@@ -10,12 +10,36 @@ import {
 } from "../../components/elements/StatusBadge";
 import { Envelope, Globe, Pencil } from "akar-icons";
 import useTranslate from "next-translate/useTranslation";
+import { NextSeo } from "next-seo";
 
 export default function BLVCKSaigon() {
   const { t } = useTranslate("projects");
 
+  const seotitle = `Projects | BLVCK Saigon - Phong.vn`;
+  const seodescrip = `Một local brand, diary, tạp chí với các sản phẩm có màu chủ đạo là đen và trắng. Tập trung đến việc cá nhân hóa thông qua thêu và in. BLVCK Saigon là một dự án được phát triển bởi Nguyễn Hữu Phong`;
+  const seourl = `https://phong.vn/projects/blvcksaigon`;
+  const seopreviewimg = "/static/images/projects/blvcksaigon-feature-img.png";
+
   return (
     <Container>
+      <NextSeo
+        title={seotitle}
+        description={seodescrip}
+        canonical={seourl}
+        openGraph={{
+          seotitle,
+          seodescrip,
+          seourl,
+          images: [
+            {
+              url: seopreviewimg,
+              alt: seotitle,
+              width: 1200,
+              height: 628,
+            },
+          ],
+        }}
+      />
       <div className="items-start mx-auto w-full max-w-3xl space-x-2 space-y-4">
         <NextLink href="/">
           <a>

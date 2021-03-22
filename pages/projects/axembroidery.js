@@ -11,12 +11,36 @@ import {
 } from "../../components/elements/StatusBadge";
 import { Envelope, Globe, Location, Pencil, ThumbsUp } from "akar-icons";
 import useTranslate from "next-translate/useTranslation";
+import { NextSeo } from "next-seo";
 
 export default function AXEmbroidery() {
   const { t } = useTranslate("projects");
 
+  const seotitle = `Projects | AX Embroidery - Phong.vn`;
+  const seodescrip = `Một hệ thống xưởng thêu / thêu vi tính / thêu công nghiệp. AX Embroidery - Thêu vi tính Anh Xuyến là một dự án được phát triển bởi Nguyễn Hữu Phong.`;
+  const seourl = `https://phong.vn/projects/axembroidery`;
+  const seopreviewimg = "/static/images/projects/axembroidery-feature-img.png";
+
   return (
     <Container>
+      <NextSeo
+        title={seotitle}
+        description={seodescrip}
+        canonical={seourl}
+        openGraph={{
+          seotitle,
+          seodescrip,
+          seourl,
+          images: [
+            {
+              url: seopreviewimg,
+              alt: seotitle,
+              width: 1200,
+              height: 628,
+            },
+          ],
+        }}
+      />
       <div className="items-start mx-auto w-full max-w-3xl space-x-2 space-y-4">
         <NextLink href="/">
           <a>

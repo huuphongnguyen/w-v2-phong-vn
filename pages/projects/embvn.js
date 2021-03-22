@@ -5,19 +5,41 @@ import NextImage from "next/image";
 import {
   Designer,
   Developer,
-  Stop,
-  ShutDown,
   Developing,
   Configuration,
 } from "../../components/elements/StatusBadge";
-import { Envelope, Globe, Location, Pencil, ThumbsUp } from "akar-icons";
+import { Envelope, Globe, Pencil } from "akar-icons";
 import useTranslate from "next-translate/useTranslation";
+import { NextSeo } from "next-seo";
 
 export default function EMBvn() {
   const { t } = useTranslate("projects");
 
+  const seotitle = `Projects | EMB Vietnam - Phong.vn`;
+  const seodescrip = `Một studio thêu sáng tạo, một dự án của AX. Mang phong cách hiện đại, dễ thương, giúp các khách hàng trẻ dễ tiếp cận hơn với thêu. EMB Vietnam là một dự án được phát triển bởi  Nguyễn Hữu Phong`;
+  const seourl = `https://phong.vn/projects/embvn`;
+  const seopreviewimg = "/static/images/projects/embvn-feature-img.png";
+
   return (
     <Container>
+      <NextSeo
+        title={seotitle}
+        description={seodescrip}
+        canonical={seourl}
+        openGraph={{
+          seotitle,
+          seodescrip,
+          seourl,
+          images: [
+            {
+              url: seopreviewimg,
+              alt: seotitle,
+              width: 1200,
+              height: 628,
+            },
+          ],
+        }}
+      />
       <div className="items-start mx-auto w-full max-w-3xl space-x-2 space-y-4">
         <NextLink href="/">
           <a>
