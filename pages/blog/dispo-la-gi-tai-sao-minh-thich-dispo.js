@@ -5,6 +5,7 @@ import NextImage from "next/image";
 import ExternalLink from "../../components/elements/ExternalLink";
 import TelegramComments from "../../components/elements/TelegramComments";
 import { NextSeo } from "next-seo";
+import TwitterSEO from "../../components/TwitterSEO";
 
 export default function Blog_dispo_la_gi_tai_sao_minh_thich_dispo() {
   const seotitle = `Dispo là gì? Tại sao mình thích Dispo?`;
@@ -32,6 +33,13 @@ export default function Blog_dispo_la_gi_tai_sao_minh_thich_dispo() {
             },
           ],
         }}
+      />
+      <TwitterSEO
+        currentURL={seourl}
+        previewImage={`https://phong.vn/${seopreviewimg}`}
+        siteName={seotitle}
+        pageTitle={seotitle}
+        description={seodescrip}
       />
       <div className="items-start mx-auto w-full max-w-3xl space-y-4">
         <div className="space-y-3 border_dash_animated dark:border_dash_animated_dark">

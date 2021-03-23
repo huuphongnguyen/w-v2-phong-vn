@@ -3,6 +3,7 @@ import MEMESoundGrid from "../../components/elements/MEMESoundGrid";
 import NextLink from "next/link";
 import useTranslate from "next-translate/useTranslation";
 import { NextSeo } from "next-seo";
+import TwitterSEO from "../../components/TwitterSEO";
 
 const memesoundEndpoint = process.env.NOTION_API_TABLE_MEMESOUND;
 
@@ -46,6 +47,13 @@ export default function MEMESound({ data }) {
             },
           ],
         }}
+      />
+      <TwitterSEO
+        currentURL={seourl}
+        previewImage={`https://phong.vn/${seopreviewimg}`}
+        siteName={seotitle}
+        pageTitle={seotitle}
+        description={seodescrip}
       />
       <div className="items-start mx-auto w-full max-w-3xl space-x-1">
         <NextLink href="/">

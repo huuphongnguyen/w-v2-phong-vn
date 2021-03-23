@@ -11,6 +11,7 @@ import {
 import { Envelope, Globe, Pencil } from "akar-icons";
 import useTranslate from "next-translate/useTranslation";
 import { NextSeo } from "next-seo";
+import TwitterSEO from "../../components/TwitterSEO";
 
 export default function BLVCKSaigon() {
   const { t } = useTranslate("projects");
@@ -39,6 +40,13 @@ export default function BLVCKSaigon() {
             },
           ],
         }}
+      />
+      <TwitterSEO
+        currentURL={seourl}
+        previewImage={`https://phong.vn/${seopreviewimg}`}
+        siteName={seotitle}
+        pageTitle={seotitle}
+        description={seodescrip}
       />
       <div className="items-start mx-auto w-full max-w-3xl space-x-2 space-y-4">
         <NextLink href="/">

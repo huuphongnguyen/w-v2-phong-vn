@@ -12,6 +12,7 @@ import {
 import { Envelope, Globe, Location, Pencil, ThumbsUp } from "akar-icons";
 import useTranslate from "next-translate/useTranslation";
 import { NextSeo } from "next-seo";
+import TwitterSEO from "../../components/TwitterSEO";
 
 export default function AXEmbroidery() {
   const { t } = useTranslate("projects");
@@ -40,6 +41,13 @@ export default function AXEmbroidery() {
             },
           ],
         }}
+      />
+      <TwitterSEO
+        currentURL={seourl}
+        previewImage={`https://phong.vn/${seopreviewimg}`}
+        siteName={seotitle}
+        pageTitle={seotitle}
+        description={seodescrip}
       />
       <div className="items-start mx-auto w-full max-w-3xl space-x-2 space-y-4">
         <NextLink href="/">
