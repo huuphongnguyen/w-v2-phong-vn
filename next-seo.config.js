@@ -21,6 +21,11 @@ const SEO = {
       },
     ],
   },
+  twitter: {
+    handle: "@isnhp",
+    site: "@isnhp",
+    cardType: "summary_large_image",
+  },
 };
 
 export default SEO;

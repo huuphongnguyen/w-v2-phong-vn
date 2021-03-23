@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://phong.vn/sitemap.xml
