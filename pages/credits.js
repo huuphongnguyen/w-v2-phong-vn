@@ -153,9 +153,12 @@ export default function Credits() {
             </div>
             <div className="space-y-2">
               {librariesDataArray.map((library, index) => (
-                <div key={index} className="border_dash_animated">
+                <div
+                  key={index}
+                  className="border_dashed_animated dark:border_dash_animated_dark"
+                >
                   <div className="flex items-center space-x-2">
-                    <h3 className="font-bold uppercase font-carbon-bold text-xl border_dashed_animated dark:border_dash_animated_dark">
+                    <h3 className="font-bold uppercase font-carbon-bold text-xl">
                       {library[0]}
                     </h3>
                     <p>-</p>
