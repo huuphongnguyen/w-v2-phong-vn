@@ -10,7 +10,7 @@ export default function TwitterSEO({
   return (
     <>
       <Head>
-        <meta name="twitter:card" content="summary" key="twcard" />
+        <meta name="twitter:card" content="summary_large_image" key="twcard" />
         <meta name="twitter:creator" content="@isnhp" key="twhandle" />
 
         <meta property="og:url" content={currentURL} key="ogurl" />

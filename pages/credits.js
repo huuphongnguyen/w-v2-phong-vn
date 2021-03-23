@@ -48,7 +48,7 @@ export default function Credits() {
       />
       <TwitterSEO
         currentURL={seourl}
-        previewImage="https://phong.vn/static/credits-feature-img.png"
+        previewImage={`https://phong.vn/${seopreviewimg}`}
         siteName={seotitle}
         pageTitle={seotitle}
         description={seodescrip}
