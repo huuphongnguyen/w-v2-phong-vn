@@ -1,5 +1,6 @@
 import Container from "../components/Container";
 import BlogSection from "../components/structures/BlogSection";
+import ConceptsSection from "../components/structures/ConceptsSection";
 import HeroSection from "../components/structures/HeroSection";
 import InspirationSection from "../components/structures/InspirationSection";
 import ProjectsSection from "../components/structures/ProjectsSection";
@@ -13,8 +14,9 @@ export default function Home() {
           <HeroSection />
         </div>
         <InspirationSection />
-        <BlogSection />
         <ProjectsSection />
+        <ConceptsSection />
+        <BlogSection />
         <SubPageSection />
       </div>
     </Container>
