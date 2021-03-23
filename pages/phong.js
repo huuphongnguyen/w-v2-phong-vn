@@ -1,5 +1,5 @@
 import { NextSeo, SocialProfileJsonLd } from "next-seo";
-import Container from "../../components/Container";
+import Container from "../components/Container";
 
 export default function Phong() {
   const seotitle = `Nguyễn Hữu Phong - Phong.vn`;
