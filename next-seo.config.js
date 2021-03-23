@@ -14,7 +14,7 @@ const SEO = {
     description,
     images: [
       {
-        url: "/static/phong-vn-feature-img.png",
+        url: "https://phong.vn/static/phong-vn-feature-img.png",
         alt: title,
         width: 1200,
         height: 628,
