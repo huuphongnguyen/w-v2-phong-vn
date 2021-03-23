@@ -11,6 +11,7 @@ import ExternalLink from "../components/elements/ExternalLink";
 import useTranslate from "next-translate/useTranslation";
 import { useRouter } from "next/router";
 import { NextSeo } from "next-seo";
+import TwitterSEO from "../components/TwitterSEO";
 
 export default function Credits() {
   const foundersDataArray = foundersData;
@@ -44,6 +45,13 @@ export default function Credits() {
             },
           ],
         }}
+      />
+      <TwitterSEO
+        currentURL={seourl}
+        previewImage={seopreviewimg}
+        siteName={seotitle}
+        pageTitle={seotitle}
+        description={seodescrip}
       />
       <div className="items-start mx-auto w-full max-w-3xl space-y-4">
         <div className="inline-flex items-center space-x-1 text-black dark:text-white text-xl uppercase font-carbon-bold">
