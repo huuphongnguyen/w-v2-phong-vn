@@ -10,6 +10,7 @@ const prettier = require("prettier");
     "pages/blog/*.js",
     "pages/inspiration/*.js",
     "pages/projects/*.js",
+    "pages/concepts/*.js",
     "!pages/_*.js",
     "!pages/api",
   ]);
@@ -23,6 +24,7 @@ const prettier = require("prettier");
                   .replace("pages", "")
                   .replace("pages/inspiration", "")
                   .replace("pages/projects", "")
+                  .replace("pages/concepts", "")
                   .replace("pages/blog", "")
                   .replace(".js", "")
                   .replace(".mdx", "");
