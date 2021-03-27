@@ -28,7 +28,7 @@ export default function SoundFromUniverse() {
   const seodescrip = `Sound from Universe là một khái niệm trong việc hình thành và xây dựng suy nghĩ của não bộ theo một chiều hướng tích cực hơn. Được xây dựng trên các định luật và quy tắc nổi tiếng về suy nghĩ, và được tinh chỉnh cho phù hợp hơn với Phong`;
   const seourl = `https://phong.vn/concepts/sound-from-universe`;
   const seopreviewimg =
-    "/static/images/dispo-la-gi-tai-sao-minh-thich-dispo/dispo-la-gi-tai-sao-minh-thich-dispo-feature-img.png";
+    "/static/images/concepts/concepts-sound-from-universe-feature-img.png";
 
   const bannerImagesData = [
     "/static/images/sound-from-universe/sound-from-universe-banner-img1.gif",

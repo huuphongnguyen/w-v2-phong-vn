@@ -1,5 +1,6 @@
 import useTranslation from "next-translate/useTranslation";
 import LetterByPhong from "../elements/LetterByPhong";
+import toast from "react-hot-toast";
 
 export default function HeroSection() {
   const { t } = useTranslation("common");
@@ -25,6 +26,24 @@ export default function HeroSection() {
             IU (Lee Ji-Eun)
           </a>
           {t("letter-p1d")}
+        </div>
+        <div>
+          {t("letter-p1e")}{" "}
+          <a
+            className="font-bold rainbow_text_hover"
+            href="https://phong.vn/phong"
+            target="_blank"
+          >
+            @phong
+          </a>{" "}
+          {t("letter-p1f")}
+          <span
+            className="font-bold rainbow_text_hover cursor-pointer"
+            onClick={() => toast(<p>😆 😂 🤣</p>)}
+          >
+            LOL
+          </span>
+          {t("letter-p1g")}
         </div>
       </LetterByPhong>
     </div>
