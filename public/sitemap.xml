@@ -5,6 +5,10 @@
   </url>
 
   <url>
+    <loc>https://phong.vn/firebasetest</loc>
+  </url>
+
+  <url>
     <loc>https://phong.vn</loc>
   </url>
 
@@ -42,5 +46,9 @@
 
   <url>
     <loc>https://phong.vn/projects/embvn</loc>
+  </url>
+
+  <url>
+    <loc>https://phong.vn/concepts/sound-from-universe</loc>
   </url>
 </urlset>

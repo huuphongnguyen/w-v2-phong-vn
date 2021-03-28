@@ -13,6 +13,7 @@
     "@tailwindcss/line-clamp": "^0.2.0",
     "akar-icons": "^1.1.8",
     "dayjs": "^1.10.4",
+    "firebase": "^8.3.1",
     "fs": "0.0.1-security",
     "globby": "^11.0.2",
     "lodash": "^4.17.21",
