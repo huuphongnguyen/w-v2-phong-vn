@@ -27,24 +27,6 @@ export default function HeroSection() {
           </a>
           {t("letter-p1d")}
         </div>
-        <div>
-          {t("letter-p1e")}{" "}
-          <a
-            className="font-bold rainbow_text_hover"
-            href="https://phong.vn/phong"
-            target="_blank"
-          >
-            @phong
-          </a>{" "}
-          {t("letter-p1f")}
-          <span
-            className="font-bold rainbow_text_hover cursor-pointer"
-            onClick={() => toast(<p>😆 😂 🤣</p>)}
-          >
-            LOL
-          </span>
-          {t("letter-p1g")}
-        </div>
       </LetterByPhong>
     </div>
   );
