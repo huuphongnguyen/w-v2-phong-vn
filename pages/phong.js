@@ -1,4 +1,4 @@
-import { Envelope, Send } from "akar-icons";
+import { Envelope, MoreHorizontal, Send } from "akar-icons";
 import { NextSeo, SocialProfileJsonLd } from "next-seo";
 import NextImage from "next/image";
 
@@ -10,7 +10,7 @@ export default function Phong() {
 
   return (
     <div className="dark:bg-white bg-white">
-      <main className="flex flex-col justify-center space-y-4 py-7 px-4 dark:bg-white bg-white">
+      <main className="flex flex-col justify-center space-y-4 py-7 px-4 dark:bg-white bg-purple-100">
         <NextSeo
           title={seotitle}
           description={seodescrip}
@@ -41,10 +41,10 @@ export default function Phong() {
           ]}
         />
         <div className="items-start mx-auto w-full max-w-xl space-y-4">
-          <div className="relative w-24 h-24 mx-auto">
+          <div className="relative w-24 h-24 mx-auto rounded-full">
             <NextImage
-              className="object-cover absolute rounded-full"
-              src="/avatar.jpg"
+              className="object-cover absolute rounded-full transform origin-center scale-150"
+              src="/phong-memoji-nonbg.png"
               layout="fill"
             />
           </div>
@@ -122,9 +122,32 @@ export default function Phong() {
               </div>
             </a>
           </div>
-          <p className="text-black font-carbon-bold uppercase text-lg text-center">
-            1997-2021
-          </p>
+          <div className="items-start mx-auto w-full max-w-3xl space-y-1 flex justify-center">
+            <MoreHorizontal className="text-black" />
+          </div>
+          <div className="flex justify-between">
+            <p className="text-black font-carbon-bold uppercase text-lg text-center">
+              Love{" "}
+              <a
+                className="text-[#7C56FB]"
+                href="https://www.google.com/search?q=purple&oq=purple&aqs=chrome..69i57j46i433j0l7j46.790j1j4&sourceid=chrome&ie=UTF-8"
+                target="_blank"
+              >
+                purple
+              </a>{" "}
+              and crush on{" "}
+              <a
+                className="text-[#7C56FB]"
+                href="https://www.instagram.com/dlwlrma"
+                target="_blank"
+              >
+                IU
+              </a>
+            </p>
+            <p className="text-black font-carbon-bold uppercase text-lg text-center">
+              22+1
+            </p>
+          </div>
         </div>
       </main>
     </div>
