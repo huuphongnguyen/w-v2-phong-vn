@@ -1,3 +1,4 @@
+import ContactButton from "./ContactButton";
 import LetterSignatureByPhong from "./LetterSignatureByPhong";
 
 export default function LetterByPhong({ children, letterNumber }) {
@@ -9,7 +10,12 @@ export default function LetterByPhong({ children, letterNumber }) {
             Letter Number: <strong>{letterNumber}</strong>
           </p>
           {children}
-          <LetterSignatureByPhong />
+          <div className="flex relative">
+            <LetterSignatureByPhong />
+            <div className="absolute right-[45px] md:right-[70px] bottom-0">
+              <ContactButton />
+            </div>
+          </div>
         </div>
       </div>
     </div>
