@@ -1,6 +1,7 @@
 import { Coffee, Envelope, MoreHorizontal, Send } from "akar-icons";
 import { NextSeo, SocialProfileJsonLd } from "next-seo";
 import NextImage from "next/image";
+import NextLink from "next/link";
 
 export default function Phong() {
   const seotitle = `Nguyễn Hữu Phong - Phong.vn`;
@@ -149,13 +150,15 @@ export default function Phong() {
             </h2>
           </div>
           <div className="grid grid-cols-1 gap-2">
-            <a href="https://phong.vn" target="_blank">
-              <div className="border-2 border-[#7C56FB] text-[#7C56FB] p-3 flex items-center space-x-2 hover:bg-purple-200 group">
-                <h3 className="font-carbon-bold uppercase transform transition-all group-hover:scale-110 group-hover:-rotate-12">
-                  PHONG.VN
-                </h3>
-              </div>
-            </a>
+            <NextLink href="/">
+              <a>
+                <div className="border-2 border-[#7C56FB] text-[#7C56FB] p-3 flex items-center space-x-2 hover:bg-purple-200 group">
+                  <h3 className="font-carbon-bold uppercase transform transition-all group-hover:scale-110 group-hover:-rotate-12">
+                    PHONG.VN
+                  </h3>
+                </div>
+              </a>
+            </NextLink>
           </div>
           <div className="flex items-center space-x-1">
             <div className="w-7 h-7 relative">
