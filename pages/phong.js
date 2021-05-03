@@ -1,4 +1,4 @@
-import { Envelope, MoreHorizontal, Send } from "akar-icons";
+import { Coffee, Envelope, MoreHorizontal, Send } from "akar-icons";
 import { NextSeo, SocialProfileJsonLd } from "next-seo";
 import NextImage from "next/image";
 
@@ -10,7 +10,7 @@ export default function Phong() {
 
   return (
     <div className="dark:bg-white bg-white">
-      <main className="flex flex-col justify-center space-y-4 py-7 px-4 dark:bg-white bg-purple-100">
+      <main className="flex flex-col justify-center space-y-4 py-7 px-4 bg-purple-100 m-4">
         <NextSeo
           title={seotitle}
           description={seodescrip}
@@ -50,7 +50,7 @@ export default function Phong() {
           </div>
           <div className="space-y-1">
             <div className="flex justify-center items-center">
-              <h1 className="text-black dark:text-white font-bold text-xl inline-flex">
+              <h1 className="text-black font-bold text-xl inline-flex">
                 Nguyễn Hữu Phong
               </h1>
             </div>
@@ -59,66 +59,203 @@ export default function Phong() {
             </p>
           </div>
           <div className="grid grid-cols-1 gap-2">
-            <a href="" target="_blank">
-              <div className="border-2 border-[#7C56FB] text-[#7C56FB] p-3 flex items-center space-x-2">
+            <a
+              href="mailto:hello@phong.vn?subject=An%20email%20from%20PHONG.VN&body=Hello%20Phong%2C%0D%0A%0D%0AMy%20name%20is%20_________%0D%0A%0D%0AI%20got%20a%20something%20to%20tell%20you%3A"
+              target="_blank"
+            >
+              <div className="border-2 border-[#7C56FB] text-[#7C56FB] p-3 flex items-center space-x-2 hover:bg-purple-200">
                 <Envelope className="text-[#7C56FB]" />
                 <h3 className="font-carbon-bold uppercase">
                   Email: hello@phong.vn
                 </h3>
               </div>
             </a>
-            <a href="" target="_blank">
-              <div className="border-2 border-[#7C56FB] text-[#7C56FB] p-3 flex items-center space-x-2">
+            <a href="https://t.me/isnhp" target="_blank">
+              <div className="border-2 border-[#7C56FB] text-[#7C56FB] p-3 flex items-center space-x-2 hover:bg-purple-200">
                 <Send className="text-[#7C56FB]" />
                 <h3 className="font-carbon-bold uppercase">Telegram: @isnhp</h3>
               </div>
             </a>
           </div>
-          <h2 className="text-black font-carbon-bold uppercase text-lg">
-            👀 My networks
-          </h2>
+          <div className="flex items-center space-x-1">
+            <div className="w-7 h-7 relative">
+              <NextImage
+                className="object-cover absolute"
+                src="/emoji/emoji-look.png"
+                layout="fill"
+              />
+            </div>
+            <h2 className="text-black font-carbon-bold uppercase text-lg">
+              My networks
+            </h2>
+          </div>
           <div className="grid grid-cols-2 gap-2">
             <a href="https://www.twitter.com/isnhp/" target="_blank">
-              <div className=" border-2 border-[#7C56FB] text-[#7C56FB] p-3">
-                <h3 className="font-carbon-bold uppercase">Twitter</h3>
+              <div className=" border-2 border-[#7C56FB] text-[#7C56FB] p-3 hover:bg-purple-200 group">
+                <h3 className="font-carbon-bold uppercase transform transition-all group-hover:scale-110 group-hover:-rotate-12 origin-center inline-flex">
+                  Twitter
+                </h3>
               </div>
             </a>
             <a
               href="https://www.facebook.com/thereisadonutonthetable/"
               target="_blank"
             >
-              <div className=" border-2 border-[#7C56FB] text-[#7C56FB] p-3">
-                <h3 className="font-carbon-bold uppercase">Facebook</h3>
+              <div className=" border-2 border-[#7C56FB] text-[#7C56FB] p-3 hover:bg-purple-200 group">
+                <h3 className="font-carbon-bold uppercase transform transition-all group-hover:scale-110 group-hover:-rotate-12 origin-center inline-flex">
+                  Facebook
+                </h3>
               </div>
             </a>
             <a href="https://www.instagram.com/isnhp" target="_blank">
-              <div className=" border-2 border-[#7C56FB] text-[#7C56FB] p-3">
-                <h3 className="font-carbon-bold uppercase">Instagram</h3>
+              <div className=" border-2 border-[#7C56FB] text-[#7C56FB] p-3 hover:bg-purple-200 group">
+                <h3 className="font-carbon-bold uppercase transform transition-all group-hover:scale-110 group-hover:-rotate-12 origin-center inline-flex">
+                  Instagram
+                </h3>
               </div>
             </a>
             <a href="https://www.github.com/huuphongnguyen" target="_blank">
-              <div className=" border-2 border-[#7C56FB] text-[#7C56FB] p-3">
-                <h3 className="font-carbon-bold uppercase">Github</h3>
+              <div className=" border-2 border-[#7C56FB] text-[#7C56FB] p-3 hover:bg-purple-200 group">
+                <h3 className="font-carbon-bold uppercase transform transition-all group-hover:scale-110 group-hover:-rotate-12 origin-center inline-flex">
+                  Github
+                </h3>
               </div>
             </a>
             <a href="https://zalo.me/dropship" target="_blank">
-              <div className=" border-2 border-[#7C56FB] text-[#7C56FB] p-3">
-                <h3 className="font-carbon-bold uppercase">Zalo</h3>
+              <div className=" border-2 border-[#7C56FB] text-[#7C56FB] p-3 hover:bg-purple-200 group">
+                <h3 className="font-carbon-bold uppercase transform transition-all group-hover:scale-110 group-hover:-rotate-12 origin-center inline-flex">
+                  Zalo
+                </h3>
               </div>
             </a>
             <a href="https://www.pinterest.com/isnhp" target="_blank">
-              <div className=" border-2 border-[#7C56FB] text-[#7C56FB] p-3">
-                <h3 className="font-carbon-bold uppercase">Pinterest</h3>
+              <div className=" border-2 border-[#7C56FB] text-[#7C56FB] p-3 hover:bg-purple-200 group">
+                <h3 className="font-carbon-bold uppercase transform transition-all group-hover:scale-110 group-hover:-rotate-12 origin-center inline-flex">
+                  Pinterest
+                </h3>
               </div>
             </a>
           </div>
-          <h2 className="text-black font-carbon-bold uppercase text-lg">
-            🖖 My personal website
-          </h2>
-          <div>
+          <div className="flex items-center space-x-1">
+            <div className="w-7 h-7 relative">
+              <NextImage
+                className="object-cover absolute"
+                src="/emoji/emoji-diamond.png"
+                layout="fill"
+              />
+            </div>
+            <h2 className="text-black font-carbon-bold uppercase text-lg">
+              My personal sites
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 gap-2">
             <a href="https://phong.vn" target="_blank">
-              <div className="border-2 border-[#7C56FB] text-[#7C56FB] p-3 flex items-center space-x-2">
-                <h3 className="font-carbon-bold uppercase">PHONG.VN</h3>
+              <div className="border-2 border-[#7C56FB] text-[#7C56FB] p-3 flex items-center space-x-2 hover:bg-purple-200 group">
+                <h3 className="font-carbon-bold uppercase transform transition-all group-hover:scale-110 group-hover:-rotate-12">
+                  PHONG.VN
+                </h3>
+              </div>
+            </a>
+          </div>
+          <div className="flex items-center space-x-1">
+            <div className="w-7 h-7 relative">
+              <NextImage
+                className="object-cover absolute"
+                src="/emoji/emoji-brain.png"
+                layout="fill"
+              />
+            </div>
+            <h2 className="text-black font-carbon-bold uppercase text-lg">
+              My project sites
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 gap-2">
+            <a href="http://xn--7biy658mpea72f.y.at/" target="_blank">
+              <div className="border-2 border-[#7C56FB] text-[#7C56FB] p-3 flex items-center space-x-2 hover:bg-purple-200 group">
+                <div className="flex items-center">
+                  <div className="w-7 h-7 relative transform transition-all group-hover:scale-150 group-hover:-rotate-12 group-hover:delay-75">
+                    <NextImage
+                      className="object-cover absolute"
+                      src="/emoji/emoji-hello.png"
+                      layout="fill"
+                    />
+                  </div>
+                  <div className="w-7 h-7 relative transform transition-all group-hover:scale-150 group-hover:-rotate-12 group-hover:delay-100">
+                    <NextImage
+                      className="object-cover absolute"
+                      src="/emoji/emoji-aliens.png"
+                      layout="fill"
+                    />
+                  </div>
+                  <div className="w-7 h-7 relative transform transition-all group-hover:scale-150 group-hover:-rotate-12 group-hover:delay-150">
+                    <NextImage
+                      className="object-cover absolute"
+                      src="/emoji/emoji-touch.png"
+                      layout="fill"
+                    />
+                  </div>
+                  <div className="w-7 h-7 relative transform transition-all group-hover:scale-150 group-hover:-rotate-12 group-hover:delay-200">
+                    <NextImage
+                      className="object-cover absolute"
+                      src="/emoji/emoji-rocket.png"
+                      layout="fill"
+                    />
+                  </div>
+                </div>
+                <h3 className="font-carbon-bold uppercase">
+                  Y.AT | Human are Aliens
+                </h3>
+              </div>
+            </a>
+            <a href="https://theuvitinhanhxuyen.com" target="_blank">
+              <div className="border-2 border-[#7C56FB] text-[#7C56FB] p-3 flex items-center space-x-2 hover:bg-purple-200">
+                <h3 className="font-carbon-bold uppercase">
+                  TheuViTinhAnhXuyen.com
+                </h3>
+              </div>
+            </a>
+            <a href="https://emb.vn" target="_blank">
+              <div className="border-2 border-[#7C56FB] text-[#7C56FB] p-3 flex items-center space-x-2 hover:bg-purple-200">
+                <h3 className="font-carbon-bold uppercase">EMB.VN</h3>
+              </div>
+            </a>
+          </div>
+          <div className="flex space-x-1 items-center">
+            <div className="w-7 h-7 relative">
+              <NextImage
+                className="object-cover absolute"
+                src="/emoji/emoji-pizza.png"
+                layout="fill"
+              />
+            </div>
+            <h2 className="text-black font-carbon-bold uppercase text-lg">
+              Others
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 gap-2">
+            <a href="https://www.buymeacoffee.com/phong" target="_blank">
+              <div className="border-2 border-[#7C56FB] text-[#7C56FB] p-3 flex items-center space-x-2 hover:bg-purple-200">
+                <Coffee className="text-[#7C56FB]" />
+                <h3 className="font-carbon-bold uppercase">
+                  Buy me a coffee . com / phong
+                </h3>
+              </div>
+            </a>
+            <div className="grid grid-cols-2 gap-2">
+              <a href="#" target="_blank">
+                <div className="border-2 border-[#7C56FB] text-[#7C56FB] p-3 flex items-center space-x-2 hover:bg-purple-200">
+                  <h3 className="font-carbon-bold uppercase">Bitcoin</h3>
+                </div>
+              </a>
+              <a href="#" target="_blank">
+                <div className="border-2 border-[#7C56FB] text-[#7C56FB] p-3 flex items-center space-x-2 hover:bg-purple-200">
+                  <h3 className="font-carbon-bold uppercase">BNB</h3>
+                </div>
+              </a>
+            </div>
+            <a href="#" target="_blank">
+              <div className="border-2 border-[#7C56FB] text-[#7C56FB] p-3 flex items-center space-x-2 hover:bg-purple-200">
+                <h3 className="font-carbon-bold uppercase">.ETH</h3>
               </div>
             </a>
           </div>

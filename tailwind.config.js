@@ -63,6 +63,7 @@ module.exports = {
       rotate: ["group-hover"],
       scale: ["group-hover", "active"],
       borderColor: ["hover"],
+      transitionDelay: ["hover", "group-hover", "focus"],
     },
   },
   plugins: [
