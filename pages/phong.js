@@ -10,7 +10,7 @@ export default function Phong() {
   const seopreviewimg = "/static/phong-vn-feature-img.png";
 
   return (
-    <div className="dark:bg-white bg-white">
+    <div className="dark:bg-white bg-black">
       <main className="flex flex-col justify-center space-y-4 py-7 px-4 bg-purple-100 m-4">
         <NextSeo
           title={seotitle}
@@ -133,6 +133,13 @@ export default function Phong() {
               <div className=" border-2 border-[#7C56FB] text-[#7C56FB] p-3 hover:bg-purple-200 group">
                 <h3 className="font-carbon-bold uppercase transform transition-all group-hover:scale-110 group-hover:-rotate-12 origin-center inline-flex">
                   Pinterest
+                </h3>
+              </div>
+            </a>
+            <a href="https://www.producthunt.com/@isnhp" target="_blank">
+              <div className=" border-2 border-[#7C56FB] text-[#7C56FB] p-3 hover:bg-purple-200 group">
+                <h3 className="font-carbon-bold uppercase transform transition-all group-hover:scale-110 group-hover:-rotate-12 origin-center inline-flex">
+                  ProductHunt
                 </h3>
               </div>
             </a>
