@@ -10,7 +10,7 @@ export default function Phong() {
   const seopreviewimg = "/static/phong-vn-feature-img.png";
 
   return (
-    <div className="dark:bg-white bg-black">
+    <div className="dark:bg-black bg-blawhiteck">
       <main className="flex flex-col justify-center space-y-4 py-7 px-4 bg-purple-100 m-4">
         <NextSeo
           title={seotitle}
