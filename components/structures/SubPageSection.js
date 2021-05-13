@@ -7,6 +7,13 @@ export default function SubPageSection() {
 
   return (
     <div>
+      <div className="w-[387px] h-[480px] hidden md:block absolute transform scale-[0.65] rotate-12 origin-center translate-x-96 -translate-y-20">
+        <NextImage
+          src="https://media0.giphy.com/media/3oz8xMcMytpQVPay9a/giphy.gif?cid=790b7611f190ff60ed17eae999eb01a7994e5ed751b0da4f&rid=giphy.gif&ct=s"
+          layout="fill"
+          className="absolute"
+        />
+      </div>
       <div className="inline-flex items-center space-x-1">
         <p className="text-black dark:text-white text-xl uppercase font-carbon-bold">
           /

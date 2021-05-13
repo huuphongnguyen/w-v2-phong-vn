@@ -10,6 +10,9 @@ module.exports = nextTranslate({
       "pbs.twimg.com",
       "abs.twimg.com",
       "notion-api.phong.vn",
+      "media2.giphy.com",
+      "media0.giphy.com",
+      "media3.giphy.com",
     ],
   },
   webpack: (config, { dev, isServer }) => {
