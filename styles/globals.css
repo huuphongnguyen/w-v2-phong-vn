@@ -406,7 +406,7 @@ line {
   height: 50px;
   border-radius: 50%;
   overflow: hidden;
-  background-color: #a68aff;
+  background-color: #c7c7c7;
 }
 .coin__front:after,
 .coin__back:after {
@@ -422,12 +422,12 @@ line {
   animation: shine linear 4s infinite;
 }
 .coin__front {
-  background-image: url("https://cdn.shopify.com/s/files/1/0559/7537/9127/files/change-coin.png?v=1620280707");
+  background-image: url("https://phong.vn/phong-logo.png");
   background-size: cover;
   transform: translateZ(3.5px);
 }
 .coin__back {
-  background-image: url("https://cdn.shopify.com/s/files/1/0559/7537/9127/files/change-coin.png?v=1620280707");
+  background-image: url("https://phong.vn/phong-logo.png");
   background-size: cover;
   transform: translateZ(-3.5px) rotateY(180deg);
 }
@@ -435,7 +435,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #0d0036;
+  background: #1d1d1d;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(94.5deg)
     translateX(25px) rotateY(90deg);
 }
@@ -443,7 +443,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #110047;
+  background: #262626;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(99deg)
     translateX(25px) rotateY(90deg);
 }
@@ -451,7 +451,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #150058;
+  background: #2e2e2e;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(103.5deg)
     translateX(25px) rotateY(90deg);
 }
@@ -459,7 +459,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #190068;
+  background: #363636;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(108deg)
     translateX(25px) rotateY(90deg);
 }
@@ -467,7 +467,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #1d0078;
+  background: #3e3e3e;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(112.5deg)
     translateX(25px) rotateY(90deg);
 }
@@ -475,7 +475,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #200087;
+  background: #464646;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(117deg)
     translateX(25px) rotateY(90deg);
 }
@@ -483,7 +483,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #240096;
+  background: #4e4e4e;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(121.5deg)
     translateX(25px) rotateY(90deg);
 }
@@ -491,7 +491,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #2700a5;
+  background: #555;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(126deg)
     translateX(25px) rotateY(90deg);
 }
@@ -499,7 +499,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #2b00b3;
+  background: #5c5c5c;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(130.5deg)
     translateX(25px) rotateY(90deg);
 }
@@ -507,7 +507,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #2e00c0;
+  background: #636363;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(135deg)
     translateX(25px) rotateY(90deg);
 }
@@ -515,7 +515,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #3100cd;
+  background: #696969;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(139.5deg)
     translateX(25px) rotateY(90deg);
 }
@@ -523,7 +523,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #3400da;
+  background: #707070;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(144deg)
     translateX(25px) rotateY(90deg);
 }
@@ -531,7 +531,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #3700e6;
+  background: #767676;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(148.5deg)
     translateX(25px) rotateY(90deg);
 }
@@ -539,7 +539,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #3a00f2;
+  background: #7c7c7c;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(153deg)
     translateX(25px) rotateY(90deg);
 }
@@ -547,7 +547,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #3d00fe;
+  background: #818181;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(157.5deg)
     translateX(25px) rotateY(90deg);
 }
@@ -555,7 +555,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #4409ff;
+  background: #878787;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(162deg)
     translateX(25px) rotateY(90deg);
 }
@@ -563,7 +563,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #4c14ff;
+  background: #8c8c8c;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(166.5deg)
     translateX(25px) rotateY(90deg);
 }
@@ -571,7 +571,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #541eff;
+  background: #919191;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(171deg)
     translateX(25px) rotateY(90deg);
 }
@@ -579,7 +579,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #5b28ff;
+  background: #969696;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(175.5deg)
     translateX(25px) rotateY(90deg);
 }
@@ -587,7 +587,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #6231ff;
+  background: #9a9a9a;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(180deg)
     translateX(25px) rotateY(90deg);
 }
@@ -595,7 +595,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #6939ff;
+  background: #9f9f9f;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(184.5deg)
     translateX(25px) rotateY(90deg);
 }
@@ -603,7 +603,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #6f42ff;
+  background: #a3a3a3;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(189deg)
     translateX(25px) rotateY(90deg);
 }
@@ -611,7 +611,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #754aff;
+  background: #a7a7a7;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(193.5deg)
     translateX(25px) rotateY(90deg);
 }
@@ -619,7 +619,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #7b51ff;
+  background: #aaa;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(198deg)
     translateX(25px) rotateY(90deg);
 }
@@ -627,7 +627,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #8058ff;
+  background: #aeaeae;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(202.5deg)
     translateX(25px) rotateY(90deg);
 }
@@ -635,7 +635,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #855eff;
+  background: #b1b1b1;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(207deg)
     translateX(25px) rotateY(90deg);
 }
@@ -643,7 +643,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #8964ff;
+  background: #b4b4b4;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(211.5deg)
     translateX(25px) rotateY(90deg);
 }
@@ -651,7 +651,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #8e6aff;
+  background: #b7b7b7;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(216deg)
     translateX(25px) rotateY(90deg);
 }
@@ -659,7 +659,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #916fff;
+  background: #bababa;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(220.5deg)
     translateX(25px) rotateY(90deg);
 }
@@ -667,7 +667,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #9574ff;
+  background: #bcbcbc;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(225deg)
     translateX(25px) rotateY(90deg);
 }
@@ -675,7 +675,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #9878ff;
+  background: #bebebe;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(229.5deg)
     translateX(25px) rotateY(90deg);
 }
@@ -683,7 +683,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #9b7cff;
+  background: #c0c0c0;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(234deg)
     translateX(25px) rotateY(90deg);
 }
@@ -691,7 +691,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #9e7fff;
+  background: #c2c2c2;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(238.5deg)
     translateX(25px) rotateY(90deg);
 }
@@ -699,7 +699,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #a082ff;
+  background: #c3c3c3;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(243deg)
     translateX(25px) rotateY(90deg);
 }
@@ -707,7 +707,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #a284ff;
+  background: #c4c4c4;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(247.5deg)
     translateX(25px) rotateY(90deg);
 }
@@ -715,7 +715,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #a386ff;
+  background: #c5c5c5;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(252deg)
     translateX(25px) rotateY(90deg);
 }
@@ -723,7 +723,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #a488ff;
+  background: #c6c6c6;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(256.5deg)
     translateX(25px) rotateY(90deg);
 }
@@ -731,7 +731,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #a589ff;
+  background: #c7c7c7;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(261deg)
     translateX(25px) rotateY(90deg);
 }
@@ -739,7 +739,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #a68aff;
+  background: #c7c7c7;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(265.5deg)
     translateX(25px) rotateY(90deg);
 }
@@ -747,7 +747,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #a68aff;
+  background: #c7c7c7;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(270deg)
     translateX(25px) rotateY(90deg);
 }
@@ -755,7 +755,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #a68aff;
+  background: #c7c7c7;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(274.5deg)
     translateX(25px) rotateY(90deg);
 }
@@ -763,7 +763,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #a589ff;
+  background: #c7c7c7;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(279deg)
     translateX(25px) rotateY(90deg);
 }
@@ -771,7 +771,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #a488ff;
+  background: #c6c6c6;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(283.5deg)
     translateX(25px) rotateY(90deg);
 }
@@ -779,7 +779,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #a386ff;
+  background: #c5c5c5;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(288deg)
     translateX(25px) rotateY(90deg);
 }
@@ -787,7 +787,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #a284ff;
+  background: #c4c4c4;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(292.5deg)
     translateX(25px) rotateY(90deg);
 }
@@ -795,7 +795,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #a082ff;
+  background: #c3c3c3;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(297deg)
     translateX(25px) rotateY(90deg);
 }
@@ -803,7 +803,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #9e7fff;
+  background: #c2c2c2;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(301.5deg)
     translateX(25px) rotateY(90deg);
 }
@@ -811,7 +811,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #9b7cff;
+  background: #c0c0c0;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(306deg)
     translateX(25px) rotateY(90deg);
 }
@@ -819,7 +819,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #9878ff;
+  background: #bebebe;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(310.5deg)
     translateX(25px) rotateY(90deg);
 }
@@ -827,7 +827,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #9574ff;
+  background: #bcbcbc;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(315deg)
     translateX(25px) rotateY(90deg);
 }
@@ -835,7 +835,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #916fff;
+  background: #bababa;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(319.5deg)
     translateX(25px) rotateY(90deg);
 }
@@ -843,7 +843,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #8e6aff;
+  background: #b7b7b7;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(324deg)
     translateX(25px) rotateY(90deg);
 }
@@ -851,7 +851,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #8964ff;
+  background: #b4b4b4;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(328.5deg)
     translateX(25px) rotateY(90deg);
 }
@@ -859,7 +859,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #855eff;
+  background: #b1b1b1;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(333deg)
     translateX(25px) rotateY(90deg);
 }
@@ -867,7 +867,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #8058ff;
+  background: #aeaeae;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(337.5deg)
     translateX(25px) rotateY(90deg);
 }
@@ -875,7 +875,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #7b51ff;
+  background: #aaa;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(342deg)
     translateX(25px) rotateY(90deg);
 }
@@ -883,7 +883,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #754aff;
+  background: #a7a7a7;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(346.5deg)
     translateX(25px) rotateY(90deg);
 }
@@ -891,7 +891,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #6f42ff;
+  background: #a3a3a3;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(351deg)
     translateX(25px) rotateY(90deg);
 }
@@ -899,7 +899,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #6939ff;
+  background: #9f9f9f;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(355.5deg)
     translateX(25px) rotateY(90deg);
 }
@@ -907,7 +907,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #6231ff;
+  background: #9a9a9a;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(360deg)
     translateX(25px) rotateY(90deg);
 }
@@ -915,7 +915,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #5b28ff;
+  background: #969696;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(364.5deg)
     translateX(25px) rotateY(90deg);
 }
@@ -923,7 +923,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #541eff;
+  background: #919191;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(369deg)
     translateX(25px) rotateY(90deg);
 }
@@ -931,7 +931,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #4c14ff;
+  background: #8c8c8c;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(373.5deg)
     translateX(25px) rotateY(90deg);
 }
@@ -939,7 +939,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #4409ff;
+  background: #878787;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(378deg)
     translateX(25px) rotateY(90deg);
 }
@@ -947,7 +947,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #3d00fe;
+  background: #818181;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(382.5deg)
     translateX(25px) rotateY(90deg);
 }
@@ -955,7 +955,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #3a00f2;
+  background: #7c7c7c;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(387deg)
     translateX(25px) rotateY(90deg);
 }
@@ -963,7 +963,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #3700e6;
+  background: #767676;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(391.5deg)
     translateX(25px) rotateY(90deg);
 }
@@ -971,7 +971,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #3400da;
+  background: #707070;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(396deg)
     translateX(25px) rotateY(90deg);
 }
@@ -979,7 +979,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #3100cd;
+  background: #696969;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(400.5deg)
     translateX(25px) rotateY(90deg);
 }
@@ -987,7 +987,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #2e00c0;
+  background: #636363;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(405deg)
     translateX(25px) rotateY(90deg);
 }
@@ -995,7 +995,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #2b00b3;
+  background: #5c5c5c;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(409.5deg)
     translateX(25px) rotateY(90deg);
 }
@@ -1003,7 +1003,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #2700a5;
+  background: #555;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(414deg)
     translateX(25px) rotateY(90deg);
 }
@@ -1011,7 +1011,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #240096;
+  background: #4e4e4e;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(418.5deg)
     translateX(25px) rotateY(90deg);
 }
@@ -1019,7 +1019,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #200087;
+  background: #464646;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(423deg)
     translateX(25px) rotateY(90deg);
 }
@@ -1027,7 +1027,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #1d0078;
+  background: #3e3e3e;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(427.5deg)
     translateX(25px) rotateY(90deg);
 }
@@ -1035,7 +1035,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #190068;
+  background: #363636;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(432deg)
     translateX(25px) rotateY(90deg);
 }
@@ -1043,7 +1043,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #150058;
+  background: #2e2e2e;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(436.5deg)
     translateX(25px) rotateY(90deg);
 }
@@ -1051,7 +1051,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #110047;
+  background: #262626;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(441deg)
     translateX(25px) rotateY(90deg);
 }
@@ -1059,7 +1059,7 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #0d0036;
+  background: #1d1d1d;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(445.5deg)
     translateX(25px) rotateY(90deg);
 }
@@ -1067,19 +1067,9 @@ line {
   position: absolute;
   height: 1.9625px;
   width: 7px;
-  background: #090024;
+  background: #151515;
   transform: translateY(24.01875px) translateX(21.5px) rotateZ(450deg)
     translateX(25px) rotateY(90deg);
-}
-.coin__shadow {
-  position: absolute;
-  width: 50px;
-  height: 7px;
-  border-radius: 50%;
-  background: #000;
-  box-shadow: 0 0 35px 35px #000;
-  opacity: 0.125;
-  transform: rotateX(90deg) translateZ(-55px) scale(0.5);
 }
 @keyframes rotate3d {
   0% {
