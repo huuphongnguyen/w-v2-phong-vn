@@ -7,7 +7,7 @@ import TwitterSEO from "../../components/TwitterSEO";
 
 const memesoundEndpoint = process.env.NOTION_API_TABLE_MEMESOUND;
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const res = await fetch(memesoundEndpoint);
   const data = await res.json();
 
