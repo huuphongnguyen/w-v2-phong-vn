@@ -11,6 +11,7 @@ import {
 } from "../elements/HashtagsData";
 import useTranslation from "next-translate/useTranslation";
 import NextImage from "next/image";
+import { ArrowUpRight } from "akar-icons";
 
 export default function ProjectsSection() {
   const { t } = useTranslation("common");
@@ -23,13 +24,23 @@ export default function ProjectsSection() {
           className="absolute"
         />
       </div>
-      <div className="inline-flex items-center space-x-1">
-        <p className="text-black dark:text-white text-xl uppercase font-carbon-bold">
-          /
-        </p>
-        <h1 className="text-black dark:text-white text-xl uppercase font-carbon-bold">
-          Projects
-        </h1>
+      <div className="flex items-center space-x-2">
+        <div className="inline-flex items-center space-x-1">
+          <p className="text-black dark:text-white text-xl uppercase font-carbon-bold">
+            /
+          </p>
+          <h1 className="text-black dark:text-white text-xl uppercase font-carbon-bold">
+            Projects
+          </h1>
+        </div>
+        <a href="/projects">
+          <div className="flex items-center space-x-1 bg-black px-2 py-1">
+            <p className="text-white dark:text-black font-bold uppercase text-xs">
+              See all
+            </p>
+            <ArrowUpRight className="text-white dark:text-black" size={18} />
+          </div>
+        </a>
       </div>
 
       <div className="px-4 py-2 space-y-4 pl-4 md:pl-36">

@@ -4,8 +4,8 @@ import ConceptsSection from "../components/structures/ConceptsSection";
 import HeroSection from "../components/structures/HeroSection";
 import InspirationSection from "../components/structures/InspirationSection";
 import ProjectsSection from "../components/structures/ProjectsSection";
+import StuffSection from "../components/structures/StuffSection";
 import SubPageSection from "../components/structures/SubPageSection";
-import VideoSection from "../components/structures/VideoSection";
 import TwitterSEO from "../components/TwitterSEO";
 
 export default function Home() {
@@ -30,9 +30,9 @@ export default function Home() {
         <InspirationSection />
         <ProjectsSection />
         <ConceptsSection />
-        <VideoSection />
         <BlogSection />
         <SubPageSection />
+        <StuffSection />
       </div>
     </Container>
   );

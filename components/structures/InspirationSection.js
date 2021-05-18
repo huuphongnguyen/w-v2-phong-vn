@@ -1,18 +1,10 @@
 import useTranslation from "next-translate/useTranslation";
-import NextImage from "next/image";
+
 export default function InspirationSection() {
   const { t } = useTranslation("common");
 
   return (
     <div>
-      <div className="w-[300px] h-[432px] hidden md:block absolute transform scale-[0.75] origin-center translate-x-96 translate-y-0">
-        <NextImage
-          src="https://media0.giphy.com/media/LOi2LqxPSTtTQxDpJv/giphy.gif?cid=ecf05e470nnvb56oae8py846vjr2gjx03o7cmgz7kcoooho3&rid=giphy.gif&ct=s"
-          layout="fill"
-          className="absolute"
-        />
-      </div>
-
       <div className="inline-flex items-center space-x-1">
         <p className="text-black dark:text-white text-xl uppercase font-carbon-bold">
           /
@@ -22,7 +14,7 @@ export default function InspirationSection() {
         </h1>
       </div>
 
-      <div className="pr-0 md:pr-72">
+      <div>
         <div className="px-4 py-2">
           <a href="/inspiration/archillect">
             <h2 className="text-black dark:text-white font-bold inline-block rainbow_text_hover ">
