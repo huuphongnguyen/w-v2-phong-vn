@@ -37,7 +37,7 @@ export default function StuffSection() {
                 <p className="text-black text-xs dark:text-white uppercase">
                   {t("stuff-spotify-explain")}{" "}
                   <a
-                    className="font-bold"
+                    className="font-bold rainbow_text_hover"
                     href="https://developer.spotify.com/documentation/web-api/"
                     target="_blank"
                   >
@@ -107,12 +107,12 @@ export default function StuffSection() {
             <div>
               <NextLink href="/domains">
                 <a>
-                  <div className="flex items-center space-x-1">
-                    <p className="text-black dark:text-white uppercase font-bold text-xs">
+                  <div className="inline-flex items-center space-x-1 bg-white hover:bg-black group px-2 py-1">
+                    <p className="text-black dark:text-white group-hover:text-white dark:group-hover:text-white uppercase font-bold text-xs">
                       see more
                     </p>
                     <ArrowUpRight
-                      className="text-black dark:text-white"
+                      className="text-black dark:text-white group-hover:text-white dark:group-hover:text-white"
                       size={18}
                     />
                   </div>

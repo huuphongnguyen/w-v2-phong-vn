@@ -8,6 +8,26 @@ export const Running = () => (
   </div>
 );
 
+export const Hodl = () => (
+  <div className="space-x-2 flex items-center">
+    <div className="relative">
+      <div className="w-3 h-3 bg-purple-500 rounded-full" />
+      <div className="w-3 h-3 bg-purple-500 rounded-full absolute top-0 mx-auto animate-ping" />
+    </div>
+    <p className="font-bold">Hodl</p>
+  </div>
+);
+
+export const Active = () => (
+  <div className="space-x-2 flex items-center">
+    <div className="relative">
+      <div className="w-3 h-3 bg-blue-500 rounded-full" />
+      <div className="w-3 h-3 bg-blue-500 rounded-full absolute top-0 mx-auto animate-ping" />
+    </div>
+    <p className="font-bold">Active</p>
+  </div>
+);
+
 export const Configuration = () => (
   <div className="space-x-2 flex items-center">
     <div className="relative">
