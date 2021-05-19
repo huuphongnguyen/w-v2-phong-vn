@@ -26,12 +26,12 @@ export default function StuffSection() {
           <div className="space-y-2">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
               <div className="space-y-1">
-                <div className="bg-white">
+                <div className="bg-white dark:px-1 dark:rounded-md">
                   <img
                     src="https://widget-spotify-now-playing.vercel.app/now-playing"
                     width="256"
                     height="64"
-                    alt="Now Playing"
+                    alt="Phong's Spotify Now Playing"
                   />
                 </div>
                 <p className="text-black text-xs dark:text-white uppercase">
@@ -107,12 +107,12 @@ export default function StuffSection() {
             <div>
               <NextLink href="/domains">
                 <a>
-                  <div className="inline-flex items-center space-x-1 bg-white hover:bg-black group px-2 py-1">
-                    <p className="text-black dark:text-white group-hover:text-white dark:group-hover:text-white uppercase font-bold text-xs">
+                  <div className="inline-flex items-center space-x-1 bg-white dark:bg-black hover:bg-black dark:hover:bg-white group px-2 py-1">
+                    <p className="text-black dark:text-white group-hover:text-white dark:group-hover:text-black uppercase font-bold text-xs">
                       see more
                     </p>
                     <ArrowUpRight
-                      className="text-black dark:text-white group-hover:text-white dark:group-hover:text-white"
+                      className="text-black dark:text-white group-hover:text-white dark:group-hover:text-black"
                       size={18}
                     />
                   </div>
