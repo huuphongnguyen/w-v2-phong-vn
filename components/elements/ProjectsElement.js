@@ -39,7 +39,7 @@ export default function ProjectsElements({
       <div className="flex">
         <div className="w-full-70 p-4 border-t-2 border-black dark:border-white">
           <NextLink href={projecturl}>
-            <a className="text-white dark:text-black inline-flex items-center space-x-2 bg-black py-1 px-2">
+            <a className="text-white dark:text-black inline-flex items-center space-x-2 bg-black dark:bg-white py-1 px-2">
               <p className="uppercase font-bold text-md">More detail</p>
               <ArrowUpRight className="text-white dark:text-black" size={16} />
             </a>

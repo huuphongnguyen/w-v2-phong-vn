@@ -34,7 +34,7 @@ export default function ProjectsSection() {
           </h1>
         </div>
         <a href="/projects">
-          <div className="flex items-center space-x-1 bg-black px-2 py-1">
+          <div className="flex items-center space-x-1 bg-black dark:bg-white px-2 py-1">
             <p className="text-white dark:text-black font-bold uppercase text-xs">
               See all
             </p>

@@ -85,7 +85,7 @@ export default function SubPageSection() {
             <div className="flex-cols md:flex items-center space-x-0 md:space-x-2">
               <a href="https://mmm.page/phong.main" target="_blank">
                 <h2 className="text-black dark:text-white font-bold rainbow_text_hover inline-block">
-                  mmm.page/phong.main
+                  mmm.page/phong
                 </h2>
               </a>
               <p className="text-gray-500 dark:text-gray-400">hmmmm!!!!</p>
