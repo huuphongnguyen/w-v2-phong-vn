@@ -1,7 +1,7 @@
-export default function Heading3({ children }) {
+export default function Heading3({ children, id }) {
   return (
-    <h1 className="font-bold text-lg my-3 text-black dark:text-white">
+    <h3 id={id} className="font-bold text-lg my-3 text-black dark:text-white">
       {children}
-    </h1>
+    </h3>
   );
 }

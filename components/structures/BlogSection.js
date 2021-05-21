@@ -4,6 +4,12 @@ import { Hashtag_vi_blog } from "../elements/HashtagsData";
 
 export const blogData = [
   [
+    "Case Study: Quá trình xây dựng thương hiệu - tái cấu trúc Anh Xuyến",
+    "/blog/case-study-qua-trinh-xay-dung-thuong-hieu-tai-cau-truc-anh-xuyen",
+    "2019-06-11",
+    "#vi-blog",
+  ],
+  [
     "Dispo là gì? Tại sao mình thích Dispo?",
     "/blog/dispo-la-gi-tai-sao-minh-thich-dispo",
     "2021-02-15",
@@ -23,7 +29,7 @@ export default function BlogSection() {
           Blog
         </h1>
       </div>
-      <div className="px-4 py-2">
+      <div className="px-4 py-2 space-y-4 md:space-y-2">
         {blogData.reverse().map((b, index) => (
           <div
             className="flex-cols md:flex items-center space-x-0 md:space-x-2"

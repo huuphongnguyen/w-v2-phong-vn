@@ -59,6 +59,7 @@ export default function Blog_dispo_la_gi_tai_sao_minh_thich_dispo() {
                 src="/static/images/dispo-la-gi-tai-sao-minh-thich-dispo/dispo-la-gi-tai-sao-minh-thich-dispo-feature-image-phongvn.gif"
                 className="absolute object-cover"
                 layout="fill"
+                quality={30}
               />
             </div>
             <div className=" md:col-span-4">
