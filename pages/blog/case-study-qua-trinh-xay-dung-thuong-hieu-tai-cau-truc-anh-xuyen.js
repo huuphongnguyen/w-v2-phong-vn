@@ -1149,7 +1149,7 @@ export default function Blog_case_study_qua_trinh_xay_dung_thuong_hieu_tai_cau_t
           </Paragraph>
         </div>
         <div>
-          <TelegramComments datatelegramdiscussion="phongchannel/5" />
+          <TelegramComments datatelegramdiscussion="phongchannel/13" />
         </div>
       </div>
     </Container>
