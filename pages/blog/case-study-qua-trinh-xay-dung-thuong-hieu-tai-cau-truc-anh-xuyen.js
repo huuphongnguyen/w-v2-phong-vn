@@ -23,7 +23,7 @@ export default function Blog_case_study_qua_trinh_xay_dung_thuong_hieu_tai_cau_t
   từ kinh nghiệm và những gì mình hiểu.`;
   const seourl = `https://phong.vn/blog/case-study-qua-trinh-xay-dung-thuong-hieu-tai-cau-truc-anh-xuyen`;
   const seopreviewimg =
-    "/static/images/case-study-qua-trinh-xay-dung-thuong-hieu-tai-cau-truc-anh-xuyen/case-study-qua-trinh-xay-dung-thuong-hieu-tai-cau-truc-anh-xuyen-feature-img.png";
+    " /static/images/case-study-qua-trinh-xay-dung-thuong-hieu-tai-cau-truc-anh-xuyen/case-study-qua-trinh-xay-dung-thuong-hieu-tai-cau-truc-anh-xuyen-feature-img.png";
   return (
     <Container>
       <NextSeo

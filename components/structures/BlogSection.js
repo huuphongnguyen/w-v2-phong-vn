@@ -30,7 +30,7 @@ export default function BlogSection() {
         </h1>
       </div>
       <div className="px-4 py-2 space-y-4 md:space-y-2">
-        {blogData.reverse().map((b, index) => (
+        {blogData.map((b, index) => (
           <div
             className="flex-cols md:flex items-center space-x-0 md:space-x-2"
             key={index}
