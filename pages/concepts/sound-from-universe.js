@@ -22,6 +22,8 @@ import Quote from "../../components/elements/block/Quote";
 import Heading1 from "../../components/elements/block/Heading1";
 import Heading2 from "../../components/elements/block/Heading2";
 import QuotePeople from "../../components/elements/block/QuotePeople";
+import Heading3 from "../../components/elements/block/Heading3";
+import BulletList from "../../components/elements/block/BulletList";
 
 export default function SoundFromUniverse() {
   const seotitle = `'Sound from Universe'`;
@@ -160,7 +162,7 @@ export default function SoundFromUniverse() {
         </div>
 
         <div className="text-black dark:text-white">
-          <Heading1>Giới thiệu</Heading1>
+          <Heading2 id="gioi-thieu">Giới thiệu</Heading2>
           <Paragraph>
             Sound from Universe là một khái niệm Phong muốn phát triển dựa trên
             những khái niệm của Luật Hấp Dẫn (Laws of Attraction - New thought).
@@ -171,7 +173,7 @@ export default function SoundFromUniverse() {
             trải nghiệm của Sound from Universe được thực hiện vào cùng một thời
             điểm bởi tác giá.
           </Paragraph>
-          <Heading1>Tóm lược</Heading1>
+          <Heading2 id="tom-luoc">Tóm lược</Heading2>
           <Paragraph>
             Từ lâu, bản thân Phong từng có một suy nghĩ về việc não bộ chúng ta
             được kiểm soát hoặc được tiếp nhận thông tin từ một nguồn phát nào
@@ -246,18 +248,18 @@ export default function SoundFromUniverse() {
             <li>Nguồn phát nằm ở đâu?</li>
           </ol>
 
-          <Heading1>
+          <Heading2 id="anchor1">
             1. Những quy tắc cơ bản của 'Sound from Universe'{" "}
-          </Heading1>
+          </Heading2>
           <Paragraph>
             Những quy tắc này được xây dựng dựa trên trải nghiệm, khái niệm,
             hiện tượng từ nhiều nguồn khác nhau và được xây dựng trên trải
             nghiệm cá nhân của Phong.
           </Paragraph>
-          <Heading2>
+          <Heading3 id="anchor11">
             1.1. Ngủ thật sớm và cố gắng thức dậy trong khoảng thời gian 3 giờ
             sáng đến 5 giờ sáng
-          </Heading2>
+          </Heading3>
           <Paragraph>
             Trong một video Phong vô tình xem được trên Youtube của một Youtuber
             người Việt chuyên thực hiện những video về Luật Hấp Dẫn có tên "3
@@ -368,7 +370,9 @@ export default function SoundFromUniverse() {
             rõ. Những điều bạn làm, những hoạt động trong ngày hôm đó sẽ trở nên
             tốn ít thời gian hơn và bạn hoàn thành nó trọn vẹn hơn.
           </CallOut>
-          <Heading2>1.2. Loại bỏ phần lớn Wishful Thinking</Heading2>
+          <Heading3 id="anchor12">
+            1.2. Loại bỏ phần lớn Wishful Thinking
+          </Heading3>
           <Paragraph>
             Wishful Thinking có thể hiểu nôm na là Suy nghĩ viễn vông. Trong một
             hội nghị với các nhà lãnh đạo và doanh nhân Ả Rập #Entspresso,{" "}
@@ -599,10 +603,10 @@ export default function SoundFromUniverse() {
             Và nếu không kiểm soát được Wishful Thinking họ sẽ trở thành những
             gã điên không thể thay đổi được thế giới.
           </Paragraph>
-          <Heading2>
+          <Heading3 id="anchor13">
             1.3. Luyện tập kiên trì từ những điều nhỏ nhất cho đến khi nó trở
             thành bình thường
-          </Heading2>
+          </Heading3>
           <Paragraph>
             Với những người không thật sự có khả năng kiên trì tốt, luyện tập từ
             những điều nhỏ nhất là một điều khá tốt. Cụ thể làm một việc gì đó
@@ -675,6 +679,386 @@ export default function SoundFromUniverse() {
             thói quen hiện tại của bạn có xu hướng lặp đi lặp lại đều rèn luyện
             cho chính não bộ một tính kiên trì nhất định.
           </Paragraph>
+          <Heading3 id="anchor14">
+            1.4. Hạn chế - cố gắng loại bỏ việc trì hoãn
+          </Heading3>
+          <Heading3 id="anchor15">
+            1.5. Thử những điều mới dù là nhỏ nhất, và làm điều đó một mình
+          </Heading3>
+          <Heading3 id="anchor16">
+            1.6. Hãy đưa bản thân vào trạng thái bình tĩnh trước mình sự việc
+            đang diễn ra
+          </Heading3>
+          <Heading3 id="anchor17">
+            1.7. Tìm cho mình một điều gì đó để tin
+          </Heading3>
+          <Heading3 id="anchor18">
+            1.8. Học cách từ bỏ từ những điều nhỏ nhất
+          </Heading3>
+          <Heading3 id="anchor19">1.9. Cội nguồn của sự tự tin</Heading3>
+          <Paragraph>
+            Sự tự tin chính là một trong những yếu tố khiến cho bản thân chúng
+            ta trở nên thu hút và tốt hơn rất nhiều. Với sự tự tin, giới hạn của
+            cơ thể từ tâm hồn đến thể xác sẽ được đẩy lên mức cao nhất. Mặt
+            khác, sự tự tin giúp cho não bộ tiếp nhận và xử lý vấn đề một cách
+            sáng tạo, có logic, và có phần đặc biệt hơn. Sự tự tin chính là một
+            trong những yếu tố quan trọng nhất của một con người. Nếu như không
+            có sự tự tin, não bộ sẽ trở nên dần mất kiểm soát và bị cuốn vào một
+            vòng xoáy gọi là sự tự ti.
+          </Paragraph>
+          <Paragraph>
+            Cội nguồn của sự tự tin bắt đầu tư đâu? Đây có lẽ là một câu hỏi mà
+            rất khó có thể trả lời chính xác bởi sự tự tin không có một hình
+            dạng hay một chuẩn mực nhất định. Sự tự tin có thể bắt nguồn từ thực
+            tế, tự sự ảo vọng, đến những điều không có thực. Đôi khi, một số
+            người có khả năng sinh ra sự tự tin ở bản thân bằng cách đánh lừa
+            não bộ và điều này trong một vài trường hợp là rất tốt. Tuy nhiên,
+            nó chắc chắn sẽ không bền vững. Sự tự tin bền vững nhất bắt đầu từ
+            chính những thứ bền vững, những thứ được người sở hữu xây dựng từng
+            ngày, trải qua từng giờ và trải qua rất rất nhiều chuyện khó khăn để
+            tạo nên. Có thể nói, sự tự tin ở từng thời điểm sẽ có những cung bậc
+            khác nhau nhưng nhìn chung nó đều được tạo ra bởi những yếu tố mà
+            người nắm giữ đã trải qua.
+          </Paragraph>
+          <Quote>Sự tự tin tỉ lệ thuận với thành tựu đạt được.</Quote>
+          <Paragraph>
+            Sự tự tin trong trường hợp này được đề cập chính là sự tự tin bền
+            vững. Một trong những sự tự tin thật nhất và thuần khiết nhất. Và nó
+            có tác động mạnh mẽ nhất để không chỉ người nắm giữ mà còn tác động
+            đến những người xung quanh khiến bản thân nhũng người ở gần cảm nhận
+            được nó. Việc hiểu rõ được cội nguồn của sự tự tin bền vững, não bộ
+            sẽ xúc tiến và đưa nó vào một quá trình dài trong việc phát triển
+            bản thân. Cứ mỗi thành tựu đạt được, mỗi cột mốc và mỗi giai đoạn mà
+            con người trải qua, sự tự tin sẽ dần được sinh ra và lớn mạnh. Để
+            rồi một lúc nào đó, sự tự tin bền vững khiến cho người nắm giữ cảm
+            nhận được và chợt nhận ra. Một số người trải qua nhiều giai đoạn của
+            cuộc đời, sự tự tin bền vững trong họ được não bộ sử dụng một cách
+            vô thức khiến cho bản thân họ không nhẫn ra được cội nguồn. Việc
+            hiểu được nguồn gốc của yếu tố này giống như hiểu được cội nguồn của
+            các tiếng nói mà não bộ tiếp nhận. Một lúc nào đó, bất kỳ ai cũng sẽ
+            nhận ra, nhưng họ chôn vùi nó thay vì truyền đạt lại, vì điều đó
+            cũng không mang lại hiệu quả cho người được truyền đạt.
+          </Paragraph>
+          <Heading3 id="anchor110">
+            1.10. Định hình cho bản thân những ước mơ
+          </Heading3>
+          <Quote>
+            "Chẳng ai đánh thuế ước mơ cả, nó miễn phí và bất kỳ ai cũng có
+            quyền tìm cho mình một ước mơ. Và đã là ước mơ thì không quan trọng
+            nó lớn như thế nào, không quan trọng nó hão huyền ra sao, điều quan
+            trọng nhất là bản thân người ước mơ phải luôn có niềm tin khi nghĩ
+            về nó".
+          </Quote>
+          <Paragraph>
+            Một trong những điều sai lầm nhất là coi thường những ước mơ, và tệ
+            hại nhất là không có bất kỳ ước mơ nào. Đừng đánh giá ước mơ của
+            người khác, và cũng đừng tự ti về ước mơ của bản thân. Não bộ được
+            lập trình để tạo ra những điều tuyệt vời giao thoa giữa ước mơ và
+            hiện thực. Hãy luôn nhớ điều đó.
+          </Paragraph>
+          <Paragraph>
+            Ước mơi của mình là gì? "Mình muốn trở thành một triệu phú trước năm
+            mình 30 tuổi".
+          </Paragraph>
+          <Paragraph>
+            Nếu bạn nghe qua chắc cũng nghĩ mình giống Bill Gates, cũng đúng vì
+            ông ấy từng nói như vậy. Nhưng mình không bắt chước ông ấy, mình
+            thậm chí không thần tượng hay quan tâm nhiều đến ông ấy. Vậy tại sao
+            mình lại muốn làm triệu phú trước năm 30 tuổi. Vì tiền giải quyết
+            được rất nhiều vấn đề, nó giúp cho cuộc sống của bạn tốt hơn, những
+            người xung quanh có một cuộc sống tốt hơn, và khi đó mình mới có khả
+            năng giúp thêm những người mình muốn giúp. Năm nay, khi mình viết
+            bài viết này, mình 23 tuổi, và mình còn 7 năm nữa để thực hiện ước
+            mơ này, một khoảng thời gian nghe thì rất dài nhưng nó thật sự rất
+            ngắn. Với bản thân mình, tiền hoàn toàn có thể mua được hạnh phúc.
+          </Paragraph>
+          <QuotePeople
+            imgwhosaid="https://i.imgur.com/rd1LCQJ.gif"
+            namewhossaid="Amancio Ortega"
+            reflink="https://www.google.com/search?q=from+zero+to+zara&oq=from+zero+to+zara&aqs=chrome.0.0i19l2j0i13i19i30j0i19i22i30l2.3149j0j7&sourceid=chrome&ie=UTF-8"
+            reftitle="'From Zero To Zara' Book"
+          >
+            "Tôi kiếm nhiều tiền để làm gì? Để tôi có một cuộc sống tốt đẹp hơn,
+            gia đình tôi cũng vậy, và những người xung quanh tôi có một cuộc
+            sống coi được hơn."
+          </QuotePeople>
+          <Paragraph>
+            Mình đã đọc được câu trả lời này khi đọc cuốn From Zero To Zara, đó
+            là một ngày đẹp trời mấy năm trước. Và đến giờ mình vẫn dành một sự
+            kính trọng to lớn nhất cho người đã lập ra để chế thời trang đó,
+            ngài Amancio. Thời điểm đó, mình đã có ước mơ là muốn trở thành một
+            triệu phú, thậm chí thỉnh thoảng đó là một tỉ phú. Đã có rất nhiều
+            giai đoạn mình gần chạm được ước mơ này, nhưng rồi lại vụt mất.
+            Nhưng mình không buồn vì điều ấy, mình tin là vũ trụ này đang thử
+            thách bản thân mình, và mình vụt mất vì mình chưa đủ xứng đáng và đủ
+            sức nắm giữ nó. Mình cần thêm thời gian để rèn luyện và vững tin hơn
+            vào ước mơ, vào bản thân mình để có thể đạt được ước mơ đó. Đừng bỏ
+            cuộc.
+          </Paragraph>
+          <Heading3 id="anchor111">
+            1.11. Kiềm hãm tối đa và chôn vùi cơn giận dữ của bản thân - triệt
+            tiêu việc bị kích động
+          </Heading3>
+          <Paragraph>
+            Có một câu nói rất hay "Việc giận dữ vào một ai đó hay một điều gì
+            đó giống như là việc uống thuốc độc mà mong cho người khác trúng độc
+            vậy.". Cơn giận dữ chính là một trong những cảm xúc cội nguồn, cảm
+            xúc cổ xưa nhất của không chỉ con người mà còn là của mọi sinh vật
+            sống. Cơn giận dữ chính là liều thuốc độc hại nhất đối với não bộ
+            khi chúng khiến cho não bộ tăng nhiệt theo nghĩa đen và cả nghĩa
+            bóng, sử dụng một lượng lớn năng lượng từ não bộ mà không mang lại
+            bất kỳ một lợi ích nào. Việc giận dữ không chỉ khiến não bộ mất đi
+            sự tỉnh táo, sự sáng suốt mà còn kéo theo sự mất kiểm soát về hành
+            vi trong một vài trường hợp khi não bộ quá tải.{" "}
+          </Paragraph>
+          <Paragraph>
+            Tất cả chúng ta đều biết một điều rằng "Chúng ta thật ngu ngốc và ấu
+            trĩ khi giận dữ", nhưng cơn giận dữ là một trong những yếu tố có thể
+            coi là khó kiểm soát và khó kiềm hãm nhất của con người. Và khi nó
+            giống với tất cả mọi người thì bất kỳ ai kiềm hãm tốt nhất, quản lý
+            tốt nhất cơn giận dữ của bản thân sẽ là người kiểm soát được mọi
+            thứ.
+          </Paragraph>
+          <Paragraph>
+            Kiềm hãm tối đa và chôn vùi cơn giận dữ của bản thân chính là một
+            trong những điều kiện kiên quyết để bảo đảm não bộ ở trong trạng
+            thái tốt nhất. Kiềm hãm là một điều rất khí nhưng nó chính là bước
+            đầu tiên khi việc này dễ thực hiện nhất trong quá trình này (nhấn
+            mạnh là dễ nhất trong quá trình này, điều dễ nhất trong những điều
+            khó nhất). Và khi kiềm hãm được trong một thời gian dài, chúng ta
+            không thể kiềm hãm nó mãi mà phải tiến vào giai đoạn quan trọng nhất
+            và cũng là khó nhất chính là chôn vùi nó.
+          </Paragraph>
+          <Paragraph>
+            Đầu tiên, làm thế nào để kiềm hãm tối đa cơn giận dữ? Đây có thể coi
+            là một câu hỏi triệu đô, một câu hỏi mà phần lớn mọi người có thể
+            xây dựng cho bản thân một câu trả lời riêng. Điều đó không quan
+            trọng, quan trọng là có thực hiện được câu trả lời đó vào những thời
+            khắc giận dữ hay không. Riêng bản thân của Phong, việc kiềm hãm
+            thường được Phong thực hiện bằng cách hỏi 2 câu hỏi quan trọng nhất:
+          </Paragraph>
+          <BulletList>
+            <li>
+              <Paragraph>
+                Việc giận dữ này có giúp giải quyết vấn đề hay không? (câu hỏi
+                này bao gồm cả hàm ý nó có trực tiếp tác động đến người khác để
+                tạo ra một giải pháp khách quan hay không). Nếu việc giận dữ này
+                không giải quyết vấn đề hay không tác động lên những người bị
+                tác động một lực tích cực giúp sinh ra giải pháp thì không có lý
+                do gì để cho nó bộc phát ra ngoài. Và phần lớn mọi người không
+                nghĩ được câu hỏi này khi giận dữ, hoặc nếu có thì nó đều bị bỏ
+                qua sau khi thoáng chốc xuất hiện, hoặc nó được biện hộ bằng
+                chính não bộ là giúp cho chủ nhân được giải tỏa áp lực. Đây
+                chính là điều nguy hiểm, giận dữ không giúp giải tỏa áp lực mà
+                nó khiến cho áp lực trở nên nghiêm trọng hơn, một lỗi của não
+                bộ.
+              </Paragraph>
+            </li>
+            <li>
+              <Paragraph>
+                Việc giận dữ này có phá hủy hay tạo ra một sự tiêu cực trong các
+                mối quan hệ hay không? Hậu quả của việc giận dữ nhất thời chính
+                là phá hủy một mối quan hệ đối với những mối quan hệ thật sự
+                đang diễn ra tốt đẹp. Và nó cũng góp phần tạo ra một sự tiêu cực
+                trầm trọng hơn với những mối quan hệ đang diễn biến không thật
+                sự ổn. Phong nghĩ tất cả mọi người đều biết rằng giận dữ tác
+                động xấu đến thế nào tình hình và sự bền vững của các mối quan
+                hệ, và ai cũng biết đều đó nhưng không ai có thể kiềm hãm được.
+              </Paragraph>
+            </li>
+          </BulletList>
+          <Paragraph>
+            Vậy tại sao mọi người đều biết hai câu hỏi này hoặc có thể nghĩ ngay
+            đến chúng khi giận dữ nhưng không thể nào kiềm hãm được nó. Chính là
+            lý trí của não bộ đã mất kiểm soát trong thời gian dài và không được
+            sử dụng, cảm xúc lấn át đi hoàn toàn lý trí là nguyên do. Với những
+            người có lý trí mạnh thì họ có thể dễ dàng kiểm soát được nếu ý thức
+            được vấn đề này, nhưng những người thiên về cảm xúc sẽ rất khó có
+            thể kiểm soát được bởi lý trí của họ không thể được vận hành trong
+            những trường hợp như thế. Vậy làm sao để giải quyết được vấn đề này?
+            Hãy để bản thân họ trải qua những điều cay đắng nhất, đau khố nhất,
+            kiệt quệ nhất, và tệ hại nhất của việc mất sự kiềm soát. Đó chính là
+            thời điểm cảm xúc chết đi và nhường lại quyền kiểm soát cho lý trí.
+            Phong cũng trải qua giai đoạn này, một cách tệ hại.
+          </Paragraph>
+          <Paragraph>
+            Và sau đó, chôn vùi. Chôn vùi không có một giải pháp nào cụ thể, và
+            chính vì vậy nó là một trong những điều khó khăn nhất mà con người
+            có thể thực hiện. Chôn vùi sự giận dữ chính là khiến bản thân không
+            còn cảm nhận được sự giận dữ bộc phát ra trước một tình huống hay
+            một trường hợp không theo ý muốn của bản thân. Đã một thời gian rất
+            dài rồi Phong không cảm nhận được sự giận dữ trổi dậy,, và Phong cố
+            gắng chôn vùi nó ở nơi sâu nhất của linh hồn mình. Sự giận dữ luôn
+            có một mối quan hệ mất thiết với đau khổ, sự giận dữ sẽ luôn đi kèm
+            sau đó là sự đau khổ, và khi sự giận dữ kéo dài thì mức độ đau khổ
+            mà nó mang lại ngày càng lớn. Và đến một lúc nào đó, khi sự đau khổ
+            diễn ra ở mức độ cao nhất, con người chúng ta không bộc phát ra sự
+            giận dữ và từ sự giận dữ đó không sinh ngược lại đau khổ, chúng ta
+            chỉ mỉm cười và bước tiếp. Thời điểm đó chính là lúc, bản thân chúng
+            ta, bản thân não bộ chúng ta đã thật sự chôn vùi sự giận dữ ở một
+            góc khuất nào đó trong linh hồn. Nó có thể không mãi mãi, nhưng nó
+            sẽ kéo dài một khoảng thời gian rất lâu.
+          </Paragraph>
+          <Paragraph>
+            Khi trải qua hai giai đoạn trên, giai đoạn kiểm soát cơn giận dữ và
+            giai đoạn chôn vùi nó, con người và não bộ sẽ bước vào một giai đoạn
+            đỉnh cao nhất của yếu tố này: chính là triệt tiêu việc bị kích động.
+            Chúng ta sẽ trở nên điềm tĩnh và không còn phản ứng thái hóa với
+            những gì đang diễn ra. Chúng ta không quá bị kích động bởi những
+            điều tuyệt vời hay đúng ý, chúng ta cũng không bị sự giận dữ lấn át
+            khi xảy ra những điều tệ hại, và chúng ta cũng không bị rơi vào vòng
+            xoáy giận dữ - mất kiểm soát - đau khổ khi bị một yếu tố gì đó kích
+            động. Chúng ta sẽ luôn điềm tĩnh và đón nhận chúng, tiếp nhận chúng,
+            phân tích và trải nghiệm, từ đó đưa ra những điều chính xác hơn mà
+            não bộ mong muốn. Đây là một giai đoạn rất khó đạt được trong một
+            sớm một chiều hay trải qua nhiều chuyện, nó phụ thuộc vào cả thời
+            gian và không gian, nó phụ thuộc vào cả hoàn cảnh và khả năng tiếp
+            nhận.
+          </Paragraph>
+          <Paragraph>
+            Và yếu tố này, con người có thể mất cả đời hoặc không bao giờ có thể
+            đạt được mức độ cao nhất.
+          </Paragraph>
+          <Heading3 id="anchor112">
+            1.12. Đừng hối tiếc những gì đã trải qua, thay vào đó lạc quan và kỹ
+            càng nhìn nhận hơn ở tương lai
+          </Heading3>
+          <Paragraph>
+            Tất cả những cơ hội vụt qua hay những điều tốt đẹp đi qua mà bản
+            thân bỏ lỡ hay không nắm bắt kịp, hãy xem đó là một bài học và đừng
+            hối tiếc. Việc hối tiếc sẽ khiến cho bản thân rơi vào trạng thái
+            tuột cảm xúc và dằn vặt, những điều tiêu cực sẽ đến và dần cuốn trí
+            não đi vào một vùng vô định. Mặt khác, việc hối tiếc cũng sẽ góp
+            phần tạo ra một tâm lý "sợ bị bỏ lỡ" cho dù nó đã thật sự bị bỏ lỡ
+            (trong đầu tư thường được gọi là FOMO), và tất nhiên điều này là
+            hoàn toàn nguy hiểm và chính việc bị FOMO có thể khiến sự hối tiếc
+            mới được hình thành. Kiên nhẫn chờ đợi và phân tích mọi thứ ở mức
+            tối đa có thể để không bỏ lỡ cơ hội hay những điều tốt đẹp đang đến
+            trong tương lai. Cuộc sống là một thị trường không bao giờ ngừng lại
+            và nó sẽ luôn lên và xuống theo từng giai đoạn, hãy chấp nhận và
+            hiểu cách nó vận hành.
+          </Paragraph>
+          <Paragraph>
+            Một trong những điều mà Phong học được khi đặt chân vào thị trường
+            Cryptocurrency chính là những điều này. Bước vào thị trường và tìm
+            hiểu thị trường này vào giai đoạn đi từ bình thường đến khủng hoảng
+            trầm trọng và bước vào giai đoạn tăng trưởng chưa từng có trong lịch
+            sử, những gì mà Phong học được chính là{" "}
+            <strong>sự kiên nhẫn và đừng hối tiếc</strong>. Việc hối tiếc sẽ tạo
+            ra một tâm lý rất nguy hiểm và bất ổn, tạo cho bản thân một tâm lý
+            FOMO (sợ bị bỏ lỡ) và FUD (sợ bị không kịp). Và khi trải qua những
+            lần như vậy, Phong nhận thấy việc hối tiếc vào những gì không may
+            hay không như mong muốn giống như 1 liều thuốc độc và nó tác động
+            trực tiếp đến cả tinh thần lẫn thể chất, nó chẳng có bất kỳ một lợi
+            ích nào và cũng không góp quá nhiều vào việc thúc đẩy hay tạo động
+            lực (và phần lớn chúng ta dùng sự hối tiếc - dằn vặt để biện hộ cho
+            bản thân rằng đây sẽ như là một bài học - một động lực - một cột mốc
+            giúp chúng ta không mắc lại sai lầm đó, tất nhiên là nếu nhìn kỹ lại
+            thì rất khó và rất hiếm nó như vậy).
+          </Paragraph>
+          <Paragraph>
+            Chúng ta sinh ra, tồn tại, phát triển trong thế giới này mà không có
+            bất kỳ một "bảng hướng dẫn trước" hoàn chỉnh nào. Chính vì vậy ai
+            cũng sẽ có những sai lầm, cũng sẽ có những quyết định và tính toán
+            không theo mong muốn. Không có ai hoàn hảo tuyệt đối và cũng không
+            có ai là biết trước cả, tất cả đều đã - đang -sẽ trải qua quá trình
+            để nhìn nhận ra điều này.{" "}
+          </Paragraph>
+          <Paragraph>
+            Tại sao lúc đó mình lại không làm vậy? Tại sao lúc ấy mình bỏ lỡ?
+            Tại sao mình lại hành động như thế? Tại sao điều đó lại diễn ra mà
+            mình không nhận ra? Tại sao mình lại nhận ra mà không có bất kỳ hành
+            động nào để nắm bắt nó? Tại sao? Tại sao? và Tại sao?. Rất nhiều câu
+            hỏi đặt ra khi chúng ta bỏ lỡ những điều hoặc nhìn lại những chuyện
+            không mong muốn trong quá khứ. Sao chúng ta kông nghĩ rằng hay không
+            tự hỏi rằng Tại sao chúng ta lại như vậy? và nó có mang lại bất kỳ
+            lợi ích gì không hay chỉ khiến chúng ta tệ thêm?{" "}
+          </Paragraph>
+          <Paragraph>
+            Bản thân Phong cũng từng trải qua một dài đoạn dài sống trong hối
+            tiếc và thậm chí hối hận, dằn vặt về những gì đã diễn ra. Và nó kéo
+            dài một khoảng thời gian quá dài, dài tới mức nó khiến Phong kiệt
+            quệ và rơi vào trạng thái tiền trầm cảm. Thật khó để vượt qua giai
+            đoạn đó, và thật sự khó để nghĩ về nó. Nếu cứ tiếp tục chạy theo và
+            tiếp tục hối tiếc những điều đã xảy ra, bản thân chúng ta sẽ dần bị
+            rơi vào một vòng lặp vô tận khi lại bỏ lỡ những điều đang diễn ra ở
+            hiện tại và sắp diễn ra ở quá khứ. Và cứ thế, chúng ta bị cuốn vào
+            cái vòng lặp "chết tiệt" đó mà dần đánh mất đi sự sáng suốt, sự bình
+            tĩnh, và sự lạc quan trong suy nghĩ. Và năng lượng mà não bộ dùng
+            cho các vấn đề đó là quá lớn, và chẳng bao giờ chúng ta còn nghe
+            thấy những tiếng phản hồi từ nó nữa.
+          </Paragraph>
+          <Paragraph>
+            Vì vậy, Phong à, đừng hối tiếc những gì đã trải qua nữa, thay vào đó
+            lạc quan và kỹ càng hơn trong cách nhìn nhận các vấn đề ở tương lai.
+          </Paragraph>
+          <Heading3 id="anchor113">
+            1.13. Nổi sợ và sự ganh ghét chính là động lực lớn nhất giúp não bộ
+            kích hoạt mọi thứ cần thiết để cơ thể tiến lên
+          </Heading3>
+          <Paragraph>
+            Động lực lớn nhất của một con người, hay có thể gọi là động lực lớn
+            nhất của não bộ bao gồm 2 thứ: Nổi sợ và sự ganh ghét. Hai yếu tố
+            này có khả năng mạnh nhất trong việc kích thích não bộ tạo ra các
+            yếu tố cần thiết, từ đó sẽ thúc đẩy con người tiến tới những giới
+            hạn mà họ chưa từng tới, thậm chí là làm những điều chưa từng làm,
+            và có suy nghĩ chưa từng có.{" "}
+          </Paragraph>
+          <Paragraph>
+            Đầu tiên, NỔI SỢ, khi chúng ta sợ một điều gì đó, sợ mất một thứ gì
+            đó, hay nổi sợ cô đơn và bị bỏ lại, não bộ sẽ được kích thích mạnh
+            mẽ giúp chúng ta vực dậy và vượt qua những khó khăn hiện tại, trở
+            nên sáng suốt và có phần tích cực hơn. Có một câu nói rất nổi tiếng
+            "Đừng bao giờ dồn người khác vào bước đường cùng, vì lúc ấy bạn sẽ
+            đánh thức con quỷ trong người họ.". Và điều này cũng đúng với chính
+            bạn, chỉ cần là con người, trong những tình huống mà cơ thể bị dồn
+            nén đến mức không thể bị dồn nén hơn, nó sẽ sinh ra nổi sợ và từ nổi
+            sợ đó, nó sẽ hình thành một động lực to lớn. Và chúng ta hay còn gọi
+            đó là bản năng sinh tồn. Thậm chí, nổi sợ tạo ra nguồn động lực lớn
+            đến nổi mà bản thân người đó sẽ không bao giờ có thể làm lại điều
+            tương tự, họ thậm chí bị phản ứng ngược sau này khi không còn đủ sức
+            nữa. Có thể hiểu như một trạng thái "chai". Bạn sẽ không biết bạn
+            mạnh mẽ, và giỏi đến dường nào nếu bạn chưa phải đối mặt với một nổi
+            sợ hãi vượt ngoài tầm kiểm soát. Nó kích thích một nguồn lực khủng
+            khiếp khiến não bộ bạn chống lại mà cả bạn cũng không thể kiểm soát
+            được nữa.
+          </Paragraph>
+          <Paragraph>
+            Và điều thứ hai chính là SỰ GANH GHÉT, điều này là một con dao hai
+            lưỡi, nó là một trong hai yếu tố giúp cho bạn có một động lực không
+            thể to lớn hơn, nhưng nó cũng góp phần khiến cho bạn mất kiểm soát
+            dễ hơn. Có hai trường hợp, hai hướng đi cụ thể khi não bộ tạo ra
+            động lực bằng sự kích thích của sự ganh ghét.
+          </Paragraph>
+          <BulletList>
+            <li>
+              <Paragraph>
+                Mất kiểm soát ở điểm đích đầu: Khi sự ganh ghét tạo ra một nguồn
+                động lực to lớn thông qua não bộ, bạn sẽ có thể làm được những
+                điều mà bạn muốn, đạt được những giới hạn mà bạn chưa bao giờ có
+                thể vượt qua. Tuy nhiên, khi đạt được mục đích đầu tiên đó, bạn
+                có đủ sức dừng lại sự ganh ghét và thay vào đó là sự cảm thông
+                và tha thứ hay không chính là vấn đề. Nếu như bạn không thể
+                kliểm soát được sau khi đạt được điểm đích đầu, bạn sẽ mất đi
+                chính mình và rất rất rất khó sau này mới có thể quay lại. Và
+                phần lớn, động lực được tạo ra từ sự ganh ghét đều có xu hướng
+                đi vào nhánh này.
+              </Paragraph>
+            </li>
+            <li>
+              <Paragraph>
+                Kiểm soát ở điểm đích đầu: Khi kiểm soát được bản thân ở điểm
+                đích đầu, não bộ sẽ bắt đầu dịu đi và hình thành ra những điều
+                tích cực hơn như một "liều thuốc giảm đau" giúp não bộ trở nên
+                bớt nóng đi. Rất khó để kiểm soát được điều này và đây chính là
+                điều mà bất kỳ ai muốn tận dụng sự ganh ghét để tạo động lực
+                cũng phải nhận thức được, và tính được khả năng kiểm soát. Đừng
+                nghĩ rằng bản thân sẽ có thể đi vào điểm này dễ dàng. Khi đặt
+                chân vào yếu tố này thì việc đi được đến nhánh này là một thử
+                thách rất lớn. Hãy cẩn thận.
+              </Paragraph>
+            </li>
+          </BulletList>
           <div className="w-full p-2 my-2 flex items-center space-x-2 justify-center">
             <VictoryHand />
             <p className="text-black dark:text-white uppercase font-bold inline-flex">

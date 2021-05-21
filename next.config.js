@@ -14,6 +14,7 @@ module.exports = nextTranslate({
       "media0.giphy.com",
       "media3.giphy.com",
       "dl.dropbox.com",
+      "i.imgur.com",
     ],
   },
   webpack: (config, { dev, isServer }) => {
