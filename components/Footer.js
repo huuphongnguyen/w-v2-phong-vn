@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="items-start mx-auto w-full max-w-3xl space-y-1">
-        <div className="block md:flex items-center space-x-2">
+        <div className="flex flex-col-reverse md:grid md:grid-cols-2 items-center space-x-2">
           <div>
             <div className="flex items-center space-x-1 font-carbon-bold text-black dark:text-white uppercase">
               <p className="">Designed / Developed / Code by</p>
@@ -77,7 +77,7 @@ export default function Footer() {
               </a>
             </div>
           </div>
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-end">
             <div className="w-[100px] h-[100px] relative">
               <NextImage
                 src="https://media0.giphy.com/media/EJwVFI5sUsNTi9AZYL/giphy.gif?cid=4fcb451eo2t34wsqupqec848qdgeenx6v1l82oqcyatbakws&rid=giphy.gif&ct=s"
