@@ -1,4 +1,5 @@
 import { PointingUp } from "akar-icons";
+import AXCoin from "../elements/AXCoin";
 import ChangeCoin from "../elements/ChangeCoin";
 
 export default function ProductsSection() {
@@ -25,13 +26,13 @@ export default function ProductsSection() {
             </h2>
           </div>
         </a>
-        <a href="https://change.vn" target="_blank">
+        <a href="https://theuvitinhanhxuyen.com" target="_blank">
           <div className="bg-purple-100 rounded-md flex-col items-center justify-center relative inline-flex py-2 group transform transition-all md:hover:scale-[0.9]">
             <div className="transform scale-[0.5] transition-all md:group-hover:scale-[0.7] -mt-20 -mb-20 -ml-4 -mr-4">
-              <ChangeCoin />
+              <AXCoin />
             </div>
             <h2 className="text-black dark:text-white font-carbon-bold uppercase text-xl transform transition-all mx-auto text-center md:group-hover:translate-y-6">
-              Change.vn
+              AX Embroidery
             </h2>
           </div>
         </a>
