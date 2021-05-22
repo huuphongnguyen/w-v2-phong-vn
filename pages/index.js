@@ -7,6 +7,7 @@ import ProjectsSection from "../components/structures/ProjectsSection";
 import StuffSection from "../components/structures/StuffSection";
 import SubPageSection from "../components/structures/SubPageSection";
 import TwitterSEO from "../components/TwitterSEO";
+import ProductsSection from "../components/structures/ProductsSection";
 
 export default function Home() {
   const seotitle = `PHONG.VN - Phong's personal website`;
@@ -28,6 +29,7 @@ export default function Home() {
           <HeroSection />
         </div>
         <InspirationSection />
+        <ProductsSection />
         <ProjectsSection />
         <ConceptsSection />
         <BlogSection />
