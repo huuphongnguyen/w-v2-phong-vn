@@ -1,4 +1,4 @@
-import { Coffee, Envelope, MoreHorizontal, Send } from "akar-icons";
+import { Envelope, MoreHorizontal, Send } from "akar-icons";
 import { NextSeo, SocialProfileJsonLd } from "next-seo";
 import NextImage from "next/image";
 import NextLink from "next/link";
@@ -143,6 +143,16 @@ export default function Phong() {
                 </h3>
               </div>
             </a>
+            <a
+              href="https://stackoverflow.com/users/6277201/huu-phong-nguyen"
+              target="_blank"
+            >
+              <div className=" border-2 border-[#7C56FB] text-[#7C56FB] p-3 hover:bg-purple-200 group">
+                <h3 className="font-carbon-bold uppercase transform transition-all group-hover:scale-110 group-hover:-rotate-12 origin-center inline-flex">
+                  Stackoverflow
+                </h3>
+              </div>
+            </a>
           </div>
           <div className="flex items-center space-x-1">
             <div className="w-7 h-7 relative">
@@ -180,6 +190,23 @@ export default function Phong() {
             </h2>
           </div>
           <div className="grid grid-cols-1 gap-2">
+            <a href="https://change.vn" target="_blank">
+              <div className="border-2 border-[#7C56FB] text-[#7C56FB] p-3 flex items-center space-x-2 hover:bg-purple-200">
+                <h3 className="font-carbon-bold uppercase">Change.vn</h3>
+              </div>
+            </a>
+            <a href="https://theuvitinhanhxuyen.com" target="_blank">
+              <div className="border-2 border-[#7C56FB] text-[#7C56FB] p-3 flex items-center space-x-2 hover:bg-purple-200">
+                <h3 className="font-carbon-bold uppercase">
+                  TheuViTinhAnhXuyen.com
+                </h3>
+              </div>
+            </a>
+            <a href="https://emb.vn" target="_blank">
+              <div className="border-2 border-[#7C56FB] text-[#7C56FB] p-3 flex items-center space-x-2 hover:bg-purple-200">
+                <h3 className="font-carbon-bold uppercase">EMB.VN</h3>
+              </div>
+            </a>
             <a href="http://xn--7biy658mpea72f.y.at/" target="_blank">
               <div className="border-2 border-[#7C56FB] text-[#7C56FB] p-3 flex items-center space-x-2 hover:bg-purple-200 group">
                 <div className="flex items-center">
@@ -215,57 +242,6 @@ export default function Phong() {
                 <h3 className="font-carbon-bold uppercase">
                   Y.AT | Human are Aliens
                 </h3>
-              </div>
-            </a>
-            <a href="https://theuvitinhanhxuyen.com" target="_blank">
-              <div className="border-2 border-[#7C56FB] text-[#7C56FB] p-3 flex items-center space-x-2 hover:bg-purple-200">
-                <h3 className="font-carbon-bold uppercase">
-                  TheuViTinhAnhXuyen.com
-                </h3>
-              </div>
-            </a>
-            <a href="https://emb.vn" target="_blank">
-              <div className="border-2 border-[#7C56FB] text-[#7C56FB] p-3 flex items-center space-x-2 hover:bg-purple-200">
-                <h3 className="font-carbon-bold uppercase">EMB.VN</h3>
-              </div>
-            </a>
-          </div>
-          <div className="flex space-x-1 items-center">
-            <div className="w-7 h-7 relative">
-              <NextImage
-                className="object-cover absolute"
-                src="/emoji/emoji-pizza.png"
-                layout="fill"
-              />
-            </div>
-            <h2 className="text-black font-carbon-bold uppercase text-lg">
-              Others
-            </h2>
-          </div>
-          <div className="grid grid-cols-1 gap-2">
-            <a href="https://www.buymeacoffee.com/phong" target="_blank">
-              <div className="border-2 border-[#7C56FB] text-[#7C56FB] p-3 flex items-center space-x-2 hover:bg-purple-200">
-                <Coffee className="text-[#7C56FB]" />
-                <h3 className="font-carbon-bold uppercase">
-                  Buy me a coffee . com / phong
-                </h3>
-              </div>
-            </a>
-            <div className="grid grid-cols-2 gap-2">
-              <a href="#" target="_blank">
-                <div className="border-2 border-[#7C56FB] text-[#7C56FB] p-3 flex items-center space-x-2 hover:bg-purple-200">
-                  <h3 className="font-carbon-bold uppercase">Bitcoin</h3>
-                </div>
-              </a>
-              <a href="#" target="_blank">
-                <div className="border-2 border-[#7C56FB] text-[#7C56FB] p-3 flex items-center space-x-2 hover:bg-purple-200">
-                  <h3 className="font-carbon-bold uppercase">BNB</h3>
-                </div>
-              </a>
-            </div>
-            <a href="#" target="_blank">
-              <div className="border-2 border-[#7C56FB] text-[#7C56FB] p-3 flex items-center space-x-2 hover:bg-purple-200">
-                <h3 className="font-carbon-bold uppercase">.ETH</h3>
               </div>
             </a>
           </div>

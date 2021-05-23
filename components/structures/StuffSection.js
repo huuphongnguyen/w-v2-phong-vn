@@ -55,19 +55,19 @@ export default function StuffSection() {
                     href="https://open.spotify.com/user/bwunro2q3l6dcfnvz6vb07g89?si=bL3D9kWXTF6sUrrJLotJLA"
                     target="_blank"
                   >
-                    <div className="text-white dark:text-black bg-black dark:bg-white px-2 py-0 inline-flex font-carbon-bold uppercase items-center space-x-2">
+                    <div className="text-black hover:bg-black hover:text-white dark:text-white dark:hover:bg-white dark:hover:text-black px-2 py-0 inline-flex font-carbon-bold uppercase items-center space-x-2 group">
                       Spotify
                       <ArrowUpRight
-                        className="text-white dark:text-black"
+                        className="text-black dark:text-white group-hover:text-white dark:group-hover:text-black"
                         size={18}
                       />
                     </div>
                   </a>
                   <a href="https://soundcloud.com/donuf" target="_blank">
-                    <div className="text-white dark:text-black bg-black dark:bg-white px-2 py-0 inline-flex font-carbon-bold uppercase items-center space-x-2">
+                    <div className="text-black hover:bg-black hover:text-white dark:text-white dark:hover:bg-white dark:hover:text-black px-2 py-0 inline-flex font-carbon-bold uppercase items-center space-x-2 group">
                       Soundcloud
                       <ArrowUpRight
-                        className="text-white dark:text-black"
+                        className="text-black dark:text-white group-hover:text-white dark:group-hover:text-black"
                         size={18}
                       />
                     </div>
