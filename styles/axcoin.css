@@ -679,6 +679,18 @@
   transform: translateY(96.075px) translateX(90px) rotateZ(450deg)
     translateX(100px) rotateY(90deg);
 }
+
+.axcoin__shadow {
+  position: absolute;
+  width: 200px;
+  height: 20px;
+  border-radius: 50%;
+  background: #000;
+  box-shadow: 0 0 100px 100px #000;
+  opacity: 0.125;
+  transform: rotateX(90deg) translateZ(-220px) scale(0.5);
+}
+
 @keyframes rotate3d {
   0% {
     transform: perspective(1000px) rotateY(0deg);

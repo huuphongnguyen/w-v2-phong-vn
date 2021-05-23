@@ -22,6 +22,7 @@ export default function ProjectsSection() {
           src="https://media0.giphy.com/media/H6bpouTIgqRYn8xzyz/giphy.gif?cid=4fcb451e3i8ou5hf8je0vjdsrs8fue3t1pp0cxkxt27ye39i&rid=giphy.gif&ct=s"
           layout="fill"
           className="absolute"
+          quality={30}
         />
       </div>
       <div className="flex items-center space-x-2">

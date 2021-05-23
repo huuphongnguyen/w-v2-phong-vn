@@ -164,7 +164,7 @@ export default function StuffSection() {
               </h2>
             </div>
             <a href="https://dispo.fun/@shop" target="_blank">
-              <div className="inline-flex items-center space-x-1 hover:bg-gray-100 dark:hover:bg-gray-800 px-2 py-1 group">
+              <div className="inline-flex items-center space-x-1 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md px-2 py-1 group">
                 <div className="w-12 h-12 relative transform transition-all group-hover:rotate-[70deg]">
                   <img
                     src="/static/dispo-roll-green.gif"
