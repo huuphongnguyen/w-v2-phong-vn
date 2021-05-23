@@ -132,7 +132,7 @@ export default function StuffSection() {
               </div>
               <div>
                 <div className="flex items-center space-x-1">
-                  <NextLink href="/domains">
+                  <NextLink href="/tools">
                     <a>
                       <div className="inline-flex items-center space-x-1 bg-white dark:bg-black hover:bg-black dark:hover:bg-white group px-2 py-1">
                         <p className="text-black dark:text-white group-hover:text-white dark:group-hover:text-black uppercase font-bold text-xs">
