@@ -1,4 +1,4 @@
-import { ArrowUpRight, Chess, VictoryHand } from "akar-icons";
+import { ArrowUpRight, Chess, KeyCap, VictoryHand } from "akar-icons";
 import useTranslation from "next-translate/useTranslation";
 import NextLink from "next/link";
 import NextImage from "next/image";
@@ -96,28 +96,62 @@ export default function StuffSection() {
             </div>
           </div>
         </div>
-        <div>
-          <div className="space-y-2">
-            <div className="flex items-center space-x-2">
-              <Chess className="text-black dark:text-white" />
-              <h2 className="text-black dark:text-white font-mono text-base font-bold">
-                My domains I am chilling with
-              </h2>
+        <div className="flex-col space-y-4 md:space-y-0 md:grid md:grid-cols-2 gap-4 pt-2 md:pt-4">
+          <div>
+            <div className="space-y-2">
+              <div className="flex items-center space-x-2">
+                <Chess className="text-black dark:text-white" />
+                <h2 className="text-black dark:text-white font-mono text-base font-bold">
+                  My domains I am chilling with
+                </h2>
+              </div>
+              <div>
+                <NextLink href="/domains">
+                  <a>
+                    <div className="inline-flex items-center space-x-1 bg-white dark:bg-black hover:bg-black dark:hover:bg-white group px-2 py-1">
+                      <p className="text-black dark:text-white group-hover:text-white dark:group-hover:text-black uppercase font-bold text-xs">
+                        see more
+                      </p>
+                      <ArrowUpRight
+                        className="text-black dark:text-white group-hover:text-white dark:group-hover:text-black"
+                        size={18}
+                      />
+                    </div>
+                  </a>
+                </NextLink>
+              </div>
             </div>
-            <div>
-              <NextLink href="/domains">
-                <a>
-                  <div className="inline-flex items-center space-x-1 bg-white dark:bg-black hover:bg-black dark:hover:bg-white group px-2 py-1">
-                    <p className="text-black dark:text-white group-hover:text-white dark:group-hover:text-black uppercase font-bold text-xs">
-                      see more
+          </div>
+          <div>
+            <div className="space-y-2">
+              <div className="flex items-center space-x-2">
+                <KeyCap className="text-black dark:text-white" />
+                <h2 className="text-black dark:text-white font-mono text-base font-bold">
+                  My tools I am using it to create
+                </h2>
+              </div>
+              <div>
+                <div className="flex items-center space-x-1">
+                  <NextLink href="/domains">
+                    <a>
+                      <div className="inline-flex items-center space-x-1 bg-white dark:bg-black hover:bg-black dark:hover:bg-white group px-2 py-1">
+                        <p className="text-black dark:text-white group-hover:text-white dark:group-hover:text-black uppercase font-bold text-xs">
+                          explore
+                        </p>
+                        <ArrowUpRight
+                          className="text-black dark:text-white group-hover:text-white dark:group-hover:text-black"
+                          size={18}
+                        />
+                      </div>
+                    </a>
+                  </NextLink>
+                  <div className="inline-flex">
+                    <p className="text-black dark:text-white px-2 text-xs uppercase font-bold border-2 border-black">
+                      Syncing with Notion API
                     </p>
-                    <ArrowUpRight
-                      className="text-black dark:text-white group-hover:text-white dark:group-hover:text-black"
-                      size={18}
-                    />
                   </div>
-                </a>
-              </NextLink>
+                </div>
+              </div>
             </div>
           </div>
         </div>

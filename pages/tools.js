@@ -5,6 +5,7 @@ import NextLink from "next/link";
 import { ArrowUpRight, FaceHappy, FaceVeryHappy } from "akar-icons";
 import useTranslate from "next-translate/useTranslation";
 import { useRouter } from "next/router";
+import TwitterSEO from "../components/TwitterSEO";
 
 export async function getStaticProps() {
   const notion = new Client({ auth: process.env.NOTION_API_OFFICIAL_KEYS });
@@ -153,6 +154,13 @@ export default function Tools({ results }) {
             },
           ],
         }}
+      />
+      <TwitterSEO
+        currentURL={seourl}
+        previewImage={`https://phong.vn/${seopreviewimg}`}
+        siteName={seotitle}
+        pageTitle={seotitle}
+        description={seodescrip}
       />
       <div className="items-start mx-auto w-full max-w-3xl space-y-4 pt-5">
         <div className="inline-flex items-center space-x-1 text-black dark:text-white text-xl uppercase font-carbon-bold">
