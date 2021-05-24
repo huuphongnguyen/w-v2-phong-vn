@@ -4,6 +4,12 @@ import { Hashtag_vi_blog } from "../elements/HashtagsData";
 
 export const blogData = [
   [
+    "Mình đã mua tên miền .ETH của ENS Domain như thế nào?",
+    "/blog/minh-da-mua-ten-mien-eth-cua-ens-nhu-the-nao",
+    "2021-05-24",
+    "#vi-blog",
+  ],
+  [
     "Dispo là gì? Tại sao mình thích Dispo?",
     "/blog/dispo-la-gi-tai-sao-minh-thich-dispo",
     "2021-02-15",
