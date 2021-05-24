@@ -9,6 +9,7 @@ import BulletList from "../../components/elements/block/BulletList";
 import Quote from "../../components/elements/block/Quote";
 import { NextSeo } from "next-seo";
 import TwitterSEO from "../../components/TwitterSEO";
+import TelegramComments from "../../components/elements/TelegramComments";
 
 export default function Blog_minh_da_mua_ten_mien_eth_cua_ens_nhu_the_nao() {
   const seotitle = `Mình đã mua tên miền .ETH của ENS Domain như thế nào?`;
@@ -651,6 +652,9 @@ export default function Blog_minh_da_mua_ten_mien_eth_cua_ens_nhu_the_nao() {
             tạo ra, một thế giới mới.
           </Paragraph>
           <Paragraph>Hãy thử và trải nghiệm tương lai.</Paragraph>
+        </div>
+        <div>
+          <TelegramComments datatelegramdiscussion="phongchannel/14" />
         </div>
       </div>
     </Container>
