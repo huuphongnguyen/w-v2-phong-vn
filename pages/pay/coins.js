@@ -43,7 +43,7 @@ export default function Coins() {
         <div className="flex items-center justify-center">
           <CopyToClipboard text="phongvn.eth" onCopy={onCopyAllText3}>
             <h3
-              className="text-black font-bold text-2xl text-center inline-flex rainbow_text_foundation p-4 cursor-pointer transform transition-all active:scale-75"
+              className="text-black font-bold text-2xl text-center rainbow_text_foundation p-4 cursor-pointer transform transition-all active:scale-75"
               onClick={() =>
                 toast(
                   <p className="text-black dark:text-white uppercase text-sm font-carbon-bold">

@@ -14,12 +14,7 @@ import EndPostSection from "../../components/structures/EndPostSection";
 
 export default function Blog_minh_da_mua_ten_mien_eth_cua_ens_nhu_the_nao() {
   const seotitle = `Mình đã mua tên miền .ETH của ENS Domain như thế nào?`;
-  const seodescrip = `Mình đã mua tên miền .ETH của ENS Domain trên mạng blockchain
-  của Ethereum như thế nào? Trong bài viết này mình sẽ viết lại
-  quá trình mình mua nó, thật sự rất dễ dàng và nhanh chóng.
-  Blockchain và cách mà các DApps tương tác với nhau khiến mình
-  thật sự rất bất ngờ, tương lai các ứng dụng nên được liên kết
-  giống như vậy.`;
+  const seodescrip = `Mình đã mua tên miền .ETH của ENS Domain trên mạng blockchain của Ethereum như thế nào? Trong bài viết này mình sẽ viết lại quá trình mình mua nó, thật sự rất dễ dàng và nhanh chóng. Blockchain và cách mà các DApps tương tác với nhau khiến mình thật sự rất bất ngờ, tương lai các ứng dụng nên được liên kết giống như vậy.`;
   const seourl = `https://phong.vn/blog/minh-da-mua-ten-mien-eth-cua-ens-nhu-the-nao`;
   const seopreviewimg =
     "/static/images/minh-da-mua-ten-mien-eth-cua-ens-nhu-the-nao/minh-da-mua-ten-mien-eth-cua-ens-nhu-the-nao-feature-img.png";

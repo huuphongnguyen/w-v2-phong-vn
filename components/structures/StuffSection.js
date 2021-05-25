@@ -132,19 +132,18 @@ export default function StuffSection() {
               </div>
               <div>
                 <div className="flex items-center space-x-1">
-                  <NextLink href="/tools">
-                    <a>
-                      <div className="inline-flex items-center space-x-1 bg-white dark:bg-black hover:bg-black dark:hover:bg-white group px-2 py-1">
-                        <p className="text-black dark:text-white group-hover:text-white dark:group-hover:text-black uppercase font-bold text-xs">
-                          explore
-                        </p>
-                        <ArrowUpRight
-                          className="text-black dark:text-white group-hover:text-white dark:group-hover:text-black"
-                          size={18}
-                        />
-                      </div>
-                    </a>
-                  </NextLink>
+                  <a href="/tools">
+                    <div className="inline-flex items-center space-x-1 bg-white dark:bg-black hover:bg-black dark:hover:bg-white group px-2 py-1">
+                      <p className="text-black dark:text-white group-hover:text-white dark:group-hover:text-black uppercase font-bold text-xs">
+                        explore
+                      </p>
+                      <ArrowUpRight
+                        className="text-black dark:text-white group-hover:text-white dark:group-hover:text-black"
+                        size={18}
+                      />
+                    </div>
+                  </a>
+
                   <div className="inline-flex">
                     <p className="text-black dark:text-white px-2 text-xs uppercase font-bold border-2 border-black">
                       Syncing with Notion API
