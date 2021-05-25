@@ -1,6 +1,5 @@
 import useTranslation from "next-translate/useTranslation";
 import LetterByPhong from "../elements/LetterByPhong";
-import toast from "react-hot-toast";
 
 export default function HeroSection() {
   const { t } = useTranslation("common");

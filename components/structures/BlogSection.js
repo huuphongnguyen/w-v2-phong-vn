@@ -44,13 +44,11 @@ export default function BlogSection() {
             <p className="text-gray-500 dark:text-gray-400 font-bold font-carbon-bold inline-flex">
               {b[2]}
             </p>
-            <NextLink href={b[1]}>
-              <a>
-                <h2 className="text-black dark:text-white inline-block font-bold rainbow_text_hover">
-                  {b[0]}
-                </h2>
-              </a>
-            </NextLink>
+            <a href="href={b[1]}">
+              <h2 className="text-black dark:text-white inline-block font-bold rainbow_text_hover">
+                {b[0]}
+              </h2>
+            </a>
             {b[3] === "#vi-blog" ? <Hashtag_vi_blog t={t} /> : ""}
           </div>
         ))}

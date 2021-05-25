@@ -13,6 +13,7 @@ import TableOfContents from "../../components/elements/block/TableOfContents";
 import { NextSeo } from "next-seo";
 import TwitterSEO from "../../components/TwitterSEO";
 import TelegramComments from "../../components/elements/TelegramComments";
+import EndPostSection from "../../components/structures/EndPostSection";
 
 export default function Blog_case_study_qua_trinh_xay_dung_thuong_hieu_tai_cau_truc_Anh_Xuyen() {
   const seotitle = `Case Study: Quá trình xây dựng thương hiệu - tái cấu trúc Anh Xuyến`;
@@ -1148,9 +1149,9 @@ export default function Blog_case_study_qua_trinh_xay_dung_thuong_hieu_tai_cau_t
             dài nhưng nó dành cho mọi người – cho bản thân của mình.
           </Paragraph>
         </div>
-        <div>
+        <EndPostSection telegramid="13">
           <TelegramComments datatelegramdiscussion="phongchannel/13" />
-        </div>
+        </EndPostSection>
       </div>
     </Container>
   );

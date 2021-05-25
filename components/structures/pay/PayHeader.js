@@ -1,6 +1,7 @@
 import { ChevronDown, Heart, Ribbon } from "akar-icons";
 import NextImage from "next/image";
 import NextLink from "next/link";
+import PayThemeSwitcher from "./PayThemeSwitcher";
 
 export default function PayHeader() {
   return (
@@ -24,24 +25,31 @@ export default function PayHeader() {
         <div className="w-full flex items-center justify-center space-x-2">
           <NextLink href="/">
             <a>
-              <div className="border-2 border-black dark:border-white inline-flex space-x-1 items-center px-2">
-                <p className="text-black dark:text-white font-carbon-bold uppercase text-lg inline-flex">
+              <div className="border-2 border-black dark:border-white hover:bg-black dark:hover:bg-white group inline-flex space-x-1 items-center px-2">
+                <p className="text-black group-hover:text-white dark:text-white dark:group-hover:text-black font-carbon-bold uppercase text-lg inline-flex">
                   Home
                 </p>
-                <Ribbon className="text-black dark:text-white" size={22} />
+                <Ribbon
+                  className="text-black group-hover:text-white dark:text-white dark:group-hover:text-black"
+                  size={22}
+                />
               </div>
             </a>
           </NextLink>
           <NextLink href="/phong">
             <a>
-              <div className="border-2 border-black dark:border-white inline-flex space-x-1 items-center px-2">
-                <p className="text-black dark:text-white font-carbon-bold uppercase text-lg inline-flex">
+              <div className="border-2 border-black dark:border-white hover:bg-black dark:hover:bg-white group inline-flex space-x-1 items-center px-2">
+                <p className="text-black group-hover:text-white dark:text-white dark:group-hover:text-black font-carbon-bold uppercase text-lg inline-flex">
                   Contact
                 </p>
-                <Heart className="text-black dark:text-white" size={22} />
+                <Heart
+                  className="text-black group-hover:text-white dark:text-white dark:group-hover:text-black"
+                  size={22}
+                />
               </div>
             </a>
           </NextLink>
+          <PayThemeSwitcher />
         </div>
       </div>
       <div className="items-start mx-auto w-full max-w-xl space-y-6 mt-4">
