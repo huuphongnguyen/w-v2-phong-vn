@@ -6,7 +6,7 @@ export default function HideButton() {
     <div className="items-start mx-auto w-full max-w-xl mt-7 space-y-6">
       <NextLink href="/pay">
         <a>
-          <div className="w-full md:w-full-30 mx-auto p-2 flex items-center space-x-2 justify-center bg-gray-100 rounded-lg transform transition-all active:scale-75">
+          <div className="w-full md:w-full-30 mx-auto p-2 flex items-center space-x-2 justify-center bg-gray-100 dark:bg-gray-800 rounded-lg transform transition-all active:scale-75">
             <EyeSlashed className="text-black dark:text-white" size={22} />
             <p className="text-black dark:text-white font-carbon-bold uppercase text-lg">
               Hide

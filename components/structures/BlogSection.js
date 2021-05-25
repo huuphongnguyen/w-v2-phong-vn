@@ -1,4 +1,3 @@
-import NextLink from "next/link";
 import useTranslation from "next-translate/useTranslation";
 import { Hashtag_vi_blog } from "../elements/HashtagsData";
 

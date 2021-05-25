@@ -10,7 +10,7 @@ export default function PayNavigationBar() {
       <NextLink href="/pay/banks">
         <a>
           <div
-            className={`space-y-2 items-center justify-center bg-gray-100 rounded-lg p-2 transform transition-all md:hover:scale-110 group border-black dark:border-white ${
+            className={`space-y-2 items-center justify-center bg-gray-100 dark:bg-gray-800 rounded-lg p-2 transform transition-all md:hover:scale-110 group border-black dark:border-white ${
               router.pathname === "/pay/banks" ? "border-2" : "border-0"
             }`}
           >
@@ -26,7 +26,7 @@ export default function PayNavigationBar() {
       <NextLink href="/pay/ewallets">
         <a>
           <div
-            className={`space-y-2 items-center justify-center bg-gray-100 rounded-lg p-2 transform transition-all md:hover:scale-110 group border-black dark:border-white ${
+            className={`space-y-2 items-center justify-center bg-gray-100 dark:bg-gray-800 rounded-lg p-2 transform transition-all md:hover:scale-110 group border-black dark:border-white ${
               router.pathname === "/pay/ewallets" ? "border-2" : "border-0"
             }`}
           >
@@ -37,7 +37,7 @@ export default function PayNavigationBar() {
               />
             </div>
             <h2 className="text-black dark:text-white font-carbon-bold text-center uppercase text-sm">
-              E-Wallets
+              E-Wall
             </h2>
           </div>
         </a>
@@ -45,7 +45,7 @@ export default function PayNavigationBar() {
       <NextLink href="/pay/coins">
         <a>
           <div
-            className={`space-y-2 items-center justify-center bg-gray-100 rounded-lg p-2 transform transition-all md:hover:scale-110 group border-black dark:border-white ${
+            className={`space-y-2 items-center justify-center bg-gray-100 dark:bg-gray-800 rounded-lg p-2 transform transition-all md:hover:scale-110 group border-black dark:border-white ${
               router.pathname === "/pay/coins" ? "border-2" : "border-0"
             }`}
           >
@@ -61,7 +61,7 @@ export default function PayNavigationBar() {
       <NextLink href="/pay/others">
         <a>
           <div
-            className={`space-y-2 items-center justify-center bg-gray-100 rounded-lg p-2 transform transition-all md:hover:scale-110 group border-black dark:border-white ${
+            className={`space-y-2 items-center justify-center bg-gray-100 dark:bg-gray-800 rounded-lg p-2 transform transition-all md:hover:scale-110 group border-black dark:border-white ${
               router.pathname === "/pay/others" ? "border-2" : "border-0"
             }`}
           >

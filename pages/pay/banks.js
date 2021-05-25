@@ -5,8 +5,11 @@ import { useState } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import PayFooter from "../../components/structures/pay/PayFooter";
 import HideButton from "../../components/structures/pay/HideButton";
+import useTranslation from "next-translate/useTranslation";
 
 export default function Banks() {
+  const { t } = useTranslation("pay");
+
   const [isAllCopied1, setIsAllCopied1] = useState(false);
   const [isNumCopied1, setIsNumCopied1] = useState(false);
 
@@ -65,25 +68,31 @@ export default function Banks() {
       <HideButton />
       <div className="items-start mx-auto w-full max-w-xl mt-7 space-y-6">
         <div className="flex space-x-4">
-          <div className="w-[75%] bg-gray-100 p-4 rounded-lg">
+          <div className="w-[75%] bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">
             <div className="block md:flex space-x-0 md:space-x-2 items-center">
               <h3 className="text-black dark:text-white font-carbon-bold uppercase  text-xl">
                 TPBank
               </h3>
               <p className="text-black dark:text-white uppercase text-xs">
-                Ngân hàng Thương mại Cổ phần Tiên Phong
+                {t("banks-tpbank-name")}
               </p>
             </div>
             <p className="text-black dark:text-white font-carbon-bold uppercase text-2xl">
               0707150797
             </p>
             <p className="text-black dark:text-white text-sm uppercase font-bold">
-              Nguyễn Hữu Phong
+              {t("phong-name")}
+            </p>
+            <p className="text-black dark:text-white text-sm uppercase pt-2">
+              SWIFT Code: <strong>TPBVVNVX</strong>
             </p>
           </div>
           <div className="w-[25%] grid grid-cols-1 gap-4">
-            <CopyToClipboard text="ALL" onCopy={onCopyAllText1}>
-              <div className="p-2 bg-gray-100 block md:flex items-center space-y-2 md:space-y-0 md:space-x-2 rounded-lg justify-center cursor-pointer transform transition-all active:scale-75">
+            <CopyToClipboard
+              text={t("banks-tpbank-copy-all")}
+              onCopy={onCopyAllText1}
+            >
+              <div className="p-2 bg-gray-100 dark:bg-gray-800 block md:flex items-center space-y-2 md:space-y-0 md:space-x-2 rounded-lg justify-center cursor-pointer transform transition-all active:scale-75">
                 <Copy
                   className={`text-black dark:text-white mx-auto md:mx-0 ${
                     isAllCopied1 ? "text-purple-400" : "text-black"
@@ -99,8 +108,11 @@ export default function Banks() {
                 </p>
               </div>
             </CopyToClipboard>
-            <CopyToClipboard text="NUM" onCopy={onCopyNumText1}>
-              <div className="p-2 bg-gray-100 block md:flex items-center space-y-2 md:space-y-0 md:space-x-2 rounded-lg justify-center cursor-pointer transform transition-all active:scale-75">
+            <CopyToClipboard
+              text={t("banks-tpbank-copy-num")}
+              onCopy={onCopyNumText1}
+            >
+              <div className="p-2 bg-gray-100 dark:bg-gray-800 block md:flex items-center space-y-2 md:space-y-0 md:space-x-2 rounded-lg justify-center cursor-pointer transform transition-all active:scale-75">
                 <Copy
                   className={`text-black dark:text-white mx-auto md:mx-0 ${
                     isNumCopied1 ? "text-purple-400" : "text-black"
@@ -120,25 +132,31 @@ export default function Banks() {
         </div>
 
         <div className="flex space-x-4">
-          <div className="w-[75%] bg-gray-100 p-4 rounded-lg">
+          <div className="w-[75%] bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">
             <div className="block md:flex space-x-0 md:space-x-2 items-center">
               <h3 className="text-black dark:text-white font-carbon-bold uppercase  text-xl">
                 MBBank
               </h3>
               <p className="text-black dark:text-white uppercase text-xs">
-                Ngân hàng TMCP Quân đội
+                {t("banks-mbbank-name")}
               </p>
             </div>
             <p className="text-black dark:text-white font-carbon-bold uppercase text-2xl">
               0707150797
             </p>
             <p className="text-black dark:text-white text-sm uppercase font-bold">
-              Nguyễn Hữu Phong
+              {t("phong-name")}
+            </p>
+            <p className="text-black dark:text-white text-sm uppercase pt-2">
+              SWIFT Code: <strong>MSCBVNVX</strong>
             </p>
           </div>
           <div className="w-[25%] grid grid-cols-1 gap-4">
-            <CopyToClipboard text="ALL" onCopy={onCopyAllText2}>
-              <div className="p-2 bg-gray-100 block md:flex items-center space-y-2 md:space-y-0 md:space-x-2 rounded-lg justify-center cursor-pointer transform transition-all active:scale-75">
+            <CopyToClipboard
+              text={t("banks-mbbank-copy-all")}
+              onCopy={onCopyAllText2}
+            >
+              <div className="p-2 bg-gray-100 dark:bg-gray-800 block md:flex items-center space-y-2 md:space-y-0 md:space-x-2 rounded-lg justify-center cursor-pointer transform transition-all active:scale-75">
                 <Copy
                   className={`text-black dark:text-white mx-auto md:mx-0 ${
                     isAllCopied2 ? "text-purple-400" : "text-black"
@@ -154,8 +172,11 @@ export default function Banks() {
                 </p>
               </div>
             </CopyToClipboard>
-            <CopyToClipboard text="NUM" onCopy={onCopyNumText2}>
-              <div className="p-2 bg-gray-100 block md:flex items-center space-y-2 md:space-y-0 md:space-x-2 rounded-lg justify-center cursor-pointer transform transition-all active:scale-75">
+            <CopyToClipboard
+              text={t("banks-mbbank-copy-num")}
+              onCopy={onCopyNumText2}
+            >
+              <div className="p-2 bg-gray-100 dark:bg-gray-800 block md:flex items-center space-y-2 md:space-y-0 md:space-x-2 rounded-lg justify-center cursor-pointer transform transition-all active:scale-75">
                 <Copy
                   className={`text-black dark:text-white mx-auto md:mx-0 ${
                     isNumCopied2 ? "text-purple-400" : "text-black"
@@ -175,25 +196,31 @@ export default function Banks() {
         </div>
 
         <div className="flex space-x-4">
-          <div className="w-[75%] bg-gray-100 p-4 rounded-lg">
+          <div className="w-[75%] bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">
             <div className="block md:flex space-x-0 md:space-x-2 items-center">
               <h3 className="text-black dark:text-white font-carbon-bold uppercase  text-xl">
                 VPBank
               </h3>
               <p className="text-black dark:text-white uppercase text-xs">
-                Ngân hàng TMCP Việt Nam Thịnh Vượng
+                {t("banks-vpbank-name")}
               </p>
             </div>
             <p className="text-black dark:text-white font-carbon-bold uppercase text-2xl">
               8 0707150797
             </p>
             <p className="text-black dark:text-white text-sm uppercase font-bold">
-              Nguyễn Hữu Phong
+              {t("phong-name")}
+            </p>
+            <p className="text-black dark:text-white text-sm uppercase pt-2">
+              SWIFT Code: <strong>VPBKVNVX</strong>
             </p>
           </div>
           <div className="w-[25%] grid grid-cols-1 gap-4">
-            <CopyToClipboard text="ALL" onCopy={onCopyAllText3}>
-              <div className="p-2 bg-gray-100 block md:flex items-center space-y-2 md:space-y-0 md:space-x-2 rounded-lg justify-center cursor-pointer transform transition-all active:scale-75">
+            <CopyToClipboard
+              text={t("banks-vpbank-copy-all")}
+              onCopy={onCopyAllText3}
+            >
+              <div className="p-2 bg-gray-100 dark:bg-gray-800 block md:flex items-center space-y-2 md:space-y-0 md:space-x-2 rounded-lg justify-center cursor-pointer transform transition-all active:scale-75">
                 <Copy
                   className={`text-black dark:text-white mx-auto md:mx-0 ${
                     isAllCopied3 ? "text-purple-400" : "text-black"
@@ -209,8 +236,11 @@ export default function Banks() {
                 </p>
               </div>
             </CopyToClipboard>
-            <CopyToClipboard text="NUM" onCopy={onCopyNumText3}>
-              <div className="p-2 bg-gray-100 block md:flex items-center space-y-2 md:space-y-0 md:space-x-2 rounded-lg justify-center cursor-pointer transform transition-all active:scale-75">
+            <CopyToClipboard
+              text={t("banks-vpbank-copy-num")}
+              onCopy={onCopyNumText3}
+            >
+              <div className="p-2 bg-gray-100 dark:bg-gray-800 block md:flex items-center space-y-2 md:space-y-0 md:space-x-2 rounded-lg justify-center cursor-pointer transform transition-all active:scale-75">
                 <Copy
                   className={`text-black dark:text-white mx-auto md:mx-0 ${
                     isNumCopied3 ? "text-purple-400" : "text-black"
