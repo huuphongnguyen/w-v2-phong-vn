@@ -1,6 +1,7 @@
 import useTranslation from "next-translate/useTranslation";
 import { Hashtag_vi_blog } from "../elements/HashtagsData";
 import NextImage from "next/image";
+import toast from "react-hot-toast";
 
 export const blogData = [
   [
@@ -23,7 +24,7 @@ export const blogData = [
   ],
 ];
 export default function BlogSection() {
-  const { t } = useTranslation("hashtags");
+  const { t } = useTranslation();
 
   return (
     <div>
@@ -36,7 +37,19 @@ export default function BlogSection() {
         </h1>
       </div>
       <div className="flex items-start space-x-4 md:space-x-6">
-        <div className="hidden md:block">
+        <div
+          className="hidden md:block transform transition-all hover:scale-[1.1] hover:-rotate-12 cursor-pointer"
+          onClick={() =>
+            toast(
+              <p className="text-black dark:text-white text-base">
+                {t("common:blog-toast-image")}
+              </p>,
+              {
+                icon: "🙄",
+              }
+            )
+          }
+        >
           <NextImage
             src="/static/the-memories-blog.svg"
             width="219.2px"

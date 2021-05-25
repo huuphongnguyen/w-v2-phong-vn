@@ -1,4 +1,11 @@
-import { ArrowUpRight, Camera, Chess, KeyCap, VictoryHand } from "akar-icons";
+import {
+  ArrowUpRight,
+  Camera,
+  Chess,
+  KeyCap,
+  Radish,
+  VictoryHand,
+} from "akar-icons";
 import useTranslation from "next-translate/useTranslation";
 import NextLink from "next/link";
 import NextImage from "next/image";
@@ -154,47 +161,48 @@ export default function StuffSection() {
             </div>
           </div>
         </div>
-        <div>
-          <div className="space-y-2">
-            <div className="flex items-center space-x-2 mb-4">
-              <Camera className="text-black dark:text-white" />
-              <h2 className="text-black dark:text-white font-mono text-base font-bold">
-                Others & my public moments
-              </h2>
-            </div>
-            <a href="https://dispo.fun/@shop" target="_blank">
-              <div className="inline-flex items-center space-x-1 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md px-2 py-1 group">
-                <div className="w-12 h-12 relative transform transition-all group-hover:rotate-[70deg]">
-                  <img
-                    src="/static/dispo-roll-green.gif"
-                    className="object-cover absolute"
-                  />
-                </div>
-                <div className="w-12 h-12 relative transform transition-all delay-100 group-hover:rotate-[70deg]">
-                  <img
-                    src="/static/dispo-roll-blue.gif"
-                    className="object-cover absolute"
-                  />
-                </div>
-                <div className="w-12 h-12 relative transform transition-all delay-200 group-hover:rotate-[70deg]">
-                  <img
-                    src="/static/dispo-roll-red.gif"
-                    className="object-cover absolute"
-                  />
-                </div>
-                <div className="flex items-center space-x-2">
-                  <div className="w-8 h-8 relative">
-                    <img
-                      src="/static/dispo-logo.svg"
-                      className="object-cover absolute dark:bg-white"
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <div className="space-y-2">
+              <div className="flex items-center space-x-2 mb-4">
+                <Camera className="text-black dark:text-white" />
+                <h2 className="text-black dark:text-white font-mono text-base font-bold">
+                  Others & my public moments
+                </h2>
+              </div>
+              <p className="text-black dark:text-white font-bold text-sm">
+                {t("stuff-moments-together")}
+              </p>
+              <a href="https://poparazzi.com/@phong" target="_blank">
+                <div className="items-center space-x-2 mt-2 p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 inline-flex">
+                  <div className="w-10 h-10 flex relative">
+                    <NextImage
+                      src="/icons/poparazzi.png"
+                      layout="fill"
+                      className="object-cover absolute"
                     />
                   </div>
-                  <p className="text-black dark:text-white font-carbon-bold uppercase">
-                    Dispo.fun/@shop
+                  <p className="text-[#1511EF] dark:text-white dark:hover:text-white font-carbon-bold uppercase text-xl">
+                    Poparzzi / @phong
                   </p>
                 </div>
+              </a>
+            </div>
+          </div>
+          <div>
+            <div className="space-y-2">
+              <div className="flex items-center space-x-2 mb-4">
+                <Radish className="text-black dark:text-white" />
+                <h2 className="text-black dark:text-white font-mono text-base font-bold">
+                  Need some quotes?
+                </h2>
               </div>
-            </a>
+              <div>
+                <p className="text-black dark:text-white text-sm">
+                  coming soon
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

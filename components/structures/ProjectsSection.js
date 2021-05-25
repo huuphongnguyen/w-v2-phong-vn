@@ -12,12 +12,25 @@ import {
 import useTranslation from "next-translate/useTranslation";
 import NextImage from "next/image";
 import { ArrowUpRight } from "akar-icons";
+import toast from "react-hot-toast";
 
 export default function ProjectsSection() {
   const { t } = useTranslation("common");
   return (
     <div>
-      <div className="w-[326px] h-[480px] hidden md:block absolute transform scale-[0.55] origin-center -translate-x-16 -translate-y-16 -rotate-6">
+      <div
+        className="w-[326px] h-[480px] hidden md:block absolute transform scale-[0.55] origin-center -translate-x-16 -translate-y-16 -rotate-6 cursor-pointer transition-all hover:scale-[0.6] hover:rotate-6"
+        onClick={() =>
+          toast(
+            <p className="text-black dark:text-white text-base">
+              {t("common:projects-toast-image")}
+            </p>,
+            {
+              icon: "🤟",
+            }
+          )
+        }
+      >
         <NextImage
           src="https://media0.giphy.com/media/H6bpouTIgqRYn8xzyz/giphy.gif?cid=4fcb451e3i8ou5hf8je0vjdsrs8fue3t1pp0cxkxt27ye39i&rid=giphy.gif&ct=s"
           layout="fill"
