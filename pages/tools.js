@@ -78,7 +78,6 @@ export default function Tools({ results }) {
           </div>
         );
       });
-    console.log(results);
     return jsx;
   };
 
@@ -131,7 +130,6 @@ export default function Tools({ results }) {
           </div>
         );
       });
-    console.log(results);
     return jsx;
   };
 

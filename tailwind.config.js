@@ -65,6 +65,7 @@ module.exports = {
       scale: ["group-hover", "active"],
       borderColor: ["hover"],
       transitionDelay: ["hover", "group-hover", "focus"],
+      blur: ["hover", "focus"],
     },
   },
   plugins: [

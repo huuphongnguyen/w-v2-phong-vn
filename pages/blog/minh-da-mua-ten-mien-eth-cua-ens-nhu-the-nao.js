@@ -11,6 +11,7 @@ import { NextSeo } from "next-seo";
 import TwitterSEO from "../../components/TwitterSEO";
 import TelegramComments from "../../components/elements/TelegramComments";
 import EndPostSection from "../../components/structures/EndPostSection";
+import TableOfContents from "../../components/elements/block/TableOfContents";
 
 export default function Blog_minh_da_mua_ten_mien_eth_cua_ens_nhu_the_nao() {
   const seotitle = `Mình đã mua tên miền .ETH của ENS Domain như thế nào?`;
@@ -92,11 +93,54 @@ export default function Blog_minh_da_mua_ten_mien_eth_cua_ens_nhu_the_nao() {
             hoạt động trên Blockchain được thiết kế với một trải nghiệm người
             dùng (UX) rất cao.
           </Paragraph>
+          <TableOfContents>
+            <li>
+              <a href="#anchor1" className="hover:underline">
+                1. Luyên thuyên
+              </a>
+            </li>
+            <li className="pl-2">
+              <ul>
+                <li>
+                  <a href="#anchor11" className="hover:underline">
+                    1.1. Tên miền .ETH và ENS Domain là gì?
+                  </a>
+                </li>
+                <li>
+                  <a href="#anchor12" className="hover:underline">
+                    1.2. Tại sao phải mua tên miền .ETH?
+                  </a>
+                </li>
+                <li>
+                  <a href="#anchor13" className="hover:underline">
+                    1.3. Những điều cần lưu ý khi đăng ký tên miền .ETH
+                  </a>
+                </li>
+                <li>
+                  <a href="#anchor14" className="hover:underline">
+                    1.4. Cài đặt MetaMask và Rainbow trên điện thoại để nhận xác
+                    nhận trong lúc đăng ký tên miền .ETH
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#anchor2" className="hover:underline">
+                2. Quá trình đăng ký tên miền .ETH của ENS
+              </a>
+            </li>
+            <li>
+              <a href="#anchor3" className="hover:underline">
+                3. Tận hưởng nó
+              </a>
+            </li>
+          </TableOfContents>
           <Heading2 id="anchor1">1. Luyên thuyên</Heading2>
           <Paragraph>
             Trước khi đi vào các bước cụ thể việc đăng ký như thế nào, mình sẽ
             giới thiệu sơ qua vài điều trước nha. Chém gió tí 😙
           </Paragraph>
+
           <Heading3 id="anchor11">
             1.1. Tên miền .ETH và ENS Domain là gì?
           </Heading3>

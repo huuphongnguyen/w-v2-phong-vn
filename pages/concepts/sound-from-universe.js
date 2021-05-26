@@ -19,11 +19,11 @@ import ExternalLink from "../../components/elements/ExternalLink";
 import CallOut from "../../components/elements/block/CallOut";
 import Paragraph from "../../components/elements/block/Paragraph";
 import Quote from "../../components/elements/block/Quote";
-import Heading1 from "../../components/elements/block/Heading1";
 import Heading2 from "../../components/elements/block/Heading2";
 import QuotePeople from "../../components/elements/block/QuotePeople";
 import Heading3 from "../../components/elements/block/Heading3";
 import BulletList from "../../components/elements/block/BulletList";
+import TableOfContents from "../../components/elements/block/TableOfContents";
 
 export default function SoundFromUniverse() {
   const seotitle = `'Sound from Universe'`;
@@ -161,6 +161,95 @@ export default function SoundFromUniverse() {
           </div>
         </div>
 
+        <TableOfContents>
+          <li>
+            <a href="#gioi-thieu" className="hover:underline">
+              Giới thiệu
+            </a>
+          </li>
+          <li>
+            <a href="#anchor1" className="hover:underline">
+              1. Những quy tắc cơ bản của 'Sound from Universe'
+            </a>
+          </li>
+          <li className="pl-2">
+            <ul>
+              <li>
+                <a href="#anchor11" className="hover:underline">
+                  1.1. Ngủ thật sớm và cố gắng thức dậy trong khoảng thời gian 3
+                  giờ sáng đến 5 giờ sáng
+                </a>
+              </li>
+              <li>
+                <a href="#anchor12" className="hover:underline">
+                  1.2. Loại bỏ phần lớn Wishful Thinking
+                </a>
+              </li>
+              <li>
+                <a href="#anchor13" className="hover:underline">
+                  1.3. Luyện tập kiên trì từ những điều nhỏ nhất cho đến khi nó
+                  trở thành bình thường
+                </a>
+              </li>
+              <li>
+                <a href="#anchor14" className="hover:underline">
+                  1.4. Hạn chế - cố gắng loại bỏ việc trì hoãn
+                </a>
+              </li>
+              <li>
+                <a href="#anchor15" className="hover:underline">
+                  1.5. Thử những điều mới dù là nhỏ nhất, và làm điều đó một
+                  mình
+                </a>
+              </li>
+              <li>
+                <a href="#anchor16" className="hover:underline">
+                  1.6. Hãy đưa bản thân vào trạng thái bình tĩnh trước mình sự
+                  việc đang diễn ra
+                </a>
+              </li>
+              <li>
+                <a href="#anchor17" className="hover:underline">
+                  1.7. Tìm cho mình một điều gì đó để tin
+                </a>
+              </li>
+              <li>
+                <a href="#anchor18" className="hover:underline">
+                  1.8. Học cách từ bỏ từ những điều nhỏ nhất
+                </a>
+              </li>
+              <li>
+                <a href="#anchor19" className="hover:underline">
+                  1.9. Cội nguồn của sự tự tin
+                </a>
+              </li>
+              <li>
+                <a href="#anchor110" className="hover:underline">
+                  1.10. Định hình cho bản thân những ước mơ
+                </a>
+              </li>
+              <li>
+                <a href="#anchor111" className="hover:underline">
+                  1.11. Kiềm hãm tối đa và chôn vùi cơn giận dữ của bản thân -
+                  triệt tiêu việc bị kích động
+                </a>
+              </li>
+              <li>
+                <a href="#anchor112" className="hover:underline">
+                  1.12. Đừng hối tiếc những gì đã trải qua, thay vào đó lạc quan
+                  và kỹ càng nhìn nhận hơn ở tương lai
+                </a>
+              </li>
+              <li>
+                <a href="#anchor113" className="hover:underline">
+                  1.13. Nổi sợ và sự ganh ghét chính là động lực lớn nhất giúp
+                  não bộ kích hoạt mọi thứ cần thiết để cơ thể tiến lên
+                </a>
+              </li>
+            </ul>
+          </li>
+        </TableOfContents>
+
         <div className="text-black dark:text-white">
           <Heading2 id="gioi-thieu">Giới thiệu</Heading2>
           <Paragraph>
@@ -249,7 +338,7 @@ export default function SoundFromUniverse() {
           </ol>
 
           <Heading2 id="anchor1">
-            1. Những quy tắc cơ bản của 'Sound from Universe'{" "}
+            1. Những quy tắc cơ bản của 'Sound from Universe'
           </Heading2>
           <Paragraph>
             Những quy tắc này được xây dựng dựa trên trải nghiệm, khái niệm,

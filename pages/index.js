@@ -8,8 +8,23 @@ import StuffSection from "../components/structures/StuffSection";
 import SubPageSection from "../components/structures/SubPageSection";
 import TwitterSEO from "../components/TwitterSEO";
 import ProductsSection from "../components/structures/ProductsSection";
+import { Client } from "@notionhq/client";
 
-export default function Home() {
+export async function getStaticProps() {
+  const notion = new Client({ auth: process.env.NOTION_API_OFFICIAL_KEYS });
+
+  const databaseId = process.env.NOTION_PAGE_ID_QUOTES_PAGE;
+  const response = await notion.databases.query({
+    database_id: databaseId,
+  });
+  return {
+    props: {
+      results: response.results,
+    },
+  };
+}
+
+export default function Home({ results }) {
   const seotitle = `PHONG.VN - Phong's personal website`;
   const seodescrip = `Trang cá nhân của Nguyễn Hữu Phong. Được xây dựng bằng Next.js / TailwindCSS và lưu trữ tại Vercel. Nơi chia sẻ những dự án, blog, mấy thứ hay ho của Phong`;
   const seourl = `https://phong.vn`;
@@ -34,7 +49,7 @@ export default function Home() {
         <ConceptsSection />
         <BlogSection />
         <SubPageSection />
-        <StuffSection />
+        <StuffSection resultssync={results} />
       </div>
     </Container>
   );

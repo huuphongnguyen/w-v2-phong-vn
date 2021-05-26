@@ -9,8 +9,9 @@ import {
 import useTranslation from "next-translate/useTranslation";
 import NextLink from "next/link";
 import NextImage from "next/image";
+import QuotesView from "../elements/QuotesView";
 
-export default function StuffSection() {
+export default function StuffSection({ resultssync }) {
   const { t } = useTranslation("common");
   return (
     <div>
@@ -187,6 +188,39 @@ export default function StuffSection() {
                   </p>
                 </div>
               </a>
+              <a href="https://dispo.fun/@shop" target="_blank">
+                <div className="inline-flex items-center space-x-1 hover:bg-gray-100 dark:hover:bg-gray-800 px-0 md:px-4 py-2 rounded-lg group">
+                  <div className="w-12 h-12 relative transform transition-all group-hover:rotate-[70deg]">
+                    <img
+                      src="/static/dispo-roll-green.gif"
+                      className="object-cover absolute"
+                    />
+                  </div>
+                  <div className="w-12 h-12 relative transform transition-all delay-100 group-hover:rotate-[70deg]">
+                    <img
+                      src="/static/dispo-roll-blue.gif"
+                      className="object-cover absolute"
+                    />
+                  </div>
+                  <div className="w-12 h-12 relative transform transition-all delay-200 group-hover:rotate-[70deg]">
+                    <img
+                      src="/static/dispo-roll-red.gif"
+                      className="object-cover absolute"
+                    />
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <div className="w-8 h-8 relative">
+                      <img
+                        src="/static/dispo-logo.svg"
+                        className="object-cover absolute dark:bg-white"
+                      />
+                    </div>
+                    <p className="text-black dark:text-white font-carbon-bold uppercase">
+                      Dispo.fun/@shop
+                    </p>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
           <div>
@@ -198,9 +232,7 @@ export default function StuffSection() {
                 </h2>
               </div>
               <div>
-                <p className="text-black dark:text-white text-sm">
-                  coming soon
-                </p>
+                <QuotesView resultssync={resultssync} />
               </div>
             </div>
           </div>

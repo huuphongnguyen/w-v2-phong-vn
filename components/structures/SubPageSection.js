@@ -1,4 +1,4 @@
-import { Coin, File } from "akar-icons";
+import { Coin, FaceHappy, File, Leaf } from "akar-icons";
 import useTranslation from "next-translate/useTranslation";
 import NextImage from "next/image";
 
@@ -18,7 +18,7 @@ export default function SubPageSection() {
       <div className="px-4 py-2 space-y-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4">
           <div className="flex items-center space-x-2">
-            <File className="text-black dark:text-white" />
+            <Leaf className="text-black dark:text-white" />
             <div className="flex-cols md:flex items-center space-x-0 md:space-x-2">
               <a href="https://log.phong.vn" target="_blank">
                 <h2 className="text-black dark:text-white font-bold rainbow_text_hover inline-block">
@@ -81,7 +81,7 @@ export default function SubPageSection() {
           </div>
 
           <div className="flex items-center space-x-2">
-            <File className="text-black dark:text-white" />
+            <FaceHappy className="text-black dark:text-white" />
             <div className="flex-cols md:flex items-center space-x-0 md:space-x-2">
               <a href="https://mmm.page/phong.main" target="_blank">
                 <h2 className="text-black dark:text-white font-bold rainbow_text_hover inline-block">
