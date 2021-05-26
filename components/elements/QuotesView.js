@@ -102,7 +102,7 @@ export default function QuotesView({ resultssync }) {
         >
           {isTranslated ? <CheckBox size={22} /> : <Box size={22} />}
           <p className="font-carbon-bold uppercase text-sm pointer-events-none select-none">
-            {isTranslated ? "Translated" : "Translate"}
+            Vietnamese
           </p>
         </div>
       </div>
