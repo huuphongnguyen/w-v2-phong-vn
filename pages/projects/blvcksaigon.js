@@ -8,10 +8,23 @@ import {
   Stop,
   ShutDown,
 } from "../../components/elements/StatusBadge";
-import { Envelope, Globe, Pencil } from "akar-icons";
+import {
+  ArrowUpRight,
+  Envelope,
+  Globe,
+  Heart,
+  Inbox,
+  MoreHorizontal,
+  Pencil,
+  Plant,
+  PointingUp,
+  RockOn,
+  VictoryHand,
+} from "akar-icons";
 import useTranslate from "next-translate/useTranslation";
 import { NextSeo } from "next-seo";
 import TwitterSEO from "../../components/TwitterSEO";
+import ChangeCoin from "../../components/elements/ChangeCoin";
 
 export default function BLVCKSaigon() {
   const { t } = useTranslate("projects");
@@ -64,6 +77,89 @@ export default function BLVCKSaigon() {
       </div>
 
       <div className="items-start mx-auto w-full max-w-3xl space-y-4">
+        <div className="border-2 border-gray-200 dark:border-gray-700 p-6 pt-8">
+          <div className="w-full flex items-center justify-center relative">
+            <div className="inline-flex px-2 py-1 bg-black dark:bg-white absolute transform -translate-y-8">
+              <p className="text-white dark:text-black font-carbon-bold uppercase">
+                Next Chapter
+              </p>
+            </div>
+          </div>
+          <div className="space-y-2">
+            <div className="w-full flex items-center justify-center">
+              <VictoryHand className="text-black dark:text-white" size={25} />
+            </div>
+            <p className="text-black dark:text-white font-bold text-lg text-center">
+              BLVCK Saigon đã gia nhập và trở thành một phần của CHANGE.VN
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-4">
+              <div className="flex items-center justify-center transform scale-[0.65] md:scale-[0.75] origin-center md:origin-top -mt-20 md:-mt-0 -mb-10 md:-mb-20">
+                <ChangeCoin />
+              </div>
+              <div className="text-black dark:text-white col-span-2 space-y-4 pt-4">
+                <div className="flex items-center space-x-4">
+                  <div>
+                    <RockOn size={25} />
+                  </div>
+                  <p className="text-sm">
+                    Một Local Brand mang đến những chiếc áo T-Shirt và Hoodie
+                    thêu và in với thiết kế có thể thay đổi, custom theo ý
+                    thích.
+                  </p>
+                </div>
+                <div className="flex items-center space-x-4">
+                  <div>
+                    <Plant size={25} />
+                  </div>
+                  <p className="text-sm">
+                    Được sáng tạo bởi bạn, tập trung vào tính cá nhân hóa
+                  </p>
+                </div>
+                <div className="flex items-center space-x-4">
+                  <div>
+                    <Inbox size={25} />
+                  </div>
+                  <p className="text-sm">
+                    Mỗi hộp sản phẩm là duy nhất với một mã QR Code riêng, bạn
+                    có thể kiểm tra quyền sở hữu hộp sản phẩm.
+                  </p>
+                </div>
+                <div className="flex items-center space-x-4">
+                  <div>
+                    <Heart size={25} />
+                  </div>
+                  <p className="text-sm">
+                    Đơn giản, thoải mái, và dành cho bạn
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="w-full flex items-center justify-center py-4">
+              <a href="https://change.vn">
+                <div className="p-2 inline-flex items-center space-x-1 border-2 border-black dark:border-white">
+                  <p className="text-black dark:text-white font-carbon-bold uppercase text-xl">
+                    CHANGE.VN
+                  </p>
+                  <ArrowUpRight
+                    className="text-black dark:text-white"
+                    size={22}
+                  />
+                </div>
+              </a>
+            </div>
+            <div className="space-y-4">
+              <div className="flex items-center justify-center">
+                <PointingUp
+                  className="text-black dark:text-white animate-bounce"
+                  size={22}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="flex items-center justify-center">
+          <MoreHorizontal className="text-black dark:text-white" size={22} />
+        </div>
         <div className="border-2 border-black dark:border-white">
           <div>
             <div className="w-full flex border-b-2 border-black dark:border-white">
