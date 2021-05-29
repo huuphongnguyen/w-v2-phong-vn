@@ -449,7 +449,7 @@ export default function SoundFromUniverse() {
               nghĩ thoáng qua hoặc một quyết định bất chợt.
             </li>
           </ol>
-          <CallOut emoji="💡" bgcolor="bg-yellow-50">
+          <CallOut emoji="💡" bgcolor="bg-yellow-50 dark:bg-yellow-800">
             Nếu bạn để ý, thức dậy vào khung giờ này sẽ giúp cả ngày hôm đó của
             bạn sẽ dài ra. Điều này không chỉ ở cảm giác là nó dài ra mà nó có
             thể do ảnh hưởng của việc giản nở thời gian trong việc thay đổi đồng

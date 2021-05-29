@@ -5,6 +5,12 @@ import toast from "react-hot-toast";
 
 export const blogData = [
   [
+    " Notion là gì? Ứng dụng quan trọng nhất của mình",
+    "blog/notion-la-gi-ung-dung-quan-trong-nhat-cua-minh",
+    "2021-05-29",
+    "#vi-blog",
+  ],
+  [
     "Mình đã mua tên miền .ETH của ENS Domain như thế nào?",
     "blog/minh-da-mua-ten-mien-eth-cua-ens-nhu-the-nao",
     "2021-05-24",
