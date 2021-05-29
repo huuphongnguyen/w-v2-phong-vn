@@ -651,8 +651,8 @@ export default function Notion_la_gi_ung_dung_quan_trong_nhat_cua_minh_blog() {
             thức. Hãy tận hưởng sản phẩm sáng tạo của một start-up "unicorn".
           </Paragraph>
         </div>
-        <EndPostSection telegramid="15">
-          <TelegramComments datatelegramdiscussion="phongchannel/15" />
+        <EndPostSection telegramid="16">
+          <TelegramComments datatelegramdiscussion="phongchannel/16" />
         </EndPostSection>
       </div>
     </Container>
