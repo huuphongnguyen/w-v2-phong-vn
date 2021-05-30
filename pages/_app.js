@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import "../styles/changecoin.css";
 import "../styles/axcoin.css";
+import "../styles/embcoin.css";
 import { ThemeProvider } from "next-themes";
 import { DefaultSeo } from "next-seo";
 import SEO from "../next-seo.config";

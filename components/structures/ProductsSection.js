@@ -1,6 +1,7 @@
-import { PointingUp } from "akar-icons";
+import { ArrowRight, PointingUp, RockOn } from "akar-icons";
 import AXCoin from "../elements/AXCoin";
 import ChangeCoin from "../elements/ChangeCoin";
+import EMBCoin from "../elements/EMBCoin";
 
 export default function ProductsSection() {
   return (
@@ -15,7 +16,21 @@ export default function ProductsSection() {
           </h1>
         </div>
       </div>
-      <div className="mt-5 -mb-5 grid grid-cols-2 md:grid-cols-4 ml-4">
+      <div className="w-full grid grid-cols-2 gap-2 mt-2">
+        <div className="w-full flex items-center space-x-2">
+          <RockOn className="text-black dark:text-white" size={23} />
+          <p className="text-black dark:text-white font-bold uppercase text-xs">
+            my coins here:
+          </p>
+        </div>
+        <div className="w-full flex md:hidden items-center justify-end space-x-2">
+          <p className="text-black dark:text-white font-bold uppercase text-xs">
+            scroll to view more
+          </p>
+          <ArrowRight className="text-black dark:text-white" size={16} />
+        </div>
+      </div>
+      <div className="mt-5 -mb-5 flex space-x-4 w-full overflow-x-scroll scrollbar-hide md:grid md:grid-cols-4">
         <a href="https://change.vn" target="_blank">
           <div className="bg-gray-100 dark:bg-gray-800 rounded-md flex-col items-center justify-center relative inline-flex py-2 group transform transition-all md:hover:scale-[0.9]">
             <div className="transform scale-[0.5] transition-all md:group-hover:scale-[0.7] -mt-20 -mb-20 -ml-4 -mr-4">
@@ -36,12 +51,16 @@ export default function ProductsSection() {
             </h2>
           </div>
         </a>
-      </div>
-      <div className="flex items-center space-x-2">
-        <PointingUp className="text-black dark:text-white" size={23} />
-        <p className="text-black dark:text-white uppercase font-carbon-bold">
-          I am working so hard to bring it to you.
-        </p>
+        <a href="https://emb.vn" target="_blank">
+          <div className="bg-gray-100 dark:bg-gray-800 rounded-md flex-col items-center justify-center relative inline-flex py-2 group transform transition-all md:hover:scale-[0.9]">
+            <div className="transform scale-[0.5] transition-all md:group-hover:scale-[0.7] -mt-20 -mb-20 -ml-4 -mr-4">
+              <EMBCoin />
+            </div>
+            <h2 className="text-black dark:text-white font-carbon-bold uppercase text-xl transform transition-all mx-auto text-center md:group-hover:translate-y-6">
+              Emb.vn
+            </h2>
+          </div>
+        </a>
       </div>
     </div>
   );

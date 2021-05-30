@@ -32,6 +32,7 @@
     "react-hot-toast": "^1.0.2",
     "react-player": "^2.9.0",
     "react-toastify": "^7.0.4",
+    "tailwind-scrollbar-hide": "^1.0.3",
     "use-sound": "^2.2.0"
   },
   "devDependencies": {
