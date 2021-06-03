@@ -89,10 +89,12 @@ export default function MEMESoundGrid({ sync }) {
             className={`text-black px-2 py-1 rounded-md bg-gray-100 dark:bg-gray-100 mr-2 focus:outline-none focus:border-black border-2 border-transparent border-dashed transform transition-all md:hover:scale-105 md:hover:border-black  ${
               isplaying ? "focus:border-black" : "focus:border-transparent"
             }`}
-            onClick={(e) => handlePLAY(element.fields.sound)}
+            onClick={(e) =>
+              handlePLAY(element.properties.soundmp3.files[0].name)
+            }
           >
             <p className="text-black font-carbon-bold text-xl">
-              {element.fields.emoji}
+              {element.properties.emoji.rich_text[0].plain_text}
             </p>
           </button>
         ))}

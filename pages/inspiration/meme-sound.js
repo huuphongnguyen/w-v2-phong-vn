@@ -4,24 +4,25 @@ import NextLink from "next/link";
 import useTranslate from "next-translate/useTranslation";
 import { NextSeo } from "next-seo";
 import TwitterSEO from "../../components/TwitterSEO";
+import { Client } from "@notionhq/client";
 
-const memesoundEndpoint = process.env.NOTION_API_TABLE_MEMESOUND;
+export async function getStaticProps() {
+  const notion = new Client({ auth: process.env.NOTION_API_OFFICIAL_KEYS });
 
-export async function getServerSideProps() {
-  const res = await fetch(memesoundEndpoint);
-  const data = await res.json();
-
+  const databaseId = process.env.NOTION_PAGE_ID_MEMESOUND;
+  const response = await notion.databases.query({
+    database_id: databaseId,
+  });
   return {
     props: {
-      data,
+      results: response.results,
     },
   };
 }
 
-export default function MEMESound({ data }) {
+export default function MEMESound({ results }) {
+  console.log("results", results);
   const { t } = useTranslate("memesound");
-
-  const memesoundarray = [data];
 
   const seotitle = `MEME's Sound Board - Phong.vn`;
   const seodescrip = `Dùng khi Voice Chat trên Clubhouse / Twitter Spaces / Telegram Voice. Dữ liệu fetching trực tiếp từ trang Notion của Phong và được tổng hợp bằng tay nên số lượng sẽ không được nhiều và bao gồm các âm thanh phổ biến.`;
@@ -75,7 +76,7 @@ export default function MEMESound({ data }) {
           </p>
         </div>
         <div>
-          <MEMESoundGrid sync={memesoundarray[0]} />
+          <MEMESoundGrid sync={results} />
         </div>
       </div>
     </Container>

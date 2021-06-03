@@ -1,5 +1,6 @@
 import useTranslation from "next-translate/useTranslation";
 import NextImage from "next/image";
+import NextLink from "next/link";
 
 export default function InspirationSection() {
   const { t } = useTranslation("common");
@@ -71,11 +72,13 @@ export default function InspirationSection() {
             </div>
           </div>
           <div className="px-4 py-2">
-            <a href="/inspiration/meme-sound">
-              <h2 className="text-black dark:text-white font-bold inline-block rainbow_text_hover">
-                {t("inspiration-memesound-title")}
-              </h2>
-            </a>
+            <NextLink href="/inspiration/meme-sound">
+              <a>
+                <h2 className="text-black dark:text-white font-bold inline-block rainbow_text_hover">
+                  {t("inspiration-memesound-title")}
+                </h2>
+              </a>
+            </NextLink>
             <p className="text-gray-500 dark:text-gray-400">
               {t("inspiration-memesound-description")}
             </p>
