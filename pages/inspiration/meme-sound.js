@@ -21,7 +21,6 @@ export async function getStaticProps() {
 }
 
 export default function MEMESound({ results }) {
-  console.log("results", results);
   const { t } = useTranslate("memesound");
 
   const seotitle = `MEME's Sound Board - Phong.vn`;
