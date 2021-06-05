@@ -5,8 +5,6 @@ import NextImage from "next/image";
 export default function BlogSection({ resultssync }) {
   const { t } = useTranslation();
 
-  console.log("bloglist", resultssync);
-
   return (
     <div>
       <div className="inline-flex items-center space-x-1">
