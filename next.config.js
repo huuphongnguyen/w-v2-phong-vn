@@ -13,10 +13,11 @@ module.exports = nextTranslate({
       "media2.giphy.com",
       "media0.giphy.com",
       "media3.giphy.com",
-      "dl.dropbox.com",
+      "dl.dropboxusercontent.com",
       "i.imgur.com",
     ],
   },
+
   webpack: (config, { dev, isServer }) => {
     if (isServer) {
       require("./scripts/generate-sitemap");

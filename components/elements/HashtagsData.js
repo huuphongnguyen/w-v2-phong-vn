@@ -34,6 +34,10 @@ export const Hashtag_vi_blog = ({ t }) => (
   <Hashtags toastinfo={t("hashtags:hashtag_vi_blog")}>#vi-blog</Hashtags>
 );
 
+export const Hashtag_en_blog = ({ t }) => (
+  <Hashtags toastinfo={t("hashtags:hashtag_en_blog")}>#en-blog</Hashtags>
+);
+
 export const hash = ({ t }) => (
   <Hashtags toastinfo={t("hashtags:hashtag_")}>hash</Hashtags>
 );
