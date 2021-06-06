@@ -26,8 +26,7 @@ const prettier = require("prettier");
                   .replace("pages/projects", "")
                   .replace("pages/concepts", "")
                   .replace("pages/blog", "")
-                  .replace(".js", "")
-                  .replace(".mdx", "");
+                  .replace(".js", "");
                 const route = path === "/index" ? "" : path;
 
                 // CHANGE THE DOMAIN TO THIS SCRIPT CAN RUNNING
