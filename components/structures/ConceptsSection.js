@@ -22,8 +22,10 @@ export default function ConceptsSection() {
       </div>
       <div className="px-4 py-2">
         {conceptsData.reverse().map((b, index) => (
-          <div className="flex items-center space-x-2">
-            <Planet className="text-black dark:text-white animate-spin-slow-42" />
+          <div className="flex items-center space-x-3">
+            <div className="pr-2">
+              <Planet className="text-black dark:text-white animate-spin-slow-42" />
+            </div>
             <div className="flex items-center space-x-2" key={index}>
               <p className="text-gray-500 dark:text-gray-400 font-bold font-carbon-bold inline-flex">
                 {b[2]}

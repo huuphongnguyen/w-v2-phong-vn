@@ -15,6 +15,8 @@
   "inspiration-twitterhashflags-description": "Hashflags is a concept used by Twitter to refer to icons next to hashtags. Only the really important and hot hashtags have Hashflags. Hashflags only exist for a certain period of time before disappearing.",
   "inspiration-memesound-title": "MEME's Sound Board",
   "inspiration-memesound-description": "Playing & have fun with some MEME's sound from my board. Just create it to collab with friends on Clubhouse or Twitter Spaces.",
+  "projects-changevn-title": "CHANGE.VN - Change Starts Here",
+  "projects-changevn-description": "An online store that sells embroidered/printed products that can be customized",
   "projects-ax-title": "AX Embroidery Workshop",
   "projects-ax-description": "A system of embroidered workshop / computerized embroidery / embroidery.",
   "projects-embvn-title": "EMB.VN - EMB Vietnam",
@@ -24,7 +26,10 @@
   "projects-toast-image": "Yesterday you said tomorrow. Just do it.",
   "blog-toast-image": "Write about what you've been through",
   "subpage-log-description": "A public diary",
+  "subpage-letters-description": "All letters I wrote",
   "stuff-spotify-explain": "Real-time syncing with my Spotify through",
   "stuff-spotify-ask": "Listen with me?",
-  "stuff-moments-together": "I hope we can create moments together."
+  "stuff-moments-together": "I hope we can create moments together.",
+  "footer-lilac-toast-line1": "My currently lovely flower,",
+  "footer-lilac-toast-line2": "Lilac"
 }

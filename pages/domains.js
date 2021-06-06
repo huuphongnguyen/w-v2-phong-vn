@@ -9,8 +9,8 @@ export default function Domains() {
   const { t } = useTranslate("domains");
   return (
     <Container>
-      <div className="items-start mx-auto w-full max-w-3xl space-y-4 pt-5">
-        <div className="inline-flex items-center space-x-1 text-black dark:text-white text-xl uppercase font-carbon-bold">
+      <div className="items-start mx-auto w-full max-w-3xl space-y-4">
+        <div className="inline-flex items-center space-x-1 text-black dark:text-white text-xl uppercase font-carbon-bold mt-5">
           <NextLink href="/">
             <a>
               <p className="text-gray-300 dark:text-gray-600 hover:text-black dark:hover:text-white">

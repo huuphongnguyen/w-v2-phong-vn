@@ -41,6 +41,34 @@ export default function ProjectsSection() {
           <div className="w-[10%] md:w-auto pt-2">
             <div className="w-8 h-8 relative">
               <NextImage
+                src="https://dl.dropboxusercontent.com/s/rzkxzvjuxnfrh0f/changevn-feature-icon.svg?dl=0"
+                layout="fill"
+                className="object-cover absolute"
+              />
+            </div>
+          </div>
+          <div>
+            <NextLink href="/projects/changevn">
+              <a>
+                <h2 className="text-black dark:text-white font-bold rainbow_text_hover inline-block">
+                  {t("projects-changevn-title")}
+                </h2>
+              </a>
+            </NextLink>
+            <p className="text-gray-500 dark:text-gray-400">
+              {t("projects-changevn-description")}
+            </p>
+            <div className="flex space-x-2">
+              <Hashtag_2021 t={t} />
+              <Hashtag_developing t={t} />
+            </div>
+          </div>
+        </div>
+
+        <div className="flex items-start space-x-3">
+          <div className="w-[10%] md:w-auto pt-2">
+            <div className="w-8 h-8 relative">
+              <NextImage
                 src="https://dl.dropboxusercontent.com/s/h9qd7mgchwuspxb/axembroidery-feature-icon.svg?dl=0"
                 layout="fill"
                 className="object-cover absolute"
