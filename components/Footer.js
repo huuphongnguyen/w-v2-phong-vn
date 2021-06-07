@@ -45,6 +45,12 @@ export default function Footer() {
                     className="w-7 h-7 dark:fill-white transform transition-all origin-center hover:scale-110"
                   />
                 </a>
+                <a href="https://dropbox.com" target="_blank">
+                  <img
+                    src="/icons/dropbox.svg"
+                    className="w-7 h-7 dark:fill-white transform transition-all origin-center hover:scale-110"
+                  />
+                </a>
                 <a href="https://cloudflare.com" target="_blank">
                   <img
                     src="/icons/cloudflare.svg"
