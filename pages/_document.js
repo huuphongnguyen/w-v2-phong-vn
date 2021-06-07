@@ -5,7 +5,13 @@ class MyDocument extends Document {
     return (
       <Html lang="vi">
         <Head>
-          <link rel="stylesheet" href="https://use.typekit.net/utb0vnu.css" />
+          <link
+            rel="preload"
+            href="/fonts/carbon-bold.woff2"
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
+          />
           <link href="/static/favicons/phong-vn.ico" rel="shortcut icon" />
 
           <link href="/static/favicons/site.webmanifest" rel="manifest" />
