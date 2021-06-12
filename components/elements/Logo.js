@@ -1,18 +1,16 @@
-import useTranslation from "next-translate/useTranslation";
-import LogoCoin from "./LogoCoin";
+import NextImage from "next/image";
 
 export default function Logo() {
-  const { t } = useTranslation("common");
-
   return (
     <a href="https://phong.vn">
-      <div className="inline-flex items-center space-x-2">
-        <div className="-mt-20 transform translate-y-10 scale-110 origin-center mr-2">
-          <LogoCoin />
+      <div className="bg-white dark:bg-black p-0 -ml-4 md:ml-0 md:p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800">
+        <div className="flex relative items-center w-[140px] h-[31px]">
+          <NextImage
+            src="/PHONG.svg"
+            layout="fill"
+            className="object-cover absolute dark:fill-white"
+          />
         </div>
-        <h1 className="text-black dark:text-white font-carbon-bold uppercase text-xl rainbow_text_hover">
-          {t("logo-title")}
-        </h1>
       </div>
     </a>
   );
