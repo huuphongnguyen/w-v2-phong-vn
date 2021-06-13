@@ -1,4 +1,3 @@
-import HeroSection from "./structures/HeroSection";
 import NavigationBar from "./structures/NavigationBar";
 
 export default function Header() {
