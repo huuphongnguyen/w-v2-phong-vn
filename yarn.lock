@@ -785,6 +785,11 @@
   dependencies:
     defer-to-connect "^2.0.0"
 
+"@tabler/icons@^1.41.2":
+  version "1.41.2"
+  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-1.41.2.tgz#effccbb261539b68609cc7dc660a058683170ee1"
+  integrity sha512-X6cQmMC24hiwg0p2BzasvU3IeCCdOk0f/9d6gNNtJM4lzG2TCloTns1bVvU5MAFkITGukxUqjPFE3Ecd6kGsfw==
+
 "@tailwindcss/aspect-ratio@^0.2.1":
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/@tailwindcss/aspect-ratio/-/aspect-ratio-0.2.1.tgz#a7ce776688b8218d9559a6918f0bccc58f0f16dd"
@@ -3934,6 +3939,11 @@ supports-color@^7.1.0:
   integrity sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==
   dependencies:
     has-flag "^4.0.0"
+
+tailwind-scrollbar-hide@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/tailwind-scrollbar-hide/-/tailwind-scrollbar-hide-1.0.3.tgz#00d4851659389856bd3185d5e45bdf0462b4f166"
+  integrity sha512-BF+ITR3cJFFF8IP1B6snlZtwSJxwWIB030LX9ZGEITBfWiqn1V4rEJUF44HJH5w6hZBrqSlwJdhILya8OvWefg==
 
 tailwindcss-css-filters@^2.1.0:
   version "2.1.0"
