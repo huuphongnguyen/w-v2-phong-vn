@@ -21,7 +21,7 @@
     "globby": "^11.0.3",
     "lodash": "^4.17.21",
     "moment": "^2.29.1",
-    "next": "10.0.9",
+    "next": "^11.0.0",
     "next-seo": "^4.24.0",
     "next-themes": "0.0.12",
     "next-translate": "^1.0.7",
@@ -37,10 +37,10 @@
     "use-sound": "^2.2.0"
   },
   "devDependencies": {
-    "autoprefixer": "^10.2.5",
+    "autoprefixer": "^10.2.6",
     "file-loader": "^6.2.0",
-    "postcss": "^8.3.0",
-    "tailwindcss": "^2.1.2",
+    "postcss": "^8.3.5",
+    "tailwindcss": "^2.2.2",
     "tailwindcss-css-filters": "^2.1.0",
     "url-loader": "^4.1.1"
   }
