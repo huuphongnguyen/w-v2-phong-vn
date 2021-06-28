@@ -9,9 +9,8 @@ import TwitterSEO from "../../components/TwitterSEO";
 export default function TwitterHashflags() {
   const { t } = useTranslation("hashflags");
 
-  const [isShowingTwitterHashflagsGrid, ShowTwitterHashflagsGrid] = useState(
-    false
-  );
+  const [isShowingTwitterHashflagsGrid, ShowTwitterHashflagsGrid] =
+    useState(false);
 
   const seotitle = `Exploring Twitter Hashflags - Phong.vn`;
   const seodescrip = `Hashflags là một khái niệm được Twitter sử dụng để chỉ những icon bên cạnh các Hashtags. Chỉ những Hashtags thật sự quan trọng và đang hot mới có Hashflags. Các Hashflags chỉ tồn tại trong một khoảng thời gian nhất định trước khi biến mất.`;
