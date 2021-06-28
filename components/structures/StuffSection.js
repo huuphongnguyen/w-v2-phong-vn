@@ -27,13 +27,13 @@ export default function StuffSection({ resultssync }) {
         <div>
           <div className="flex items-center space-x-2 mb-2">
             <VictoryHand className="text-black dark:text-white" />
-            <h2 className="text-base font-bold text-black dark:text-white font-mono">
+            <h2 className="text-base font-bold text-black dark:text-white font-carbon-bold">
               My playlists
             </h2>
           </div>
           <div className="space-y-2">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-              <div className="space-y-1">
+              <div className="space-y-1 hidden">
                 <div className="bg-white dark:px-1 dark:rounded-md">
                   <img
                     src="https://widget-spotify-now-playing.vercel.app/now-playing"
@@ -109,7 +109,7 @@ export default function StuffSection({ resultssync }) {
             <div className="space-y-2">
               <div className="flex items-center space-x-2">
                 <Chess className="text-black dark:text-white" />
-                <h2 className="text-black dark:text-white font-mono text-base font-bold">
+                <h2 className="text-black dark:text-white font-carbon-bold text-base font-bold">
                   My domains I am chilling with
                 </h2>
               </div>
@@ -134,7 +134,7 @@ export default function StuffSection({ resultssync }) {
             <div className="space-y-2">
               <div className="flex items-center space-x-2">
                 <KeyCap className="text-black dark:text-white" />
-                <h2 className="text-black dark:text-white font-mono text-base font-bold">
+                <h2 className="text-black dark:text-white font-carbon-bold text-base font-bold">
                   My tools I am using it to create
                 </h2>
               </div>
@@ -167,24 +167,24 @@ export default function StuffSection({ resultssync }) {
             <div className="space-y-2">
               <div className="flex items-center space-x-2 mb-4">
                 <Camera className="text-black dark:text-white" />
-                <h2 className="text-black dark:text-white font-mono text-base font-bold">
+                <h2 className="text-black dark:text-white font-carbon-bold text-base font-bold">
                   Others & my public moments
                 </h2>
               </div>
               <p className="text-black dark:text-white font-bold text-sm">
                 {t("stuff-moments-together")}
               </p>
-              <a href="https://poparazzi.com/@phong" target="_blank">
+              <a href="https://futureme.org" target="_blank">
                 <div className="items-center space-x-2 mt-2 p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 inline-flex">
-                  <div className="w-10 h-10 flex relative">
+                  <div className="w-[124px] h-[22px] flex relative">
                     <NextImage
-                      src="/icons/poparazzi.png"
+                      src="/icons/futureme.svg"
                       layout="fill"
-                      className="object-cover absolute"
+                      className="object-cover"
                     />
                   </div>
-                  <p className="text-[#1511EF] dark:text-white dark:hover:text-white font-carbon-bold uppercase text-xl">
-                    Poparzzi / @phong
+                  <p className="text-black dark:text-white dark:hover:text-white font-carbon-bold uppercase text-base px-2 pt-1">
+                    Write a letter
                   </p>
                 </div>
               </a>
@@ -227,7 +227,7 @@ export default function StuffSection({ resultssync }) {
             <div className="space-y-2">
               <div className="flex items-center space-x-2 mb-4">
                 <Radish className="text-black dark:text-white" />
-                <h2 className="text-black dark:text-white font-mono text-base font-bold">
+                <h2 className="text-black dark:text-white font-carbon-bold text-base font-bold">
                   Need some quotes?
                 </h2>
               </div>

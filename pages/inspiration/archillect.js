@@ -23,9 +23,8 @@ export async function getServerSideProps() {
 export default function Archillect({ data }) {
   const archillectarray = [data];
 
-  const [isShowingArchillectImageGrid, showArchillectImageGrid] = useState(
-    false
-  );
+  const [isShowingArchillectImageGrid, showArchillectImageGrid] =
+    useState(false);
 
   const { t } = useTranslation("archillect");
 
