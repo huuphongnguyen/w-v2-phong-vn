@@ -1,0 +1,47 @@
+{
+  "name": "phong.vn",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@icons-pack/react-simple-icons": "^4.3.0",
+    "@notionhq/client": "^0.1.8",
+    "@tabler/icons": "^1.41.2",
+    "@tailwindcss/aspect-ratio": "^0.2.1",
+    "@tailwindcss/line-clamp": "^0.2.1",
+    "akar-icons": "^1.5.0",
+    "dayjs": "^1.10.4",
+    "firebase": "^8.6.2",
+    "firebase-admin": "^9.8.0",
+    "fs": "0.0.1-security",
+    "globby": "^11.0.3",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "next": "^11.0.0",
+    "next-seo": "^4.24.0",
+    "next-themes": "0.0.12",
+    "next-translate": "^1.0.7",
+    "nextjs-progressbar": "0.0.8",
+    "prettier": "^2.3.0",
+    "react": "17.0.1",
+    "react-copy-to-clipboard": "^5.0.3",
+    "react-dom": "17.0.1",
+    "react-hot-toast": "^1.0.2",
+    "react-player": "^2.9.0",
+    "react-toastify": "^7.0.4",
+    "tailwind-scrollbar-hide": "^1.0.3",
+    "use-sound": "^2.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "file-loader": "^6.2.0",
+    "postcss": "^8.3.5",
+    "tailwindcss": "^2.2.2",
+    "tailwindcss-css-filters": "^2.1.0",
+    "url-loader": "^4.1.1"
+  }
+}
