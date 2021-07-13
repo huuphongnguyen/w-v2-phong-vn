@@ -17,7 +17,7 @@ export default function LetterByPhong({ children, letterNumber }) {
                 </div>
               </a>
             </NextLink>
-            <p className="font-bold uppercase font-carbon-bold text-black dark:text-white text-lg">
+            <p className="font-bold uppercase font-carbonbold text-black dark:text-white text-lg">
               Letter Number: <strong>{letterNumber}</strong>
             </p>
           </div>

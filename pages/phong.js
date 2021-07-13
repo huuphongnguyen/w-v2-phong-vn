@@ -55,7 +55,7 @@ export default function Phong() {
                 Nguyễn Hữu Phong
               </h1>
             </div>
-            <p className="text-black text-center text-xl uppercase font-carbon-bold">
+            <p className="text-black text-center text-xl uppercase font-carbonbold">
               @phong
             </p>
           </div>
@@ -66,7 +66,7 @@ export default function Phong() {
             >
               <div className="border-2 border-[#7C56FB] text-[#7C56FB] p-3 flex items-center space-x-2 hover:bg-purple-200">
                 <Envelope className="text-[#7C56FB]" />
-                <h3 className="font-carbon-bold uppercase">
+                <h3 className="font-carbonbold uppercase">
                   Email: hello@phong.vn
                 </h3>
               </div>
@@ -74,7 +74,7 @@ export default function Phong() {
             <a href="https://t.me/isnhp" target="_blank">
               <div className="border-2 border-[#7C56FB] text-[#7C56FB] p-3 flex items-center space-x-2 hover:bg-purple-200">
                 <Send className="text-[#7C56FB]" />
-                <h3 className="font-carbon-bold uppercase">Telegram: @isnhp</h3>
+                <h3 className="font-carbonbold uppercase">Telegram: @isnhp</h3>
               </div>
             </a>
           </div>
@@ -86,14 +86,14 @@ export default function Phong() {
                 layout="fill"
               />
             </div>
-            <h2 className="text-black font-carbon-bold uppercase text-lg">
+            <h2 className="text-black font-carbonbold uppercase text-lg">
               My networks
             </h2>
           </div>
           <div className="grid grid-cols-2 gap-2">
             <a href="https://www.twitter.com/isnhp/" target="_blank">
               <div className=" border-2 border-[#7C56FB] text-[#7C56FB] p-3 hover:bg-purple-200 group">
-                <h3 className="font-carbon-bold uppercase transform transition-all group-hover:scale-110 group-hover:-rotate-12 origin-center inline-flex">
+                <h3 className="font-carbonbold uppercase transform transition-all group-hover:scale-110 group-hover:-rotate-12 origin-center inline-flex">
                   Twitter
                 </h3>
               </div>
@@ -103,42 +103,42 @@ export default function Phong() {
               target="_blank"
             >
               <div className=" border-2 border-[#7C56FB] text-[#7C56FB] p-3 hover:bg-purple-200 group">
-                <h3 className="font-carbon-bold uppercase transform transition-all group-hover:scale-110 group-hover:-rotate-12 origin-center inline-flex">
+                <h3 className="font-carbonbold uppercase transform transition-all group-hover:scale-110 group-hover:-rotate-12 origin-center inline-flex">
                   Facebook
                 </h3>
               </div>
             </a>
             <a href="https://www.instagram.com/isnhp" target="_blank">
               <div className=" border-2 border-[#7C56FB] text-[#7C56FB] p-3 hover:bg-purple-200 group">
-                <h3 className="font-carbon-bold uppercase transform transition-all group-hover:scale-110 group-hover:-rotate-12 origin-center inline-flex">
+                <h3 className="font-carbonbold uppercase transform transition-all group-hover:scale-110 group-hover:-rotate-12 origin-center inline-flex">
                   Instagram
                 </h3>
               </div>
             </a>
             <a href="https://www.github.com/huuphongnguyen" target="_blank">
               <div className=" border-2 border-[#7C56FB] text-[#7C56FB] p-3 hover:bg-purple-200 group">
-                <h3 className="font-carbon-bold uppercase transform transition-all group-hover:scale-110 group-hover:-rotate-12 origin-center inline-flex">
+                <h3 className="font-carbonbold uppercase transform transition-all group-hover:scale-110 group-hover:-rotate-12 origin-center inline-flex">
                   Github
                 </h3>
               </div>
             </a>
             <a href="https://zalo.me/dropship" target="_blank">
               <div className=" border-2 border-[#7C56FB] text-[#7C56FB] p-3 hover:bg-purple-200 group">
-                <h3 className="font-carbon-bold uppercase transform transition-all group-hover:scale-110 group-hover:-rotate-12 origin-center inline-flex">
+                <h3 className="font-carbonbold uppercase transform transition-all group-hover:scale-110 group-hover:-rotate-12 origin-center inline-flex">
                   Zalo
                 </h3>
               </div>
             </a>
             <a href="https://www.pinterest.com/isnhp" target="_blank">
               <div className=" border-2 border-[#7C56FB] text-[#7C56FB] p-3 hover:bg-purple-200 group">
-                <h3 className="font-carbon-bold uppercase transform transition-all group-hover:scale-110 group-hover:-rotate-12 origin-center inline-flex">
+                <h3 className="font-carbonbold uppercase transform transition-all group-hover:scale-110 group-hover:-rotate-12 origin-center inline-flex">
                   Pinterest
                 </h3>
               </div>
             </a>
             <a href="https://www.producthunt.com/@isnhp" target="_blank">
               <div className=" border-2 border-[#7C56FB] text-[#7C56FB] p-3 hover:bg-purple-200 group">
-                <h3 className="font-carbon-bold uppercase transform transition-all group-hover:scale-110 group-hover:-rotate-12 origin-center inline-flex">
+                <h3 className="font-carbonbold uppercase transform transition-all group-hover:scale-110 group-hover:-rotate-12 origin-center inline-flex">
                   ProductHunt
                 </h3>
               </div>
@@ -148,7 +148,7 @@ export default function Phong() {
               target="_blank"
             >
               <div className=" border-2 border-[#7C56FB] text-[#7C56FB] p-3 hover:bg-purple-200 group">
-                <h3 className="font-carbon-bold uppercase transform transition-all group-hover:scale-110 group-hover:-rotate-12 origin-center inline-flex">
+                <h3 className="font-carbonbold uppercase transform transition-all group-hover:scale-110 group-hover:-rotate-12 origin-center inline-flex">
                   Stackoverflow
                 </h3>
               </div>
@@ -162,7 +162,7 @@ export default function Phong() {
                 layout="fill"
               />
             </div>
-            <h2 className="text-black font-carbon-bold uppercase text-lg">
+            <h2 className="text-black font-carbonbold uppercase text-lg">
               My personal sites
             </h2>
           </div>
@@ -170,7 +170,7 @@ export default function Phong() {
             <NextLink href="/">
               <a>
                 <div className="border-2 border-[#7C56FB] text-[#7C56FB] p-3 flex items-center space-x-2 hover:bg-purple-200 group">
-                  <h3 className="font-carbon-bold uppercase transform transition-all group-hover:scale-110 group-hover:-rotate-12">
+                  <h3 className="font-carbonbold uppercase transform transition-all group-hover:scale-110 group-hover:-rotate-12">
                     PHONG.VN
                   </h3>
                 </div>
@@ -185,26 +185,26 @@ export default function Phong() {
                 layout="fill"
               />
             </div>
-            <h2 className="text-black font-carbon-bold uppercase text-lg">
+            <h2 className="text-black font-carbonbold uppercase text-lg">
               My project sites
             </h2>
           </div>
           <div className="grid grid-cols-1 gap-2">
             <a href="https://change.vn" target="_blank">
               <div className="border-2 border-[#7C56FB] text-[#7C56FB] p-3 flex items-center space-x-2 hover:bg-purple-200">
-                <h3 className="font-carbon-bold uppercase">Change.vn</h3>
+                <h3 className="font-carbonbold uppercase">Change.vn</h3>
               </div>
             </a>
             <a href="https://theuvitinhanhxuyen.com" target="_blank">
               <div className="border-2 border-[#7C56FB] text-[#7C56FB] p-3 flex items-center space-x-2 hover:bg-purple-200">
-                <h3 className="font-carbon-bold uppercase">
+                <h3 className="font-carbonbold uppercase">
                   TheuViTinhAnhXuyen.com
                 </h3>
               </div>
             </a>
             <a href="https://emb.vn" target="_blank">
               <div className="border-2 border-[#7C56FB] text-[#7C56FB] p-3 flex items-center space-x-2 hover:bg-purple-200">
-                <h3 className="font-carbon-bold uppercase">EMB.VN</h3>
+                <h3 className="font-carbonbold uppercase">EMB.VN</h3>
               </div>
             </a>
             <a href="http://xn--7biy658mpea72f.y.at/" target="_blank">
@@ -239,7 +239,7 @@ export default function Phong() {
                     />
                   </div>
                 </div>
-                <h3 className="font-carbon-bold uppercase">
+                <h3 className="font-carbonbold uppercase">
                   Y.AT | Human are Aliens
                 </h3>
               </div>
@@ -249,7 +249,7 @@ export default function Phong() {
             <MoreHorizontal className="text-black" />
           </div>
           <div className="flex justify-between">
-            <p className="text-black font-carbon-bold uppercase text-lg text-center">
+            <p className="text-black font-carbonbold uppercase text-lg text-center">
               Love{" "}
               <a
                 className="text-[#7C56FB]"
@@ -267,7 +267,7 @@ export default function Phong() {
                 IU
               </a>
             </p>
-            <p className="text-black font-carbon-bold uppercase text-lg text-center">
+            <p className="text-black font-carbonbold uppercase text-lg text-center">
               22+1
             </p>
           </div>

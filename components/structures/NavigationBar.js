@@ -14,7 +14,7 @@ export default function NavigationBar() {
           <a
             href="https://github.com/huuphongnguyen/phong.vn"
             target="_blank"
-            className="text-black dark:text-white rainbow_text_hover font-carbon-bold uppercase"
+            className="text-black dark:text-white rainbow_text_hover font-carbonbold uppercase"
           >
             source
           </a>

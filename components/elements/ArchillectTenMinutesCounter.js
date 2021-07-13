@@ -32,7 +32,7 @@ export default function ArchillectTenMinutesCounter() {
         {t("archillect-10counter")}{" "}
         <span
           id="timer"
-          className="rainbow_text_animated inline-block p-1 font-bold font-carbon-bold text-lg"
+          className="rainbow_text_animated inline-block p-1 font-bold font-carbonbold text-lg"
         />
       </p>
     </div>

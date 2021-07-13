@@ -8,10 +8,10 @@ export default function BlogSection({ resultssync }) {
   return (
     <div>
       <div className="inline-flex items-center space-x-1">
-        <p className="text-black dark:text-white uppercase font-carbon-bold text-xl">
+        <p className="text-black dark:text-white uppercase font-carbonbold text-xl">
           /
         </p>
-        <h1 className="text-black dark:text-white uppercase font-carbon-bold text-xl">
+        <h1 className="text-black dark:text-white uppercase font-carbonbold text-xl">
           Blog
         </h1>
       </div>
@@ -30,7 +30,7 @@ export default function BlogSection({ resultssync }) {
               </div>
               <div className="flex-cols items-center" key={block.id}>
                 <div className="flex items-center space-x-2">
-                  <p className="text-gray-500 dark:text-gray-400 font-bold font-carbon-bold inline-flex">
+                  <p className="text-gray-500 dark:text-gray-400 font-bold font-carbonbold inline-flex">
                     {block.properties.daywrite.rich_text[0].plain_text}
                   </p>
                   {block.properties.Tags.multi_select.map((tag) =>

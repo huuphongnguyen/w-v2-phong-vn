@@ -2,11 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-  .font-carbon-bold {
+@layer base {
+  @font-face {
     font-family: "T-26 Carbon Bold";
+    font-weight: 700;
+    font-style: normal;
+    font-display: optional;
+    src: url(/fonts/carbon-bold.woff2) format("woff2");
   }
+}
 
+@layer utilities {
   .rainbow_contact_button {
     height: 90px;
     width: 90px;
@@ -99,14 +105,6 @@
       background-position: 100% 0%, 0% 100%, 0% 0%, 100% 100%;
     }
   }
-}
-
-@font-face {
-  font-family: "T-26 Carbon Bold";
-  font-weight: 700;
-  font-style: normal;
-  font-display: optional;
-  src: url(/fonts/carbon-bold.woff2) format("woff2");
 }
 
 html,

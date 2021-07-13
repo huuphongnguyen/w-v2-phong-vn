@@ -60,7 +60,7 @@ export default function Contact() {
               onClick={() =>
                 toast(
                   <div>
-                    <h3 className="text-xl font-bold font-carbon-bold text-black">
+                    <h3 className="text-xl font-bold font-carbonbold text-black">
                       Session
                     </h3>
                     <p className="text-sm text-gray-500">
@@ -76,17 +76,17 @@ export default function Contact() {
                       .
                     </p>
                     <div>
-                      <h4 className="font-carbon-bold text-bold uppercase text-black">
+                      <h4 className="font-carbonbold text-bold uppercase text-black">
                         Session ID:
                       </h4>
-                      <p className="text-blue-500 font-carbon-bold text-sm flex">
+                      <p className="text-blue-500 font-carbonbold text-sm flex">
                         051197cf6e06d5d6ab60b2a6747f2c
                         <br />
                         93723bd39f2a11209d39467c38aa48494156
                       </p>
                       <CopyToClipboard text="051197cf6e06d5d6ab60b2a6747f2c93723bd39f2a11209d39467c38aa48494156">
                         <button
-                          className="my-2 px-2 py-1 bg-gray-200 rounded-xl text-black uppercase font-carbon-bold focus:outline-none transform transition-all active:scale-90"
+                          className="my-2 px-2 py-1 bg-gray-200 rounded-xl text-black uppercase font-carbonbold focus:outline-none transform transition-all active:scale-90"
                           onClick={() => CopySuccessful()}
                         >
                           Copy Session ID

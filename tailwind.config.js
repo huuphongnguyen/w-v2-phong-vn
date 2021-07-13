@@ -6,6 +6,9 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      fontFamily: {
+        carbonbold: "T-26 Carbon Bold",
+      },
       gridTemplateColumns: {
         autoscale: "repeat(auto-fit, minmax(75px, 1fr))",
         autoscale_small: "repeat(auto-fit, minmax(35px, 1fr))",

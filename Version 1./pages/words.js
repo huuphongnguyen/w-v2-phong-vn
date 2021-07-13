@@ -69,7 +69,7 @@ export default function Words({ data }) {
         </div>
         <div className="space-y-3">
           <div className="space-y-2">
-            <h2 className="text-black dark:text-white font-bold text-3xl font-carbon-bold uppercase px-2">
+            <h2 className="text-black dark:text-white font-bold text-3xl font-carbonbold uppercase px-2">
               2021 / January
             </h2>
             <div>
@@ -80,7 +80,7 @@ export default function Words({ data }) {
                   )
                   .map((word, index) => (
                     <div
-                      className="font-carbon-bold uppercase text-white dark:text-gray-700 bg-black dark:bg-white inline-flex items-center mx-1 my-1 px-2 py-1 rounded-full"
+                      className="font-carbonbold uppercase text-white dark:text-gray-700 bg-black dark:bg-white inline-flex items-center mx-1 my-1 px-2 py-1 rounded-full"
                       key={index}
                     >
                       <p>{word.fields.keyword}</p>
@@ -90,7 +90,7 @@ export default function Words({ data }) {
           </div>
 
           <div className="space-y-2">
-            <h2 className="text-black dark:text-white font-bold text-3xl font-carbon-bold uppercase px-2">
+            <h2 className="text-black dark:text-white font-bold text-3xl font-carbonbold uppercase px-2">
               2021 / February
             </h2>
             <div>
@@ -100,7 +100,7 @@ export default function Words({ data }) {
                     word.fields.day.start_date.includes("2021-02")
                   )
                   .map((word) => (
-                    <div className="font-carbon-bold uppercase text-white dark:text-gray-700 bg-black dark:bg-white inline-flex items-center mx-1 my-1 px-2 py-1 rounded-full">
+                    <div className="font-carbonbold uppercase text-white dark:text-gray-700 bg-black dark:bg-white inline-flex items-center mx-1 my-1 px-2 py-1 rounded-full">
                       <p>{word.fields.keyword}</p>
                     </div>
                   ))}

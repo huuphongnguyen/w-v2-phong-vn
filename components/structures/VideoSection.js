@@ -19,7 +19,7 @@ export default function VideoSection() {
 
   return (
     <div className="space-y-4">
-      <p className="text-black font-carbon-bold text-xl text-center">
+      <p className="text-black font-carbonbold text-xl text-center">
         A weird video is picked randomly
       </p>
       <div className="flex items-center justify-center">

@@ -18,7 +18,7 @@ export default function ArchillectImageGrid({ data }) {
           Do sử dụng API được thiết kế riêng. Cập nhật sẽ có độ trễ nhất định so
           với máy chủ của Archillect trong một vài trường hợp.
         </p>
-        <div className="text-black dark:text-white text-xl font-carbon-bold flex items-center space-x-2">
+        <div className="text-black dark:text-white text-xl font-carbonbold flex items-center space-x-2">
           <p>BLOCKS: </p>
           <p>
             {data[0].id} - {data[49].id}
@@ -34,11 +34,11 @@ export default function ArchillectImageGrid({ data }) {
                 onClick={() =>
                   toast(
                     <div>
-                      <h3 className="text-2xl font-bold font-carbon-bold text-black">
+                      <h3 className="text-2xl font-bold font-carbonbold text-black">
                         BLOCK: {item.id}
                       </h3>
                       <img src={item.imageSource} />
-                      <p className="text-black text-xl font-carbon-bold">
+                      <p className="text-black text-xl font-carbonbold">
                         References:
                         <br />
                         <div className="flex">

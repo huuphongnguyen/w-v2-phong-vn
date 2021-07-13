@@ -16,10 +16,10 @@ export default function StuffSection({ resultssync }) {
   return (
     <div>
       <div className="inline-flex items-center space-x-1">
-        <p className="text-black dark:text-white text-xl uppercase font-carbon-bold">
+        <p className="text-black dark:text-white text-xl uppercase font-carbonbold">
           /
         </p>
-        <h1 className="text-black dark:text-white text-xl uppercase font-carbon-bold">
+        <h1 className="text-black dark:text-white text-xl uppercase font-carbonbold">
           Stuff
         </h1>
       </div>
@@ -27,7 +27,7 @@ export default function StuffSection({ resultssync }) {
         <div>
           <div className="flex items-center space-x-2 mb-2">
             <VictoryHand className="text-black dark:text-white" />
-            <h2 className="text-base font-bold text-black dark:text-white font-carbon-bold">
+            <h2 className="text-base font-bold text-black dark:text-white font-carbonbold">
               My playlists
             </h2>
           </div>
@@ -63,7 +63,7 @@ export default function StuffSection({ resultssync }) {
                     href="https://open.spotify.com/user/bwunro2q3l6dcfnvz6vb07g89?si=bL3D9kWXTF6sUrrJLotJLA"
                     target="_blank"
                   >
-                    <div className="text-black hover:bg-black hover:text-white dark:text-white dark:hover:bg-white dark:hover:text-black px-2 py-0 inline-flex font-carbon-bold uppercase items-center space-x-2 group">
+                    <div className="text-black hover:bg-black hover:text-white dark:text-white dark:hover:bg-white dark:hover:text-black px-2 py-0 inline-flex font-carbonbold uppercase items-center space-x-2 group">
                       Spotify
                       <ArrowUpRight
                         className="text-black dark:text-white group-hover:text-white dark:group-hover:text-black"
@@ -72,7 +72,7 @@ export default function StuffSection({ resultssync }) {
                     </div>
                   </a>
                   <a href="https://soundcloud.com/donuf" target="_blank">
-                    <div className="text-black hover:bg-black hover:text-white dark:text-white dark:hover:bg-white dark:hover:text-black px-2 py-0 inline-flex font-carbon-bold uppercase items-center space-x-2 group">
+                    <div className="text-black hover:bg-black hover:text-white dark:text-white dark:hover:bg-white dark:hover:text-black px-2 py-0 inline-flex font-carbonbold uppercase items-center space-x-2 group">
                       Soundcloud
                       <ArrowUpRight
                         className="text-black dark:text-white group-hover:text-white dark:group-hover:text-black"
@@ -109,7 +109,7 @@ export default function StuffSection({ resultssync }) {
             <div className="space-y-2">
               <div className="flex items-center space-x-2">
                 <Chess className="text-black dark:text-white" />
-                <h2 className="text-black dark:text-white font-carbon-bold text-base font-bold">
+                <h2 className="text-black dark:text-white font-carbonbold text-base font-bold">
                   My domains I am chilling with
                 </h2>
               </div>
@@ -134,7 +134,7 @@ export default function StuffSection({ resultssync }) {
             <div className="space-y-2">
               <div className="flex items-center space-x-2">
                 <KeyCap className="text-black dark:text-white" />
-                <h2 className="text-black dark:text-white font-carbon-bold text-base font-bold">
+                <h2 className="text-black dark:text-white font-carbonbold text-base font-bold">
                   My tools I am using it to create
                 </h2>
               </div>
@@ -167,7 +167,7 @@ export default function StuffSection({ resultssync }) {
             <div className="space-y-2">
               <div className="flex items-center space-x-2 mb-4">
                 <Camera className="text-black dark:text-white" />
-                <h2 className="text-black dark:text-white font-carbon-bold text-base font-bold">
+                <h2 className="text-black dark:text-white font-carbonbold text-base font-bold">
                   Others & my public moments
                 </h2>
               </div>
@@ -183,7 +183,7 @@ export default function StuffSection({ resultssync }) {
                       className="object-cover"
                     />
                   </div>
-                  <p className="text-black dark:text-white dark:hover:text-white font-carbon-bold uppercase text-base px-2 pt-1">
+                  <p className="text-black dark:text-white dark:hover:text-white font-carbonbold uppercase text-base px-2 pt-1">
                     Write a letter
                   </p>
                 </div>
@@ -215,7 +215,7 @@ export default function StuffSection({ resultssync }) {
                         className="object-cover absolute dark:bg-white"
                       />
                     </div>
-                    <p className="text-black dark:text-white font-carbon-bold uppercase">
+                    <p className="text-black dark:text-white font-carbonbold uppercase">
                       Dispo.fun/@shop
                     </p>
                   </div>
@@ -227,7 +227,7 @@ export default function StuffSection({ resultssync }) {
             <div className="space-y-2">
               <div className="flex items-center space-x-2 mb-4">
                 <Radish className="text-black dark:text-white" />
-                <h2 className="text-black dark:text-white font-carbon-bold text-base font-bold">
+                <h2 className="text-black dark:text-white font-carbonbold text-base font-bold">
                   Need some quotes?
                 </h2>
               </div>

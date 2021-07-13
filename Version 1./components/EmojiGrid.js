@@ -33,11 +33,11 @@ export default function EmojiGrid({ emojis }) {
                   <p className="text-6xl inline-flex bg-gray-200 p-2 rounded-md font-black">
                     {emoji.emoji}
                   </p>
-                  <div className="font-carbon-bold text-xl">
+                  <div className="font-carbonbold text-xl">
                     <p>{emoji.description}</p>
                     <p>{emoji.category}</p>
                   </div>
-                  <p className="uppercase font-bold text-md font-carbon-bold text-gray-500">
+                  <p className="uppercase font-bold text-md font-carbonbold text-gray-500">
                     Released from {emoji.ios_version}
                   </p>
                   <div className="my-2">

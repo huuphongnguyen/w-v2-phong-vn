@@ -15,20 +15,20 @@ export default function MemeDealerGrid({ sync }) {
               onClick={() =>
                 toast(
                   <div>
-                    <h3 className="text-2xl font-bold font-carbon-bold text-black">
+                    <h3 className="text-2xl font-bold font-carbonbold text-black">
                       r/{meme.subreddit}
                     </h3>
                     <div className="flex items-center space-x-2">
                       <ArrowCircleUp classNameSync="w-7 h-7 text-yellow-500" />
 
-                      <p className="text-2xl font-bold font-carbon-bold text-yellow-500">
+                      <p className="text-2xl font-bold font-carbonbold text-yellow-500">
                         {meme.ups}
                       </p>
                     </div>
-                    <p className="text-xl font-bold font-carbon-bold text-black">
+                    <p className="text-xl font-bold font-carbonbold text-black">
                       post link:{" "}
                       <a
-                        className="text-xl font-bold font-carbon-bold text-blue-500"
+                        className="text-xl font-bold font-carbonbold text-blue-500"
                         target="_blank"
                         href={meme.post_link}
                       >

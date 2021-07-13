@@ -10,14 +10,14 @@ export default function Footer() {
       <div className="items-start mx-auto w-full max-w-3xl space-y-1">
         <div className="flex flex-col-reverse md:grid md:grid-cols-2 items-center space-x-2">
           <div>
-            <div className="flex items-center space-x-1 font-carbon-bold text-black dark:text-white uppercase">
+            <div className="flex items-center space-x-1 font-carbonbold text-black dark:text-white uppercase">
               <p className="">Designed / Developed / Code by</p>
               <a href="https://phong.vn">
                 <p className="inline-block rainbow_text_hover">PHONG</p>
               </a>
             </div>
             <div className="flex items-center space-x-2">
-              <p className="font-carbon-bold text-black dark:text-white uppercase">
+              <p className="font-carbonbold text-black dark:text-white uppercase">
                 Built with
               </p>
               <div className="flex items-center space-x-2">
@@ -65,7 +65,7 @@ export default function Footer() {
                 </a>
               </div>
             </div>
-            <div className="flex items-center space-x-1 font-carbon-bold text-black dark:text-white uppercase">
+            <div className="flex items-center space-x-1 font-carbonbold text-black dark:text-white uppercase">
               <p>and other open-source projects listed</p>
               <NextLink href="/credits">
                 <a>
@@ -76,7 +76,7 @@ export default function Footer() {
                 </a>
               </NextLink>
             </div>
-            <div className="flex items-center space-x-1 font-carbon-bold text-black dark:text-white uppercase">
+            <div className="flex items-center space-x-1 font-carbonbold text-black dark:text-white uppercase">
               <p className="">This website is also open-sourced on</p>
               <a
                 href="https://github.com/huuphongnguyen/phong.vn"

@@ -75,13 +75,13 @@ export default function Ewallets() {
                   </div>
                 </div>
                 <div className="p-2 flex items-center justify-center">
-                  <h3 className="text-black dark:text-white uppercase text-xl font-carbon-bold text-center">
+                  <h3 className="text-black dark:text-white uppercase text-xl font-carbonbold text-center">
                     MOMO
                   </h3>
                 </div>
               </div>
             </div>
-            <div className="font-carbon-bold px-4 py-2 md:p-2 flex w-full items-center">
+            <div className="font-carbonbold px-4 py-2 md:p-2 flex w-full items-center">
               <div className="w-[70%]">
                 <h3 className="text-black dark:text-white uppercase text-xl">
                   Nguyen Huu Phong
@@ -100,7 +100,7 @@ export default function Ewallets() {
                       size={22}
                     />
                     <p
-                      className={`text-black dark:text-white font-carbon-bold text-sm md:text-lg uppercase text-center ${
+                      className={`text-black dark:text-white font-carbonbold text-sm md:text-lg uppercase text-center ${
                         isAllCopied1 ? "text-purple-400" : "text-black"
                       }`}
                     >
@@ -129,13 +129,13 @@ export default function Ewallets() {
                   </div>
                 </div>
                 <div className="p-2 flex items-center justify-center">
-                  <h3 className="text-black dark:text-white uppercase text-xl font-carbon-bold text-center">
+                  <h3 className="text-black dark:text-white uppercase text-xl font-carbonbold text-center">
                     ZaloPay
                   </h3>
                 </div>
               </div>
             </div>
-            <div className="font-carbon-bold px-4 py-2 md:p-2 flex w-full items-center">
+            <div className="font-carbonbold px-4 py-2 md:p-2 flex w-full items-center">
               <div className="w-[70%]">
                 <h3 className="text-black dark:text-white uppercase text-xl">
                   Nguyen Huu Phong
@@ -154,7 +154,7 @@ export default function Ewallets() {
                       size={22}
                     />
                     <p
-                      className={`text-black dark:text-white font-carbon-bold text-sm md:text-lg uppercase text-center ${
+                      className={`text-black dark:text-white font-carbonbold text-sm md:text-lg uppercase text-center ${
                         isAllCopied2 ? "text-purple-400" : "text-black"
                       }`}
                     >
@@ -183,13 +183,13 @@ export default function Ewallets() {
                   </div>
                 </div>
                 <div className="p-2 flex items-center justify-center">
-                  <h3 className="text-black dark:text-white uppercase text-xl font-carbon-bold text-center">
+                  <h3 className="text-black dark:text-white uppercase text-xl font-carbonbold text-center">
                     Viettel
                   </h3>
                 </div>
               </div>
             </div>
-            <div className="font-carbon-bold px-4 py-2 md:p-2 flex w-full items-center">
+            <div className="font-carbonbold px-4 py-2 md:p-2 flex w-full items-center">
               <div className="w-[70%]">
                 <h3 className="text-black dark:text-white uppercase text-xl">
                   Nguyen Huu Phong
@@ -208,7 +208,7 @@ export default function Ewallets() {
                       size={22}
                     />
                     <p
-                      className={`text-black dark:text-white font-carbon-bold text-sm md:text-lg uppercase text-center ${
+                      className={`text-black dark:text-white font-carbonbold text-sm md:text-lg uppercase text-center ${
                         isAllCopied3 ? "text-purple-400" : "text-black"
                       }`}
                     >
@@ -237,13 +237,13 @@ export default function Ewallets() {
                   </div>
                 </div>
                 <div className="p-2 flex items-center justify-center">
-                  <h3 className="text-black dark:text-white uppercase text-xl font-carbon-bold text-center">
+                  <h3 className="text-black dark:text-white uppercase text-xl font-carbonbold text-center">
                     AirPay
                   </h3>
                 </div>
               </div>
             </div>
-            <div className="font-carbon-bold px-4 py-2 md:p-2 flex w-full items-center">
+            <div className="font-carbonbold px-4 py-2 md:p-2 flex w-full items-center">
               <div className="w-[70%]">
                 <h3 className="text-black dark:text-white uppercase text-xl">
                   Nguyen Huu Phong
@@ -262,7 +262,7 @@ export default function Ewallets() {
                       size={22}
                     />
                     <p
-                      className={`text-black dark:text-white font-carbon-bold text-sm md:text-lg uppercase text-center ${
+                      className={`text-black dark:text-white font-carbonbold text-sm md:text-lg uppercase text-center ${
                         isAllCopied4 ? "text-purple-400" : "text-black"
                       }`}
                     >
@@ -291,13 +291,13 @@ export default function Ewallets() {
                   </div>
                 </div>
                 <div className="p-2 flex items-center justify-center">
-                  <h3 className="text-black dark:text-white uppercase text-xl font-carbon-bold text-center">
+                  <h3 className="text-black dark:text-white uppercase text-xl font-carbonbold text-center">
                     Grab
                   </h3>
                 </div>
               </div>
             </div>
-            <div className="font-carbon-bold px-4 py-2 md:p-2 flex w-full items-center">
+            <div className="font-carbonbold px-4 py-2 md:p-2 flex w-full items-center">
               <div className="w-[70%]">
                 <h3 className="text-black dark:text-white uppercase text-xl">
                   Nguyen Huu Phong
@@ -316,7 +316,7 @@ export default function Ewallets() {
                       size={22}
                     />
                     <p
-                      className={`text-black dark:text-white font-carbon-bold text-sm md:text-lg uppercase text-center ${
+                      className={`text-black dark:text-white font-carbonbold text-sm md:text-lg uppercase text-center ${
                         isAllCopied5 ? "text-purple-400" : "text-black"
                       }`}
                     >

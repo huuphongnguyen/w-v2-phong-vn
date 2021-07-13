@@ -53,7 +53,7 @@ export default function Tools({ results }) {
               </div>
             </div>
             <div className="w-[70%] py-2 px-4 border-l-2 border-r-2 border-black dark:border-white">
-              <h3 className="font-carbon-bold uppercase text-xl">
+              <h3 className="font-carbonbold uppercase text-xl">
                 {block.properties.name.title[0].plain_text}
               </h3>
               <p className="text-sm">
@@ -66,7 +66,7 @@ export default function Tools({ results }) {
               <a
                 href={block.properties.url.url}
                 target="_blank"
-                className="font-carbon-bold uppercase flex items-center space-x-1"
+                className="font-carbonbold uppercase flex items-center space-x-1"
               >
                 <p className="inline-flex text-lg">{t("tools-notion-visit")}</p>
                 <ArrowUpRight
@@ -105,7 +105,7 @@ export default function Tools({ results }) {
               </div>
             </div>
             <div className="w-[70%] py-2 px-4 border-l-2 border-r-2 border-black dark:border-white">
-              <h3 className="font-carbon-bold uppercase text-xl">
+              <h3 className="font-carbonbold uppercase text-xl">
                 {block.properties.name.title[0].plain_text}
               </h3>
               <p className="text-sm">
@@ -118,7 +118,7 @@ export default function Tools({ results }) {
               <a
                 href={block.properties.url.url}
                 target="_blank"
-                className="font-carbon-bold uppercase flex items-center space-x-1"
+                className="font-carbonbold uppercase flex items-center space-x-1"
               >
                 <p className="inline-flex text-lg">{t("tools-notion-visit")}</p>
                 <ArrowUpRight
@@ -161,7 +161,7 @@ export default function Tools({ results }) {
         description={seodescrip}
       />
       <div className="items-start mx-auto w-full max-w-3xl space-y-4 pt-5">
-        <div className="inline-flex items-center space-x-1 text-black dark:text-white text-xl uppercase font-carbon-bold">
+        <div className="inline-flex items-center space-x-1 text-black dark:text-white text-xl uppercase font-carbonbold">
           <NextLink href="/">
             <a>
               <p className="text-gray-300 dark:text-gray-600 hover:text-black dark:hover:text-white">
@@ -201,7 +201,7 @@ export default function Tools({ results }) {
         <div>
           <div className="flex items-center space-x-2">
             <FaceVeryHappy className="text-black dark:text-white" size={22} />
-            <h2 className="text-black dark:text-white font-carbon-bold uppercase text-xl">
+            <h2 className="text-black dark:text-white font-carbonbold uppercase text-xl">
               Important
             </h2>
           </div>
@@ -210,7 +210,7 @@ export default function Tools({ results }) {
           </div>
           <div className="flex items-center space-x-2 pt-4">
             <FaceHappy className="text-black dark:text-white" size={22} />
-            <h2 className="text-black dark:text-white font-carbon-bold uppercase text-xl">
+            <h2 className="text-black dark:text-white font-carbonbold uppercase text-xl">
               Support
             </h2>
           </div>

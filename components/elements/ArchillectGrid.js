@@ -20,7 +20,7 @@ export default function ArchillectGrid({ sync }) {
               quality={20}
             />
           </div>
-          <div className="absolute inline-block opacity-0 group-hover:opacity-100 top-0 px-1 font-carbon-bold text-white bg-red-500">
+          <div className="absolute inline-block opacity-0 group-hover:opacity-100 top-0 px-1 font-carbonbold text-white bg-red-500">
             {element.id}
           </div>
         </div>
