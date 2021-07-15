@@ -1,5 +1,4 @@
 import { ArrowUpRight } from "akar-icons";
-import NextImage from "next/image";
 import moment from "moment";
 
 export default function DomainsElement({
@@ -48,11 +47,7 @@ export default function DomainsElement({
           </div>
           <div className="border-l-2 border-black dark:border-white">
             <div className="relative w-full aspect-h-1 aspect-w-1">
-              <NextImage
-                src={qrcodeimg}
-                layout="fill"
-                className="object-cover absolute"
-              />
+              <img src={qrcodeimg} className="object-cover absolute" />
             </div>
           </div>
         </div>

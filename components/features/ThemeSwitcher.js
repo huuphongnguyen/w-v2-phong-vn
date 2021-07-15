@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
-import NextImage from "next/image";
 
 export default function ThemeSwitcher() {
   const [mounted, setMounted] = useState(false);
@@ -18,16 +17,11 @@ export default function ThemeSwitcher() {
       {mounted && (
         <div>
           {theme === "dark" ? (
-            <NextImage
-              src="/emoji/emoji-sun.png"
-              className="aspect-w-1 aspect-h-1"
-              layout="fill"
-            />
+            <img src="/emoji/emoji-sun.png" className="aspect-w-1 aspect-h-1" />
           ) : (
-            <NextImage
+            <img
               src="/emoji/emoji-moon.png"
               className="aspect-w-1 aspect-h-1"
-              layout="fill"
             />
           )}
         </div>

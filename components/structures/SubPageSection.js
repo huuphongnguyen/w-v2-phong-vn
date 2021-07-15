@@ -1,6 +1,5 @@
 import { Coin, Envelope, FaceHappy, File, Leaf } from "akar-icons";
 import useTranslation from "next-translate/useTranslation";
-import NextImage from "next/image";
 import NextLink from "next/link";
 
 export default function SubPageSection() {
@@ -46,31 +45,27 @@ export default function SubPageSection() {
                 <div className="flex items-center space-x-1">
                   <div className="flex items-center">
                     <div className="w-7 h-7 relative transform transition-all group-hover:scale-150 group-hover:-rotate-12 group-hover:delay-75">
-                      <NextImage
+                      <img
                         className="object-cover absolute"
                         src="/emoji/emoji-hello.png"
-                        layout="fill"
                       />
                     </div>
                     <div className="w-7 h-7 relative transform transition-all group-hover:scale-150 group-hover:-rotate-12 group-hover:delay-100">
-                      <NextImage
+                      <img
                         className="object-cover absolute"
                         src="/emoji/emoji-aliens.png"
-                        layout="fill"
                       />
                     </div>
                     <div className="w-7 h-7 relative transform transition-all group-hover:scale-150 group-hover:-rotate-12 group-hover:delay-150">
-                      <NextImage
+                      <img
                         className="object-cover absolute"
                         src="/emoji/emoji-touch.png"
-                        layout="fill"
                       />
                     </div>
                     <div className="w-7 h-7 relative transform transition-all group-hover:scale-150 group-hover:-rotate-12 group-hover:delay-200">
-                      <NextImage
+                      <img
                         className="object-cover absolute"
                         src="/emoji/emoji-rocket.png"
-                        layout="fill"
                       />
                     </div>
                   </div>

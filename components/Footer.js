@@ -1,5 +1,4 @@
 import NextLink from "next/link";
-import NextImage from "next/image";
 import toast, { Toaster } from "react-hot-toast";
 import useTranslate from "next-translate/useTranslation";
 
@@ -104,11 +103,10 @@ export default function Footer() {
                 )
               }
             >
-              <NextImage
+              <img
                 src="https://media0.giphy.com/media/EJwVFI5sUsNTi9AZYL/giphy.gif?cid=4fcb451eo2t34wsqupqec848qdgeenx6v1l82oqcyatbakws&rid=giphy.gif&ct=s"
                 layout="fill"
                 className="object-cover absolute"
-                quality={30}
               />
             </div>
           </div>

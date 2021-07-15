@@ -1,4 +1,3 @@
-import NextImage from "next/image";
 import { ArrowUpRight } from "akar-icons";
 import moment from "moment";
 import NextLink from "next/link";
@@ -19,12 +18,7 @@ export default function ProjectsElements({
             key={index}
             className=" w-full aspect-w-1 aspect-h-1 relative flex"
           >
-            <NextImage
-              src={img}
-              layout="fill"
-              className="object-cover absolute"
-              quality={30}
-            />
+            <img src={img} className="object-cover absolute" />
           </div>
         ))}
       </div>
@@ -53,11 +47,7 @@ export default function ProjectsElements({
         </div>
         <div className="w-full-30 p-2 border-t-2 border-l-2 border-black dark:border-white">
           <div className="w-full aspect-h-1 aspect-w-1 relative">
-            <NextImage
-              src={qrimageurl}
-              layout="fill"
-              className="object-cover absolute"
-            />
+            <img src={qrimageurl} className="object-cover absolute" />
           </div>
         </div>
       </div>

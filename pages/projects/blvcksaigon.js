@@ -1,7 +1,6 @@
 import Container from "../../components/Container";
 import NextLink from "next/link";
 import LetterByPhong from "../../components/elements/LetterByPhong";
-import NextImage from "next/image";
 import {
   Designer,
   Developer,
@@ -178,10 +177,9 @@ export default function BLVCKSaigon() {
                 </div>
                 <div className="flex items-center justify-between">
                   <div className="w-full aspect-w-1 aspect-h-1 origin-center transform scale-75 object-cover relative">
-                    <NextImage
+                    <img
                       src="/logos/blvcksaigon-logo.svg"
                       className="absolute"
-                      layout="fill"
                     />
                   </div>
                 </div>

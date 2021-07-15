@@ -1,5 +1,4 @@
 import { ChevronDown, CircleCheck, Heart, Ribbon } from "akar-icons";
-import NextImage from "next/image";
 import NextLink from "next/link";
 import LanguageSwitcher from "../../features/LanguageSwitcher";
 import PayThemeSwitcher from "./PayThemeSwitcher";
@@ -11,9 +10,8 @@ export default function PayHeader() {
         <div className="w-full  mt-10 flex items-center justify-center">
           <div className="w-[150px] h-[150px] flex items-center justify-center bg-white dark:bg-white rounded-full">
             <div className="w-[100px] h-[100px] relative transform translate-x-2">
-              <NextImage
+              <img
                 src="/phong-logo-black.svg"
-                layout="fill"
                 className="object-fill absolute"
               />
             </div>

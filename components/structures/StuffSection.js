@@ -8,7 +8,6 @@ import {
 } from "akar-icons";
 import useTranslation from "next-translate/useTranslation";
 import NextLink from "next/link";
-import NextImage from "next/image";
 import QuotesView from "../elements/QuotesView";
 
 export default function StuffSection({ resultssync }) {
@@ -88,10 +87,9 @@ export default function StuffSection({ resultssync }) {
                 {spotifyplaylists.map((playlist, index) => (
                   <a key={index} href={playlist[1]} target="_blank">
                     <div className="w-full aspect-w-1 aspect-h-1 relative group">
-                      <NextImage
+                      <img
                         src={playlist[0] ?? null}
                         className="object-cover absolute"
-                        layout="fill"
                         quality={10}
                       />
                       <div className="bg-black bg-opacity-50 justify-center items-center flex w-full h-full absolute opacity-0 group-hover:opacity-100">
@@ -177,11 +175,7 @@ export default function StuffSection({ resultssync }) {
               <a href="https://futureme.org" target="_blank">
                 <div className="items-center space-x-2 mt-2 p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 inline-flex">
                   <div className="w-[124px] h-[22px] flex relative">
-                    <NextImage
-                      src="/icons/futureme.svg"
-                      layout="fill"
-                      className="object-cover"
-                    />
+                    <img src="/icons/futureme.svg" className="object-cover" />
                   </div>
                   <p className="text-black dark:text-white dark:hover:text-white font-carbonbold uppercase text-base px-2 pt-1">
                     Write a letter

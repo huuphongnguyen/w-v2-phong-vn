@@ -10,7 +10,6 @@ import {
   Hashtag_2017,
 } from "../elements/HashtagsData";
 import useTranslation from "next-translate/useTranslation";
-import NextImage from "next/image";
 import { ArrowUpRight } from "akar-icons";
 
 export default function ProjectsSection() {
@@ -40,9 +39,8 @@ export default function ProjectsSection() {
         <div className="flex items-start space-x-3">
           <div className="w-[10%] md:w-auto pt-2">
             <div className="w-8 h-8 relative">
-              <NextImage
+              <img
                 src="https://dl.dropboxusercontent.com/s/rzkxzvjuxnfrh0f/changevn-feature-icon.svg?dl=0"
-                layout="fill"
                 className="object-cover absolute"
               />
             </div>
@@ -68,9 +66,8 @@ export default function ProjectsSection() {
         <div className="flex items-start space-x-3">
           <div className="w-[10%] md:w-auto pt-2">
             <div className="w-8 h-8 relative">
-              <NextImage
+              <img
                 src="https://dl.dropboxusercontent.com/s/h9qd7mgchwuspxb/axembroidery-feature-icon.svg?dl=0"
-                layout="fill"
                 className="object-cover absolute"
               />
             </div>
@@ -96,9 +93,8 @@ export default function ProjectsSection() {
         <div className="flex items-start space-x-3">
           <div className="w-[10%] md:w-auto pt-2">
             <div className="w-8 h-8 relative">
-              <NextImage
+              <img
                 src="https://dl.dropboxusercontent.com/s/98kw1mqm0cg0mmb/embvn-feature-icon.svg?dl=0"
-                layout="fill"
                 className="object-cover absolute"
               />
             </div>
@@ -124,9 +120,8 @@ export default function ProjectsSection() {
         <div className="flex items-start space-x-3">
           <div className="w-[10%] md:w-auto pt-2">
             <div className="w-8 h-8 relative">
-              <NextImage
+              <img
                 src="https://dl.dropboxusercontent.com/s/l56z44w3sk27jbr/blvcksaigon-feature-icon.svg?dl=0"
-                layout="fill"
                 className="object-cover absolute"
               />
             </div>

@@ -1,6 +1,5 @@
 import { Envelope, MoreHorizontal, Send } from "akar-icons";
 import { NextSeo, SocialProfileJsonLd } from "next-seo";
-import NextImage from "next/image";
 import NextLink from "next/link";
 
 export default function Phong() {
@@ -43,10 +42,9 @@ export default function Phong() {
         />
         <div className="items-start mx-auto w-full max-w-xl space-y-4">
           <div className="relative w-24 h-24 mx-auto rounded-full">
-            <NextImage
+            <img
               className="object-cover absolute rounded-full transform origin-center scale-150"
               src="/phong-memoji-nonbg.png"
-              layout="fill"
             />
           </div>
           <div className="space-y-1">
@@ -80,10 +78,9 @@ export default function Phong() {
           </div>
           <div className="flex items-center space-x-1">
             <div className="w-7 h-7 relative">
-              <NextImage
+              <img
                 className="object-cover absolute"
                 src="/emoji/emoji-look.png"
-                layout="fill"
               />
             </div>
             <h2 className="text-black font-carbonbold uppercase text-lg">
@@ -156,10 +153,9 @@ export default function Phong() {
           </div>
           <div className="flex items-center space-x-1">
             <div className="w-7 h-7 relative">
-              <NextImage
+              <img
                 className="object-cover absolute"
                 src="/emoji/emoji-diamond.png"
-                layout="fill"
               />
             </div>
             <h2 className="text-black font-carbonbold uppercase text-lg">
@@ -179,10 +175,9 @@ export default function Phong() {
           </div>
           <div className="flex items-center space-x-1">
             <div className="w-7 h-7 relative">
-              <NextImage
+              <img
                 className="object-cover absolute"
                 src="/emoji/emoji-brain.png"
-                layout="fill"
               />
             </div>
             <h2 className="text-black font-carbonbold uppercase text-lg">
@@ -211,31 +206,27 @@ export default function Phong() {
               <div className="border-2 border-[#7C56FB] text-[#7C56FB] p-3 flex items-center space-x-2 hover:bg-purple-200 group">
                 <div className="flex items-center">
                   <div className="w-7 h-7 relative transform transition-all group-hover:scale-150 group-hover:-rotate-12 group-hover:delay-75">
-                    <NextImage
+                    <img
                       className="object-cover absolute"
                       src="/emoji/emoji-hello.png"
-                      layout="fill"
                     />
                   </div>
                   <div className="w-7 h-7 relative transform transition-all group-hover:scale-150 group-hover:-rotate-12 group-hover:delay-100">
-                    <NextImage
+                    <img
                       className="object-cover absolute"
                       src="/emoji/emoji-aliens.png"
-                      layout="fill"
                     />
                   </div>
                   <div className="w-7 h-7 relative transform transition-all group-hover:scale-150 group-hover:-rotate-12 group-hover:delay-150">
-                    <NextImage
+                    <img
                       className="object-cover absolute"
                       src="/emoji/emoji-touch.png"
-                      layout="fill"
                     />
                   </div>
                   <div className="w-7 h-7 relative transform transition-all group-hover:scale-150 group-hover:-rotate-12 group-hover:delay-200">
-                    <NextImage
+                    <img
                       className="object-cover absolute"
                       src="/emoji/emoji-rocket.png"
-                      layout="fill"
                     />
                   </div>
                 </div>

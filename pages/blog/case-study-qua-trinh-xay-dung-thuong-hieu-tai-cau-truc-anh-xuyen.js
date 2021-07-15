@@ -1,7 +1,6 @@
 import { Pin } from "akar-icons";
 import Container from "../../components/Container";
 import AuthorBadge from "../../components/elements/AuthorBadge";
-import NextImage from "next/image";
 import Quote from "../../components/elements/block/Quote";
 import Paragraph from "../../components/elements/block/Paragraph";
 import Heading2 from "../../components/elements/block/Heading2";
@@ -62,11 +61,9 @@ export default function Blog_case_study_qua_trinh_xay_dung_thuong_hieu_tai_cau_t
           </div>
           <div className="pb-2">
             <div className="w-[150px] h-[150px] mr-4 mb-4 relative float-left">
-              <NextImage
+              <img
                 src="/static/images/case-study-qua-trinh-xay-dung-thuong-hieu-tai-cau-truc-anh-xuyen/case-study-qua-trinh-xay-dung-thuong-hieu-tai-cau-truc-anh-xuyen-feature-image-phongvn.gif"
                 className="absolute object-cover"
-                layout="fill"
-                quality={30}
               />
             </div>
             <div className=" md:col-span-4">
@@ -428,9 +425,8 @@ export default function Blog_case_study_qua_trinh_xay_dung_thuong_hieu_tai_cau_t
           </Paragraph>
           <div className="w-full flex items-center justify-center">
             <div className="w-[200px] h-[200px] relative">
-              <NextImage
+              <img
                 src="/static/images/case-study-qua-trinh-xay-dung-thuong-hieu-tai-cau-truc-anh-xuyen/anh-xuyen-logo.png"
-                layout="fill"
                 className="object-cover absolute"
               />
             </div>

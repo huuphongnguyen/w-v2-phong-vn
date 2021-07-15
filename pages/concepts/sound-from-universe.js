@@ -14,7 +14,6 @@ import {
   Telescope,
   VictoryHand,
 } from "akar-icons";
-import NextImage from "next/image";
 import ExternalLink from "../../components/elements/ExternalLink";
 import CallOut from "../../components/elements/block/CallOut";
 import Paragraph from "../../components/elements/block/Paragraph";
@@ -86,12 +85,7 @@ export default function SoundFromUniverse() {
               {bannerImagesData.map((image, index) => (
                 <div key={index} className="relative group">
                   <div className="aspect-w-1 aspect-h-1">
-                    <NextImage
-                      src={image}
-                      layout="fill"
-                      className="object-cover"
-                      quality={50}
-                    />
+                    <img src={image} className="object-cover" />
                   </div>
                 </div>
               ))}

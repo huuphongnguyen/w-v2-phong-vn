@@ -2,7 +2,6 @@ import Container from "../components/Container";
 import { NextSeo } from "next-seo";
 import PhongSignature from "../components/elements/PhongSignature";
 import { CopyToClipboard } from "react-copy-to-clipboard";
-import NextImage from "next/image";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";

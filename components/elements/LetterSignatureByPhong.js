@@ -1,4 +1,3 @@
-import NextImage from "next/image";
 import PhongSignature from "./PhongSignature";
 import useTranslation from "next-translate/useTranslation";
 
@@ -9,12 +8,7 @@ export default function LetterSignatureByPhong() {
     <div>
       <div className="my-4 flex items-center space-x-4">
         <div className="w-16 h-16 object-cover relative">
-          <NextImage
-            src="/avatar.jpg"
-            layout="fill"
-            className="rounded-full absolute"
-            quality={50}
-          />
+          <img src="/avatar.jpg" className="rounded-full absolute" />
         </div>
         <div className="h-16 mt-10 flex items-end">
           <div className="absolute">

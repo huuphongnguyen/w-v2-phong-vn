@@ -1,4 +1,3 @@
-import NextImage from "next/image";
 import React, { useState, useEffect } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -42,11 +41,7 @@ export default function TwitterHashflagsGrid() {
           onClick={() => toast(<TwitterHashflagsToast hashflag={hashflag} />)}
         >
           <div className="aspect-w-1 aspect-h-1">
-            <NextImage
-              src={hashflag[0].assetUrl}
-              layout="fill"
-              className="object-cover"
-            />
+            <img src={hashflag[0].assetUrl} className="object-cover" />
           </div>
         </div>
       ))}

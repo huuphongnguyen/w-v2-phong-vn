@@ -1,5 +1,3 @@
-import NextImage from "next/image";
-
 export default function VideoSection() {
   const videolist = [
     "https://www.youtube.com/embed/uWKlfC7N3Kw",
@@ -34,9 +32,8 @@ export default function VideoSection() {
           ></iframe>
         </div>
         <div className="w-[480px] h-[270px] block relative transform scale-[1] origin-center">
-          <NextImage
+          <img
             src="https://media3.giphy.com/media/W3fbhbxNejGhsv44je/giphy.gif?cid=790b7611dbcd8bbf8404d81dbe6542a05de8e80e20c3fd4b&rid=giphy.gif&ct=s"
-            layout="fill"
             className="absolute z-10"
           />
         </div>

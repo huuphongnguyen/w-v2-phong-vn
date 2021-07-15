@@ -1,4 +1,3 @@
-import NextImage from "next/image";
 import ArchillectToast from "./ArchillectToast";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -13,12 +12,7 @@ export default function ArchillectGrid({ sync }) {
           onClick={() => toast(<ArchillectToast item={element} />)}
         >
           <div className="aspect-w-1 aspect-h-1">
-            <NextImage
-              src={element.imageSource}
-              layout="fill"
-              className="object-cover"
-              quality={20}
-            />
+            <img src={element.imageSource} className="object-cover" />
           </div>
           <div className="absolute inline-block opacity-0 group-hover:opacity-100 top-0 px-1 font-carbonbold text-white bg-red-500">
             {element.id}

@@ -5,7 +5,6 @@ import HideButton from "../../components/structures/pay/HideButton";
 import PayFooter from "../../components/structures/pay/PayFooter";
 import PayHeader from "../../components/structures/pay/PayHeader";
 import PayNavigationBar from "../../components/structures/pay/PayNavigationBar";
-import NextImage from "next/image";
 
 export default function Ewallets() {
   const [isAllCopied1, setIsAllCopied1] = useState(false);
@@ -66,9 +65,8 @@ export default function Ewallets() {
                 <div className="border-r-2 h-full border-black dark:border-white">
                   <div className="p-2 h-full flex items-center justify-center">
                     <div className="w-10 h-10 relative">
-                      <NextImage
+                      <img
                         src="/icons/icon-momo.png"
-                        layout="fill"
                         className="object-cover absolute"
                       />
                     </div>
@@ -120,9 +118,8 @@ export default function Ewallets() {
                 <div className="border-r-2 h-full border-black dark:border-white">
                   <div className="p-2 h-full flex items-center justify-center">
                     <div className="w-10 h-10 relative">
-                      <NextImage
+                      <img
                         src="/icons/icon-zalopay.png"
-                        layout="fill"
                         className="object-cover absolute"
                       />
                     </div>
@@ -174,9 +171,8 @@ export default function Ewallets() {
                 <div className="border-r-2 h-full border-black dark:border-white">
                   <div className="p-2 h-full flex items-center justify-center">
                     <div className="w-10 h-10 relative">
-                      <NextImage
+                      <img
                         src="/icons/icon-viettelpay.png"
-                        layout="fill"
                         className="object-cover absolute"
                       />
                     </div>
@@ -228,9 +224,8 @@ export default function Ewallets() {
                 <div className="border-r-2 h-full border-black dark:border-white">
                   <div className="p-2 h-full flex items-center justify-center">
                     <div className="w-10 h-10 relative">
-                      <NextImage
+                      <img
                         src="/icons/icon-airpay.png"
-                        layout="fill"
                         className="object-cover absolute"
                       />
                     </div>
@@ -282,9 +277,8 @@ export default function Ewallets() {
                 <div className="border-r-2 h-full border-black dark:border-white">
                   <div className="p-2 h-full flex items-center justify-center">
                     <div className="w-10 h-10 relative">
-                      <NextImage
+                      <img
                         src="/icons/icon-grab.png"
-                        layout="fill"
                         className="object-cover absolute"
                       />
                     </div>

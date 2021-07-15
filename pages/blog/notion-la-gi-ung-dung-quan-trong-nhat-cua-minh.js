@@ -1,6 +1,5 @@
 import Container from "../../components/Container";
 import AuthorBadge from "../../components/elements/AuthorBadge";
-import NextImage from "next/image";
 import { Pin } from "akar-icons";
 import { NextSeo } from "next-seo";
 import TwitterSEO from "../../components/TwitterSEO";
@@ -60,11 +59,9 @@ export default function Notion_la_gi_ung_dung_quan_trong_nhat_cua_minh_blog() {
           </div>
           <div className="pb-2">
             <div className="w-[150px] h-[150px] mr-4 mb-4 relative float-left">
-              <NextImage
+              <img
                 src="/static/images/notion-la-gi-ung-dung-quan-trong-nhat-cua-minh/notion-la-gi-ung-dung-quan-trong-nhat-cua-minh-feature-banner.gif"
                 className="absolute object-cover"
-                layout="fill"
-                quality={30}
               />
             </div>
             <div className=" md:col-span-4">

@@ -1,6 +1,5 @@
 import useTranslation from "next-translate/useTranslation";
 import { Hashtag_vi_blog, Hashtag_en_blog } from "../elements/HashtagsData";
-import NextImage from "next/image";
 
 export default function BlogSection({ resultssync }) {
   const { t } = useTranslation();
@@ -21,9 +20,8 @@ export default function BlogSection({ resultssync }) {
             <div className="flex items-center space-x-3">
               <div className="w-[10%] md:w-auto">
                 <div className="w-8 h-8 relative">
-                  <NextImage
+                  <img
                     src={block.properties.icon.files[0].name}
-                    layout="fill"
                     className="object-cover absolute"
                   />
                 </div>

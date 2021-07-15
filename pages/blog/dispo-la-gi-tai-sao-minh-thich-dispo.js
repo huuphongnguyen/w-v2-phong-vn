@@ -1,7 +1,6 @@
 import { Pin } from "akar-icons";
 import Container from "../../components/Container";
 import AuthorBadge from "../../components/elements/AuthorBadge";
-import NextImage from "next/image";
 import ExternalLink from "../../components/elements/ExternalLink";
 import TelegramComments from "../../components/elements/TelegramComments";
 import { NextSeo } from "next-seo";
@@ -56,11 +55,9 @@ export default function Blog_dispo_la_gi_tai_sao_minh_thich_dispo() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
             <div className="w-full aspect-h-1 aspect-w-1 object-cover relative  md:col-span-1">
-              <NextImage
+              <img
                 src="/static/images/dispo-la-gi-tai-sao-minh-thich-dispo/dispo-la-gi-tai-sao-minh-thich-dispo-feature-image-phongvn.gif"
                 className="absolute object-cover"
-                layout="fill"
-                quality={30}
               />
             </div>
             <div className=" md:col-span-4">

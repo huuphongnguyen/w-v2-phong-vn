@@ -1,5 +1,4 @@
 import useTranslation from "next-translate/useTranslation";
-import NextImage from "next/image";
 import NextLink from "next/link";
 
 export default function InspirationSection() {
@@ -20,9 +19,8 @@ export default function InspirationSection() {
         <div className="flex items-start">
           <div className="pt-2">
             <div className="relative w-[40px] h-[40px] transform transition-all hover:scale-110 hover:-rotate-12">
-              <NextImage
+              <img
                 src="/emoji/emoji-brain.png"
-                layout="fill"
                 className="object-cover absolute"
               />
             </div>
@@ -42,9 +40,8 @@ export default function InspirationSection() {
         <div className="flex items-start">
           <div className="pt-2">
             <div className="relative w-[40px] h-[40px] transform transition-all hover:scale-110 hover:-rotate-12">
-              <NextImage
+              <img
                 src="/emoji/emoji-diamond.png"
-                layout="fill"
                 className="object-cover absolute"
               />
             </div>
@@ -64,9 +61,8 @@ export default function InspirationSection() {
         <div className="flex items-start">
           <div className="pt-2">
             <div className="relative w-[40px] h-[40px] transform transition-all hover:scale-110 hover:-rotate-12">
-              <NextImage
+              <img
                 src="/emoji/emoji-pizza.png"
-                layout="fill"
                 className="object-cover absolute"
               />
             </div>

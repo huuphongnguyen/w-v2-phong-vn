@@ -1,6 +1,5 @@
 import { Pin } from "akar-icons";
 import AuthorBadge from "../../components/elements/AuthorBadge";
-import NextImage from "next/image";
 import Container from "../../components/Container";
 import Paragraph from "../../components/elements/block/Paragraph";
 import Heading2 from "../../components/elements/block/Heading2";
@@ -60,11 +59,9 @@ export default function Blog_minh_da_mua_ten_mien_eth_cua_ens_nhu_the_nao() {
           </div>
           <div className="pb-2">
             <div className="w-[150px] h-[150px] mr-4 mb-4 relative float-left">
-              <NextImage
+              <img
                 src="/static/images/minh-da-mua-ten-mien-eth-cua-ens-nhu-the-nao/minh-da-mua-ten-mien-eth-cua-ens-nhu-the-nao-feature-img.gif"
                 className="absolute object-cover"
-                layout="fill"
-                quality={30}
               />
             </div>
             <div className=" md:col-span-4">

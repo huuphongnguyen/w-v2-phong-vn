@@ -1,5 +1,4 @@
 import Link from "next/link";
-import NextImage from "next/image";
 
 const BlogPost = ({ title, summary, slug, publishedAt, image }) => {
   return (
@@ -8,13 +7,7 @@ const BlogPost = ({ title, summary, slug, publishedAt, image }) => {
         <div className="mb-8 w-full flex space-x-3 rounded-md p-0 md:p-3 md:dark:hover:bg-gray-700 md:hover:bg-gray-200">
           <div className="w-1/2 md:w-300px relative">
             <div className="w-full h-full">
-              <NextImage
-                className="object-cover rounded-md"
-                src={image}
-                layout="fill"
-                priority="true"
-                quality="50"
-              />
+              <img className="object-cover rounded-md" src={image} />
             </div>
           </div>
           <div className="w-full">
