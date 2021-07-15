@@ -15,9 +15,9 @@ This project is an open-source codepackage to build my website at: https://phong
 ## Running Locally
 
 ```bash
-$ git clone https://github.com/huuphongnguyen/w-v2-phong-vn.git
-$ cd w-v2-phong-vn
-$ yarn
+$ git clone https://github.com/huuphongnguyen/phong.vn.git
+$ cd phong.vn
+$ npm install
 $ yarn dev
 ```
 
@@ -25,14 +25,10 @@ $ yarn dev
 
 - [Next.js](https://nextjs.org/)
 - [Vercel](https://vercel.com)
-- [MDX](https://github.com/mdx-js/mdx)
 - [Tailwind CSS](https://tailwindcss.com/)
+- [Dropbox](https://dropbox.com)
+- [Notion](https://notion.com)
 
 ### Inspiration
 
 - Inspired by the website structure of [leerob.io](https://leerob.io/)
-
-### Data updates
-
-Because some part of this website using static data, so I need update this README for letting Vercel re-build to fetching data.
-Current data version: 1.3
