@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="425px" height="425px" viewBox="0 0 425 425" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>case-study-qua-trinh-xay-dung-thuong-hieu-tai-cau-truc-anh-xuyen-feature-icon</title>
+    <g id="case-study-qua-trinh-xay-dung-thuong-hieu-tai-cau-truc-anh-xuyen-feature-icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M109.401236,3 L316.598764,3 C353.596792,3 367.013171,6.85226286 380.539097,14.0860072 C394.065023,21.3197516 404.680248,31.9349774 411.913993,45.4609033 C419.147737,58.9868292 423,72.4032081 423,109.401236 L423,316.598764 C423,353.596792 419.147737,367.013171 411.913993,380.539097 C404.680248,394.065023 394.065023,404.680248 380.539097,411.913993 C367.013171,419.147737 353.596792,423 316.598764,423 L109.401236,423 C72.4032081,423 58.9868292,419.147737 45.4609033,411.913993 C31.9349774,404.680248 21.3197516,394.065023 14.0860072,380.539097 C6.85226286,367.013171 3,353.596792 3,316.598764 L3,109.401236 C3,72.4032081 6.85226286,58.9868292 14.0860072,45.4609033 C21.3197516,31.9349774 31.9349774,21.3197516 45.4609033,14.0860072 C58.9868292,6.85226286 72.4032081,3 109.401236,3 Z" id="Rectangle" fill="#FFFFFF"></path>
+        <g id="directions" transform="translate(15.000000, 13.000000)">
+            <polygon id="Path" points="0 0 400 0 400 400 0 400"></polygon>
+            <path d="M150,83.3333333 L316.666667,83.3333333 L350,116.666667 L316.666667,150 L150,150 C140.795254,150 133.333333,142.538079 133.333333,133.333333 L133.333333,100 C133.333333,90.7952542 140.795254,83.3333333 150,83.3333333" id="Path" stroke="#000000" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M216.666667,216.666667 L100,216.666667 L66.6666667,250 L100,283.333333 L216.666667,283.333333 C225.871412,283.333333 233.333333,275.871412 233.333333,266.666667 L233.333333,233.333333 C233.333333,224.128588 225.871412,216.666667 216.666667,216.666667" id="Path" stroke="#000000" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"></path>
+            <line x1="200" y1="366.666667" x2="200" y2="283.333333" id="Path" stroke="#000000" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="200" y1="216.666667" x2="200" y2="150" id="Path" stroke="#000000" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="200" y1="83.3333333" x2="200" y2="50" id="Path" stroke="#000000" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"></line>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,42 @@
+export const blogsData = [
+  [
+    "Notion là gì? Ứng dụng quan trọng nhất của mình",
+    "/icons/notion-la-gi-ung-dung-quan-trong-nhat-cua-minh-feature-icon.svg",
+    ["#vi-blog"],
+    [""],
+    "2021-05-29",
+    "https://phong.vn/blog/notion-la-gi-ung-dung-quan-trong-nhat-cua-minh",
+  ],
+  [
+    "Mình đã mua tên miền .ETH của ENS Domain như thế nào?",
+    "/icons/minh-da-mua-ten-mien-eth-cua-ens-nhu-the-nao-feature-icon.svg",
+    ["#vi-blog"],
+    [""],
+    "2021-05-24",
+    "https://phong.vn/blog/minh-da-mua-ten-mien-eth-cua-ens-nhu-the-nao",
+  ],
+  [
+    "Dispo là gì? Tại sao mình thích Dispo?",
+    "/icons/dispo-la-gi-tai-sao-minh-thich-dispo-feature-icon.svg",
+    ["#vi-blog"],
+    [""],
+    "2021-02-15",
+    "https://phong.vn/blog/dispo-la-gi-tai-sao-minh-thich-dispo",
+  ],
+  [
+    "How to export font files of Adobe Fonts on MacOS",
+    "/icons/how-to-export-font-files-of-adobe-fonts-on-macos-feature-icon.svg",
+    ["#en-blog"],
+    ["dev.to"],
+    "2021-01-11",
+    "https://dev.to/black/how-to-export-font-files-of-adobe-fonts-on-macos-1o08",
+  ],
+  [
+    "Case Study: Quá trình xây dựng thương hiệu - tái cấu trúc Anh Xuyến",
+    "/icons/case-study-qua-trinh-xay-dung-thuong-hieu-tai-cau-truc-anh-xuyen-feature-icon.svg",
+    ["#vi-blog"],
+    [""],
+    "2019-06-11",
+    "https://phong.vn/blog/case-study-qua-trinh-xay-dung-thuong-hieu-tai-cau-truc-anh-xuyen",
+  ],
+];

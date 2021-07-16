@@ -14,25 +14,25 @@ export async function getStaticProps() {
   const notion = new Client({ auth: process.env.NOTION_API_OFFICIAL_KEYS });
 
   const databaseQuotesId = process.env.NOTION_PAGE_ID_QUOTES_PAGE;
-  const databaseBlogListId = process.env.NOTION_PAGE_ID_BLOGLIST;
+  //const databaseBlogListId = process.env.NOTION_PAGE_ID_BLOGLIST;
 
   const responseQuotes = await notion.databases.query({
     database_id: databaseQuotesId,
   });
 
-  const responseBlogList = await notion.databases.query({
-    database_id: databaseBlogListId,
-  });
+  // const responseBlogList = await notion.databases.query({
+  //   database_id: databaseBlogListId,
+  // });
 
   return {
     props: {
       resultsQuotes: responseQuotes.results,
-      resultsBlogList: responseBlogList.results,
+      //resultsBlogList: responseBlogList.results,
     },
   };
 }
 
-export default function Home({ resultsBlogList, resultsQuotes }) {
+export default function Home({ resultsQuotes }) {
   const seotitle = `PHONG.VN - Phong's personal website`;
   const seodescrip = `Trang cá nhân của Nguyễn Hữu Phong. Được xây dựng bằng Next.js / TailwindCSS và lưu trữ tại Vercel. Nơi chia sẻ những dự án, blog, mấy thứ hay ho của Phong`;
   const seourl = `https://phong.vn`;
@@ -55,7 +55,7 @@ export default function Home({ resultsBlogList, resultsQuotes }) {
         <ProductsSection />
         <ProjectsSection />
         <ConceptsSection />
-        <BlogSection resultssync={resultsBlogList} />
+        <BlogSection />
         <SubPageSection />
         <StuffSection resultssync={resultsQuotes} />
       </div>

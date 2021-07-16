@@ -40,7 +40,7 @@ export default function ProjectsSection() {
           <div className="w-[10%] md:w-auto pt-2">
             <div className="w-8 h-8 relative">
               <img
-                src="https://dl.dropboxusercontent.com/s/rzkxzvjuxnfrh0f/changevn-feature-icon.svg?dl=0"
+                src="/icons/changevn-feature-icon.svg"
                 className="object-cover absolute"
               />
             </div>
@@ -67,7 +67,7 @@ export default function ProjectsSection() {
           <div className="w-[10%] md:w-auto pt-2">
             <div className="w-8 h-8 relative">
               <img
-                src="https://dl.dropboxusercontent.com/s/h9qd7mgchwuspxb/axembroidery-feature-icon.svg?dl=0"
+                src="/icons/axembroidery-feature-icon.svg"
                 className="object-cover absolute"
               />
             </div>
@@ -94,7 +94,7 @@ export default function ProjectsSection() {
           <div className="w-[10%] md:w-auto pt-2">
             <div className="w-8 h-8 relative">
               <img
-                src="https://dl.dropboxusercontent.com/s/98kw1mqm0cg0mmb/embvn-feature-icon.svg?dl=0"
+                src="/icons/embvn-feature-icon.svg"
                 className="object-cover absolute"
               />
             </div>
@@ -121,7 +121,7 @@ export default function ProjectsSection() {
           <div className="w-[10%] md:w-auto pt-2">
             <div className="w-8 h-8 relative">
               <img
-                src="https://dl.dropboxusercontent.com/s/l56z44w3sk27jbr/blvcksaigon-feature-icon.svg?dl=0"
+                src="/icons/blvcksaigon-feature-icon.svg"
                 className="object-cover absolute"
               />
             </div>
