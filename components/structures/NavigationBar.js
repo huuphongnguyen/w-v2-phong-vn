@@ -19,7 +19,8 @@ export default function NavigationBar() {
             source
           </a>
         </div>
-        <div className="">
+
+        <div className="flex items-center justify-center">
           <ThemeSwitcher />
         </div>
       </div>

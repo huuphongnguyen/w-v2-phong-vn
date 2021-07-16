@@ -8,7 +8,8 @@
     font-weight: 700;
     font-style: normal;
     font-display: optional;
-    src: url(/fonts/carbon-bold.woff2) format("woff2");
+    src: url(/fonts/carbon-bold.woff2) format("woff2"),
+      url(/fonts/carbon-bold.woff) format("woff");
   }
 }
 

@@ -12,6 +12,15 @@ class MyDocument extends Document {
             type="font/woff2"
             crossOrigin="anonymous"
           />
+
+          <link
+            rel="preload"
+            href="/fonts/carbon-bold.woff"
+            as="font"
+            type="font/woff"
+            crossOrigin="anonymous"
+          />
+
           <link href="/static/favicons/phong-vn.ico" rel="shortcut icon" />
 
           <link href="/static/favicons/site.webmanifest" rel="manifest" />

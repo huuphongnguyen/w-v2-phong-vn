@@ -1,7 +1,6 @@
 import Container from "../components/Container";
 import { NextSeo } from "next-seo";
 import NextImage from "next/image";
-import NextLink from "next/link";
 import ExternalLink from "../components/elements/ExternalLink";
 import InternalLink from "../components/elements/InternalLink";
 
