@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1080px" height="540px" viewBox="0 0 1080 540" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Top/ 18</title>
+    <g id="Top/-18" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M620.003959,230.082418 C758.020127,265.607218 860,390.894271 860,540 C860,716.73112 716.73112,860 540,860 C363.26888,860 220,716.73112 220,540 C220,390.893911 321.980365,265.606613 459.99704,230.082161 L460,244 C460,288.18278 495.81722,324 540,324 C584.18278,324 620,288.18278 620,244 L620,244 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+        <g id="Group" transform="translate(220.000000, 207.000000)">
+            <path d="M430.002548,32.4086612 C552.544109,77.2658754 640,194.919729 640,333 C640,509.73112 496.73112,653 320,653 C143.26888,653 0,509.73112 0,333 C0,194.919354 87.4563657,77.265237 209.99845,32.4082961 L210,352 L430,352 Z" id="Combined-Shape" stroke="#000000" stroke-width="12" fill="#5487B4" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M232,0 L194,16 L187,36 L166,45 L142,144 L194,135 L178,163 L224,215 C214.261844,159.129609 209.928511,116.796275 211,88 C212.071489,59.2037247 219.071489,29.8703914 232,0 Z" id="Path" stroke="#000000" stroke-width="12" fill="#5487B4" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M498,0 L460,16 L453,36 L432,45 L408,144 L460,135 L444,163 L490,215 C480.261844,159.129609 475.928511,116.796275 477,88 C478.071489,59.2037247 485.071489,29.8703914 498,0 Z" id="Path" stroke="#000000" stroke-width="12" fill="#5487B4" stroke-linecap="round" stroke-linejoin="round" transform="translate(453.000000, 107.500000) scale(-1, 1) translate(-453.000000, -107.500000) "></path>
+            <line x1="478" y1="143" x2="478" y2="333" id="Path" stroke="#000000" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="162" y1="143" x2="162" y2="333" id="Path" stroke="#000000" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"></line>
+            <polygon id="Rectangle" stroke="#000000" stroke-width="12" fill="#5487B4" stroke-linecap="round" stroke-linejoin="round" points="498 215 562 215 562 287 530 297 498 287"></polygon>
+            <polygon id="Rectangle" stroke="#000000" stroke-width="12" fill="#5487B4" stroke-linecap="round" stroke-linejoin="round" points="78 215 142 215 142 287 110 297 78 287"></polygon>
+            <circle id="Oval" fill="#000000" cx="530" cy="241" r="12"></circle>
+            <circle id="Oval" fill="#000000" cx="110" cy="241" r="12"></circle>
+        </g>
+    </g>
+</svg>

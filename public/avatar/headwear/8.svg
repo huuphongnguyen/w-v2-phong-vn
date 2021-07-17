@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="860px" height="860px" viewBox="0 0 860 860" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Headwear/ 8</title>
+    <g id="Headwear/-8" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Group" transform="translate(160.000000, 86.000000)" fill="#212121" stroke="#000000" stroke-width="12">
+            <path d="M129.068689,11.937986 C176.045792,3.97932866 223.022896,0 270,0 C316.977104,0 363.954207,3.97932862 410.931311,11.9379859 L410.931311,11.9379853 C443.690984,17.4879871 466.755087,47.1842201 464.024562,80.2983099 C461.341521,112.836554 460,145.374799 460,177.913043 C460,229.20329 463.333333,280.493537 470,331.783784 L70,331.783784 C76.6666667,280.493537 80,229.20329 80,177.913043 C80,145.374799 78.6584792,112.836554 75.9754377,80.29831 C73.244913,47.1842205 96.3090158,17.4879878 129.068689,11.937986 Z" id="Rectangle"></path>
+            <ellipse id="Oval" cx="270" cy="321.567568" rx="270" ry="38.4324324"></ellipse>
+        </g>
+    </g>
+</svg>

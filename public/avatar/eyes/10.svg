@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="100px" viewBox="0 0 200 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Eyes/ 10</title>
+    <g id="Eyes/-10" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Left" transform="translate(117.000000, 13.000000)">
+            <path d="M0,25.3127525 C19.8799416,12.3902011 36.8799416,4.39020112 51,1.31275249 C65.1200584,-1.76469613 74.1200584,0.568637208 78,8.31275249" id="Path" stroke="#000000" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"></path>
+            <circle id="Oval" fill="#000000" cx="34" cy="54" r="20"></circle>
+        </g>
+        <g id="Right" transform="translate(6.000000, 32.000000)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="12">
+            <path d="M76,13 C70,15 64,15.6666667 58,15 C49,14 35,0 21,0 C11.6666667,0 4.66666667,4.33333333 0,13" id="Path"></path>
+            <path d="M21.4325692,38.1216967 C27.8261614,40.7770891 33.3786684,41.9163285 38.0900902,41.5394147 C42.8015121,41.162501 48.9156718,39.0899283 56.4325692,35.3216967" id="Path" transform="translate(38.932569, 38.465693) rotate(22.000000) translate(-38.932569, -38.465693) "></path>
+        </g>
+    </g>
+</svg>

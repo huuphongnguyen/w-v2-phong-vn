@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="428px" height="144px" viewBox="0 0 428 144" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Eyewear/ 7</title>
+    <g id="Eyewear/-7" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" stroke="#FE5893" stroke-width="12" fill="#000000" cx="229" cy="59" r="50"></circle>
+        <circle id="Oval" stroke="#FE5893" stroke-width="12" fill="#000000" cx="97" cy="59" r="50"></circle>
+        <path d="M183,34 L183,70 L173.955167,70.000169 C173.449991,61.5903383 168.738081,55 163,55 C157.261919,55 152.550009,61.5903383 152.044833,70.000169 L143,70 L143,34 L183,34 Z" id="Combined-Shape" fill="#FE5893"></path>
+        <path d="M275,34 L392.012959,39.4424632 C398.721447,39.7544859 404,45.2842597 404,52 C404,58.7157403 398.721447,64.2455141 392.012959,64.5575368 L275,70 L275,70 L275,34 Z" id="Combined-Shape" fill="#FE5893"></path>
+    </g>
+</svg>

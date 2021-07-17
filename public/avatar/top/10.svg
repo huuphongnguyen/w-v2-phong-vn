@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1080px" height="540px" viewBox="0 0 1080 540" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Top/ 10</title>
+    <g id="Top/-10" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(220.000000, 215.000000)">
+            <path d="M400.003959,15.0824177 C538.020127,50.6072179 640,175.894271 640,325 C640,501.73112 496.73112,645 320,645 C143.26888,645 0,501.73112 0,325 C0,175.893911 101.980365,50.6066133 239.99704,15.0821606 L240,29 C240,73.18278 275.81722,109 320,109 C364.18278,109 400,73.18278 400,29 L400,29 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+            <path d="M211.902123,23.7183235 L230,344 L410,344 L428.098877,23.7186824 C551.63736,68.0497243 640,186.205762 640,325 C640,501.73112 496.73112,645 320,645 C143.26888,645 0,501.73112 0,325 C0,186.205387 88.3631165,68.0490865 211.902123,23.7183235 Z" id="Combined-Shape" stroke="#000000" stroke-width="12" fill="#281F1F" stroke-linecap="round" stroke-linejoin="round"></path>
+            <polygon id="Triangle" stroke="#000000" stroke-width="12" fill="#1523BF" stroke-linecap="round" stroke-linejoin="round" transform="translate(320.000000, 143.500000) scale(1, -1) translate(-320.000000, -143.500000) " points="320 113 344.5 113 369 174 271 174 295.5 113"></polygon>
+            <polygon id="Triangle" stroke="#000000" stroke-width="12" fill="#1523BF" stroke-linecap="round" stroke-linejoin="round" transform="translate(320.000000, 274.000000) scale(1, -1) rotate(-180.000000) translate(-320.000000, -274.000000) " points="320 174 342 174 364 374 276 374 298 174"></polygon>
+            <polygon id="Combined-Shape" stroke="#000000" stroke-width="12" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" points="236.30303 17 206 70.3671875 221.151515 155 306 116.726562"></polygon>
+            <polygon id="Combined-Shape" stroke="#000000" stroke-width="12" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" points="364.30303 17 334 70.3671875 349.151515 155 434 116.726562"></polygon>
+            <polygon id="Path" stroke="#000000" stroke-width="12" fill="#281F1F" stroke-linecap="round" stroke-linejoin="round" points="416 0 475 62.5438596 467.342466 191.535088 431.410959 223.596491 459.684932 260.131579 437.890411 325 346 325"></polygon>
+            <polygon id="Path" stroke="#000000" stroke-width="12" fill="#281F1F" stroke-linecap="round" stroke-linejoin="round" transform="translate(228.500000, 162.500000) scale(-1, 1) translate(-228.500000, -162.500000) " points="234 0 293 62.5438596 285.342466 191.535088 249.410959 223.596491 277.684932 260.131579 255.890411 325 164 325"></polygon>
+        </g>
+    </g>
+</svg>

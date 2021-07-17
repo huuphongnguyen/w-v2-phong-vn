@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="100px" viewBox="0 0 200 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Eyes/ 9</title>
+    <g id="Eyes/-9" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Left" transform="translate(130.000000, 16.000000)" stroke="#000000">
+            <path d="M0,43.2 C3.73333333,60 12.1333333,68.4 25.2,68.4 C38.2666667,68.4 46.6666667,60 50.4,43.2" id="Path" stroke-width="12"></path>
+            <path d="M2.8,4 L10.0258065,20.8 L47.6,20.8 C45.0448364,17.7018633 42.1545138,15.5480171 38.9290323,14.3384615 C35.7035507,13.1289059 23.6605399,9.6827521 2.8,4 Z" id="Path" stroke-width="6" fill="#000000" transform="translate(25.200000, 12.400000) rotate(8.000000) translate(-25.200000, -12.400000) "></path>
+        </g>
+        <g id="Right" transform="translate(44.500000, 50.500000) scale(-1, 1) translate(-44.500000, -50.500000) translate(19.000000, 16.000000)" stroke="#000000">
+            <path d="M0,43.2 C3.73333333,60 12.1333333,68.4 25.2,68.4 C38.2666667,68.4 46.6666667,60 50.4,43.2" id="Path" stroke-width="12"></path>
+            <path d="M2.8,4 L10.0258065,20.8 L47.6,20.8 C45.0448364,17.7018633 42.1545138,15.5480171 38.9290323,14.3384615 C35.7035507,13.1289059 23.6605399,9.6827521 2.8,4 Z" id="Path" stroke-width="6" fill="#000000" transform="translate(25.200000, 12.400000) rotate(8.000000) translate(-25.200000, -12.400000) "></path>
+        </g>
+    </g>
+</svg>

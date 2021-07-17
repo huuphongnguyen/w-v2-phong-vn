@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="440px" height="524px" viewBox="0 0 440 524" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Face/ 7</title>
+    <g id="Face/-7" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M200,0 C280.463942,0 349.829709,47.5169326 381.567538,116.021033 C413.97869,116.849867 440,143.386132 440,176 C440,203.157364 421.957373,226.100647 397.205248,233.49672 C388.515344,285.042196 360.105111,329.889404 320.002878,360.012486 L320,444 C320,488.18278 284.18278,524 240,524 C195.81722,524 160,488.18278 160,444 L159.998578,395.998987 C68.7096735,377.467624 0,296.757814 0,200 C0,89.54305 89.54305,0 200,0 Z" id="Combined-Shape" fill="#FDD4BC"></path>
+        <polyline id="Path" stroke="#000000" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" transform="translate(94.000000, 233.000000) rotate(8.000000) translate(-94.000000, -233.000000) " points="86 201 86 257.888889 102 265"></polyline>
+        <path d="M382,196 C379.333333,189.333333 378,182.666667 378,176 C378,169.333333 379.333333,162.666667 382,156" id="Path" stroke="#000000" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" transform="translate(380.000000, 176.000000) rotate(45.000000) translate(-380.000000, -176.000000) "></path>
+    </g>
+</svg>

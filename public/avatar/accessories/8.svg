@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1080px" height="840px" viewBox="0 0 1080 840" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Accessories/ 8</title>
+    <g id="Accessories/-8" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(340.876384, 497.149773)">
+            <path d="M246.123616,227.850227 C272.123616,193.18356 285.123616,161.18356 285.123616,131.850227 C285.123616,102.516893 283.790283,73.8502268 281.123616,45.8502268 L281.123616,12.8502268 C299.66527,63.2384414 307.998604,102.905108 306.123616,131.850227 C304.248629,160.795346 284.248629,200.462012 246.123616,250.850227 L246.123616,227.850227 Z" id="Path" stroke="#593B1A" stroke-width="4" fill="#5B3B19" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M42,227.305874 C64.0180002,198.918251 75.0270003,170.057773 75.0270003,140.72444 C75.0270003,111.391107 67.9486796,76.0635382 53.792038,34.7417345 L65.9765483,3 C90.5518371,57.8711746 101.901988,99.7793213 100.027,128.72444 C98.1520129,157.669559 79.5073875,196.153587 44.0931242,244.176524 L42,227.305874 Z" id="Path" stroke="#593B1A" stroke-width="4" fill="#5B3B19" stroke-linecap="round" stroke-linejoin="round" transform="translate(71.113185, 123.588262) scale(-1, 1) rotate(-21.000000) translate(-71.113185, -123.588262) "></path>
+            <rect id="Rectangle" fill="#353535" x="67.1236161" y="194.850227" width="32" height="12" rx="4"></rect>
+            <rect id="Rectangle" fill="#D8D8D8" x="51.1236161" y="200.850227" width="200" height="120" rx="9"></rect>
+            <rect id="Rectangle" fill="#D8D8D8" x="119.123616" y="182.850227" width="64" height="120" rx="9"></rect>
+            <rect id="Rectangle" fill="#353535" x="127.123616" y="188.850227" width="48" height="12" rx="4"></rect>
+            <rect id="Rectangle" fill="#252525" x="51.1236161" y="216.850227" width="200" height="88"></rect>
+            <circle id="Oval" fill="#D8D8D8" cx="151.123616" cy="258.850227" r="52"></circle>
+            <circle id="Oval" fill="#C1C1C1" cx="151.123616" cy="258.850227" r="44"></circle>
+            <circle id="Oval" fill="#706F6F" cx="151.123616" cy="258.850227" r="36"></circle>
+            <circle id="Oval" fill="#5E5D5D" cx="151.123616" cy="258.850227" r="28"></circle>
+            <circle id="Oval" fill="#353535" cx="151.123616" cy="258.850227" r="20"></circle>
+            <circle id="Oval" fill="#FFFFFF" cx="151.123616" cy="258.850227" r="8"></circle>
+        </g>
+    </g>
+</svg>

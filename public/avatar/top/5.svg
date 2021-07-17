@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1080px" height="540px" viewBox="0 0 1080 540" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Top/ 5</title>
+    <g id="Top/-5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(220.000000, 230.082161)">
+            <path d="M400.003959,0.000257164248 C538.020127,35.5250574 640,160.812111 640,309.917839 C640,486.648959 496.73112,629.917839 320,629.917839 C143.26888,629.917839 0,486.648959 0,309.917839 C0,160.811751 101.980365,35.5244527 239.99704,-5.48006085e-13 L240,13.9178394 C240,58.1006194 275.81722,93.9178394 320,93.9178394 C364.18278,93.9178394 400,58.1006194 400,13.9178394 L400,13.9178394 Z" id="Combined-Shape" fill="#94262C"></path>
+            <polygon id="Rectangle" fill="#FFFFFF" points="230 179.917839 440 179.917839 410 243.917839 200 243.917839"></polygon>
+            <polygon id="Rectangle" fill="#FFFFFF" points="200 251.917839 410 251.917839 410 263.917839 200 263.917839"></polygon>
+        </g>
+    </g>
+</svg>

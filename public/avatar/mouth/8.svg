@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="240px" height="240px" viewBox="0 0 240 240" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Mouth/ 8</title>
+    <g id="Mouth/-8" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(118.000000, 126.732051) rotate(-30.000000) translate(-118.000000, -126.732051) translate(53.000000, 102.732051)">
+            <path d="M5,8 C25.9760677,34.3094011 46.4641016,47.4641016 66.4641016,47.4641016 C86.4641016,47.4641016 105.976068,34.3094011 125,8 C103,2.84529946 88.3333333,0.267949192 81,0.267949192 C73.6666667,0.267949192 68.3333333,2.84529946 65,8 C61.1786328,3.33333333 55.6012825,1 48.2679492,1 C40.9346159,1 26.5119661,3.33333333 5,8 Z" id="Path" fill="#F32B7A"></path>
+            <path d="M0,5 C27.3333333,18.3333333 49,25 65,25 C81,25 102.666667,18.3333333 130,5" id="Path" stroke="#B80B4F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="860px" height="860px" viewBox="0 0 860 860" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Headwear/ 5</title>
+    <g id="Headwear/-5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(335.000000, 316.500000) rotate(-30.000000) translate(-335.000000, -316.500000) translate(-65.000000, 159.000000)">
+            <ellipse id="Oval" stroke="#000000" stroke-width="12" fill="#EBE8DC" stroke-linecap="round" stroke-linejoin="round" cx="400.5" cy="105" rx="144.5" ry="105"></ellipse>
+            <ellipse id="Oval" stroke="#000000" stroke-width="12" fill="#EBE8DC" stroke-linecap="round" stroke-linejoin="round" cx="400" cy="210" rx="400" ry="105"></ellipse>
+            <path d="M542,66 L586,108 C572.359514,130.940817 547.643285,145 520.953513,145 L279.777226,145 C252.112059,145 226.592483,130.095765 213,106 L213,106 L213,106 L259,66 C277,88 324.333333,99 401,99 C477.666667,99 524.666667,88 542,66 Z" id="Path" stroke="#000000" stroke-width="12" fill="#000000" stroke-linecap="round" stroke-linejoin="round"></path>
+            <circle id="Oval" fill="#000000" cx="239" cy="98" r="60"></circle>
+            <circle id="Oval" fill="#EBE8DC" cx="239" cy="98" r="48"></circle>
+        </g>
+    </g>
+</svg>

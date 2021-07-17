@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1080px" height="540px" viewBox="0 0 1080 540" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Top/ 13</title>
+    <g id="Top/-13" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M620.003959,230.082418 C758.020127,265.607218 860,390.894271 860,540 C860,716.73112 716.73112,860 540,860 C363.26888,860 220,716.73112 220,540 C220,390.893911 321.980365,265.606613 459.99704,230.082161 L460,244 C460,288.18278 495.81722,324 540,324 C584.18278,324 620,288.18278 620,244 L620,244 Z" id="Combined-Shape" stroke="#000000" stroke-width="12" fill="#948C87"></path>
+        <g id="Group" transform="translate(474.000000, 217.000000)" fill="#FFFFFF" stroke="#000000" stroke-width="12">
+            <path d="M0,0 C13.7092909,10.9326202 22.9350974,17.0905149 27.6774194,18.4736842 C32.4197413,19.8568535 40.9358704,21.616252 53.2258065,23.7518797 L66,102.924812 L66,351 L49.1612903,351 L0,0 Z" id="Path"></path>
+            <path d="M66,0 C79.7092909,10.9326202 88.9350974,17.0905149 93.6774194,18.4736842 C98.4197413,19.8568535 106.93587,21.616252 119.225806,23.7518797 L132,102.924812 L132,351 L115.16129,351 L66,0 Z" id="Path" transform="translate(99.000000, 175.500000) scale(-1, 1) translate(-99.000000, -175.500000) "></path>
+        </g>
+        <g id="Group" transform="translate(407.000000, 198.000000)" fill="#948C87" stroke="#000000" stroke-width="12">
+            <polygon id="Path" points="199.5 0 259 41.5779817 266 75.5963303 220.5 75.5963303 266 94.4954128 133 412"></polygon>
+            <polygon id="Path" transform="translate(66.500000, 206.000000) scale(-1, 1) translate(-66.500000, -206.000000) " points="66.5 0 126 41.5779817 133 75.5963303 87.5 75.5963303 133 94.4954128 0 412"></polygon>
+        </g>
+    </g>
+</svg>

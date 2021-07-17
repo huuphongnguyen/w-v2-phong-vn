@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="240px" height="240px" viewBox="0 0 240 240" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Mouth/ 9</title>
+    <g id="Mouth/-9" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Group" transform="translate(126.000000, 126.500000) rotate(-30.000000) translate(-126.000000, -126.500000) translate(58.000000, 92.000000)">
+            <path d="M8.81072992e-13,12 C30.1772505,12.6805407 52.8439171,12.3472074 68,11 C83.1560829,9.65279264 105.489416,5.98612597 135,-1.77635684e-13 C136.333333,34.6666667 117,56.6666667 77,66 C37,75.3333333 11.3333333,57.3333333 8.81072992e-13,12 Z" id="Path" stroke="#000000" stroke-width="12" fill="#FF9393"></path>
+            <path d="M9,19 C10.6652207,22.6215658 11.998554,25.6215658 13,28 C14.001446,30.3784342 15.6681126,33.7117675 18,38 L125,24 C125.998721,21.11793 126.665388,18.7845967 127,17 C127.334612,15.2154033 127.667945,12.2154033 128,8 C103.147775,12.6629381 84.147775,15.6629381 71,17 C57.852225,18.3370619 37.1855584,19.0037285 9,19 Z" id="Path" stroke="#FFFFFF" stroke-width="2" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

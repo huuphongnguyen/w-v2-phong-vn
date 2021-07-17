@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="240px" height="240px" viewBox="0 0 240 240" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Mouth/ 2</title>
+    <g id="Mouth/-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M64,116 C81.0226532,122.666667 97.8511322,126 114.485437,126 C131.119742,126 147.624596,122.666667 164,116" id="Path" stroke="#000000" stroke-width="12" transform="translate(114.000000, 121.000000) rotate(-30.000000) translate(-114.000000, -121.000000) "></path>
+        <g id="Group" transform="translate(97.000000, 90.000000) rotate(-30.000000) translate(-97.000000, -90.000000) translate(18.000000, 72.000000)" stroke="#000000" stroke-width="4">
+            <g transform="translate(84.500000, 0.000000)" id="Line">
+                <line x1="0.5" y1="1.13728471e-13" x2="0.5" y2="20"></line>
+                <line x1="12.5" y1="1.13728471e-13" x2="12.5" y2="20"></line>
+                <line x1="24.5" y1="2" x2="24.5" y2="18"></line>
+                <line x1="36.5" y1="6" x2="36.5" y2="22"></line>
+                <line x1="48.5" y1="10" x2="48.5" y2="26"></line>
+                <line x1="60.5" y1="14" x2="60.5" y2="30"></line>
+                <line x1="72.5" y1="24" x2="72.5" y2="36"></line>
+            </g>
+            <g transform="translate(36.500000, 18.000000) scale(-1, 1) translate(-36.500000, -18.000000) " id="Line">
+                <line x1="0.5" y1="1.13728471e-13" x2="0.5" y2="20"></line>
+                <line x1="12.5" y1="1.13728471e-13" x2="12.5" y2="20"></line>
+                <line x1="24.5" y1="2" x2="24.5" y2="18"></line>
+                <line x1="36.5" y1="6" x2="36.5" y2="22"></line>
+                <line x1="48.5" y1="10" x2="48.5" y2="26"></line>
+                <line x1="60.5" y1="14" x2="60.5" y2="30"></line>
+                <line x1="72.5" y1="24" x2="72.5" y2="36"></line>
+            </g>
+        </g>
+        <g id="Group" transform="translate(142.000000, 166.000000) rotate(-30.000000) translate(-142.000000, -166.000000) translate(75.000000, 128.000000)" stroke="#000000" stroke-width="4">
+            <g transform="translate(72.500000, 0.000000)" id="Line">
+                <line x1="0.5" y1="44" x2="0.5" y2="76"></line>
+                <line x1="12.5" y1="44" x2="12.5" y2="76"></line>
+                <line x1="24.5" y1="28" x2="24.5" y2="68"></line>
+                <line x1="36.5" y1="12" x2="36.5" y2="60"></line>
+                <line x1="48.5" y1="8" x2="48.5" y2="48"></line>
+                <line x1="60.5" y1="1.13728471e-13" x2="60.5" y2="40"></line>
+            </g>
+            <g transform="translate(30.500000, 38.000000) scale(-1, 1) translate(-30.500000, -38.000000) " id="Line">
+                <line x1="0.5" y1="44" x2="0.5" y2="76"></line>
+                <line x1="12.5" y1="44" x2="12.5" y2="76"></line>
+                <line x1="24.5" y1="28" x2="24.5" y2="68"></line>
+                <line x1="36.5" y1="12" x2="36.5" y2="60"></line>
+                <line x1="48.5" y1="8" x2="48.5" y2="48"></line>
+                <line x1="60.5" y1="1.13728471e-13" x2="60.5" y2="40"></line>
+            </g>
+        </g>
+    </g>
+</svg>

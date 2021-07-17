@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1080px" height="840px" viewBox="0 0 1080 840" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Accessories/ 10</title>
+    <g id="Accessories/-10" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Group" transform="translate(623.000000, 913.500000) rotate(30.000000) translate(-623.000000, -913.500000) translate(431.000000, 332.000000)" stroke="#000000" stroke-width="12">
+            <rect id="Rectangle" fill="#ECD69E" x="16" y="0" width="352" height="1163" rx="176"></rect>
+            <g transform="translate(192.000000, 274.000000) scale(1, -1) translate(-192.000000, -274.000000) translate(0.000000, 214.000000)">
+                <rect id="Rectangle" fill="#D8D8D8" x="132" y="0" width="120" height="120"></rect>
+                <path d="M65,65 L145,65 C160.483877,38.3333333 176.150543,25 192,25 C207.849457,25 223.849457,38.3333333 240,65 L319,65 L319,95 L65,95 L65,65 Z" id="Rectangle" fill="#D8D8D8"></path>
+                <rect id="Rectangle" fill="#2D2D2D" x="312" y="36" width="72" height="84"></rect>
+                <rect id="Rectangle" fill="#2D2D2D" x="0" y="36" width="72" height="84"></rect>
+                <circle id="Oval" cx="191" cy="60" r="16"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

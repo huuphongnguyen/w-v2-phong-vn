@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="428px" height="144px" viewBox="0 0 428 144" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Eyewear/ 10</title>
+    <g id="Eyewear/-10" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Group" transform="translate(47.000000, 10.000000)" stroke="#000000">
+            <path d="M0,11.5116279 C46.1666667,3.8372093 92.3333333,0 138.5,0 C184.666667,0 230.833333,3.8372093 277,11.5116279 L277,85.1860465 L138.5,96.6976744 C128.158667,89.0232558 118.556,85.1860465 109.692,85.1860465 C100.828,85.1860465 93.4413333,89.7906977 87.532,99 L0,85.1860465 L0,11.5116279 Z" id="Rectangle" stroke-width="12" fill="#FFED34"></path>
+            <rect id="Rectangle" stroke-width="8" fill="#FF0000" x="19" y="28" width="233" height="37" rx="8"></rect>
+        </g>
+        <path d="M319,10 L319,109 L380.47518,100.003632 C392.262147,98.2787102 401,88.1690783 401,76.2565666 L401,41.9954679 C401,29.9738971 392.105773,19.806872 380.190929,18.2085393 L319,10 L319,10 Z" id="Path" stroke="#000000" stroke-width="12" fill="#FFED34"></path>
+    </g>
+</svg>

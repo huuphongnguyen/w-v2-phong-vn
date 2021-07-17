@@ -8,7 +8,9 @@ export default function NavigationBar() {
       <div className="">
         <LanguageSwitcher />
       </div>
-      <Logo />
+      <div className="ml-9">
+        <Logo />
+      </div>
       <div className="flex items-center space-x-1">
         <div className="items-center hidden md:flex mb-0 mr-2">
           <a

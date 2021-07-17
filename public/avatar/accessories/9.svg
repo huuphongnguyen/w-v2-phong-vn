@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1080px" height="840px" viewBox="0 0 1080 840" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Accessories/ 9</title>
+    <g id="Accessories/-9" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(722.000000, 590.500000) rotate(30.000000) translate(-722.000000, -590.500000) translate(689.000000, 189.000000)">
+            <rect id="Rectangle" stroke="#E86D62" stroke-width="12" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" x="14" y="0" width="32" height="669" rx="16"></rect>
+            <polygon id="Rectangle" fill="#000000" points="4 603 56 573 56 803 4 803"></polygon>
+            <polygon id="Rectangle" fill="#989DA1" points="8 632 52 632 52 799 8 799"></polygon>
+            <path d="M60,619 L0,619 L0,651 L14.6341463,651 C21.5376911,642.116863 27.8791545,636.78353 33.6585366,635 C39.4379187,633.21647 48.2184065,633.883137 60,637 L60,619 Z" id="Path" fill="#000000"></path>
+            <polygon id="Path" fill="#000000" points="0 679 0 724 60 724 60 679"></polygon>
+            <polygon id="Path" fill="#000000" points="0 679 0 724 60 724 60 679"></polygon>
+            <polygon id="Path" fill="#000000" points="6 683 6 719 66 719 66 683"></polygon>
+        </g>
+    </g>
+</svg>

@@ -1,4 +1,10 @@
 import {
+  IconAlien,
+  IconChevronRight,
+  IconChevronsRight,
+  IconChevronUpRight,
+} from "@tabler/icons";
+import {
   ArrowUpRight,
   Camera,
   Chess,
@@ -9,6 +15,7 @@ import {
 import useTranslation from "next-translate/useTranslation";
 import NextLink from "next/link";
 import QuotesView from "../elements/QuotesView";
+import RandomAvatarGrid from "../elements/RandomAvatarGrid";
 
 export default function StuffSection({ resultssync }) {
   const { t } = useTranslation("common");
@@ -25,6 +32,37 @@ export default function StuffSection({ resultssync }) {
       <div className="px-4 py-2 space-y-4">
         <div>
           <div className="flex items-center space-x-2 mb-2">
+            <div className="flex items-center space-x-2">
+              <IconAlien
+                size={27}
+                stroke={2}
+                className="text-black dark:text-white"
+              />
+              <h2 className="text-base font-bold text-black dark:text-white font-carbonbold uppercase">
+                Create your own avatar
+              </h2>
+            </div>
+            <div className="flex items-center justify-center">
+              <NextLink href="/avatar">
+                <a>
+                  <div className="px-2 border-2 border-black dark:border-white hover:bg-black dark:hover:bg-white inline-flex items-center justify-between group">
+                    <p className="text-black dark:text-white group-hover:text-white dark:group-hover:text-black text-sm font-bold inline-flex">
+                      Make it
+                    </p>
+                    <IconChevronsRight
+                      size={22}
+                      stroke={2}
+                      className="text-black dark:text-white group-hover:text-white dark:group-hover:text-black"
+                    />
+                  </div>
+                </a>
+              </NextLink>
+            </div>
+          </div>
+          <div className="mb-4 space-y-2">
+            <RandomAvatarGrid />
+          </div>
+          <div className="flex items-center space-x-2 mb-2">
             <VictoryHand className="text-black dark:text-white" />
             <h2 className="text-base font-bold text-black dark:text-white font-carbonbold">
               My playlists
@@ -37,11 +75,10 @@ export default function StuffSection({ resultssync }) {
                   href="https://spotify-now-playing.phong.vn/now-playing?open"
                   target="_blank"
                 >
-                  <div className="py-4 md:py-2 flex items-center justify-center border-2 border-dashed border-black">
+                  <div className="py-4 md:py-2 flex items-center justify-center border-2 border-dashed border-black dark:border-white">
                     <img
                       src="https://spotify-now-playing.phong.vn/now-playing"
                       alt="Spotify Now Playing"
-                      className=""
                     />
                   </div>
                 </a>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="100px" viewBox="0 0 200 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Eyes/ 4</title>
+    <g id="Eyes/-4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Left" transform="translate(118.000000, 27.000000)">
+            <path d="M0,1 C13.3333333,-0.333333333 24.3333333,-0.333333333 33,1 C41.6666667,2.33333333 52,6.33333333 64,13" id="Path" stroke="#000000" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"></path>
+            <circle id="Oval" fill="#000000" cx="27" cy="33" r="12"></circle>
+        </g>
+        <g id="Right" transform="translate(50.000000, 49.500000) scale(-1, 1) translate(-50.000000, -49.500000) translate(18.000000, 27.000000)">
+            <path d="M0,1 C13.3333333,-0.333333333 24.3333333,-0.333333333 33,1 C41.6666667,2.33333333 52,6.33333333 64,13" id="Path" stroke="#000000" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"></path>
+            <circle id="Oval" fill="#000000" cx="27" cy="33" r="12"></circle>
+        </g>
+    </g>
+</svg>

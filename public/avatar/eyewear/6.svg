@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="428px" height="144px" viewBox="0 0 428 144" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Eyewear/ 6</title>
+    <defs>
+        <path d="M8.26571006,0.615384615 L231,0.615384615 C235.418278,0.615384615 239,4.19710662 239,8.61538462 L239,42.7725539 C238.999995,45.2126008 237.886412,47.5192454 235.975754,49.0368806 C199.399728,78.0892166 170.308307,92.6153846 148.701493,92.6153846 C126,92.6153846 132,52.6680162 89.1044776,49.0364372 C46.2089552,45.4048583 58,88.9838057 30,86.562753 C12.2884635,85.0313044 2.37937759,59.1606325 0.272742197,8.95073737 C0.0875342526,4.53634557 3.51596109,0.807629512 7.93035268,0.622416746 C8.04207704,0.617729174 8.15388741,0.615384615 8.26571006,0.615384615 Z" id="path-1"></path>
+    </defs>
+    <g id="Eyewear/-6" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M58.5722962,14 L294,14 C302.836556,14 310,21.163444 310,30 L310,78.0353208 C310.000001,83.0965437 307.605322,87.8593332 303.542847,90.8779878 C264.854071,119.625996 233.673121,134 210,134 C172.535677,134 178,89.4285714 144,89.4285714 C110,89.4285714 126,134 85,127.142857 C59.9201491,122.948318 45.7851039,90.8505371 42.5948645,30.8495156 C42.1256902,22.025424 48.8986885,14.4917431 57.7227801,14.0225683 C58.0057024,14.0075254 58.2889743,14 58.5722962,14 Z" id="Path" stroke="#000000" stroke-width="12" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"></path>
+        <g id="Group" transform="translate(58.000000, 26.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#6076F7" xlink:href="#path-1"></use>
+            <line x1="82" y1="-6" x2="2" y2="58" id="Path" stroke="#FFFFFF" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-2)"></line>
+            <line x1="64" y1="-16" x2="-16" y2="48" id="Path" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-2)"></line>
+        </g>
+        <polygon id="Path" stroke="#000000" stroke-width="12" fill="#4E4E4E" stroke-linecap="round" stroke-linejoin="round" points="310 34.2325581 416 13.1627907 416 45 310 85"></polygon>
+    </g>
+</svg>

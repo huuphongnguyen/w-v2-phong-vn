@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1080px" height="840px" viewBox="0 0 1080 840" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Accessories/ 7</title>
+    <g id="Accessories/-7" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Group" transform="translate(324.000000, 514.000000)" stroke="#000000" stroke-width="8">
+            <circle id="Oval" fill="#F9DCE9" cx="298" cy="24" r="24"></circle>
+            <circle id="Oval" fill="#F9DCE9" cx="330" cy="59" r="24"></circle>
+            <circle id="Oval" fill="#F9DCE9" cx="350" cy="105" r="24"></circle>
+            <circle id="Oval" fill="#F9DCE9" cx="354" cy="153" r="24"></circle>
+            <circle id="Oval" fill="#F9DCE9" cx="338" cy="201" r="24"></circle>
+            <circle id="Oval" fill="#F9DCE9" cx="306" cy="238" r="24"></circle>
+            <circle id="Oval" fill="#F9DCE9" cx="265" cy="268" r="24"></circle>
+            <circle id="Oval" fill="#F9DCE9" cx="216" cy="277" r="24"></circle>
+            <circle id="Oval" fill="#F9DCE9" cx="59" cy="238" r="24"></circle>
+            <circle id="Oval" fill="#F9DCE9" cx="37" cy="195" r="24"></circle>
+            <circle id="Oval" fill="#F9DCE9" cx="24" cy="147" r="24"></circle>
+            <circle id="Oval" fill="#F9DCE9" cx="40" cy="99" r="24"></circle>
+            <circle id="Oval" fill="#F9DCE9" cx="72" cy="59" r="24"></circle>
+            <circle id="Oval" fill="#F9DCE9" cx="112" cy="30" r="24"></circle>
+            <path d="M110.266853,319 C82.5768746,293.030832 75.2305537,264.803475 88.2278906,234.317929 C97.2677458,213.114746 118.781896,207.862588 128.915206,221.615619 C131.872656,225.6295 132.437758,235.509075 130.610511,251.254343 C144.172949,241.657042 155.474981,236.858391 164.516607,236.858391 C178.079045,236.858391 198.422703,244.479778 188.250874,280.046247 C181.469655,303.757227 155.474981,316.741811 110.266853,319 Z" id="Path" fill="#A7E5FF"></path>
+        </g>
+    </g>
+</svg>
