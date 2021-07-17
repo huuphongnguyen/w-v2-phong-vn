@@ -31,28 +31,27 @@ export default function StuffSection({ resultssync }) {
             </h2>
           </div>
           <div className="space-y-2">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-              <div className="space-y-1 hidden">
-                <div className="bg-white dark:px-1 dark:rounded-md">
-                  <img
-                    src="https://widget-spotify-now-playing.vercel.app/now-playing"
-                    width="256"
-                    height="64"
-                    alt="Phong's Spotify Now Playing"
-                  />
-                </div>
-                <p className="text-black text-xs dark:text-white uppercase">
-                  {t("stuff-spotify-explain")}{" "}
-                  <a
-                    className="font-bold rainbow_text_hover"
-                    href="https://developer.spotify.com/documentation/web-api/"
-                    target="_blank"
-                  >
-                    API
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
+              <div className="col-span-2 space-y-2">
+                <a
+                  href="https://spotify-now-playing.phong.vn/now-playing?open"
+                  target="_blank"
+                >
+                  <div className="py-4 md:py-2 flex items-center justify-center border-2 border-dashed border-black">
+                    <img
+                      src="https://spotify-now-playing.phong.vn/now-playing"
+                      alt="Spotify Now Playing"
+                      className=""
+                    />
+                  </div>
+                </a>
+                <p className="text-black dark:text-white text-sm">
+                  Real-time syncing with{" "}
+                  <a href="" target="_blank" className="font-bold">
+                    Spotify API
                   </a>
                 </p>
               </div>
-
               <div className="space-y-1">
                 <p className="text-black dark:text-white font-bold text-sm">
                   {t("stuff-spotify-ask")}
