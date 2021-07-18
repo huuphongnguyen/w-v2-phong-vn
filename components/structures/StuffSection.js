@@ -1,9 +1,4 @@
-import {
-  IconAlien,
-  IconChevronRight,
-  IconChevronsRight,
-  IconChevronUpRight,
-} from "@tabler/icons";
+import { IconAlien, IconChevronsRight, IconCrown } from "@tabler/icons";
 import {
   ArrowUpRight,
   Camera,
@@ -16,9 +11,15 @@ import useTranslation from "next-translate/useTranslation";
 import NextLink from "next/link";
 import QuotesView from "../elements/QuotesView";
 import RandomAvatarGrid from "../elements/RandomAvatarGrid";
+import SpotifyNowPlaying from "../elements/SpotifyNowPlaying";
+import SpotifyTopTracks from "../elements/SpotifyTopTracks";
+import { useState } from "react";
 
 export default function StuffSection({ resultssync }) {
   const { t } = useTranslation("common");
+
+  const [showTopTracks, setShowTopTracks] = useState(false);
+
   return (
     <div>
       <div className="inline-flex items-center space-x-1">
@@ -71,74 +72,72 @@ export default function StuffSection({ resultssync }) {
           <div className="space-y-2">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
               <div className="col-span-2 space-y-2">
-                <a
-                  href="https://spotify-now-playing.phong.vn/now-playing?open"
-                  target="_blank"
-                >
-                  <div className="py-4 md:py-2 flex items-center justify-center border-2 border-dashed border-black dark:border-white">
-                    <img
-                      src="https://spotify-now-playing.phong.vn/now-playing"
-                      alt="Spotify Now Playing"
-                    />
-                  </div>
-                </a>
-                <p className="text-black dark:text-white text-sm">
-                  Real-time syncing with{" "}
-                  <a href="" target="_blank" className="font-bold">
-                    Spotify API
-                  </a>
-                </p>
+                <SpotifyNowPlaying />
               </div>
-              <div className="space-y-1">
-                <p className="text-black dark:text-white font-bold text-sm">
-                  {t("stuff-spotify-ask")}
-                </p>
-                <div className="flex items-center space-x-2">
-                  <a
-                    href="https://open.spotify.com/user/bwunro2q3l6dcfnvz6vb07g89?si=bL3D9kWXTF6sUrrJLotJLA"
-                    target="_blank"
+              <div>
+                <div className="space-y-1">
+                  <p className="text-black dark:text-white font-bold text-sm pl-2">
+                    {t("stuff-spotify-ask")}
+                  </p>
+                  <div className="flex items-center space-x-2">
+                    <a
+                      href="https://open.spotify.com/user/bwunro2q3l6dcfnvz6vb07g89?si=bL3D9kWXTF6sUrrJLotJLA"
+                      target="_blank"
+                    >
+                      <div className="text-black hover:bg-black hover:text-white dark:text-white dark:hover:bg-white dark:hover:text-black px-2 py-0 inline-flex font-carbonbold uppercase items-center space-x-2 group">
+                        Spotify
+                        <ArrowUpRight
+                          className="text-black dark:text-white group-hover:text-white dark:group-hover:text-black"
+                          size={18}
+                        />
+                      </div>
+                    </a>
+                    <a href="https://soundcloud.com/donuf" target="_blank">
+                      <div className="text-black hover:bg-black hover:text-white dark:text-white dark:hover:bg-white dark:hover:text-black px-2 py-0 inline-flex font-carbonbold uppercase items-center space-x-2 group">
+                        Soundcloud
+                        <ArrowUpRight
+                          className="text-black dark:text-white group-hover:text-white dark:group-hover:text-black"
+                          size={18}
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div className="mt-2 mx-2 w-full flex items-center justify-center md:justify-start">
+                  <div
+                    className={`inline-flex items-center space-x-1 px-2 py-1 cursor-pointer group border-2  rounded-xl transition-all active:scale-[0.9] ${
+                      showTopTracks
+                        ? "border-yellow-400 dark:border-gray-500"
+                        : "border-gray-200 dark:border-gray-700"
+                    }`}
+                    onClick={() => setShowTopTracks(!showTopTracks)}
                   >
-                    <div className="text-black hover:bg-black hover:text-white dark:text-white dark:hover:bg-white dark:hover:text-black px-2 py-0 inline-flex font-carbonbold uppercase items-center space-x-2 group">
-                      Spotify
-                      <ArrowUpRight
-                        className="text-black dark:text-white group-hover:text-white dark:group-hover:text-black"
-                        size={18}
+                    <div>
+                      <IconCrown
+                        size={27}
+                        stroke={2}
+                        className="text-yellow-400"
                       />
                     </div>
-                  </a>
-                  <a href="https://soundcloud.com/donuf" target="_blank">
-                    <div className="text-black hover:bg-black hover:text-white dark:text-white dark:hover:bg-white dark:hover:text-black px-2 py-0 inline-flex font-carbonbold uppercase items-center space-x-2 group">
-                      Soundcloud
-                      <ArrowUpRight
-                        className="text-black dark:text-white group-hover:text-white dark:group-hover:text-black"
-                        size={18}
-                      />
-                    </div>
-                  </a>
+                    <p className="text-black dark:text-white text-sm font-bold">
+                      My Top Tracks
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div>
-              <div className="mt-4 grid grid-cols-5 md:grid-cols-10">
-                {spotifyplaylists.map((playlist, index) => (
-                  <a key={index} href={playlist[1]} target="_blank">
-                    <div className="w-full aspect-w-1 aspect-h-1 relative group">
-                      <img
-                        src={playlist[0] ?? null}
-                        className="object-cover absolute"
-                        quality={10}
-                      />
-                      <div className="bg-black bg-opacity-50 justify-center items-center flex w-full h-full absolute opacity-0 group-hover:opacity-100">
-                        <ArrowUpRight className="text-white" />
-                      </div>
-                    </div>
-                  </a>
-                ))}
+            <div
+              className={`${
+                showTopTracks ? "flex" : "hidden"
+              } md:col-span-3 py-6 items-center justify-center`}
+            >
+              <div className="border-2 border-dashed border-green-500 p-4 rounded-2xl w-full md:w-[80%]">
+                <SpotifyTopTracks />
               </div>
             </div>
           </div>
         </div>
-        <div className="flex-col space-y-4 md:space-y-0 md:grid md:grid-cols-2 gap-4 pt-2 md:pt-4">
+        <div className="flex-col space-y-4 md:space-y-0 md:grid md:grid-cols-2 gap-4 pt-2">
           <div>
             <div className="space-y-2">
               <div className="flex items-center space-x-2">
@@ -271,46 +270,3 @@ export default function StuffSection({ resultssync }) {
     </div>
   );
 }
-
-export const spotifyplaylists = [
-  [
-    "https://66.media.tumblr.com/329fb0c10b783b4042aea2d776705105/tumblr_n437znIrAm1s5rsdao1_500.gif",
-    "https://open.spotify.com/playlist/1HjjtwwOwVINLAx1mAlWe2?si=4dbb1b95b12c4ed9",
-  ],
-  [
-    "https://66.media.tumblr.com/8dd1c4e0584dea0679b86ee06199b4a5/tumblr_nyt53pb9RP1rcz4rao1_540.jpg",
-    "https://open.spotify.com/playlist/5wlEcUgC7xf2CjCvIxk70G?si=e92d1debf315471e",
-  ],
-  [
-    "https://66.media.tumblr.com/afee8b2b29b8b577a645c08045e4eaf9/tumblr_njtn3fak2m1r0ixdro1_1280.png",
-    "https://open.spotify.com/playlist/1SQvYtYjRwS0LkE2hEhWxL?si=b3fb6bbac820405d",
-  ],
-  [
-    "https://66.media.tumblr.com/2f145a5bf6346155904c6398595158fb/tumblr_o2tyj5v0yW1r20fq5o1_1280.jpg",
-    "https://open.spotify.com/playlist/4fhMrEtvGS0xZ2YWRNt6Rk?si=2e71ac66454748b8",
-  ],
-  [
-    "https://66.media.tumblr.com/805ed4e0e9a0d6f367025a1eb9c97fff/tumblr_nm8pipaX161r5rhxlo1_640.jpg",
-    "https://open.spotify.com/playlist/70B9AFJrPNt6CycPwar9Ew?si=54b6021665f94139",
-  ],
-  [
-    "https://66.media.tumblr.com/1d02ea896bebab4e82ab68d630848ae4/tumblr_nldfvjgipT1u9b9ceo1_500.gif",
-    "https://open.spotify.com/playlist/6hDHYebjewy9MqM3KCsvnP?si=6b60b79e38e64bec",
-  ],
-  [
-    "https://66.media.tumblr.com/bb9ad945128756956e6b2dff0005bd73/tumblr_peseexylMJ1viuar9o1_640.gif",
-    "https://open.spotify.com/playlist/67KsE5j5uAtMyFyUV4qQU6?si=4a68fcdf2913414e",
-  ],
-  [
-    "https://66.media.tumblr.com/0b5d1a2c8b9bd2db16d56216c53f16ee/tumblr_oedtvhZ7J81s7ibqko1_1280.jpg",
-    "https://open.spotify.com/playlist/7bPtEpYy9rF5yFmAfhuMGv?si=f373f944db0c4299",
-  ],
-  [
-    "https://66.media.tumblr.com/ff7dbf4691818d5c20eb7eb8dcd7d49e/tumblr_o3sluaUi7k1uzcmcro1_640.gif",
-    "https://open.spotify.com/playlist/5vopcEtNCTaGEzr7LoMbXU?si=1bbab58d5c6b419d",
-  ],
-  [
-    "https://66.media.tumblr.com/35d6154fc76f2be18d234a4d2e8d7226/tumblr_pbjr37o7Zb1qh0kqjo1_1280.jpg",
-    "https://open.spotify.com/playlist/5JYYjxfYoeVmi5KTtq3pVv?si=ced3cf02084c4bc5",
-  ],
-];
