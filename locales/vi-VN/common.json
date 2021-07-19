@@ -29,8 +29,10 @@
   "subpage-letters-description": "Tất cả thư mình đã viết",
   "stuff-spotify-explain": "Đồng bộ với Spotify của Phong thông qua",
   "stuff-spotify-ask": "Nghe nhạc với mình không?",
-  "stuff-moments-together": "Mình hy vọng chúng ta có thể tạo ra những khoảnh khắp đẹp cùng nhau.",
+  "stuff-moments-together": "Mình hy vọng chúng ta có thể tạo ra những khoảnh khắc đẹp cùng nhau.",
   "spotify-now-playing-title": "Hiện tại mình không nghe nhạc.",
+  "spotify-now-playing-status-playing": "Đang phát",
+  "spotify-now-playing-status-paused": "Tạm dừng",
   "footer-lilac-toast-line1": "Hoa yêu thích hiện tại của mình,",
   "footer-lilac-toast-line2": "Tử Đinh Hương"
 }

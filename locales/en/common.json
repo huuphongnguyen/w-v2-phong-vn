@@ -30,7 +30,9 @@
   "stuff-spotify-explain": "Real-time syncing with my Spotify through",
   "stuff-spotify-ask": "Listen with me?",
   "stuff-moments-together": "I hope we can create moments together.",
-  "spotify-now-playing-title": "Not playing any song now.",
+  "spotify-now-playing-title": "Not playing any song.",
+  "spotify-now-playing-status-playing": "Playing",
+  "spotify-now-playing-status-paused": "Paused",
   "footer-lilac-toast-line1": "My currently lovely flower,",
   "footer-lilac-toast-line2": "Lilac"
 }

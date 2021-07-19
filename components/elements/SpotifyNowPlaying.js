@@ -86,7 +86,7 @@ export default function SpotifyNowPlaying() {
                         <div className="w-full h-full bg-green-500 rounded-full absolute top-0" />
                       </div>
                       <p className="text-black dark:text-white font-bold uppercase text-xs">
-                        Đang phát
+                        {t("spotify-now-playing-status-playing")}
                       </p>
                     </div>
                   ) : (
@@ -96,7 +96,7 @@ export default function SpotifyNowPlaying() {
                         <div className="w-full h-full bg-yellow-500 rounded-full absolute top-0" />
                       </div>
                       <p className="text-black dark:text-white font-bold uppercase text-xs">
-                        Tạm dừng
+                        {t("spotify-now-playing-status-paused")}
                       </p>
                     </div>
                   )}
